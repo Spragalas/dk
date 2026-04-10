@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Degalų kainos Lietuvoje</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <div id="panel">
+    <div id="panel-header">
+      <div>
+        <h1>Degalų kainos</h1>
+        <div id="date-section">
+          <span id="date-display"></span>
+          <select id="history-select" title="Istorija"></select>
+        </div>
+      </div>
+      <button id="panel-toggle" title="Sutraukti/Išskleisti">&#9650;</button>
+    </div>
+
+    <div id="panel-body">
+
+    <div id="fuel-tabs">
+      <button class="fuel-tab active" data-fuel="petrol95">95 benzinas</button>
+      <button class="fuel-tab" data-fuel="diesel">Dyzelinas</button>
+      <button class="fuel-tab" data-fuel="lpg">SND</button>
+    </div>
+
+    <div id="averages"></div>
+
+    <div id="filters">
+      <div class="filter-section">
+        <label for="company-select">Tinklas:</label>
+        <select id="company-select">
+          <option value="">Visi</option>
+        </select>
+      </div>
+      <div class="filter-section">
+        <label for="search-input">Paieška:</label>
+        <input type="text" id="search-input" placeholder="Adresas arba miestas..." />
+      </div>
+    </div>
+
+    <div id="cluster-mode">
+      <label>Grupėje rodyti:</label>
+      <div id="mode-tabs">
+        <button class="mode-tab active" data-mode="min">Min</button>
+        <button class="mode-tab" data-mode="max">Max</button>
+      </div>
+    </div>
+
+    <div id="legend">
+      <div class="legend-title">Kaina vs vidurkis</div>
+      <div class="legend-row"><span class="dot" style="background:#2d9e2d"></span> Pigiau</div>
+      <div class="legend-row"><span class="dot" style="background:#f0ad4e"></span> Apie vidurkį</div>
+      <div class="legend-row"><span class="dot" style="background:#d9534f"></span> Brangiau</div>
+    </div>
+
+    <div id="stats"></div>
+
+    <div id="attribution">
+      Duomenys: <a href="https://www.ena.lt" target="_blank">LEA</a> |
+      Žemėlapis: <a href="https://www.openstreetmap.org" target="_blank">OSM</a>
+    </div>
+
+    </div><!-- end panel-body -->
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
