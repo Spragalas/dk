@@ -48,6 +48,7 @@
     });
     map.addLayer(markerCluster);
 
+    setupThemeToggle();
     setupPanelToggle();
     setupFuelTabs();
     setupClusterMode();
@@ -120,8 +121,6 @@
       allStations = data.stations;
       averages = data.averages;
 
-      document.getElementById("date-display").textContent = data.date;
-
       // Set history select to match
       const histSelect = document.getElementById("history-select");
       if (histSelect.options.length > 0) {
@@ -138,7 +137,7 @@
       }
     } catch (err) {
       console.error("Failed to load data:", err);
-      document.getElementById("date-display").textContent = "Klaida kraunant duomenis";
+      console.error("Klaida kraunant duomenis");
     }
   }
 
@@ -163,23 +162,43 @@
 
   function renderAverages() {
     const el = document.getElementById("averages");
-    el.innerHTML = Object.entries(FUEL_LABELS)
-      .map(([key, label]) => {
-        const val = averages[key];
-        return `<div class="avg-row">
-          <span class="avg-label">${label}:</span>
-          <span class="avg-value">${val != null ? val.toFixed(3) + " \u20ac" : "\u2014"}</span>
-        </div>`;
-      })
+    if (!allStations) return;
+
+    const prices = allStations
+      .map((s) => s.prices[currentFuel])
+      .filter((p) => p != null);
+
+    if (prices.length === 0) {
+      el.innerHTML = `<div class="avg-row"><span class="avg-label">N/A</span></div>`;
+      return;
+    }
+
+    const min = Math.min(...prices);
+    const avg = prices.reduce((a, b) => a + b, 0) / prices.length;
+    const max = Math.max(...prices);
+
+    el.innerHTML = [
+      { label: "Mažiausia", value: min },
+      { label: "Vidutin\u0117", value: avg },
+      { label: "Didžiausia", value: max },
+    ]
+      .map((r) => `<div class="avg-row">
+        <span class="avg-label">${r.label}</span>
+        <span class="avg-value">${r.value.toFixed(3)} \u20ac</span>
+      </div>`)
       .join("");
+  }
+
+  function getCSSVar(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
 
   function getColor(price, avg) {
     if (price == null || avg == null) return "#999";
     const pct = (price - avg) / avg;
-    if (pct < -0.02) return "#2d9e2d";
-    if (pct > 0.02) return "#d9534f";
-    return "#f0ad4e";
+    if (pct < -0.02) return getCSSVar("--green");
+    if (pct > 0.02) return getCSSVar("--red");
+    return getCSSVar("--yellow");
   }
 
   function createMarkerIcon(color, price) {
@@ -263,6 +282,30 @@
       `Rodoma: ${displayCount} / ${total} degaliniu`;
   }
 
+  function setupThemeToggle() {
+    const btn = document.getElementById("theme-toggle");
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+      btn.innerHTML = "&#9790;";
+    }
+
+    btn.addEventListener("click", () => {
+      const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      if (isDark) {
+        document.documentElement.removeAttribute("data-theme");
+        localStorage.setItem("theme", "light");
+        btn.innerHTML = "&#9788;";
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
+        btn.innerHTML = "&#9790;";
+      }
+      // Re-render markers to pick up new colors
+      if (allStations) renderMarkers();
+    });
+  }
+
   function setupPanelToggle() {
     const btn = document.getElementById("panel-toggle");
     const body = document.getElementById("panel-body");
@@ -278,6 +321,7 @@
         document.querySelectorAll(".fuel-tab").forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
         currentFuel = btn.dataset.fuel;
+        renderAverages();
         renderMarkers();
       });
     });

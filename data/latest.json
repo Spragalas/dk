@@ -1,6 +1,6 @@
 {
   "date": "2026-04-10",
-  "updatedAt": "2026-04-10T20:04:22.858055+00:00",
+  "updatedAt": "2026-04-10T20:33:36.237823+00:00",
   "averages": {
     "petrol95": 1.773,
     "diesel": 2.178,
@@ -4535,8 +4535,8 @@
         "diesel": 2.05,
         "lpg": 0.87
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9398236,
+      "lng": 23.3937822,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.13,
@@ -4553,8 +4553,8 @@
         "diesel": 2.08,
         "lpg": 0.85
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.6865165,
+      "lng": 22.8611849,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.02,
@@ -4571,8 +4571,8 @@
         "diesel": null,
         "lpg": 0.88
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3764559,
+      "lng": 23.1988999,
       "priceChange": {
         "petrol95": null,
         "diesel": null,
@@ -4589,8 +4589,8 @@
         "diesel": 2.08,
         "lpg": 0.85
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3764559,
+      "lng": 23.1988999,
       "priceChange": {
         "petrol95": -0.1,
         "diesel": -0.13,
@@ -4607,8 +4607,8 @@
         "diesel": null,
         "lpg": 0.88
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3750109,
+      "lng": 21.5403978,
       "priceChange": {
         "petrol95": null,
         "diesel": null,
@@ -4625,8 +4625,8 @@
         "diesel": 2.08,
         "lpg": 0.88
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.0731045,
+      "lng": 23.8319151,
       "priceChange": {
         "petrol95": -0.1,
         "diesel": -0.11,
@@ -4643,8 +4643,8 @@
         "diesel": 2.08,
         "lpg": 0.88
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3625318,
+      "lng": 21.4450256,
       "priceChange": {
         "petrol95": -0.1,
         "diesel": -0.14,
@@ -4661,8 +4661,8 @@
         "diesel": 2.16,
         "lpg": 0.88
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.953916,
+      "lng": 21.8335407,
       "priceChange": {
         "petrol95": -0.01,
         "diesel": -0.06,
@@ -4679,8 +4679,8 @@
         "diesel": 2.07,
         "lpg": 0.85
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3564378,
+      "lng": 22.405222,
       "priceChange": {
         "petrol95": -0.11,
         "diesel": -0.15,
@@ -4697,8 +4697,8 @@
         "diesel": 2.08,
         "lpg": 0.88
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9155086,
+      "lng": 25.0309026,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.14,
@@ -4715,8 +4715,8 @@
         "diesel": null,
         "lpg": 0.88
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.7827168,
+      "lng": 21.3496449,
       "priceChange": {
         "petrol95": null,
         "diesel": null,
@@ -4733,8 +4733,8 @@
         "diesel": 2.19,
         "lpg": 0.95
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6334424,
+      "lng": 24.2204708,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.05,
@@ -4751,8 +4751,8 @@
         "diesel": 2.27,
         "lpg": 0.92
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.2176268,
+      "lng": 22.9652342,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -4769,8 +4769,8 @@
         "diesel": 2.169,
         "lpg": 0.929
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.6865165,
+      "lng": 22.8611849,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -4787,8 +4787,8 @@
         "diesel": 2.27,
         "lpg": 0.929
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.884461,
+      "lng": 21.2215329,
       "priceChange": {
         "petrol95": -0.01,
         "diesel": -0.01,
@@ -4805,8 +4805,8 @@
         "diesel": 2.19,
         "lpg": 0.89
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.5252224,
+      "lng": 22.2160078,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -4823,8 +4823,8 @@
         "diesel": 2.27,
         "lpg": 0.92
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.140417,
+      "lng": 21.9034153,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -4841,8 +4841,8 @@
         "diesel": 2.25,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.919887,
+      "lng": 21.8570671,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.03,
@@ -4859,8 +4859,8 @@
         "diesel": 2.19,
         "lpg": 0.94
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.0130975,
+      "lng": 22.1366723,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": -0.1,
@@ -4877,8 +4877,8 @@
         "diesel": 2.19,
         "lpg": 0.89
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3706566,
+      "lng": 23.1192973,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": -0.07,
@@ -4895,8 +4895,8 @@
         "diesel": 2.29,
         "lpg": 0.94
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9686093,
+      "lng": 21.3604059,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -4913,8 +4913,8 @@
         "diesel": 2.27,
         "lpg": 0.92
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.4015729,
+      "lng": 22.5977437,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -4931,8 +4931,8 @@
         "diesel": 2.18,
         "lpg": 0.89
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.4859035,
+      "lng": 22.1996267,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -4949,8 +4949,8 @@
         "diesel": 2.18,
         "lpg": 0.96
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9997952,
+      "lng": 22.2416104,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.11,
@@ -4967,8 +4967,8 @@
         "diesel": 2.17,
         "lpg": 0.92
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3552823,
+      "lng": 21.6800586,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -4985,8 +4985,8 @@
         "diesel": 2.19,
         "lpg": 0.89
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9228673,
+      "lng": 21.6491956,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": -0.09,
@@ -5003,8 +5003,8 @@
         "diesel": 2.189,
         "lpg": 0.889
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.2415748,
+      "lng": 22.8625876,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5021,8 +5021,8 @@
         "diesel": 2.189,
         "lpg": 0.949
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.8270857,
+      "lng": 24.4264088,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.05,
@@ -5039,8 +5039,8 @@
         "diesel": 2.149,
         "lpg": 0.899
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.3137433,
+      "lng": 22.3682032,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5057,8 +5057,8 @@
         "diesel": 2.19,
         "lpg": 0.89
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.2274045,
+      "lng": 21.6899322,
       "priceChange": {
         "petrol95": -0.1,
         "diesel": -0.1,
@@ -5075,8 +5075,8 @@
         "diesel": 2.159,
         "lpg": 0.939
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.3791164,
+      "lng": 23.5285824,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": -0.02,
@@ -5093,8 +5093,8 @@
         "diesel": 2.09,
         "lpg": 0.88
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.7861028,
+      "lng": 22.6709028,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5111,8 +5111,8 @@
         "diesel": 2.214,
         "lpg": 0.92
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.339637,
+      "lng": 24.0118376,
       "priceChange": {
         "petrol95": -0.01,
         "diesel": -0.01,
@@ -5129,8 +5129,8 @@
         "diesel": 2.189,
         "lpg": 0.889
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.2415748,
+      "lng": 22.8625876,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5147,8 +5147,8 @@
         "diesel": 2.199,
         "lpg": 0.899
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.682847,
+      "lng": 25.2878406,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5165,8 +5165,8 @@
         "diesel": 2.19,
         "lpg": 0.94
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.0130975,
+      "lng": 22.1366723,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": -0.1,
@@ -5183,8 +5183,8 @@
         "diesel": 2.15,
         "lpg": 0.85
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3764559,
+      "lng": 23.1988999,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5201,8 +5201,8 @@
         "diesel": 2.23,
         "lpg": 0.89
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3764559,
+      "lng": 23.1988999,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.006,
@@ -5219,8 +5219,8 @@
         "diesel": 2.16,
         "lpg": 0.87
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.0731045,
+      "lng": 23.8319151,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5237,8 +5237,8 @@
         "diesel": 2.099,
         "lpg": 0.9
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3703149,
+      "lng": 23.1321196,
       "priceChange": {
         "petrol95": -0.09,
         "diesel": -0.12,
@@ -5255,8 +5255,8 @@
         "diesel": 2.299,
         "lpg": 0.969
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.8243039,
+      "lng": 25.0014554,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5273,8 +5273,8 @@
         "diesel": 2.299,
         "lpg": 0.939
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.4243113,
+      "lng": 24.9204947,
       "priceChange": {
         "petrol95": 0.03,
         "diesel": 0.02,
@@ -5291,8 +5291,8 @@
         "diesel": 2.199,
         "lpg": 0.939
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.5349516,
+      "lng": 25.0424158,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5309,8 +5309,8 @@
         "diesel": 2.199,
         "lpg": 0.939
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.5848527,
+      "lng": 24.8784603,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5327,8 +5327,8 @@
         "diesel": 2.199,
         "lpg": 0.94
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9749782,
+      "lng": 24.7401225,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5345,8 +5345,8 @@
         "diesel": 2.199,
         "lpg": 0.939
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7924833,
+      "lng": 25.2870888,
       "priceChange": {
         "petrol95": 0.0,
         "diesel": 0.0,
@@ -5363,8 +5363,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6341739,
+      "lng": 25.3045356,
       "priceChange": {
         "petrol95": -0.075,
         "diesel": -0.12,
@@ -5381,8 +5381,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7361438,
+      "lng": 25.2311187,
       "priceChange": {
         "petrol95": -0.03,
         "diesel": -0.1,
@@ -5399,8 +5399,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7138968,
+      "lng": 25.2096844,
       "priceChange": {
         "petrol95": -0.075,
         "diesel": -0.09,
@@ -5417,8 +5417,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6728103,
+      "lng": 25.1979479,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.11,
@@ -5435,8 +5435,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7121034,
+      "lng": 25.2707309,
       "priceChange": {
         "petrol95": -0.055,
         "diesel": -0.12,
@@ -5453,8 +5453,8 @@
         "diesel": 2.144,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7214903,
+      "lng": 25.2561146,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.115,
@@ -5471,8 +5471,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7174439,
+      "lng": 25.3044408,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.115,
@@ -5489,8 +5489,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.71563,
+      "lng": 25.2287063,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.11,
@@ -5507,8 +5507,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6440341,
+      "lng": 25.2074576,
       "priceChange": {
         "petrol95": -0.07,
         "diesel": -0.12,
@@ -5525,8 +5525,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6734231,
+      "lng": 25.2240676,
       "priceChange": {
         "petrol95": -0.025,
         "diesel": -0.095,
@@ -5543,8 +5543,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6716123,
+      "lng": 25.270971,
       "priceChange": {
         "petrol95": -0.03,
         "diesel": -0.1,
@@ -5561,8 +5561,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6468852,
+      "lng": 25.2102272,
       "priceChange": {
         "petrol95": -0.07,
         "diesel": -0.12,
@@ -5579,8 +5579,8 @@
         "diesel": 2.189,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6771369,
+      "lng": 25.2560022,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.09,
@@ -5597,8 +5597,8 @@
         "diesel": 2.149,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.75485,
+      "lng": 25.271346,
       "priceChange": {
         "petrol95": -0.055,
         "diesel": -0.12,
@@ -5615,8 +5615,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7119036,
+      "lng": 25.293073,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.115,
@@ -5633,8 +5633,8 @@
         "diesel": 2.164,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7067448,
+      "lng": 25.304138,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.115,
@@ -5651,8 +5651,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6767354,
+      "lng": 25.3092992,
       "priceChange": {
         "petrol95": -0.055,
         "diesel": -0.12,
@@ -5669,8 +5669,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6552621,
+      "lng": 25.2702703,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.1,
@@ -5687,8 +5687,8 @@
         "diesel": 2.194,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6808398,
+      "lng": 25.2076283,
       "priceChange": {
         "petrol95": -0.045,
         "diesel": -0.085,
@@ -5705,8 +5705,8 @@
         "diesel": 2.164,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7049091,
+      "lng": 25.2147007,
       "priceChange": {
         "petrol95": -0.055,
         "diesel": -0.125,
@@ -5723,8 +5723,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7013241,
+      "lng": 25.2638052,
       "priceChange": {
         "petrol95": -0.055,
         "diesel": -0.12,
@@ -5741,8 +5741,8 @@
         "diesel": 2.139,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7094735,
+      "lng": 25.1898838,
       "priceChange": {
         "petrol95": -0.075,
         "diesel": -0.12,
@@ -5759,8 +5759,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6566534,
+      "lng": 25.2920381,
       "priceChange": {
         "petrol95": -0.075,
         "diesel": -0.12,
@@ -5777,8 +5777,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6244066,
+      "lng": 25.1119814,
       "priceChange": {
         "petrol95": -0.07,
         "diesel": -0.12,
@@ -5795,8 +5795,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6212846,
+      "lng": 25.2429403,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.1,
@@ -5813,8 +5813,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6583266,
+      "lng": 25.1592954,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.12,
@@ -5831,8 +5831,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.6681842,
+      "lng": 25.2651336,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.1,
@@ -5849,8 +5849,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7041729,
+      "lng": 25.2670837,
       "priceChange": {
         "petrol95": -0.055,
         "diesel": -0.14,
@@ -5867,8 +5867,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9099418,
+      "lng": 23.9837672,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.07,
@@ -5885,8 +5885,8 @@
         "diesel": 2.149,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9133284,
+      "lng": 23.9116506,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.1,
@@ -5903,8 +5903,8 @@
         "diesel": 2.164,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.8755037,
+      "lng": 23.8909537,
       "priceChange": {
         "petrol95": -0.049,
         "diesel": -0.1,
@@ -5921,8 +5921,8 @@
         "diesel": 2.164,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9255312,
+      "lng": 23.8917929,
       "priceChange": {
         "petrol95": -0.045,
         "diesel": -0.1,
@@ -5939,8 +5939,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.8950704,
+      "lng": 23.9859176,
       "priceChange": {
         "petrol95": -0.04,
         "diesel": -0.1,
@@ -5957,8 +5957,8 @@
         "diesel": 2.129,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9260285,
+      "lng": 24.0605624,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.1,
@@ -5975,8 +5975,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9120996,
+      "lng": 23.9726146,
       "priceChange": {
         "petrol95": -0.03,
         "diesel": -0.095,
@@ -5993,8 +5993,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9159784,
+      "lng": 23.9535991,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.095,
@@ -6011,8 +6011,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9314194,
+      "lng": 23.9508055,
       "priceChange": {
         "petrol95": -0.04,
         "diesel": -0.09,
@@ -6029,8 +6029,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9068617,
+      "lng": 23.8728216,
       "priceChange": {
         "petrol95": -0.04,
         "diesel": -0.11,
@@ -6047,8 +6047,8 @@
         "diesel": 2.149,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9364848,
+      "lng": 23.8863425,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.1,
@@ -6065,8 +6065,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.8982139,
+      "lng": 23.9044817,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.1,
@@ -6083,8 +6083,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.8946555,
+      "lng": 23.9442777,
       "priceChange": {
         "petrol95": -0.054,
         "diesel": -0.095,
@@ -6101,8 +6101,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.8982139,
+      "lng": 23.9044817,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.1,
@@ -6119,8 +6119,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.9293519,
+      "lng": 23.9734688,
       "priceChange": {
         "petrol95": -0.03,
         "diesel": -0.11,
@@ -6137,8 +6137,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.8982139,
+      "lng": 23.9044817,
       "priceChange": {
         "petrol95": -0.065,
         "diesel": -0.11,
@@ -6155,8 +6155,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.8758023,
+      "lng": 23.9120977,
       "priceChange": {
         "petrol95": -0.049,
         "diesel": -0.1,
@@ -6173,8 +6173,8 @@
         "diesel": 2.149,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.6728215,
+      "lng": 21.2017347,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.105,
@@ -6191,8 +6191,8 @@
         "diesel": 2.119,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.6930895,
+      "lng": 21.1747696,
       "priceChange": {
         "petrol95": -0.075,
         "diesel": -0.14,
@@ -6209,8 +6209,8 @@
         "diesel": 2.119,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.6889111,
+      "lng": 21.1551766,
       "priceChange": {
         "petrol95": -0.075,
         "diesel": -0.15,
@@ -6227,8 +6227,8 @@
         "diesel": 2.129,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.6847139,
+      "lng": 21.1505231,
       "priceChange": {
         "petrol95": -0.08,
         "diesel": -0.15,
@@ -6245,8 +6245,8 @@
         "diesel": 2.099,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.7168107,
+      "lng": 21.150527,
       "priceChange": {
         "petrol95": -0.09,
         "diesel": -0.155,
@@ -6263,8 +6263,8 @@
         "diesel": 2.149,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.6698478,
+      "lng": 21.1929514,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.105,
@@ -6281,8 +6281,8 @@
         "diesel": 2.114,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.7031833,
+      "lng": 21.1647917,
       "priceChange": {
         "petrol95": -0.055,
         "diesel": -0.12,
@@ -6299,8 +6299,8 @@
         "diesel": 2.174,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.7827168,
+      "lng": 21.3496449,
       "priceChange": {
         "petrol95": -0.075,
         "diesel": -0.125,
@@ -6317,8 +6317,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.7827168,
+      "lng": 21.3496449,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.09,
@@ -6335,8 +6335,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9059107,
+      "lng": 23.2587205,
       "priceChange": {
         "petrol95": -0.05,
         "diesel": -0.1,
@@ -6353,8 +6353,8 @@
         "diesel": 2.164,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9200839,
+      "lng": 23.2932849,
       "priceChange": {
         "petrol95": -0.045,
         "diesel": -0.1,
@@ -6371,8 +6371,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9293669,
+      "lng": 23.2941339,
       "priceChange": {
         "petrol95": -0.03,
         "diesel": -0.09,
@@ -6389,8 +6389,8 @@
         "diesel": 2.189,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.7283773,
+      "lng": 24.3323377,
       "priceChange": {
         "petrol95": -0.01,
         "diesel": -0.075,
@@ -6407,8 +6407,8 @@
         "diesel": 2.174,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.709517,
+      "lng": 24.3747541,
       "priceChange": {
         "petrol95": -0.025,
         "diesel": -0.075,
@@ -6425,8 +6425,8 @@
         "diesel": 2.194,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.7277452,
+      "lng": 24.3488051,
       "priceChange": {
         "petrol95": -0.015,
         "diesel": -0.075,
@@ -6443,8 +6443,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.0706909,
+      "lng": 24.3842838,
       "priceChange": {
         "petrol95": -0.015,
         "diesel": -0.1,
@@ -6461,8 +6461,8 @@
         "diesel": 2.174,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.7193962,
+      "lng": 24.3488668,
       "priceChange": {
         "petrol95": -0.025,
         "diesel": -0.075,
@@ -6479,8 +6479,8 @@
         "diesel": 2.184,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.73063,
+      "lng": 24.316109,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.075,
@@ -6497,8 +6497,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9155086,
+      "lng": 25.0309026,
       "priceChange": {
         "petrol95": -0.03,
         "diesel": -0.11,
@@ -6515,8 +6515,8 @@
         "diesel": 2.149,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.9155086,
+      "lng": 25.0309026,
       "priceChange": {
         "petrol95": -0.03,
         "diesel": -0.11,
@@ -6533,8 +6533,8 @@
         "diesel": 2.149,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.3870841,
+      "lng": 24.0262949,
       "priceChange": {
         "petrol95": -0.07,
         "diesel": -0.13,
@@ -6551,8 +6551,8 @@
         "diesel": 2.149,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.408962,
+      "lng": 24.0051873,
       "priceChange": {
         "petrol95": -0.07,
         "diesel": -0.13,
@@ -6569,8 +6569,8 @@
         "diesel": 2.139,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.5603639,
+      "lng": 23.3659257,
       "priceChange": {
         "petrol95": -0.07,
         "diesel": -0.13,
@@ -6587,8 +6587,8 @@
         "diesel": 2.124,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.5626096,
+      "lng": 23.3323659,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.14,
@@ -6605,8 +6605,8 @@
         "diesel": 2.179,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7397108,
+      "lng": 25.2804959,
       "priceChange": {
         "petrol95": null,
         "diesel": -0.11,
@@ -6623,8 +6623,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7397108,
+      "lng": 25.2804959,
       "priceChange": {
         "petrol95": -0.04,
         "diesel": -0.11,
@@ -6641,8 +6641,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 56.3012334,
+      "lng": 22.3498409,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.12,
@@ -6659,8 +6659,8 @@
         "diesel": 2.219,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.5252224,
+      "lng": 22.2160078,
       "priceChange": {
         "petrol95": -0.01,
         "diesel": -0.06,
@@ -6677,8 +6677,8 @@
         "diesel": 2.249,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.2781085,
+      "lng": 23.959972,
       "priceChange": {
         "petrol95": -0.07,
         "diesel": -0.05,
@@ -6695,8 +6695,8 @@
         "diesel": 2.129,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.2420375,
+      "lng": 24.7429222,
       "priceChange": {
         "petrol95": -0.07,
         "diesel": -0.135,
@@ -6713,8 +6713,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.5051789,
+      "lng": 25.6248833,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.13,
@@ -6731,8 +6731,8 @@
         "diesel": 2.164,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.4929397,
+      "lng": 25.5815827,
       "priceChange": {
         "petrol95": -0.06,
         "diesel": -0.13,
@@ -6749,8 +6749,8 @@
         "diesel": 2.169,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.2282306,
+      "lng": 25.4148997,
       "priceChange": {
         "petrol95": -0.055,
         "diesel": -0.11,
@@ -6767,8 +6767,8 @@
         "diesel": 2.159,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.978537,
+      "lng": 25.7566235,
       "priceChange": {
         "petrol95": -0.045,
         "diesel": -0.115,
@@ -6785,8 +6785,8 @@
         "diesel": 2.189,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.1168377,
+      "lng": 24.2815728,
       "priceChange": {
         "petrol95": -0.035,
         "diesel": -0.09,
@@ -6803,8 +6803,8 @@
         "diesel": 2.189,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.8142724,
+      "lng": 23.5460383,
       "priceChange": {
         "petrol95": -0.055,
         "diesel": -0.085,
@@ -6821,8 +6821,8 @@
         "diesel": 2.239,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.3764559,
+      "lng": 23.1988999,
       "priceChange": {
         "petrol95": -0.01,
         "diesel": -0.06,
@@ -6839,8 +6839,8 @@
         "diesel": 2.129,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 55.2653157,
+      "lng": 22.3088337,
       "priceChange": {
         "petrol95": -0.07,
         "diesel": -0.12,
@@ -6857,8 +6857,8 @@
         "diesel": 2.199,
         "lpg": null
       },
-      "lat": null,
-      "lng": null,
+      "lat": 54.7890725,
+      "lng": 24.6724424,
       "priceChange": {
         "petrol95": -0.02,
         "diesel": -0.1,

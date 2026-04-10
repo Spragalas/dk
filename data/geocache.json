@@ -1293,5 +1293,615 @@
     "lat": 55.953916,
     "lng": 21.8335407,
     "display_name": "Plungės rajono savivaldybė, Telšių apskritis, Lietuva"
+  },
+  "tauragės-r-sav-|papušynės-k-šilalės-g-105": {
+    "lat": 55.3564378,
+    "lng": 22.405222,
+    "display_name": "Tauragės apskritis, Lietuva"
+  },
+  "panevėžio-m-sav-|panevėžys-s-kerbedžio-g-7f": {
+    "lat": 55.9155086,
+    "lng": 25.0309026,
+    "display_name": "Panevėžio apskritis, Lietuva"
+  },
+  "klaipėdos-m-sav-|klaipėda-priestočio-g-26": {
+    "lat": 55.7827168,
+    "lng": 21.3496449,
+    "display_name": "Klaipėdos apskritis, Lietuva"
+  },
+  "prienų-r-sav-|alytaus-pl-2-mardosų-k": {
+    "lat": 54.6334424,
+    "lng": 24.2204708,
+    "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "jurbarko-r-sav-|tauragės-g-29-rimšų-k": {
+    "lat": 55.2176268,
+    "lng": 22.9652342,
+    "display_name": "Jurbarko rajono savivaldybė, Tauragės apskritis, Lietuva"
+  },
+  "kelmės-r-sav-|puttvinskio-g-29-kelmė": {
+    "lat": 55.6865165,
+    "lng": 22.8611849,
+    "display_name": "Kelmės rajono savivaldybė, Šiaulių apskritis, Lietuva"
+  },
+  "kretingos-r-sav-|tiekėjų-g-34a-kretinga": {
+    "lat": 55.884461,
+    "lng": 21.2215329,
+    "display_name": "Milda, 34A, Tiekėjų g., Kretinga, Kretingos miesto seniūnija, Kretingos rajono savivaldybė, Klaipėdos apskritis, 97168, Lietuva"
+  },
+  "šilalės-r-sav-|paršežerio-g-1-vabalų-k": {
+    "lat": 55.5252224,
+    "lng": 22.2160078,
+    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
+  },
+  "pagėgių-sav-|klaipėdos-g-6b-pagėgiai": {
+    "lat": 55.140417,
+    "lng": 21.9034153,
+    "display_name": "milda, 6B, Klaipėdos g., Pagėgiai, Pagėgių seniūnija, Pagėgių savivaldybė, Tauragės apskritis, 99290, Lietuva"
+  },
+  "plungės-r-sav-|dariaus-ir-girėno-g-31-plungė": {
+    "lat": 55.919887,
+    "lng": 21.8570671,
+    "display_name": "Milda, 31, Dariaus ir Girėno g., Plungė, Plungės miesto seniūnija, Plungės rajono savivaldybė, Telšių apskritis, 90117, Lietuva"
+  },
+  "telšių-r-sav-|telšių-g-2-b-rainių-k": {
+    "lat": 56.0130975,
+    "lng": 22.1366723,
+    "display_name": "Telšių apskritis, Lietuva"
+  },
+  "raseinių-r-sav-|jurbarko-g-34-raseiniai": {
+    "lat": 55.3706566,
+    "lng": 23.1192973,
+    "display_name": "Milda, 34, Jurbarko g., Raseiniai, Raseinių miesto seniūnija, Raseinių rajono savivaldybė, Kauno apskritis, 60178, Lietuva"
+  },
+  "kretingos-r-sav-|platelių-g-1-a-laivių-k": {
+    "lat": 55.9686093,
+    "lng": 21.3604059,
+    "display_name": "Kretingos rajono savivaldybė, Klaipėdos apskritis, Lietuva"
+  },
+  "tauragės-r-sav-|adakavo-g-1-skaudvilė": {
+    "lat": 55.4015729,
+    "lng": 22.5977437,
+    "display_name": "Milda, 1, Adakavo g., Skaudvilė, Skaudvilės seniūnija, Tauragės rajono savivaldybė, Tauragės apskritis, 73435, Lietuva"
+  },
+  "šilalės-r-sav-|rytinio-kelio-g-2a-šilalė": {
+    "lat": 55.4859035,
+    "lng": 22.1996267,
+    "display_name": "Milda, 2A, Rytinio Kelio g., Šilalė, Šilalės miesto seniūnija, Šilalės rajono savivaldybė, Tauragės apskritis, 75122, Lietuva"
+  },
+  "telšių-r-sav-|mažeikių-g-1-telšiai": {
+    "lat": 55.9997952,
+    "lng": 22.2416104,
+    "display_name": "1, Mažeikių g., Telšiai, Telšių miesto seniūnija, Telšių rajono savivaldybė, Telšių apskritis, 87101, Lietuva"
+  },
+  "šilutės-r-sav-|klaipėdos-g-76-žemaičių-naumiestis": {
+    "lat": 55.3552823,
+    "lng": 21.6800586,
+    "display_name": "76, Klaipėdos g., Žemaičių Naumiestis, Žemaičių Naumiesčio seniūnija, Šilutės rajono savivaldybė, Klaipėdos apskritis, 99206, Lietuva"
+  },
+  "plungės-r-sav-|minijos-g-1-aleksandravo-k": {
+    "lat": 55.9228673,
+    "lng": 21.6491956,
+    "display_name": "1, Minijos g., Pakutuvėnai, Šateikių seniūnija, Plungės rajono savivaldybė, Telšių apskritis, 90390, Lietuva"
+  },
+  "akmenės-r-sav-|plento-g-2-ventos-m": {
+    "lat": 56.2415748,
+    "lng": 22.8625876,
+    "display_name": "Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva"
+  },
+  "kaišiadorių-r-sav-|bačkonių-k-pastrėvio-g-1a": {
+    "lat": 54.8270857,
+    "lng": 24.4264088,
+    "display_name": "Kaišiadorių rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "mažeikių-r-sav-|laižuvos-g-82-d-mažeikiai": {
+    "lat": 56.3137433,
+    "lng": 22.3682032,
+    "display_name": "82D, Laižuvos g., Senamiestis, Mažeikiai, Mažeikių seniūnija, Mažeikių rajono savivaldybė, Telšių apskritis, 89213, Lietuva"
+  },
+  "skuodo-r-sav-|skuodo-g-7-stripinių-k": {
+    "lat": 56.2274045,
+    "lng": 21.6899322,
+    "display_name": "Skuodo rajono savivaldybė, Klaipėdos apskritis, Lietuva"
+  },
+  "lazdijų-r-sav-|alytaus-g-59-krosnos-k": {
+    "lat": 54.3791164,
+    "lng": 23.5285824,
+    "display_name": "Kvistija, 59, Alytaus g., Krosna, Krosnos seniūnija, Lazdijų rajono savivaldybė, Alytaus apskritis, 67443, Lietuva"
+  },
+  "kelmės-r-sav-|žemaitės-g-52-užventis": {
+    "lat": 55.7861028,
+    "lng": 22.6709028,
+    "display_name": "Kvistija, 52, Žemaitės g., Užventis, Užvenčio seniūnija, Kelmės rajono savivaldybė, Šiaulių apskritis, 86343, Lietuva"
+  },
+  "kėdainių-r-sav-|ruoščių-k-1": {
+    "lat": 55.339637,
+    "lng": 24.0118376,
+    "display_name": "Kėdainių rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "akmenės-r-sav-|skabeikių-k-4": {
+    "lat": 56.2415748,
+    "lng": 22.8625876,
+    "display_name": "Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva"
+  },
+  "vilniaus-r-sav-|kalnuotės-1-k": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, Pilies g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
+  },
+  "telšių-r-sav-|beržų-g-24-drąsiųjų-7-tryškiai": {
+    "lat": 56.0130975,
+    "lng": 22.1366723,
+    "display_name": "Telšių apskritis, Lietuva"
+  },
+  "raseinių-r-sav-|šilo-g-1-ylių-k": {
+    "lat": 55.3764559,
+    "lng": 23.1988999,
+    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "raseinių-r-sav-|pievų-g-17-slabados-k": {
+    "lat": 55.3764559,
+    "lng": 23.1988999,
+    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "pakruojo-r-sav-|topolių-g-1-degučių-k": {
+    "lat": 56.0731045,
+    "lng": 23.8319151,
+    "display_name": "Pakruojo rajono savivaldybė, Šiaulių apskritis, Lietuva"
+  },
+  "raseinių-r-sav-|vilniaus-g-3b-raseiniai": {
+    "lat": 55.3703149,
+    "lng": 23.1321196,
+    "display_name": "Žerminalis, 3B, Vilniaus g., Raseiniai, Raseinių miesto seniūnija, Raseinių rajono savivaldybė, Kauno apskritis, 60186, Lietuva"
+  },
+  "kupiškio-r-sav-|kikonių-g-10-aleksandrijos-k": {
+    "lat": 55.8243039,
+    "lng": 25.0014554,
+    "display_name": "10, Kikonių g., Aleksandrija, Kupiškio seniūnija, Kupiškio rajono savivaldybė, Panevėžio apskritis, 40335, Lietuva"
+  },
+  "anykščių-r-sav-|pumpučių-g-25-pumpučiai": {
+    "lat": 55.4243113,
+    "lng": 24.9204947,
+    "display_name": "Circle K „Kavarskas“, 25, Pumpučių g., Pumpučiai, Kavarsko seniūnija, Anykščių rajono savivaldybė, Utenos apskritis, 29260, Lietuva"
+  },
+  "anykščių-r-sav-|sausalaukės-k-2": {
+    "lat": 55.5349516,
+    "lng": 25.0424158,
+    "display_name": "Anykščių rajono savivaldybė, Utenos apskritis, Lietuva"
+  },
+  "anykščių-r-sav-|vilniaus-g-32-troškūnai": {
+    "lat": 55.5848527,
+    "lng": 24.8784603,
+    "display_name": "Link geležinkelio, 32, Vilniaus g., Troškūnai, Troškūnų seniūnija, Anykščių rajono savivaldybė, Utenos apskritis, 29306, Lietuva"
+  },
+  "biržų-r-sav-|s-nėries-g-35-vabalninkas": {
+    "lat": 55.9749782,
+    "lng": 24.7401225,
+    "display_name": "Narjanta, 35, Panevėžio g., Vabalninkas, Vabalninko seniūnija, Biržų rajono savivaldybė, Panevėžio apskritis, 41318, Lietuva"
+  },
+  "kupiškio-r-sav-|dvariškių-vs-2": {
+    "lat": 54.7924833,
+    "lng": 25.2870888,
+    "display_name": "Dvariškių g., Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 14259, Lietuva"
+  },
+  "vilniaus-m-sav-|servečės-g-2-vilnius": {
+    "lat": 54.6341739,
+    "lng": 25.3045356,
+    "display_name": "2, Servečės g., Rasų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02225, Lietuva"
+  },
+  "vilniaus-m-sav-|ukmergės-g-296-vilnius": {
+    "lat": 54.7361438,
+    "lng": 25.2311187,
+    "display_name": "Neste, 296, Ukmergės g., Fabijoniškės, Pašilaičių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 12105, Lietuva"
+  },
+  "vilniaus-m-sav-|talino-g-2c-vilnius": {
+    "lat": 54.7138968,
+    "lng": 25.2096844,
+    "display_name": "H2Auto, 2C, Talino g., Justiniškės, Justiniškių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 05202, Lietuva"
+  },
+  "vilniaus-m-sav-|erfurto-g-41-vilnius": {
+    "lat": 54.6728103,
+    "lng": 25.1979479,
+    "display_name": "Hesburger, 41, Erfurto g., Gudeliai, Lazdynų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 04226, Lietuva"
+  },
+  "vilniaus-m-sav-|geležinio-vilko-g-63-vilnius": {
+    "lat": 54.7121034,
+    "lng": 25.2707309,
+    "display_name": "63, Geležinio Vilko g., Šnipiškės, Šnipiškių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08217, Lietuva"
+  },
+  "vilniaus-m-sav-|s-stanevičiaus-g-3-vilnius": {
+    "lat": 54.7214903,
+    "lng": 25.2561146,
+    "display_name": "Neste „Stanevičiaus“, 3, S. Stanevičiaus g., Fabijoniškės, Fabijoniškių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 07131, Lietuva"
+  },
+  "vilniaus-m-sav-|žirmūnų-g-68b-vilnius": {
+    "lat": 54.7174439,
+    "lng": 25.3044408,
+    "display_name": "Hesburger, 68B, Žirmūnų g., Žirmūnai, Žirmūnų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 09124, Lietuva"
+  },
+  "vilniaus-m-sav-|rygos-g-2-vilnius": {
+    "lat": 54.71563,
+    "lng": 25.2287063,
+    "display_name": "Neste „Justiniškių“, 2, Rygos g., Viršuliškės, Viršuliškių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 05259, Lietuva"
+  },
+  "vilniaus-m-sav-|savanorių-pr-220a-vilnius": {
+    "lat": 54.6440341,
+    "lng": 25.2074576,
+    "display_name": "Švaros Broliai, 220A, Savanorių pr., Žemieji Paneriai, Vilkpėdės seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02301, Lietuva"
+  },
+  "vilniaus-m-sav-|parodų-g-1a-vilnius": {
+    "lat": 54.6734231,
+    "lng": 25.2240676,
+    "display_name": "Neste „Litexpo“, 1A, Parodų g., Miškiniai, Lazdynų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 04133, Lietuva"
+  },
+  "vilniaus-m-sav-|kauno-g-26-vilnius": {
+    "lat": 54.6716123,
+    "lng": 25.270971,
+    "display_name": "Plaunu pats, 26, Kauno g., Naujamiestis, Naujamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 03209, Lietuva"
+  },
+  "vilniaus-m-sav-|savanorių-pr-187-vilnius": {
+    "lat": 54.6468852,
+    "lng": 25.2102272,
+    "display_name": "187, Savanorių pr., Žemieji Paneriai, Vilkpėdės seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02301, Lietuva"
+  },
+  "vilniaus-m-sav-|kedrų-g-2-vilnius": {
+    "lat": 54.6771369,
+    "lng": 25.2560022,
+    "display_name": "Švaros broliai, 2, Kedrų g., Naujamiestis, Naujamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 03159, Lietuva"
+  },
+  "vilniaus-m-sav-|molėtų-pl-8-vilnius": {
+    "lat": 54.75485,
+    "lng": 25.271346,
+    "display_name": "Neste „Santariškių“, 8, Molėtų pl., Visoriai, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08409, Lietuva"
+  },
+  "vilniaus-m-sav-|p-lukšio-g-22-vilnius": {
+    "lat": 54.7119036,
+    "lng": 25.293073,
+    "display_name": "Neste, 22, P. Lukšio g., Šiaurės miestelis, Žirmūnų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08222, Lietuva"
+  },
+  "vilniaus-m-sav-|žirmūnų-g-54c-vilnius": {
+    "lat": 54.7067448,
+    "lng": 25.304138,
+    "display_name": "Neste Minties, 54C, Žirmūnų g., Šiaurės miestelis, Žirmūnų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 09124, Lietuva"
+  },
+  "vilniaus-m-sav-|subačiaus-g-64-vilnius": {
+    "lat": 54.6767354,
+    "lng": 25.3092992,
+    "display_name": "Pit Stop Grill Cafe, 64, Subačiaus g., Paupys, Rasų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 11342, Lietuva"
+  },
+  "vilniaus-m-sav-|dariaus-ir-girėno-g-17-vilnius": {
+    "lat": 54.6552621,
+    "lng": 25.2702703,
+    "display_name": "Egas, 17, Dariaus ir Girėno g., Naujininkai, Naujininkų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02196, Lietuva"
+  },
+  "vilniaus-m-sav-|architektų-g-130-vilnius": {
+    "lat": 54.6808398,
+    "lng": 25.2076283,
+    "display_name": "Neste „Architektų“, 130, Architektų g., Lazdynai, Lazdynų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 04216, Lietuva"
+  },
+  "vilniaus-m-sav-|justiniškių-g-14b-vilnius": {
+    "lat": 54.7049091,
+    "lng": 25.2147007,
+    "display_name": "Plaunu pats, 14B, Justiniškių g., Viršuliškės, Viršuliškių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 05130, Lietuva"
+  },
+  "vilniaus-m-sav-|geležinio-vilko-g-37a-vilnius": {
+    "lat": 54.7013241,
+    "lng": 25.2638052,
+    "display_name": "Plaunu pats, 37A, Geležinio Vilko g., Šnipiškės, Šnipiškių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08104, Lietuva"
+  },
+  "vilniaus-m-sav-|pilaitės-pr-27-vilnius": {
+    "lat": 54.7094735,
+    "lng": 25.1898838,
+    "display_name": "Dockers Pub Pilaitė, 27, Pilaitės pr., Pilaitė, Pilaitės seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 06204, Lietuva"
+  },
+  "vilniaus-m-sav-|žirnių-g-17-vilnius": {
+    "lat": 54.6566534,
+    "lng": 25.2920381,
+    "display_name": "Neste „Žirnių“, 17, Žirnių g., Naujininkai, Naujininkų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02117, Lietuva"
+  },
+  "vilniaus-m-sav-|j-tiškevičiaus-g-19-vilnius": {
+    "lat": 54.6244066,
+    "lng": 25.1119814,
+    "display_name": "Hesburger, 19, J. Tiškevičiaus g., Trakų Vokė, Panerių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02238, Lietuva"
+  },
+  "vilniaus-m-sav-|eišiškių-pl-82-vilnius": {
+    "lat": 54.6212846,
+    "lng": 25.2429403,
+    "display_name": "Neste „Eišiškių“, 82, Eišiškių pl., Naujininkų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02186, Lietuva"
+  },
+  "vilniaus-m-sav-|gariūnų-g-55-vilnius": {
+    "lat": 54.6583266,
+    "lng": 25.1592954,
+    "display_name": "Egas Spaauto, 55, Gariūnų g., Gariūnai, Panerių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02300, Lietuva"
+  },
+  "vilniaus-m-sav-|panerių-g-42-vilnius": {
+    "lat": 54.6681842,
+    "lng": 25.2651336,
+    "display_name": "42, Panerių g., Naujamiestis, Naujamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 03202, Lietuva"
+  },
+  "vilniaus-m-sav-|geležinio-vilko-g-41-vilnius": {
+    "lat": 54.7041729,
+    "lng": 25.2670837,
+    "display_name": "Neste, 41, Geležinio Vilko g., Šnipiškės, Šnipiškių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 09300, Lietuva"
+  },
+  "kauno-m-sav-|pramonės-pr-6a-kaunas": {
+    "lat": 54.9099418,
+    "lng": 23.9837672,
+    "display_name": "Neste „Pramonės“, 6A, Pramonės pr., Naujasodis, Petrašiūnų seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 51287, Lietuva"
+  },
+  "kauno-m-sav-|jonavos-g-110-kaunas": {
+    "lat": 54.9133284,
+    "lng": 23.9116506,
+    "display_name": "Neste „Jonavos“, 110, Jonavos g., Žaliakalnis, Žaliakalnio seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 44137, Lietuva"
+  },
+  "kauno-m-sav-|veiverių-g-132d-kaunas": {
+    "lat": 54.8755037,
+    "lng": 23.8909537,
+    "display_name": "132D, Veiverių g., Birutė I, Aleksoto seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 46335, Lietuva"
+  },
+  "kauno-m-sav-|žemaičių-pl-26-kaunas": {
+    "lat": 54.9255312,
+    "lng": 23.8917929,
+    "display_name": "Neste, 26, Žemaičių pl., Milikoniai, Šilainių seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 48256, Lietuva"
+  },
+  "kauno-m-sav-|r-kalantos-g-27-kaunas": {
+    "lat": 54.8950704,
+    "lng": 23.9859176,
+    "display_name": "Neste „Kalantos“, 27, R. Kalantos g., Petrašiūnai, Petrašiūnų seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 52302, Lietuva"
+  },
+  "kauno-m-sav-|ateities-pl-50b-kaunas": {
+    "lat": 54.9260285,
+    "lng": 24.0605624,
+    "display_name": "50B, Ateities pl., Kaunas, Karmėlavos seniūnija, Kauno rajono savivaldybė, Kauno apskritis, 52106, Lietuva"
+  },
+  "kauno-m-sav-|taikos-pr-80a-kaunas": {
+    "lat": 54.9120996,
+    "lng": 23.9726146,
+    "display_name": "Neste „Taikos žiedo“, 80A, Taikos pr., Gričiupis, Gričiupio seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 51295, Lietuva"
+  },
+  "kauno-m-sav-|birželio-23-iosios-g-23a-kaunas": {
+    "lat": 54.9159784,
+    "lng": 23.9535991,
+    "display_name": "23A, Birželio 23-iosios g., Dainava, Dainavos seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 50220, Lietuva"
+  },
+  "kauno-m-sav-|islandijos-pl-191e-kaunas": {
+    "lat": 54.9314194,
+    "lng": 23.9508055,
+    "display_name": "Neste „Islandijos“, 191E, Islandijos pl., Naujasodis, Eigulių seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 49100, Lietuva"
+  },
+  "kauno-m-sav-|raudondvario-pl-103-kaunas": {
+    "lat": 54.9068617,
+    "lng": 23.8728216,
+    "display_name": "Neste, 103, Raudondvario pl., Mikalinava, Vilijampolės seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 47185, Lietuva"
+  },
+  "kauno-m-sav-|kuršių-g-1-kaunas": {
+    "lat": 54.9364848,
+    "lng": 23.8863425,
+    "display_name": "1, Kuršių g., Šilainiai, Šilainių seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 48106, Lietuva"
+  },
+  "kauno-r-sav-|vijoklių-g-1c-ramučių-k": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "kauno-m-sav-|tunelio-g-26-kaunas": {
+    "lat": 54.8946555,
+    "lng": 23.9442777,
+    "display_name": "H2Auto, 26, Tunelio g., Aukštieji Šančiai, Šančių seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 44391, Lietuva"
+  },
+  "kauno-r-sav-|vakarų-g-14-kumpių-k": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "kauno-m-sav-|savanorių-pr-441c-kaunas": {
+    "lat": 54.9293519,
+    "lng": 23.9734688,
+    "display_name": "Neste „Muravos“, 441C, Savanorių pr., Murava, Eigulių seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 49185, Lietuva"
+  },
+  "kauno-m-sav-|vakarinis-aplinkkelis-18-kaunas": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "kauno-m-sav-|europos-pr-43-kaunas": {
+    "lat": 54.8758023,
+    "lng": 23.9120977,
+    "display_name": "Rimi, 43, Europos pr., Aukštoji Freda, Aleksoto seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 46329, Lietuva"
+  },
+  "klaipėdos-m-sav-|plieno-g-1-klaipėda": {
+    "lat": 55.6728215,
+    "lng": 21.2017347,
+    "display_name": "1, Plieno g., Bandužiai, Vaidaugai, Smeltė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 95112, Lietuva"
+  },
+  "klaipėdos-m-sav-|šilutės-pl-30-klaipėda": {
+    "lat": 55.6930895,
+    "lng": 21.1747696,
+    "display_name": "Neste „Baltijos pr.“, 30, Šilutės pl., Pempininkai, Senosios Gandrališkės, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 91107, Lietuva"
+  },
+  "klaipėdos-m-sav-|taikos-pr-60-klaipėda": {
+    "lat": 55.6889111,
+    "lng": 21.1551766,
+    "display_name": "Neste „Taikos“, 60, Taikos pr., Arena, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 93225, Lietuva"
+  },
+  "klaipėdos-m-sav-|minijos-g-119-klaipėda": {
+    "lat": 55.6847139,
+    "lng": 21.1505231,
+    "display_name": "Green Park Hotel Klaipėda, 119, Minijos g., Žvejų sodyba, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 93231, Lietuva"
+  },
+  "klaipėdos-m-sav-|artojo-g-2-klaipėda": {
+    "lat": 55.7168107,
+    "lng": 21.150527,
+    "display_name": "2, Artojo g., Butsargių dvaras, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92105, Lietuva"
+  },
+  "klaipėdos-m-sav-|smiltelės-g-17-klaipėda": {
+    "lat": 55.6698478,
+    "lng": 21.1929514,
+    "display_name": "Plaunu pats, 17, Smiltelės g., Bandužiai, Šlapžemiai, Smeltė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 95186, Lietuva"
+  },
+  "klaipėdos-m-sav-|šilutės-pl-5c-klaipėda": {
+    "lat": 55.7031833,
+    "lng": 21.1647917,
+    "display_name": "Neste „Sendvario“, 5C, Šilutės pl., Rumpiškės dvaras, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 91109, Lietuva"
+  },
+  "klaipėdos-r-sav-|vilniaus-pl-9-jakų-k": {
+    "lat": 55.7827168,
+    "lng": 21.3496449,
+    "display_name": "Klaipėdos apskritis, Lietuva"
+  },
+  "klaipėdos-r-sav-|sendvario-g-2-sudmantų-k": {
+    "lat": 55.7827168,
+    "lng": 21.3496449,
+    "display_name": "Klaipėdos apskritis, Lietuva"
+  },
+  "šiaulių-m-sav-|gegužių-g-28-šiauliai": {
+    "lat": 55.9059107,
+    "lng": 23.2587205,
+    "display_name": "Aibė, 28, Gegužių g., Senieji Dainai, Gytariai, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 78346, Lietuva"
+  },
+  "šiaulių-m-sav-|tilžės-g-72-šiauliai": {
+    "lat": 55.9200839,
+    "lng": 23.2932849,
+    "display_name": "Hesburger, 72, Tilžės g., Žaliūkės, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 78140, Lietuva"
+  },
+  "šiaulių-m-sav-|dubijos-g-18a-šiauliai": {
+    "lat": 55.9293669,
+    "lng": 23.2941339,
+    "display_name": "18A, Dubijos g., Žaliūkės, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 77172, Lietuva"
+  },
+  "panevėžio-m-sav-|klaipėdos-g-81-panevėžys": {
+    "lat": 55.7283773,
+    "lng": 24.3323377,
+    "display_name": "Neste „IKI“, 81, Klaipėdos g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 37106, Lietuva"
+  },
+  "panevėžio-m-sav-|ramygalos-g-145b-panevėžys": {
+    "lat": 55.709517,
+    "lng": 24.3747541,
+    "display_name": "Neste „Ramygalos“, 145B, Ramygalos g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36255, Lietuva"
+  },
+  "panevėžio-m-sav-|klaipėdos-g-66-panevėžys": {
+    "lat": 55.7277452,
+    "lng": 24.3488051,
+    "display_name": "Neste „Klaipėdos“, 66, Klaipėdos g., Senamiestis, Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 35194, Lietuva"
+  },
+  "pasvalio-r-sav-|ąžuolpamūšio-g-1a-raubonių-k": {
+    "lat": 56.0706909,
+    "lng": 24.3842838,
+    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva"
+  },
+  "panevėžio-m-sav-|margirio-g-1b-panevėžys": {
+    "lat": 55.7193962,
+    "lng": 24.3488668,
+    "display_name": "Neste „Nemuno“, 1B, Margirio g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36250, Lietuva"
+  },
+  "panevėžio-m-sav-|klaipėdos-g-144b-panevėžys": {
+    "lat": 55.73063,
+    "lng": 24.316109,
+    "display_name": "Neste „Babilonas“, 144B, Klaipėdos g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 37124, Lietuva"
+  },
+  "panevėžio-r-sav-|panevėžio-aplinkl-7-šilagalio-k": {
+    "lat": 55.9155086,
+    "lng": 25.0309026,
+    "display_name": "Panevėžio apskritis, Lietuva"
+  },
+  "panevėžio-r-sav-|panevėžio-aplinkl-22-šilagalio-k": {
+    "lat": 55.9155086,
+    "lng": 25.0309026,
+    "display_name": "Panevėžio apskritis, Lietuva"
+  },
+  "alytaus-m-sav-|santaikos-g-34a-alytus": {
+    "lat": 54.3870841,
+    "lng": 24.0262949,
+    "display_name": "Neste „Santaikos“, 34A, Santaikos g., Alytus, Alytaus miesto savivaldybė, Alytaus apskritis, 63315, Lietuva"
+  },
+  "alytaus-m-sav-|ūdrijos-g-31-alytus": {
+    "lat": 54.408962,
+    "lng": 24.0051873,
+    "display_name": "Neste „Ūdrijos“, 31, Ūdrijos g., Putinai, Alytus, Alytaus miesto savivaldybė, Alytaus apskritis, 62411, Lietuva"
+  },
+  "marijampolės-sav-|stoties-g-4c-marijampolė": {
+    "lat": 54.5603639,
+    "lng": 23.3659257,
+    "display_name": "Neste „Marijampolės“, 4C, Stoties g., Draugystė, Marijampolė, Marijampolės savivaldybė, Marijampolės apskritis, 68233, Lietuva"
+  },
+  "marijampolės-sav-|vilkaviškio-g-61d-marijampolė": {
+    "lat": 54.5626096,
+    "lng": 23.3323659,
+    "display_name": "Neste, 61D, Vilkaviškio g., Mokolai, Marijampolė, Marijampolės savivaldybė, Marijampolės apskritis, 68171, Lietuva"
+  },
+  "kalvarijos-sav-|europos-g-1-salaperaugio-k": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
+  },
+  "kalvarijos-sav-|europos-g-6-n-valios-k": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
+  },
+  "mažeikių-r-sav-|m-daukšos-g-29-mažeikiai": {
+    "lat": 56.3012334,
+    "lng": 22.3498409,
+    "display_name": "Neste „Mažeikiai“, 29, M. Daukšos g., Mažeikiai, Mažeikių seniūnija, Mažeikių rajono savivaldybė, Telšių apskritis, 89234, Lietuva"
+  },
+  "šilalės-r-sav-|katyčių-k-šilalės-r": {
+    "lat": 55.5252224,
+    "lng": 22.2160078,
+    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
+  },
+  "kėdainių-r-sav-|j-basanavičiaus-g-91e-kėdainiai": {
+    "lat": 55.2781085,
+    "lng": 23.959972,
+    "display_name": "Neste „Kėdainiai“, 91E, J. Basanavičiaus g., Senamiestis, Kėdainiai, Kėdainių miesto seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 57367, Lietuva"
+  },
+  "ukmergės-r-sav-|kauno-g-45b-ukmergė": {
+    "lat": 55.2420375,
+    "lng": 24.7429222,
+    "display_name": "Neste „Ukmergės“, 45B, Kauno g., Smėliai, Ukmergė, Ukmergės miesto seniūnija, Ukmergės rajono savivaldybė, Vilniaus apskritis, 20118, Lietuva"
+  },
+  "utenos-r-sav-|j-basanavičiaus-g-129-utena": {
+    "lat": 55.5051789,
+    "lng": 25.6248833,
+    "display_name": "129, J. Basanavičiaus g., Smėlis, Utena, Utenos miesto seniūnija, Utenos rajono savivaldybė, Utenos apskritis, 28210, Lietuva"
+  },
+  "utenos-r-sav-|kupiškio-g-12-utena": {
+    "lat": 55.4929397,
+    "lng": 25.5815827,
+    "display_name": "Kupiškio g., Šilinė, Utena, Utenos miesto seniūnija, Utenos rajono savivaldybė, Utenos apskritis, 28134, Lietuva"
+  },
+  "molėtų-r-sav-|aplinkkelio-g-165-molėtai": {
+    "lat": 55.2282306,
+    "lng": 25.4148997,
+    "display_name": "Molėtų rajono savivaldybė, Utenos apskritis, Lietuva"
+  },
+  "švenčionių-r-sav-|vilniaus-g-94-pabradė": {
+    "lat": 54.978537,
+    "lng": 25.7566235,
+    "display_name": "94, Vilniaus g., Pabradė, Pabradės seniūnija, Švenčionių rajono savivaldybė, Vilniaus apskritis, 18179, Lietuva"
+  },
+  "jonavos-r-sav-|plento-g-7-gudžionių-k": {
+    "lat": 55.1168377,
+    "lng": 24.2815728,
+    "display_name": "Jonavos rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "radviliškio-r-sav-|versmės-g-2-radviliškis": {
+    "lat": 55.8142724,
+    "lng": 23.5460383,
+    "display_name": "2, Versmės g., Radviliškis, Radviliškio miesto seniūnija, Radviliškio rajono savivaldybė, Šiaulių apskritis, 82001, Lietuva"
+  },
+  "raseinių-r-sav-|pušyno-g-11-ylių-k": {
+    "lat": 55.3764559,
+    "lng": 23.1988999,
+    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "tauragės-r-sav-|dariaus-ir-girėno-g-130a-tauragė": {
+    "lat": 55.2653157,
+    "lng": 22.3088337,
+    "display_name": "Neste, 130A, Dariaus ir Girėno g., Beržės, Tauragė, Tauragės miesto seniūnija, Tauragės rajono savivaldybė, Tauragės apskritis, 72194, Lietuva"
+  },
+  "elektrėnų-sav-|sabališkių-g-1u-elektrėnai": {
+    "lat": 54.7890725,
+    "lng": 24.6724424,
+    "display_name": "H2Auto, 1U, Sabališkių g., Elektrėnai, Elektrėnų seniūnija, Elektrėnų savivaldybė, Vilniaus apskritis, 26124, Lietuva"
   }
 }
