@@ -94,9 +94,34 @@ def geocode_address(address: str, municipality: str) -> dict | None:
         f"{clean_muni}, Lithuania",
     ]
 
+    # Vague result types that indicate city/region level, not a specific address
+    VAGUE_TYPES = {"city", "town", "village", "county", "state", "administrative", "municipality"}
+
     for query in queries:
         results = nominatim_search(query, headers)
 
+        if results:
+            r = results[0]
+            rtype = r.get("type", "")
+            rclass = r.get("class", "")
+
+            # Skip vague results (city/region centroid) unless it's the last fallback
+            if rtype in VAGUE_TYPES or rclass == "boundary":
+                print(f"  Skipping vague result ({rclass}/{rtype}): {r.get('display_name', '')[:60]}")
+                time.sleep(RATE_LIMIT_SECONDS)
+                continue
+
+            return {
+                "lat": float(r["lat"]),
+                "lng": float(r["lon"]),
+                "display_name": r.get("display_name", ""),
+            }
+
+        time.sleep(RATE_LIMIT_SECONDS)
+
+    # Last resort: accept even a vague result (municipality centroid) over nothing
+    for query in queries:
+        results = nominatim_search(query, headers)
         if results:
             r = results[0]
             return {
@@ -104,7 +129,6 @@ def geocode_address(address: str, municipality: str) -> dict | None:
                 "lng": float(r["lon"]),
                 "display_name": r.get("display_name", ""),
             }
-
         time.sleep(RATE_LIMIT_SECONDS)
 
     return None
