@@ -178,9 +178,15 @@ def update_history_index():
 
 
 def main():
-    # Determine target date
-    if len(sys.argv) > 1:
-        target_date = datetime.strptime(sys.argv[1], "%Y-%m-%d")
+    # Usage: fetch_prices.py [DATE] [--file PATH]
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("date", nargs="?", help="Target date YYYY-MM-DD")
+    parser.add_argument("--file", help="Path to local Excel file (skip download)")
+    args = parser.parse_args()
+
+    if args.date:
+        target_date = datetime.strptime(args.date, "%Y-%m-%d")
     else:
         target_date = datetime.now(VILNIUS_TZ)
 
@@ -192,20 +198,34 @@ def main():
         print(f"Data for {date_str} already exists, skipping fetch.")
         # Still regenerate stations.json in case geocache was updated
     else:
-        # Download Excel
-        url = build_url(target_date)
-        print(f"Downloading {url} ...")
-        resp = requests.get(url, timeout=30)
-        resp.raise_for_status()
-
-        with tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False) as tmp:
-            tmp.write(resp.content)
-            tmp_path = tmp.name
-
-        try:
-            stations = parse_excel(tmp_path)
-        finally:
-            os.unlink(tmp_path)
+        if args.file:
+            # Use provided local file
+            xlsx_path = args.file
+            print(f"Using local file: {xlsx_path}")
+            stations = parse_excel(xlsx_path)
+        else:
+            # Try download from ena.lt first, fall back to SharePoint via Playwright
+            url = build_url(target_date)
+            print(f"Downloading {url} ...")
+            try:
+                resp = requests.get(url, timeout=30, allow_redirects=False)
+                if resp.status_code == 200:
+                    with tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False) as tmp:
+                        tmp.write(resp.content)
+                        xlsx_path = tmp.name
+                    stations = parse_excel(xlsx_path)
+                    os.unlink(xlsx_path)
+                else:
+                    raise requests.HTTPError(f"Status {resp.status_code}")
+            except (requests.HTTPError, requests.RequestException) as e:
+                print(f"Direct download failed ({e}), trying SharePoint...")
+                from download_sharepoint import get_sharepoint_link, download_from_sharepoint
+                sp_url, sp_date = get_sharepoint_link(date_str)
+                dl_dir = DATA_DIR / "downloads"
+                dl_dir.mkdir(parents=True, exist_ok=True)
+                xlsx_path = str(dl_dir / f"dk-{date_str}.xlsx")
+                download_from_sharepoint(sp_url, Path(xlsx_path))
+                stations = parse_excel(xlsx_path)
 
         print(f"Parsed {len(stations)} stations")
 
