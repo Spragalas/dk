@@ -1855,14 +1855,16 @@
     "display_name": "Šalčininkų rajono savivaldybė, Vilniaus apskritis, Lietuva"
   },
   "kalvarijos-sav-|europos-g-17-salaperaugio-k": {
-    "lat": 54.7397108,
-    "lng": 25.2804959,
-    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
+    "lat": 54.3204313,
+    "lng": 23.1399268,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva",
+    "manual": true
   },
   "alytaus-r-sav-|santaikos-g-2a-santaikos-k": {
-    "lat": 55.7319393,
-    "lng": 21.1423197,
-    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva"
+    "lat": 54.3883422,
+    "lng": 23.8201404,
+    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva",
+    "manual": true
   },
   "alytaus-m-sav-|alytus-santaikos-g-33": {
     "lat": 54.3864789,
@@ -1895,14 +1897,16 @@
     "display_name": "Baltic Petroleum, 37, Merkinės g., Leipalingis, Leipalingio seniūnija, Druskininkų savivaldybė, Alytaus apskritis, 67280, Lietuva"
   },
   "jonavos-r-sav-|spanėnų-k-plento-g-46": {
-    "lat": 55.1168377,
-    "lng": 24.2815728,
-    "display_name": "Jonavos rajono savivaldybė, Kauno apskritis, Lietuva"
+    "lat": 55.057998,
+    "lng": 24.263705,
+    "display_name": "Jonavos rajono savivaldybė, Kauno apskritis, Lietuva",
+    "manual": true
   },
   "jonavos-r-sav-|šilų-sen-gudžionių-k-plento-g-24": {
-    "lat": 55.1168377,
-    "lng": 24.2815728,
-    "display_name": "Jonavos rajono savivaldybė, Kauno apskritis, Lietuva"
+    "lat": 55.0991088,
+    "lng": 24.3160808,
+    "display_name": "Jonavos rajono savivaldybė, Kauno apskritis, Lietuva",
+    "manual": true
   },
   "jurbarko-r-sav-|jurbarkas-muitinės-g-22a": {
     "lat": 55.0781222,
@@ -1910,9 +1914,10 @@
     "display_name": "22A, Muitinės g., Naujamiestis, Jurbarkas, Jurbarko miesto seniūnija, Jurbarko rajono savivaldybė, Tauragės apskritis, 74106, Lietuva"
   },
   "kaišiadorių-r-sav-|triliškių-k-kauno-pl-5": {
-    "lat": 54.8270857,
-    "lng": 24.4264088,
-    "display_name": "Kaišiadorių rajono savivaldybė, Kauno apskritis, Lietuva"
+    "lat": 54.8168413,
+    "lng": 24.4365871,
+    "display_name": "Kaišiadorių rajono savivaldybė, Kauno apskritis, Lietuva",
+    "manual": true
   },
   "kauno-m-sav-|kaunas-chemijos-g-6": {
     "lat": 54.903137,
@@ -1935,14 +1940,16 @@
     "display_name": "Baltic petroleum, 153, Vaidoto g., Panemunė, Panemunės seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 45302, Lietuva"
   },
   "kauno-r-sav-|pagirių-k-marijampolės-g-1": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+    "lat": 54.8146380569221,
+    "lng": 23.872546497021787,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva",
+    "manual": true
   },
   "kauno-r-sav-|jaučiakių-k": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+    "lat": 55.0383273,
+    "lng": 23.6079562,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva",
+    "manual": true
   },
   "klaipėdos-m-sav-|klaipėda-liepų-g-79a": {
     "lat": 55.7208199,
@@ -2000,14 +2007,16 @@
     "display_name": "Velžio kelias, Senamiestis, Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36109, Lietuva"
   },
   "pasvalio-r-sav-|aukštikalnio-k-mūšos-g-19": {
-    "lat": 56.0706909,
-    "lng": 24.3842838,
-    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva"
+    "lat": 55.73039406042563,
+    "lng": 22.37679972952987,
+    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva",
+    "manual": true
   },
   "plungės-r-sav-|plateliai-ž-kalvarijos-g-1a": {
-    "lat": 55.953916,
-    "lng": 21.8335407,
-    "display_name": "Plungės rajono savivaldybė, Telšių apskritis, Lietuva"
+    "lat": 56.04377913015932,
+    "lng": 21.815759658352885,
+    "display_name": "Plungės rajono savivaldybė, Telšių apskritis, Lietuva",
+    "manual": true
   },
   "klaipėdos-r-sav-|priekulė-klaipėdos-g-61": {
     "lat": 55.5618881,
@@ -2035,9 +2044,10 @@
     "display_name": "Baltic Petroleum, 30, Vilniaus g., Raseiniai, Raseinių miesto seniūnija, Raseinių rajono savivaldybė, Kauno apskritis, 60183, Lietuva"
   },
   "telšių-r-sav-|ožtakių-k-dariaus-ir-girėno-g-77": {
-    "lat": 56.0130975,
-    "lng": 22.1366723,
-    "display_name": "Telšių apskritis, Lietuva"
+    "lat": 55.73039406042563,
+    "lng": 22.37679972952987,
+    "display_name": "Telšių apskritis, Lietuva",
+    "manual": true
   },
   "trakų-r-sav-|trakai-vilniaus-g-33": {
     "lat": 54.6273235,
@@ -2149,11 +2159,6 @@
     "lng": 23.8046471,
     "display_name": "Baltic Petroleum, 1A, Gėlių g., Ringaudai, Ringaudų seniūnija, Kauno rajono savivaldybė, Kauno apskritis, 53333, Lietuva"
   },
-  "zarasų-r-sav-|sarakiškių-k-vytauto-g-61": {
-    "lat": 55.7303771,
-    "lng": 26.0387936,
-    "display_name": "Zarasų rajono savivaldybė, Utenos apskritis, Lietuva"
-  },
   "klaipėdos-m-sav-|klaipėda-tilžės-g-90": {
     "lat": 55.7003233,
     "lng": 21.1991789,
@@ -2169,45 +2174,41 @@
     "lng": 24.8888306,
     "display_name": "Baltic Petroleum, 3A, Parko g., Noriūnai, Noriūnų seniūnija, Kupiškio rajono savivaldybė, Panevėžio apskritis, 40395, Lietuva"
   },
-  "zarasų-r-sav-|padustėlis-v-striogos-g-4a": {
-    "lat": 55.7303771,
-    "lng": 26.0387936,
-    "display_name": "Zarasų rajono savivaldybė, Utenos apskritis, Lietuva"
-  },
   "marijampolės-sav-|plytinės-g-2-puskelnių-k": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
+    "lat": 54.6054921,
+    "lng": 23.4047896,
+    "display_name": "Marijampolės apskritis, Lietuva",
+    "manual": true
   },
   "marijampolės-sav-|pietarių-k-kauno-g-164": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
+    "lat": 54.58698534158356,
+    "lng": 23.384483897954453,
+    "display_name": "Marijampolės apskritis, Lietuva",
+    "manual": true
   },
   "marijampolės-sav-|pasiekų-k": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
+    "lat": 54.32232575281695,
+    "lng": 23.145141501386018,
+    "display_name": "Marijampolės apskritis, Lietuva",
+    "manual": true
   },
   "vilniaus-r-sav-|vilkaraisčio-k": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
+    "lat": 54.86325459929091,
+    "lng": 25.49092785483132,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva",
+    "manual": true
   },
   "vilniaus-m-sav-|vilnius-kalvarijų-g-161a": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
+    "lat": 54.723884560734966,
+    "lng": 25.282260082681347,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva",
+    "manual": true
   },
   "vilniaus-m-sav-|vilnius-s-batoro-g-15": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
-  "vilniaus-r-sav-|užubalių-k-senasis-ukmergės-kelias-4": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
+    "lat": 54.69227539098235,
+    "lng": 25.346554610522873,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva",
+    "manual": true
   },
   "tauragės-r-sav-|taurų-k-tilžės-pl-36": {
     "lat": 55.3564378,
@@ -2239,86 +2240,6 @@
     "lng": 21.380302,
     "display_name": "10, Dariaus ir Girėno g., Gargždai, Gargždų seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96181, Lietuva"
   },
-  "kauno-r-sav-|baltijos-g-1-mastaičių-k": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "panevėžio-r-sav-|baltijos-kelio-g-33-ūtos-k": {
-    "lat": 55.9155086,
-    "lng": 25.0309026,
-    "display_name": "Panevėžio apskritis, Lietuva"
-  },
-  "ukmergės-r-sav-|ežero-g-7-kurėnų-k": {
-    "lat": 55.301698,
-    "lng": 24.7372908,
-    "display_name": "Ukmergės rajono savivaldybė, Vilniaus apskritis, Lietuva"
-  },
-  "panevėžio-r-sav-|panevėžio-aplinkl-20-šilagalio-k": {
-    "lat": 55.9155086,
-    "lng": 25.0309026,
-    "display_name": "Panevėžio apskritis, Lietuva"
-  },
-  "kauno-m-sav-|vakarinis-aplinkkelis-10-kaunas": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "šilalės-r-sav-|dvaro-g-3-košių-ii-k": {
-    "lat": 55.5252224,
-    "lng": 22.2160078,
-    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
-  },
-  "klaipėdos-r-sav-|vilniaus-pl-21-jakų-k": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
-  },
-  "trakų-r-sav-|didžiulio-g-5-dėdeliškių-k": {
-    "lat": 54.5642276,
-    "lng": 24.7282274,
-    "display_name": "Trakų rajono savivaldybė, Vilniaus apskritis, Lietuva"
-  },
-  "lazdijų-r-sav-|nekrūnų-k-1": {
-    "lat": 54.1607523,
-    "lng": 23.6775875,
-    "display_name": "Lazdijų rajono savivaldybė, Alytaus apskritis, Lietuva"
-  },
-  "raseinių-r-sav-|pikelių-k-1": {
-    "lat": 55.3764559,
-    "lng": 23.1988999,
-    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "kalvarijos-sav-|europos-g-13a-salaperaugio-k": {
-    "lat": 54.7397108,
-    "lng": 25.2804959,
-    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
-  },
-  "kalvarijos-sav-|muitinės-g-5b-brazavo-k": {
-    "lat": 54.7397108,
-    "lng": 25.2804959,
-    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
-  },
-  "kauno-m-sav-|tvirtovės-alėja-33a-kaunas": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "vilniaus-r-sav-|molėtų-g-15-didžiosios-riešės-k": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01122, Lietuva"
-  },
-  "šakių-r-sav-|mozūriškiai-mozūriškių-10": {
-    "lat": 54.9148731,
-    "lng": 23.078048,
-    "display_name": "Šakių rajono savivaldybė, Marijampolės apskritis, Lietuva"
-  },
-  "šilalės-r-sav-|šolių-k-pietinio-kelio-g-9": {
-    "lat": 55.5252224,
-    "lng": 22.2160078,
-    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
-  },
   "vilniaus-m-sav-|vilnius-parko-g-64": {
     "lat": 54.6859077,
     "lng": 25.4305922,
@@ -2333,16 +2254,6 @@
     "lat": 54.5971881,
     "lng": 25.3151483,
     "display_name": "Jozita, 2, Jašiūnų g., Kineliai, Rudaminos seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 13255, Lietuva"
-  },
-  "vilniaus-m-sav-|vilnius-baltosios-vokės-g-35": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01122, Lietuva"
-  },
-  "kauno-m-sav-|kaunas-kuršių-13a": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
   },
   "kauno-m-sav-|kaunas-betygalos-g-8": {
     "lat": 54.9045123,
@@ -2369,20 +2280,10 @@
     "lng": 24.0234639,
     "display_name": "K. Bielinio g., Ramučiai, Karmėlavos seniūnija, Kauno rajono savivaldybė, Kauno apskritis, 54600, Lietuva"
   },
-  "klaipėdos-r-sav-|klipščių-k-šilelių-g-1": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
-  },
   "klaipėdos-r-sav-|gargždai-gamyklos-g-1": {
     "lat": 55.7064158,
     "lng": 21.3634837,
     "display_name": "Jozita, 1, Gamyklos g., Lėbartai, Gargždai, Gargždų seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96155, Lietuva"
-  },
-  "klaipėdos-r-sav-|-trepkalnių-k-mokyklos-g-2": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
   },
   "šiaulių-m-sav-|šiauliai-architektų-g-80": {
     "lat": 55.9245288,
@@ -2444,40 +2345,15 @@
     "lng": 21.1353282,
     "display_name": "Priestočio g., Lietuvninkai, Centras, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92304, Lietuva"
   },
-  "prienų-r-sav-|alytaus-pl-2-mardosų-k": {
-    "lat": 54.6334424,
-    "lng": 24.2204708,
-    "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
   "jurbarko-r-sav-|tauragės-g-29-rimšų-k": {
     "lat": 55.2176268,
     "lng": 22.9652342,
     "display_name": "Jurbarko rajono savivaldybė, Tauragės apskritis, Lietuva"
   },
-  "kelmės-r-sav-|puttvinskio-g-29-kelmė": {
-    "lat": 55.6865165,
-    "lng": 22.8611849,
-    "display_name": "Kelmės rajono savivaldybė, Šiaulių apskritis, Lietuva"
-  },
-  "šilalės-r-sav-|paršežerio-g-1-vabalų-k": {
-    "lat": 55.5252224,
-    "lng": 22.2160078,
-    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
-  },
-  "telšių-r-sav-|telšių-g-2-b-rainių-k": {
-    "lat": 56.0130975,
-    "lng": 22.1366723,
-    "display_name": "Telšių apskritis, Lietuva"
-  },
   "kretingos-r-sav-|platelių-g-1-a-laivių-k": {
     "lat": 55.9686093,
     "lng": 21.3604059,
     "display_name": "Kretingos rajono savivaldybė, Klaipėdos apskritis, Lietuva"
-  },
-  "akmenės-r-sav-|plento-g-2-ventos-m": {
-    "lat": 56.2415748,
-    "lng": 22.8625876,
-    "display_name": "Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva"
   },
   "kaišiadorių-r-sav-|bačkonių-k-pastrėvio-g-1a": {
     "lat": 54.8270857,
@@ -2494,31 +2370,6 @@
     "lng": 24.0118376,
     "display_name": "Kėdainių rajono savivaldybė, Kauno apskritis, Lietuva"
   },
-  "akmenės-r-sav-|skabeikių-k-4": {
-    "lat": 56.2415748,
-    "lng": 22.8625876,
-    "display_name": "Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva"
-  },
-  "vilniaus-r-sav-|kalnuotės-1-k": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
-  "telšių-r-sav-|beržų-g-24-drąsiųjų-7-tryškiai": {
-    "lat": 56.0130975,
-    "lng": 22.1366723,
-    "display_name": "Telšių apskritis, Lietuva"
-  },
-  "raseinių-r-sav-|šilo-g-1-ylių-k": {
-    "lat": 55.3764559,
-    "lng": 23.1988999,
-    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "raseinių-r-sav-|pievų-g-17-slabados-k": {
-    "lat": 55.3764559,
-    "lng": 23.1988999,
-    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
   "pakruojo-r-sav-|topolių-g-1-degučių-k": {
     "lat": 56.0731045,
     "lng": 23.8319151,
@@ -2528,61 +2379,6 @@
     "lat": 55.5349516,
     "lng": 25.0424158,
     "display_name": "Anykščių rajono savivaldybė, Utenos apskritis, Lietuva"
-  },
-  "kauno-r-sav-|vijoklių-g-1c-ramučių-k": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "kauno-r-sav-|vakarų-g-14-kumpių-k": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "kauno-m-sav-|vakarinis-aplinkkelis-18-kaunas": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "klaipėdos-r-sav-|vilniaus-pl-9-jakų-k": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
-  },
-  "klaipėdos-r-sav-|sendvario-g-2-sudmantų-k": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
-  },
-  "pasvalio-r-sav-|ąžuolpamūšio-g-1a-raubonių-k": {
-    "lat": 56.0706909,
-    "lng": 24.3842838,
-    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva"
-  },
-  "panevėžio-r-sav-|panevėžio-aplinkl-7-šilagalio-k": {
-    "lat": 55.9155086,
-    "lng": 25.0309026,
-    "display_name": "Panevėžio apskritis, Lietuva"
-  },
-  "panevėžio-r-sav-|panevėžio-aplinkl-22-šilagalio-k": {
-    "lat": 55.9155086,
-    "lng": 25.0309026,
-    "display_name": "Panevėžio apskritis, Lietuva"
-  },
-  "kalvarijos-sav-|europos-g-1-salaperaugio-k": {
-    "lat": 54.7397108,
-    "lng": 25.2804959,
-    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
-  },
-  "kalvarijos-sav-|europos-g-6-n-valios-k": {
-    "lat": 54.7397108,
-    "lng": 25.2804959,
-    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
-  },
-  "šilalės-r-sav-|katyčių-k-šilalės-r": {
-    "lat": 55.5252224,
-    "lng": 22.2160078,
-    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
   },
   "molėtų-r-sav-|aplinkkelio-g-165-molėtai": {
     "lat": 55.2282306,
@@ -2594,60 +2390,15 @@
     "lng": 24.2815728,
     "display_name": "Jonavos rajono savivaldybė, Kauno apskritis, Lietuva"
   },
-  "raseinių-r-sav-|pušyno-g-11-ylių-k": {
-    "lat": 55.3764559,
-    "lng": 23.1988999,
-    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "telšių-r-sav-|šiaulių-pl-1a-gaudikaičių-k": {
-    "lat": 56.0130975,
-    "lng": 22.1366723,
-    "display_name": "Telšių apskritis, Lietuva"
-  },
   "elektrėnų-sav-|-žilvičių-g-1-a-kakliniškių-k": {
     "lat": 54.763291,
     "lng": 24.7695541,
     "display_name": "Elektrėnų savivaldybė, Vilniaus apskritis, Lietuva"
   },
-  "prienų-r-sav-|alytaus-g-2-verbyliškių-k": {
-    "lat": 54.6334424,
-    "lng": 24.2204708,
-    "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "klaipėdos-r-sav-|vilniaus-pl-13-jakų-k": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
-  },
-  "raseinių-r-sav-|pikelių-k-6": {
-    "lat": 55.3764559,
-    "lng": 23.1988999,
-    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "raseinių-r-sav-|pikelių-k-8": {
-    "lat": 55.3764559,
-    "lng": 23.1988999,
-    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "panevėžio-r-sav-|šiaulių-g-50-nausodės-k": {
-    "lat": 55.9155086,
-    "lng": 25.0309026,
-    "display_name": "Panevėžio apskritis, Lietuva"
-  },
-  "klaipėdos-r-sav-|šv-kristoforo-g-4-dituvos-k": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
-  },
   "rietavo-sav-|lėgų-k-1-rietavas": {
     "lat": 55.7240783,
     "lng": 22.0024769,
     "display_name": "Rietavo savivaldybė, Telšių apskritis, Lietuva"
-  },
-  "klaipėdos-r-sav-|veiviržėnų-g-29-pyktiškės-k": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
   },
   "šilutės-r-sav-|liepų-g-4-žemaitkiemio-k": {
     "lat": 55.3750109,
@@ -2714,11 +2465,6 @@
     "lng": 23.2319222,
     "display_name": "Viada, 81, Dariaus ir Girėno g., Senamiestis, Kalvarija, Kalvarijos seniūnija, Kalvarijos savivaldybė, Marijampolės apskritis, 69219, Lietuva"
   },
-  "kalvarijos-sav-|pelucmurgių-k-muitinės-g-35": {
-    "lat": 54.7397108,
-    "lng": 25.2804959,
-    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
-  },
   "kauno-m-sav-|kaunas-ateities-pl-105": {
     "lat": 54.9271996,
     "lng": 24.0430425,
@@ -2784,26 +2530,6 @@
     "lng": 23.893637,
     "display_name": "Viada, 124B, Veiverių g., Aleksotas, Aleksoto seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 46272, Lietuva"
   },
-  "kauno-r-sav-|giraitės-k-automagistralės-g-4": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "kauno-r-sav-|ilgakiemio-k-prienų-g-22": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "kauno-r-sav-|kampiškių-k-baltijos-g-41": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "kauno-r-sav-|kumpių-k-verslo-g-13a": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
   "kauno-r-sav-|zapyškis-vytauto-g-20a": {
     "lat": 54.9270913,
     "lng": 23.6619908,
@@ -2838,11 +2564,6 @@
     "lat": 55.8275144,
     "lng": 21.1849852,
     "display_name": "Viada, 1A, Klaipėdos g., Kretingalė, Kretingalės seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96330, Lietuva"
-  },
-  "klaipėdos-r-sav-|sudmantų-k-vilniaus-pl-6": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
   },
   "kretingos-r-sav-|kretinga-vytauto-g-163": {
     "lat": 55.890563,
@@ -2909,16 +2630,6 @@
     "lng": 24.3126597,
     "display_name": "Viada, 1B, Vienkiemio g., Ramygala, Ramygalos seniūnija, Panevėžio rajono savivaldybė, Panevėžio apskritis, 38261, Lietuva"
   },
-  "panevėžio-r-sav-|šilagalio-k-panevėžio-aplinkl-5": {
-    "lat": 55.9155086,
-    "lng": 25.0309026,
-    "display_name": "Panevėžio apskritis, Lietuva"
-  },
-  "panevėžio-r-sav-|tičkūnų-k-tičkūnų-g-31": {
-    "lat": 55.9155086,
-    "lng": 25.0309026,
-    "display_name": "Panevėžio apskritis, Lietuva"
-  },
   "panevėžio-m-sav-|panevėžys-j-janonio-g-28a": {
     "lat": 55.7388746,
     "lng": 24.3101357,
@@ -2953,11 +2664,6 @@
     "lat": 55.7368227,
     "lng": 24.3871183,
     "display_name": "Viada, 16, Venslaviškio g., Senamiestis, Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 35116, Lietuva"
-  },
-  "pasvalio-r-sav-|brazdigalos-k-1": {
-    "lat": 56.0706909,
-    "lng": 24.3842838,
-    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva"
   },
   "pasvalio-r-sav-|pasvalys-vilniaus-g-50": {
     "lat": 56.0559385,
@@ -3059,20 +2765,10 @@
     "lng": 22.2401557,
     "display_name": "2A, Pramonės g., Senamiestis, Telšiai, Telšių miesto seniūnija, Telšių rajono savivaldybė, Telšių apskritis, 87102, Lietuva"
   },
-  "trakų-r-sav-|aukštųjų-semeniukų-k-logistikos-g-9": {
-    "lat": 54.5642276,
-    "lng": 24.7282274,
-    "display_name": "Trakų rajono savivaldybė, Vilniaus apskritis, Lietuva"
-  },
   "ukmergės-r-sav-|ukmergė-žiedo-g-15": {
     "lat": 55.2461826,
     "lng": 24.7431883,
     "display_name": "Viada, 15, Žiedo g., Šlapiai, Ukmergė, Ukmergės miesto seniūnija, Ukmergės rajono savivaldybė, Vilniaus apskritis, 20127, Lietuva"
-  },
-  "ukmergės-r-sav-|šventupės-k-beržų-g-13": {
-    "lat": 55.301698,
-    "lng": 24.7372908,
-    "display_name": "Ukmergės rajono savivaldybė, Vilniaus apskritis, Lietuva"
   },
   "utenos-r-sav-|utena-metalo-g-8": {
     "lat": 55.4969921,
@@ -3174,16 +2870,6 @@
     "lng": 25.2943022,
     "display_name": "52, Verkių g., Žirmūnai, Žirmūnų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 09109, Lietuva"
   },
-  "zarasų-r-sav-|juodalaukių-k-2": {
-    "lat": 55.7303771,
-    "lng": 26.0387936,
-    "display_name": "Zarasų rajono savivaldybė, Utenos apskritis, Lietuva"
-  },
-  "kalvarijos-sav-|kazlavo-km-4-kalvarijos-sav": {
-    "lat": 54.7397108,
-    "lng": 25.2804959,
-    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
-  },
   "utenos-r-sav-|utena-pramonės-g-16": {
     "lat": 55.4946795,
     "lng": 25.6458529,
@@ -3193,11 +2879,6 @@
     "lat": 54.3838453,
     "lng": 23.659403,
     "display_name": "Skulas, 48, Alytaus g., Simnas, Simno seniūnija, Alytaus rajono savivaldybė, Alytaus apskritis, 64313, Lietuva"
-  },
-  "alytaus-r-sav-|likiškėlių-k-kalninės-g-5": {
-    "lat": 55.7319393,
-    "lng": 21.1423197,
-    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva"
   },
   "kauno-m-sav-|kaunas-ašigalio-g-1-a": {
     "lat": 54.9331246,
@@ -3209,11 +2890,6 @@
     "lng": 23.8544016,
     "display_name": "Skulas, 106D, Marvelės g., Marvelė, Aleksoto seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 46205, Lietuva"
   },
-  "kauno-r-sav-|virbališkių-k-verslo-g-2": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
   "pasvalio-r-sav-|pasvalys-mūšos-g-2-e": {
     "lat": 56.0695312,
     "lng": 24.3878814,
@@ -3223,16 +2899,6 @@
     "lat": 54.7231706,
     "lng": 25.2768132,
     "display_name": "34, J. Kazlausko g., Ozas, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08350, Lietuva"
-  },
-  "pasvalio-r-sav-|liepų-g-4-škilinpamūšio-k": {
-    "lat": 56.0706909,
-    "lng": 24.3842838,
-    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva"
-  },
-  "pasvalio-r-sav-|pasienio-g-10-škilinpamūšio-k": {
-    "lat": 56.0706909,
-    "lng": 24.3842838,
-    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva"
   },
   "mažeikių-r-sav-|židikai-mažeikiu-g-10": {
     "lat": 56.3176396,
@@ -3259,11 +2925,6 @@
     "lng": 21.8525815,
     "display_name": "10A, Lentpjūvės g., Plungė, Plungės miesto seniūnija, Plungės rajono savivaldybė, Telšių apskritis, 90117, Lietuva"
   },
-  "šilalės-r-sav-|gineikių-k": {
-    "lat": 55.5252224,
-    "lng": 22.2160078,
-    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
-  },
   "telšių-r-sav-|telšiai-masčio-g-21": {
     "lat": 55.9757001,
     "lng": 22.2636566,
@@ -3274,135 +2935,20 @@
     "lng": 23.3505853,
     "display_name": "Aušros g., Švedės bendruomenė, Ginkūnai, Ginkūnų seniūnija, Šiaulių rajono savivaldybė, Šiaulių apskritis, 81493, Lietuva"
   },
-  "kelmės-r-sav-|kuršukų-k-plento-g-1": {
-    "lat": 55.6865165,
-    "lng": 22.8611849,
-    "display_name": "Kelmės rajono savivaldybė, Šiaulių apskritis, Lietuva"
-  },
-  "kelmės-r-sav-|maironių-k-kuršių-g-2": {
-    "lat": 55.6865165,
-    "lng": 22.8611849,
-    "display_name": "Kelmės rajono savivaldybė, Šiaulių apskritis, Lietuva"
-  },
-  "alytaus-r-sav-|alytaus-k": {
-    "lat": 55.7319393,
-    "lng": 21.1423197,
-    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva"
-  },
-  "kauno-r-sav-|erdvės-g-78-ramučių-k": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "panevėžio-r-sav-|žemdirbių-g-15-paliūniškio-k": {
-    "lat": 55.9155086,
-    "lng": 25.0309026,
-    "display_name": "Panevėžio apskritis, Lietuva"
-  },
-  "vilniaus-r-sav-|bukiškio-k-ukmergės-g-437": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
   "vilniaus-m-sav-|vilnius-spyglių-g-2": {
     "lat": 54.6684024,
     "lng": 25.1116773,
     "display_name": "EMSI Grigiškės, 2, Spyglių g., Neravai, Grigiškių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 27129, Lietuva"
-  },
-  "kauno-r-sav-|ilgakiemio-k-kauno-g-25": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "klaipėdos-r-sav-|durpyno-63-jonušų-k": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
-  },
-  "klaipėdos-r-sav-|medelyno-g-126-kalotės-k": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
-  },
-  "lazdijų-r-sav-|lazdijų-sen-janaslavo-k-11": {
-    "lat": 54.1607523,
-    "lng": 23.6775875,
-    "display_name": "Lazdijų rajono savivaldybė, Alytaus apskritis, Lietuva"
-  },
-  "vilniaus-r-sav-|mokyklos-g-26-maišiagalos-mstl": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
-  "kauno-r-sav-|marijampolės-g-58-mastaičių-k": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
   },
   "vilniaus-r-sav-|medininkų-k-pasieniečių-g-10": {
     "lat": 54.5496804,
     "lng": 25.6800445,
     "display_name": "Emsi, 10, Pasieniečių g., Medininkai, Medininkų seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 13192, Lietuva"
   },
-  "vilniaus-r-sav-|taikos-g-1-kreivalaužių-k": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
   "pasvalio-r-sav-|pasvalys-taikos-g-24": {
     "lat": 56.063652,
     "lng": 24.4257529,
     "display_name": "EMSI, 24, Taikos g., Pasvalys, Pasvalio miesto seniūnija, Pasvalio rajono savivaldybė, Panevėžio apskritis, 39130, Lietuva"
-  },
-  "marijampolės-sav-|kauno-g-165-pietarių-k": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
-  },
-  "raseinių-r-sav-|raščių-k-1a": {
-    "lat": 55.3764559,
-    "lng": 23.1988999,
-    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "trakų-r-sav-|sausių-g-2-sausių-k": {
-    "lat": 54.5642276,
-    "lng": 24.7282274,
-    "display_name": "Trakų rajono savivaldybė, Vilniaus apskritis, Lietuva"
-  },
-  "pasvalio-r-sav-|sereikonių-k-baltijos-kelio-g-2": {
-    "lat": 56.0706909,
-    "lng": 24.3842838,
-    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva"
-  },
-  "panevėžio-r-sav-|šilagalio-k-panevėžio-aplinkl-12": {
-    "lat": 55.9155086,
-    "lng": 25.0309026,
-    "display_name": "Panevėžio apskritis, Lietuva"
-  },
-  "marijampolės-sav-|skaisčiūnų-k-europos-g-11": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
-  },
-  "kauno-r-sav-|žemaitkiemis-stasio-krasausko-g-21": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "akmenės-r-sav-|naujoji-akmenė-v-kudirkos-18a": {
-    "lat": 56.2415748,
-    "lng": 22.8625876,
-    "display_name": "Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva"
-  },
-  "akmenės-r-sav-|akmenės-i-kaimas-plento-g-1": {
-    "lat": 56.2415748,
-    "lng": 22.8625876,
-    "display_name": "Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva"
-  },
-  "akmenės-r-sav-|pašakarnių-km-pašakarnių-g-1": {
-    "lat": 56.2415748,
-    "lng": 22.8625876,
-    "display_name": "Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva"
   },
   "šiaulių-m-sav-|šiauliai-pramonės-g-7c": {
     "lat": 55.9398236,
@@ -3424,90 +2970,20 @@
     "lng": 21.5299065,
     "display_name": "20, Vytauto g., Skuodas, Skuodo miesto seniūnija, Skuodo rajono savivaldybė, Klaipėdos apskritis, 98123, Lietuva"
   },
-  "klaipėdos-r-sav-|klaipėda-jūrininkų-pr-29": {
-    "lat": 55.7827168,
-    "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
-  },
-  "šilalės-r-sav-|šilalė-rytinio-kelio-g-19": {
-    "lat": 55.5252224,
-    "lng": 22.2160078,
-    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
-  },
   "kalvarijos-sav-|kreivukės-km": {
     "lat": 54.4096957,
     "lng": 23.2178283,
     "display_name": "Kreivukės g., Turgaus g., Naujamiestis, Kreivukė, Kalvarijos seniūnija, Kalvarijos savivaldybė, Marijampolės apskritis, 69215, Lietuva"
-  },
-  "kalvarijos-sav-|kušliškių-km-suvalkijos-g-15": {
-    "lat": 54.7397108,
-    "lng": 25.2804959,
-    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
-  },
-  "marijampolės-sav-|marijampolė-statybininkų-g-8": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
-  },
-  "alytaus-m-sav-|alytus-miškininkų-g-7": {
-    "lat": 55.7319393,
-    "lng": 21.1423197,
-    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva"
-  },
-  "alytaus-m-sav-|alytus-pramonės-g-5": {
-    "lat": 55.7319393,
-    "lng": 21.1423197,
-    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva"
-  },
-  "prienų-r-sav-|ignacavos-km-kauno-pl-18": {
-    "lat": 54.6334424,
-    "lng": 24.2204708,
-    "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "kauno-r-sav-|domeikava-muitinės-g-2": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "kauno-m-sav-|kaunas-garažų-g-20": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "kauno-r-sav-|babtai-vandžiogalos-g-3": {
-    "lat": 54.8982139,
-    "lng": 23.9044817,
-    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
   },
   "kaišiadorių-r-sav-|rumšiškės-lekavičiaus-g-71": {
     "lat": 54.8270857,
     "lng": 24.4264088,
     "display_name": "Kaišiadorių rajono savivaldybė, Kauno apskritis, Lietuva"
   },
-  "šakių-r-sav-|lėkėčių-km-šakių-g-3": {
-    "lat": 54.9148731,
-    "lng": 23.078048,
-    "display_name": "Šakių rajono savivaldybė, Marijampolės apskritis, Lietuva"
-  },
-  "prienų-r-sav-|mauručiai-liepų-g-20": {
-    "lat": 54.6334424,
-    "lng": 24.2204708,
-    "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva"
-  },
-  "ukmergės-r-sav-|ukmergė-kareivinių-g-64": {
-    "lat": 55.301698,
-    "lng": 24.7372908,
-    "display_name": "Ukmergės rajono savivaldybė, Vilniaus apskritis, Lietuva"
-  },
   "ukmergės-r-sav-|pageležių-km": {
     "lat": 55.1683551,
     "lng": 24.4719526,
     "display_name": "Pageležių miškas, Durpyno g., Aklasis Ežeras, Šilų seniūnija, Jonavos rajono savivaldybė, Kauno apskritis, 55108, Lietuva"
-  },
-  "vilniaus-r-sav-|zujūnai-buivydiškių-g-1a": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
   },
   "vilniaus-m-sav-|vilnius-jankiškių-g-43a": {
     "lat": 54.6518904,
@@ -3518,26 +2994,6 @@
     "lat": 54.71563,
     "lng": 25.2287063,
     "display_name": "Neste „Justiniškių“, 2, Rygos g., Viršuliškės, Viršuliškių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 05259, Lietuva"
-  },
-  "vilniaus-m-sav-|vilnius-stanevičiaus-g-3a": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
-  "marijampolės-sav-|l-taunio-g-3-pasūduonės-km": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
-  },
-  "šilalės-r-sav-|dvaro-g-1-papynaujo-k-kvėdarna": {
-    "lat": 55.5252224,
-    "lng": 22.2160078,
-    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
-  },
-  "šakių-r-sav-|kauno-g-68-girėnų-k": {
-    "lat": 54.9148731,
-    "lng": 23.078048,
-    "display_name": "Šakių rajono savivaldybė, Marijampolės apskritis, Lietuva"
   },
   "jonavos-r-sav-|jonava-taurostos-g-16a": {
     "lat": 55.0671367,
@@ -3579,39 +3035,718 @@
     "lng": 25.0879884,
     "display_name": "Baltic Petroleum, 34A, A. Vienuolio g., Jurzdikas, Pašventupys, Anykščiai, Anykščių seniūnija, Anykščių rajono savivaldybė, Utenos apskritis, 29148, Lietuva"
   },
-  "plungės-r-sav-|pramogų-g-4-truikių-k": {
-    "lat": 55.953916,
-    "lng": 21.8335407,
-    "display_name": "Plungės rajono savivaldybė, Telšių apskritis, Lietuva"
+  "vilniaus-r-sav-|užubalių-k-senasis-ukmergės-kelias-4": {
+    "lat": 56.1445342,
+    "lng": 25.5052069,
+    "display_name": "Užubalių piliakalnis, Klevų g., Užubaliai, Juodupės seniūnija, Rokiškio rajono savivaldybė, Panevėžio apskritis, 42440, Lietuva",
+    "review": true
   },
-  "marijampolės-sav-|sodo-g-11-gavaltuvos-k": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
+  "zarasų-r-sav-|sarakiškių-k-vytauto-g-61": {
+    "lat": 55.7303771,
+    "lng": 26.0387936,
+    "display_name": "Zarasų rajono savivaldybė, Utenos apskritis, Lietuva",
+    "review": true
   },
-  "klaipėdos-r-sav-|laisvės-g-50-maciuičių-k": {
+  "zarasų-r-sav-|padustėlis-v-striogos-g-4a": {
+    "lat": 55.736407,
+    "lng": 25.8556403,
+    "display_name": "Padustėlis, Dusetų seniūnija, Zarasų rajono savivaldybė, Utenos apskritis, 32306, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|baltijos-g-1-mastaičių-k": {
+    "lat": 55.0786111,
+    "lng": 22.9123056,
+    "display_name": "Maštaičių piliakalnis, Vieškelio g., Papiškiai, Kidulių seniūnija, Šakių rajono savivaldybė, Marijampolės apskritis, 74476, Lietuva",
+    "review": true
+  },
+  "panevėžio-r-sav-|baltijos-kelio-g-33-ūtos-k": {
+    "lat": 54.5861461,
+    "lng": 23.7419612,
+    "display_name": "Naujosios Ūtos seniūnija, Prienų rajono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "ukmergės-r-sav-|ežero-g-7-kurėnų-k": {
+    "lat": 55.30972,
+    "lng": 24.7664021,
+    "display_name": "Kurėnų ež., Baubliai, Vidiškių seniūnija, Ukmergės rajono savivaldybė, Vilniaus apskritis, Lietuva",
+    "review": true
+  },
+  "panevėžio-r-sav-|panevėžio-aplinkl-20-šilagalio-k": {
+    "lat": 55.713692,
+    "lng": 24.3411366,
+    "display_name": "Šilagalio g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36252, Lietuva",
+    "review": true
+  },
+  "kauno-m-sav-|vakarinis-aplinkkelis-10-kaunas": {
+    "lat": 54.6723646,
+    "lng": 25.1944139,
+    "display_name": "Vakarinis aplinkkelis, Gudeliai, Lazdynų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 04224, Lietuva",
+    "review": true
+  },
+  "šilalės-r-sav-|dvaro-g-3-košių-ii-k": {
+    "lat": 55.5252224,
+    "lng": 22.2160078,
+    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|vilniaus-pl-21-jakų-k": {
+    "lat": 55.7160278,
+    "lng": 21.2313056,
+    "display_name": "Jakų piliakalnis, Tolminkiemio g., Leliai, Sendvario seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 91300, Lietuva",
+    "review": true
+  },
+  "trakų-r-sav-|didžiulio-g-5-dėdeliškių-k": {
+    "lat": 54.6767069,
+    "lng": 25.0576741,
+    "display_name": "Dėdeliškių kapinės, Dėdeliškės, Lentvario seniūnija, Trakų rajono savivaldybė, Vilniaus apskritis, Lietuva",
+    "review": true
+  },
+  "lazdijų-r-sav-|nekrūnų-k-1": {
+    "lat": 54.1607523,
+    "lng": 23.6775875,
+    "display_name": "Lazdijų rajono savivaldybė, Alytaus apskritis, Lietuva",
+    "review": true
+  },
+  "raseinių-r-sav-|pikelių-k-1": {
+    "lat": 56.4183967,
+    "lng": 22.109181,
+    "display_name": "Pikelių Švč. Trejybės bažnyčia, 3, Tvenkinio g., Pikeliai, Židikų seniūnija, Mažeikių rajono savivaldybė, Telšių apskritis, 89462, Lietuva",
+    "review": true
+  },
+  "kalvarijos-sav-|europos-g-13a-salaperaugio-k": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva",
+    "review": true
+  },
+  "kalvarijos-sav-|muitinės-g-5b-brazavo-k": {
+    "lat": 54.3691113,
+    "lng": 23.1746923,
+    "display_name": "Brazavo kapinės, 5, Brazavas, Kalvarijos seniūnija, Kalvarijos savivaldybė, Marijampolės apskritis, Lietuva",
+    "review": true
+  },
+  "kauno-m-sav-|tvirtovės-alėja-33a-kaunas": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "vilniaus-r-sav-|molėtų-g-15-didžiosios-riešės-k": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01122, Lietuva",
+    "review": true
+  },
+  "šakių-r-sav-|mozūriškiai-mozūriškių-10": {
+    "lat": 54.9557378,
+    "lng": 23.6589006,
+    "display_name": "Mozūriškiai, Batniavos seniūnija, Kauno rajono savivaldybė, Kauno apskritis, 53482, Lietuva",
+    "review": true
+  },
+  "šilalės-r-sav-|šolių-k-pietinio-kelio-g-9": {
+    "lat": 55.4864892,
+    "lng": 22.1790106,
+    "display_name": "Šolių g., Šilalė, Šilalės miesto seniūnija, Šilalės rajono savivaldybė, Tauragės apskritis, 75126, Lietuva",
+    "review": true
+  },
+  "vilniaus-m-sav-|vilnius-baltosios-vokės-g-35": {
+    "lat": 54.6870458,
+    "lng": 25.2829111,
+    "display_name": "Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, Lietuva",
+    "review": true
+  },
+  "kauno-m-sav-|kaunas-kuršių-13a": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|klipščių-k-šilelių-g-1": {
+    "lat": 55.7480721,
+    "lng": 21.1806065,
+    "display_name": "Klipščių g., Slengiai, Sendvario seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 92338, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|-trepkalnių-k-mokyklos-g-2": {
     "lat": 55.7827168,
     "lng": 21.3496449,
-    "display_name": "Klaipėdos apskritis, Lietuva"
+    "display_name": "Klaipėdos apskritis, Lietuva",
+    "review": true
+  },
+  "prienų-r-sav-|alytaus-pl-2-mardosų-k": {
+    "lat": 54.6334424,
+    "lng": 24.2204708,
+    "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "kelmės-r-sav-|puttvinskio-g-29-kelmė": {
+    "lat": 55.6294679,
+    "lng": 22.9313095,
+    "display_name": "Kelmė, Kelmės seniūnija, Kelmės rajono savivaldybė, Šiaulių apskritis, Lietuva",
+    "review": true
+  },
+  "šilalės-r-sav-|paršežerio-g-1-vabalų-k": {
+    "lat": 55.7618186,
+    "lng": 24.3974296,
+    "display_name": "Vabalų g., Vaivadai, Panevėžio seniūnija, Panevėžio rajono savivaldybė, Panevėžio apskritis, 38444, Lietuva",
+    "review": true
+  },
+  "telšių-r-sav-|telšių-g-2-b-rainių-k": {
+    "lat": 55.9539961,
+    "lng": 22.3011056,
+    "display_name": "Rainių TP, Rainiai, Viešvėnų seniūnija, Telšių rajono savivaldybė, Telšių apskritis, Lietuva",
+    "review": true
+  },
+  "akmenės-r-sav-|plento-g-2-ventos-m": {
+    "lat": 55.9386544,
+    "lng": 23.3290094,
+    "display_name": "Ventos g., Kalniukas, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 76202, Lietuva",
+    "review": true
+  },
+  "akmenės-r-sav-|skabeikių-k-4": {
+    "lat": 56.1841249,
+    "lng": 22.7693985,
+    "display_name": "Skabeikių miškas, Mažūnaičiai, Papilės seniūnija, Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva",
+    "review": true
+  },
+  "vilniaus-r-sav-|kalnuotės-1-k": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01122, Lietuva",
+    "review": true
+  },
+  "telšių-r-sav-|beržų-g-24-drąsiųjų-7-tryškiai": {
+    "lat": 56.0589416,
+    "lng": 22.5786116,
+    "display_name": "Tryškiai, Tryškių seniūnija, Telšių rajono savivaldybė, Telšių apskritis, 88152, Lietuva",
+    "review": true
+  },
+  "raseinių-r-sav-|šilo-g-1-ylių-k": {
+    "lat": 55.3764559,
+    "lng": 23.1988999,
+    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "raseinių-r-sav-|pievų-g-17-slabados-k": {
+    "lat": 55.3863632,
+    "lng": 23.0967498,
+    "display_name": "Slabados g., Raseiniai, Raseinių miesto seniūnija, Raseinių rajono savivaldybė, Kauno apskritis, 60137, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|vijoklių-g-1c-ramučių-k": {
+    "lat": 56.3189202,
+    "lng": 22.8645788,
+    "display_name": "Naujosios Akmenės Ramučių gimnazija, 5, Ramučių g., Naujoji Akmenė, Naujosios Akmenės miesto seniūnija, Akmenės rajono savivaldybė, Šiaulių apskritis, 85192, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|vakarų-g-14-kumpių-k": {
+    "lat": 54.9546964,
+    "lng": 23.8819997,
+    "display_name": "Kumpių g., Šakiai, Domeikavos seniūnija, Kauno rajono savivaldybė, Kauno apskritis, 47425, Lietuva",
+    "review": true
+  },
+  "kauno-m-sav-|vakarinis-aplinkkelis-18-kaunas": {
+    "lat": 54.6878257,
+    "lng": 25.1958483,
+    "display_name": "18, Vakarinis aplinkkelis, Pilaitės seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 04304, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|vilniaus-pl-9-jakų-k": {
+    "lat": 55.7160278,
+    "lng": 21.2313056,
+    "display_name": "Jakų piliakalnis, Tolminkiemio g., Leliai, Sendvario seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 91300, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|sendvario-g-2-sudmantų-k": {
+    "lat": 55.7040045,
+    "lng": 21.2094241,
+    "display_name": "Sudmantų g., Sudmantai, Sendvario seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96327, Lietuva",
+    "review": true
+  },
+  "pasvalio-r-sav-|ąžuolpamūšio-g-1a-raubonių-k": {
+    "lat": 56.128826,
+    "lng": 24.4744696,
+    "display_name": "Raubonių koplyčia, 4, Draugystės g., Ąžuolytė, Raubonys, Saločių seniūnija, Pasvalio rajono savivaldybė, Panevėžio apskritis, 39447, Lietuva",
+    "review": true
+  },
+  "panevėžio-r-sav-|panevėžio-aplinkl-7-šilagalio-k": {
+    "lat": 55.713692,
+    "lng": 24.3411366,
+    "display_name": "Šilagalio g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36252, Lietuva",
+    "review": true
+  },
+  "panevėžio-r-sav-|panevėžio-aplinkl-22-šilagalio-k": {
+    "lat": 55.713692,
+    "lng": 24.3411366,
+    "display_name": "Šilagalio g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36252, Lietuva",
+    "review": true
+  },
+  "kalvarijos-sav-|europos-g-1-salaperaugio-k": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva",
+    "review": true
+  },
+  "kalvarijos-sav-|europos-g-6-n-valios-k": {
+    "lat": 54.6231449,
+    "lng": 25.0935999,
+    "display_name": "Gerosios Valios g., Trakų Vokė, Panerių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02233, Lietuva",
+    "review": true
+  },
+  "šilalės-r-sav-|katyčių-k-šilalės-r": {
+    "lat": 55.2651603,
+    "lng": 21.8209124,
+    "display_name": "Katyčių seniūnija, Šilutės rajono savivaldybė, Klaipėdos apskritis, 99224, Lietuva",
+    "review": true
+  },
+  "raseinių-r-sav-|pušyno-g-11-ylių-k": {
+    "lat": 55.3764559,
+    "lng": 23.1988999,
+    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "telšių-r-sav-|šiaulių-pl-1a-gaudikaičių-k": {
+    "lat": 56.0268012,
+    "lng": 22.2605749,
+    "display_name": "Gaudikaičių miškas, Gintalai, Degaičių seniūnija, Telšių rajono savivaldybė, Telšių apskritis, Lietuva",
+    "review": true
+  },
+  "prienų-r-sav-|alytaus-g-2-verbyliškių-k": {
+    "lat": 54.6334424,
+    "lng": 24.2204708,
+    "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|vilniaus-pl-13-jakų-k": {
+    "lat": 55.7160278,
+    "lng": 21.2313056,
+    "display_name": "Jakų piliakalnis, Tolminkiemio g., Leliai, Sendvario seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 91300, Lietuva",
+    "review": true
+  },
+  "raseinių-r-sav-|pikelių-k-6": {
+    "lat": 56.4183967,
+    "lng": 22.109181,
+    "display_name": "Pikelių Švč. Trejybės bažnyčia, 3, Tvenkinio g., Pikeliai, Židikų seniūnija, Mažeikių rajono savivaldybė, Telšių apskritis, 89462, Lietuva",
+    "review": true
+  },
+  "raseinių-r-sav-|pikelių-k-8": {
+    "lat": 56.4183967,
+    "lng": 22.109181,
+    "display_name": "Pikelių Švč. Trejybės bažnyčia, 3, Tvenkinio g., Pikeliai, Židikų seniūnija, Mažeikių rajono savivaldybė, Telšių apskritis, 89462, Lietuva",
+    "review": true
+  },
+  "panevėžio-r-sav-|šiaulių-g-50-nausodės-k": {
+    "lat": 55.7160502,
+    "lng": 24.3344991,
+    "display_name": "Nausodės g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36265, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|šv-kristoforo-g-4-dituvos-k": {
+    "lat": 55.5906597,
+    "lng": 21.2454908,
+    "display_name": "Dituvos ež., Dercekliai, Priekulės seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|veiviržėnų-g-29-pyktiškės-k": {
+    "lat": 55.7827168,
+    "lng": 21.3496449,
+    "display_name": "Klaipėdos apskritis, Lietuva",
+    "review": true
+  },
+  "kalvarijos-sav-|pelucmurgių-k-muitinės-g-35": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|giraitės-k-automagistralės-g-4": {
+    "lat": 54.2733333,
+    "lng": 23.5988056,
+    "display_name": "Giraitės piliakalnis, Drebulių g., Giraitė, Šventežerio seniūnija, Lazdijų rajono savivaldybė, Alytaus apskritis, 67412, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|ilgakiemio-k-prienų-g-22": {
+    "lat": 54.8481336,
+    "lng": 23.9988303,
+    "display_name": "Ilgakiemio g., Prendzeliava, Panemunės seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 45475, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|kampiškių-k-baltijos-g-41": {
+    "lat": 54.8259609,
+    "lng": 24.2048687,
+    "display_name": "Kampiškių miškas, Leonavas, Taurakiemio seniūnija, Kauno rajono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|kumpių-k-verslo-g-13a": {
+    "lat": 54.9546964,
+    "lng": 23.8819997,
+    "display_name": "Kumpių g., Šakiai, Domeikavos seniūnija, Kauno rajono savivaldybė, Kauno apskritis, 47425, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|sudmantų-k-vilniaus-pl-6": {
+    "lat": 55.7040045,
+    "lng": 21.2094241,
+    "display_name": "Sudmantų g., Sudmantai, Sendvario seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96327, Lietuva",
+    "review": true
+  },
+  "panevėžio-r-sav-|šilagalio-k-panevėžio-aplinkl-5": {
+    "lat": 55.713692,
+    "lng": 24.3411366,
+    "display_name": "Šilagalio g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36252, Lietuva",
+    "review": true
+  },
+  "panevėžio-r-sav-|tičkūnų-k-tičkūnų-g-31": {
+    "lat": 55.7788418,
+    "lng": 24.3648008,
+    "display_name": "Viada, 31, Tičkūnų g., Tičkūnai, Panevėžio seniūnija, Panevėžio rajono savivaldybė, Panevėžio apskritis, 38410, Lietuva",
+    "review": true
+  },
+  "pasvalio-r-sav-|brazdigalos-k-1": {
+    "lat": 56.0478314,
+    "lng": 24.3836295,
+    "display_name": "Brazdigalos g., Panevėžio g., Pasvalys, Pasvalio miesto seniūnija, Pasvalio rajono savivaldybė, Panevėžio apskritis, 39159, Lietuva",
+    "review": true
+  },
+  "trakų-r-sav-|aukštųjų-semeniukų-k-logistikos-g-9": {
+    "lat": 54.7119339,
+    "lng": 24.989427,
+    "display_name": "Aukštųjų Semeniukų g., Rykantai, Lentvario seniūnija, Trakų rajono savivaldybė, Vilniaus apskritis, 21403, Lietuva",
+    "review": true
+  },
+  "ukmergės-r-sav-|šventupės-k-beržų-g-13": {
+    "lat": 54.923887,
+    "lng": 23.8012232,
+    "display_name": "Šventupės g., Aukštutiniai Kaniūkai, Šilainių seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 47299, Lietuva",
+    "review": true
+  },
+  "zarasų-r-sav-|juodalaukių-k-2": {
+    "lat": 55.7303771,
+    "lng": 26.0387936,
+    "display_name": "Zarasų rajono savivaldybė, Utenos apskritis, Lietuva",
+    "review": true
+  },
+  "kalvarijos-sav-|kazlavo-km-4-kalvarijos-sav": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva",
+    "review": true
+  },
+  "alytaus-r-sav-|likiškėlių-k-kalninės-g-5": {
+    "lat": 54.3967883,
+    "lng": 24.0134061,
+    "display_name": "Alytaus Likiškėlių progimnazija, 12, Likiškėlių g., Dainava, Alytus, Alytaus miesto savivaldybė, Alytaus apskritis, 63162, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|virbališkių-k-verslo-g-2": {
+    "lat": 54.9137778,
+    "lng": 23.7225833,
+    "display_name": "Virbališkių piliakalnis, Gabijos g., Virbališkiai, Ringaudų seniūnija, Kauno rajono savivaldybė, Kauno apskritis, 53460, Lietuva",
+    "review": true
+  },
+  "pasvalio-r-sav-|liepų-g-4-škilinpamūšio-k": {
+    "lat": 56.2663447,
+    "lng": 24.3669048,
+    "display_name": "Škilinpamūšio dvaro sodybos parkas, Gniaužiai, Saločių seniūnija, Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva",
+    "review": true
+  },
+  "pasvalio-r-sav-|pasienio-g-10-škilinpamūšio-k": {
+    "lat": 56.0706909,
+    "lng": 24.3842838,
+    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva",
+    "review": true
+  },
+  "šilalės-r-sav-|gineikių-k": {
+    "lat": 55.5252224,
+    "lng": 22.2160078,
+    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva",
+    "review": true
+  },
+  "kelmės-r-sav-|kuršukų-k-plento-g-1": {
+    "lat": 55.6865165,
+    "lng": 22.8611849,
+    "display_name": "Kelmės rajono savivaldybė, Šiaulių apskritis, Lietuva",
+    "review": true
+  },
+  "kelmės-r-sav-|maironių-k-kuršių-g-2": {
+    "lat": 55.6011328,
+    "lng": 23.0721336,
+    "display_name": "Maironių koplyčia, 7A, Tytuvėnų g., Maironiai, Liolių seniūnija, Kelmės rajono savivaldybė, Šiaulių apskritis, 86203, Lietuva",
+    "review": true
+  },
+  "alytaus-r-sav-|alytaus-k": {
+    "lat": 55.7319393,
+    "lng": 21.1423197,
+    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva",
+    "review": false
+  },
+  "kauno-r-sav-|erdvės-g-78-ramučių-k": {
+    "lat": 56.3189202,
+    "lng": 22.8645788,
+    "display_name": "Naujosios Akmenės Ramučių gimnazija, 5, Ramučių g., Naujoji Akmenė, Naujosios Akmenės miesto seniūnija, Akmenės rajono savivaldybė, Šiaulių apskritis, 85192, Lietuva",
+    "review": true
+  },
+  "panevėžio-r-sav-|žemdirbių-g-15-paliūniškio-k": {
+    "lat": 55.7933211,
+    "lng": 24.4428261,
+    "display_name": "Paliūniškio tiltas, Žemdirbių g., Paliūniškis, Karsakiškio seniūnija, Panevėžio rajono savivaldybė, Panevėžio apskritis, 38440, Lietuva",
+    "review": true
+  },
+  "vilniaus-r-sav-|bukiškio-k-ukmergės-g-437": {
+    "lat": 54.7609108,
+    "lng": 25.20762,
+    "display_name": "Bukiškio stačiatikių Kristaus Gimimo cerkvė, Sodų g., Bukiškis, Avižienių seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 14183, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|ilgakiemio-k-kauno-g-25": {
+    "lat": 54.8481336,
+    "lng": 23.9988303,
+    "display_name": "Ilgakiemio g., Prendzeliava, Panemunės seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 45475, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|durpyno-63-jonušų-k": {
+    "lat": 55.7155332,
+    "lng": 21.2884022,
+    "display_name": "Jonušų g., Gobergiškė, Dauparų-Kvietinių seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96173, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|medelyno-g-126-kalotės-k": {
+    "lat": 55.9623416,
+    "lng": 23.2854929,
+    "display_name": "Kalotės g., Vinkšnėnai, Šiaulių kaimiškoji seniūnija, Šiaulių rajono savivaldybė, Šiaulių apskritis, 76152, Lietuva",
+    "review": true
+  },
+  "lazdijų-r-sav-|lazdijų-sen-janaslavo-k-11": {
+    "lat": 54.1607523,
+    "lng": 23.6775875,
+    "display_name": "Lazdijų rajono savivaldybė, Alytaus apskritis, Lietuva",
+    "review": true
+  },
+  "vilniaus-r-sav-|mokyklos-g-26-maišiagalos-mstl": {
+    "lat": 54.8732412,
+    "lng": 25.0734568,
+    "display_name": "Emsi, Vievis — Maišiagala — Nemenčinė, Maišiagala, Maišiagalos seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 14242, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|marijampolės-g-58-mastaičių-k": {
+    "lat": 55.0786111,
+    "lng": 22.9123056,
+    "display_name": "Maštaičių piliakalnis, Vieškelio g., Papiškiai, Kidulių seniūnija, Šakių rajono savivaldybė, Marijampolės apskritis, 74476, Lietuva",
+    "review": true
+  },
+  "vilniaus-r-sav-|taikos-g-1-kreivalaužių-k": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01122, Lietuva",
+    "review": true
+  },
+  "marijampolės-sav-|kauno-g-165-pietarių-k": {
+    "lat": 54.6792304,
+    "lng": 23.2004406,
+    "display_name": "Marijampolės apskritis, Lietuva",
+    "review": true
+  },
+  "raseinių-r-sav-|raščių-k-1a": {
+    "lat": 55.3764559,
+    "lng": 23.1988999,
+    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "trakų-r-sav-|sausių-g-2-sausių-k": {
+    "lat": 54.7075301,
+    "lng": 24.9959605,
+    "display_name": "Emsi, 2, Sausių g., Sausiai, Lentvario seniūnija, Trakų rajono savivaldybė, Vilniaus apskritis, 21401, Lietuva",
+    "review": true
+  },
+  "pasvalio-r-sav-|sereikonių-k-baltijos-kelio-g-2": {
+    "lat": 56.0706909,
+    "lng": 24.3842838,
+    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva",
+    "review": true
+  },
+  "panevėžio-r-sav-|šilagalio-k-panevėžio-aplinkl-12": {
+    "lat": 55.713692,
+    "lng": 24.3411366,
+    "display_name": "Šilagalio g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36252, Lietuva",
+    "review": true
+  },
+  "marijampolės-sav-|skaisčiūnų-k-europos-g-11": {
+    "lat": 54.5568446,
+    "lng": 23.2920749,
+    "display_name": "Skaisčiūnų g., Skaisčiūnai, Marijampolės seniūnija, Marijampolės savivaldybė, Marijampolės apskritis, 68134, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|žemaitkiemis-stasio-krasausko-g-21": {
+    "lat": 54.5666898,
+    "lng": 23.9759839,
+    "display_name": "Žemaitkiemis, Birštono seniūnija, Birštono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "akmenės-r-sav-|naujoji-akmenė-v-kudirkos-18a": {
+    "lat": 56.2415748,
+    "lng": 22.8625876,
+    "display_name": "Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva",
+    "review": true
+  },
+  "akmenės-r-sav-|akmenės-i-kaimas-plento-g-1": {
+    "lat": 56.2415748,
+    "lng": 22.8625876,
+    "display_name": "Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva",
+    "review": true
+  },
+  "akmenės-r-sav-|pašakarnių-km-pašakarnių-g-1": {
+    "lat": 56.2671989,
+    "lng": 22.8344787,
+    "display_name": "Pašakarnių g., Alkiškiai, Naujosios Akmenės kaimiškoji seniūnija, Akmenės rajono savivaldybė, Šiaulių apskritis, 85270, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|klaipėda-jūrininkų-pr-29": {
+    "lat": 55.7827168,
+    "lng": 21.3496449,
+    "display_name": "Klaipėdos apskritis, Lietuva",
+    "review": true
+  },
+  "šilalės-r-sav-|šilalė-rytinio-kelio-g-19": {
+    "lat": 55.5252224,
+    "lng": 22.2160078,
+    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva",
+    "review": true
+  },
+  "kalvarijos-sav-|kušliškių-km-suvalkijos-g-15": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva",
+    "review": true
+  },
+  "marijampolės-sav-|marijampolė-statybininkų-g-8": {
+    "lat": 54.6792304,
+    "lng": 23.2004406,
+    "display_name": "Marijampolės apskritis, Lietuva",
+    "review": true
+  },
+  "alytaus-m-sav-|alytus-miškininkų-g-7": {
+    "lat": 55.7319393,
+    "lng": 21.1423197,
+    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva",
+    "review": true
+  },
+  "alytaus-m-sav-|alytus-pramonės-g-5": {
+    "lat": 55.7319393,
+    "lng": 21.1423197,
+    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva",
+    "review": true
+  },
+  "prienų-r-sav-|ignacavos-km-kauno-pl-18": {
+    "lat": 54.6334424,
+    "lng": 24.2204708,
+    "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|domeikava-muitinės-g-2": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "kauno-m-sav-|kaunas-garažų-g-20": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "kauno-r-sav-|babtai-vandžiogalos-g-3": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "šakių-r-sav-|lėkėčių-km-šakių-g-3": {
+    "lat": 55.0006475,
+    "lng": 23.4603147,
+    "display_name": "Lekėčių seniūnija, Šakių rajono savivaldybė, Marijampolės apskritis, Lietuva",
+    "review": true
+  },
+  "prienų-r-sav-|mauručiai-liepų-g-20": {
+    "lat": 54.6334424,
+    "lng": 24.2204708,
+    "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva",
+    "review": true
+  },
+  "ukmergės-r-sav-|ukmergė-kareivinių-g-64": {
+    "lat": 55.301698,
+    "lng": 24.7372908,
+    "display_name": "Ukmergės rajono savivaldybė, Vilniaus apskritis, Lietuva",
+    "review": true
+  },
+  "vilniaus-r-sav-|zujūnai-buivydiškių-g-1a": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01122, Lietuva",
+    "review": true
+  },
+  "vilniaus-m-sav-|vilnius-stanevičiaus-g-3a": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01122, Lietuva",
+    "review": true
+  },
+  "marijampolės-sav-|l-taunio-g-3-pasūduonės-km": {
+    "lat": 54.4804895,
+    "lng": 23.2174108,
+    "display_name": "Pasūduonės tv., Pasūduonė, Marijampolės seniūnija, Marijampolės savivaldybė, Marijampolės apskritis, Lietuva",
+    "review": true
+  },
+  "šilalės-r-sav-|dvaro-g-1-papynaujo-k-kvėdarna": {
+    "lat": 55.5252224,
+    "lng": 22.2160078,
+    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva",
+    "review": true
+  },
+  "šakių-r-sav-|kauno-g-68-girėnų-k": {
+    "lat": 54.5264014,
+    "lng": 22.7200886,
+    "display_name": "Girėnų k. senosios kapinės, Girėnai, Vištyčio seniūnija, Vilkaviškio rajono savivaldybė, Marijampolės apskritis, Lietuva",
+    "review": true
+  },
+  "plungės-r-sav-|pramogų-g-4-truikių-k": {
+    "lat": 55.92658,
+    "lng": 21.8573734,
+    "display_name": "Truikių g., Plungė, Plungės miesto seniūnija, Plungės rajono savivaldybė, Telšių apskritis, 90118, Lietuva",
+    "review": true
+  },
+  "marijampolės-sav-|sodo-g-11-gavaltuvos-k": {
+    "lat": 54.65875,
+    "lng": 23.4024382,
+    "display_name": "Antanavo tv., Gavaltuva, Sasnavos seniūnija, Marijampolės savivaldybė, Marijampolės apskritis, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|laisvės-g-50-maciuičių-k": {
+    "lat": 55.7046455,
+    "lng": 21.4126064,
+    "display_name": "Maciuičių piliakalnis, Pylos g., Maciuičiai, Vėžaičių seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96158, Lietuva",
+    "review": true
   },
   "lazdijų-r-sav-|kalvelių-k-lazdijų-pl-29": {
-    "lat": 54.1607523,
-    "lng": 23.6775875,
-    "display_name": "Lazdijų rajono savivaldybė, Alytaus apskritis, Lietuva"
+    "lat": 54.622485,
+    "lng": 25.6804774,
+    "display_name": "Kalvelių seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, Lietuva",
+    "review": true
   },
   "lazdijų-r-sav-|seirijų-mstl-algirdo-g-35a": {
-    "lat": 54.1607523,
-    "lng": 23.6775875,
-    "display_name": "Lazdijų rajono savivaldybė, Alytaus apskritis, Lietuva"
+    "lat": 54.2395118,
+    "lng": 23.8230697,
+    "display_name": "Melkasta, 35A, Algirdo g., Seirijai, Seirijų seniūnija, Lazdijų rajono savivaldybė, Alytaus apskritis, 67227, Lietuva",
+    "review": true
   },
   "plungės-r-sav-|telšių-g-127-jovaišiškės-k": {
-    "lat": 55.953916,
-    "lng": 21.8335407,
-    "display_name": "Plungės rajono savivaldybė, Telšių apskritis, Lietuva"
+    "lat": 54.588299,
+    "lng": 24.4310845,
+    "display_name": "Jovaišiškės, Aukštadvario seniūnija, Trakų rajono savivaldybė, Vilniaus apskritis, 59366, Lietuva",
+    "review": true
   },
   "plungės-r-sav-|rietavo-g-107-pakerų-k": {
     "lat": 55.953916,
     "lng": 21.8335407,
-    "display_name": "Plungės rajono savivaldybė, Telšių apskritis, Lietuva"
+    "display_name": "Plungės rajono savivaldybė, Telšių apskritis, Lietuva",
+    "review": true
   }
 }

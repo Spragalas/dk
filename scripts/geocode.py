@@ -128,13 +128,41 @@ def parse_address_parts(address: str, municipality: str = "") -> tuple[str, str]
     return "", clean
 
 
-def geocode_address(address: str, municipality: str) -> dict | None:
-    """Try to geocode an address, return {lat, lng, display_name} or None."""
+def extract_village_name(address: str) -> str | None:
+    """Extract village/settlement name from address.
+
+    Patterns:
+      "Veiverių k., Kauno g. 1" -> "Veiverių"
+      "Bukiškio k. Ukmergės g.437" -> "Bukiškio"
+      "Mastaičių k." -> "Mastaičių"
+      "Padustėlis, V. Striogos g. 4A" -> "Padustėlis"
+      "Didžiosios Riešės k." -> "Didžiosios Riešės"
+    """
+    import re
+    # Match "Name k." or "Name km." pattern
+    m = re.search(r"([\w\s]+?)\s+k[m]?\.", address)
+    if m:
+        return m.group(1).strip()
+
+    # Match "Name mstl." (miestelis = small town)
+    m = re.search(r"([\w\s]+?)\s+mstl\.", address)
+    if m:
+        return m.group(1).strip()
+
+    return None
+
+
+def geocode_address(address: str, municipality: str, company: str = "") -> dict | None:
+    """Try to geocode an address, return {lat, lng, display_name} or None.
+
+    Returns dict with extra key "review": True if result is approximate.
+    """
     headers = {"User-Agent": USER_AGENT}
 
     clean_addr = clean_for_nominatim(address)
     clean_muni = clean_for_nominatim(municipality)
     street, city = parse_address_parts(address, municipality)
+    village = extract_village_name(address)
 
     VAGUE_TYPES = {"city", "town", "village", "county", "state", "administrative", "municipality"}
 
@@ -143,7 +171,15 @@ def geocode_address(address: str, municipality: str) -> dict | None:
         rclass = result.get("class", "")
         return rtype not in VAGUE_TYPES and rclass != "boundary"
 
-    # Strategy 1: Structured search (most reliable)
+    def make_result(r, review=False):
+        return {
+            "lat": float(r["lat"]),
+            "lng": float(r["lon"]),
+            "display_name": r.get("display_name", ""),
+            "review": review,
+        }
+
+    # Strategy 1: Structured search (street + city)
     if street and city:
         results = nominatim_search(None, headers, structured={
             "street": street,
@@ -151,47 +187,54 @@ def geocode_address(address: str, municipality: str) -> dict | None:
             "country": "Lithuania",
         })
         if results and is_specific(results[0]):
-            r = results[0]
-            return {
-                "lat": float(r["lat"]),
-                "lng": float(r["lon"]),
-                "display_name": r.get("display_name", ""),
-            }
+            return make_result(results[0])
         time.sleep(RATE_LIMIT_SECONDS)
 
     # Strategy 2: Free text with just the address
     results = nominatim_search(f"{clean_addr}, Lithuania", headers)
     if results and is_specific(results[0]):
-        r = results[0]
-        return {
-            "lat": float(r["lat"]),
-            "lng": float(r["lon"]),
-            "display_name": r.get("display_name", ""),
-        }
+        return make_result(results[0])
     time.sleep(RATE_LIMIT_SECONDS)
 
-    # Strategy 3: Free text with municipality added
+    # Strategy 3: Free text with municipality
     results = nominatim_search(f"{clean_addr}, {clean_muni}, Lithuania", headers)
     if results and is_specific(results[0]):
-        r = results[0]
-        return {
-            "lat": float(r["lat"]),
-            "lng": float(r["lon"]),
-            "display_name": r.get("display_name", ""),
-        }
+        return make_result(results[0])
     time.sleep(RATE_LIMIT_SECONDS)
+
+    # Strategy 4: Village name + company (e.g. "Circle K Mastaičiai")
+    if village and company:
+        results = nominatim_search(f"{company} {village}, Lithuania", headers)
+        if results and is_specific(results[0]):
+            print(f"  Resolved via village+company: {company} {village}")
+            return make_result(results[0], review=True)
+        time.sleep(RATE_LIMIT_SECONDS)
+
+    # Strategy 5: Just the village/settlement name
+    if village:
+        results = nominatim_search(f"{village}, Lithuania", headers)
+        if results:
+            r = results[0]
+            print(f"  Resolved via village name: {village}")
+            return make_result(r, review=True)
+        time.sleep(RATE_LIMIT_SECONDS)
+
+    # Strategy 6: City name from address (for non-village addresses like "Kaunas, Chemijos g. 6")
+    if city and city != clean_muni:
+        results = nominatim_search(f"{city}, Lithuania", headers)
+        if results:
+            r = results[0]
+            print(f"  Resolved via city name: {city}")
+            return make_result(r, review=True)
+        time.sleep(RATE_LIMIT_SECONDS)
 
     # Last resort: municipality centroid
     results = nominatim_search(f"{clean_muni}, Lithuania", headers)
     if results:
         r = results[0]
-        print(f"  Using municipality fallback: {r.get('display_name', '')[:60]}")
-        return {
-            "lat": float(r["lat"]),
-            "lng": float(r["lon"]),
-            "display_name": r.get("display_name", ""),
-        }
-        time.sleep(RATE_LIMIT_SECONDS)
+        print(f"  Municipality fallback: {r.get('display_name', '')[:60]}")
+        return make_result(r, review=True)
+    time.sleep(RATE_LIMIT_SECONDS)
 
     return None
 
@@ -225,14 +268,16 @@ def main():
         sid = station["id"]
         addr = station["address"]
         muni = station["municipality"]
+        company = station.get("company", "")
         print(f"[{i+1}/{len(to_geocode)}] Geocoding: {addr}, {muni}")
 
-        result = geocode_address(addr, muni)
+        result = geocode_address(addr, muni, company)
 
         if result:
             geocache[sid] = result
             newly_geocoded += 1
-            print(f"  -> {result['lat']}, {result['lng']}")
+            review_flag = " [REVIEW]" if result.get("review") else ""
+            print(f"  -> {result['lat']}, {result['lng']}{review_flag}")
             # Save incrementally so progress is never lost
             save_geocache(geocache, geocache_path)
         else:
