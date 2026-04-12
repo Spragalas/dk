@@ -1839,10 +1839,10 @@
     "lng": 22.9514104,
     "display_name": "Atsiauta, 80, Vytauto g., Kuršėnai, Kuršėnų miesto seniūnija, Šiaulių rajono savivaldybė, Šiaulių apskritis, 81110, Lietuva"
   },
-  "marijampolės-sav-|plytinės-g-2-puskelnių-k": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
+  "kauno-m-sav-|savanorių-pr-321-kaunas": {
+    "lat": 54.9200306,
+    "lng": 23.9510946,
+    "display_name": "Rimi, 321, Savanorių pr., Kalniečiai, Eigulių seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 50120, Lietuva"
   },
   "širvintų-r-sav-|paširvio-g-1-paširvinčio-k": {
     "lat": 55.0096018,
@@ -1853,5 +1853,395 @@
     "lat": 54.3173722,
     "lng": 25.2380361,
     "display_name": "Šalčininkų rajono savivaldybė, Vilniaus apskritis, Lietuva"
+  },
+  "kalvarijos-sav-|europos-g-17-salaperaugio-k": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
+  },
+  "alytaus-r-sav-|santaikos-g-2a-santaikos-k": {
+    "lat": 55.7319393,
+    "lng": 21.1423197,
+    "display_name": "Alytaus g., Miškas, Danės slėnių, Luizė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 92308, Lietuva"
+  },
+  "alytaus-m-sav-|alytus-santaikos-g-33": {
+    "lat": 54.3864789,
+    "lng": 24.0330607,
+    "display_name": "Baltic Petroleum, 33, Santaikos g., Alytus, Alytaus miesto savivaldybė, Alytaus apskritis, 62123, Lietuva"
+  },
+  "anykščių-r-sav-|anykščiai-mindaugo-g-23": {
+    "lat": 55.5089869,
+    "lng": 25.1005651,
+    "display_name": "23, Mindaugo g., Jurzdikas, Pašventupys, Anykščiai, Anykščių seniūnija, Anykščių rajono savivaldybė, Utenos apskritis, 29141, Lietuva"
+  },
+  "biržų-r-sav-|valantiškio-k": {
+    "lat": 56.175453,
+    "lng": 24.8313461,
+    "display_name": "Biržų rajono savivaldybė, Panevėžio apskritis, Lietuva"
+  },
+  "druskininkų-sav-|druskininkai-gardino-g-79": {
+    "lat": 53.9998991,
+    "lng": 23.9879595,
+    "display_name": "Baltic Petroleum, 79, Gardino g., Druskininkai, Druskininkų savivaldybė, Alytaus apskritis, 66191, Lietuva"
+  },
+  "druskininkų-sav-|druskininkai-leipalingio-g-26": {
+    "lat": 54.0302436,
+    "lng": 23.9832836,
+    "display_name": "Baltic Petroleum, 26, Leipalingio g., Senamiestis, Druskininkai, Druskininkų savivaldybė, Alytaus apskritis, 66371, Lietuva"
+  },
+  "druskininkų-sav-|leipalingis-merkinės-g-37": {
+    "lat": 54.0946203,
+    "lng": 23.8714383,
+    "display_name": "Baltic Petroleum, 37, Merkinės g., Leipalingis, Leipalingio seniūnija, Druskininkų savivaldybė, Alytaus apskritis, 67280, Lietuva"
+  },
+  "jonavos-r-sav-|spanėnų-k-plento-g-46": {
+    "lat": 55.1168377,
+    "lng": 24.2815728,
+    "display_name": "Jonavos rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "jonavos-r-sav-|šilų-sen-gudžionių-k-plento-g-24": {
+    "lat": 55.1168377,
+    "lng": 24.2815728,
+    "display_name": "Jonavos rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "jurbarko-r-sav-|jurbarkas-muitinės-g-22a": {
+    "lat": 55.0781222,
+    "lng": 22.7447381,
+    "display_name": "22A, Muitinės g., Naujamiestis, Jurbarkas, Jurbarko miesto seniūnija, Jurbarko rajono savivaldybė, Tauragės apskritis, 74106, Lietuva"
+  },
+  "kaišiadorių-r-sav-|triliškių-k-kauno-pl-5": {
+    "lat": 54.8270857,
+    "lng": 24.4264088,
+    "display_name": "Kaišiadorių rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "kauno-m-sav-|kaunas-chemijos-g-6": {
+    "lat": 54.903137,
+    "lng": 23.9827343,
+    "display_name": "Baltic Petroleum, 6, Chemijos g., Petrašiūnai, Petrašiūnų seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 51326, Lietuva"
+  },
+  "kauno-m-sav-|kaunas-jonavos-g-60a": {
+    "lat": 54.9050351,
+    "lng": 23.8995849,
+    "display_name": "Baltic Petroleum, 60A, Jonavos g., Žaliakalnio seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 44192, Lietuva"
+  },
+  "kauno-m-sav-|kaunas-minkovskių-g-132": {
+    "lat": 54.8857026,
+    "lng": 23.9119704,
+    "display_name": "Baltic Petroleum, 132, H. ir O. Minkovskių g., Aleksotas, Aleksoto seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 46245, Lietuva"
+  },
+  "kauno-m-sav-|kaunas-vaidoto-g-153": {
+    "lat": 54.8613556,
+    "lng": 23.9588064,
+    "display_name": "Baltic petroleum, 153, Vaidoto g., Panemunė, Panemunės seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 45302, Lietuva"
+  },
+  "kauno-r-sav-|pagirių-k-marijampolės-g-1": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "kauno-r-sav-|jaučiakių-k": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "klaipėdos-m-sav-|klaipėda-liepų-g-79a": {
+    "lat": 55.7208199,
+    "lng": 21.1524938,
+    "display_name": "Baltic Petroleum, 79A, Liepų g., Pelenynas, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 91270, Lietuva"
+  },
+  "klaipėdos-m-sav-|klaipėda-šilutės-pl-1": {
+    "lat": 55.7049578,
+    "lng": 21.1635571,
+    "display_name": "Baltic Petroleum, 1, Šilutės pl., Rumpiškės dvaras, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 91109, Lietuva"
+  },
+  "kėdainių-r-sav-|kėdainiai-j-basanavičiaus-g-95b": {
+    "lat": 55.2769184,
+    "lng": 23.9558741,
+    "display_name": "95B, J. Basanavičiaus g., Senamiestis, Kėdainiai, Kėdainių miesto seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 57367, Lietuva"
+  },
+  "marijampolės-sav-|marijampolė-p-armino-g-69": {
+    "lat": 54.5338041,
+    "lng": 23.353361,
+    "display_name": "Baltic Petroleum, 69, P. Armino g., Kvietiškis, Marijampolė, Marijampolės savivaldybė, Marijampolės apskritis, 68127, Lietuva"
+  },
+  "marijampolės-sav-|marijampolė-vasaros-g-15": {
+    "lat": 54.5556517,
+    "lng": 23.375474,
+    "display_name": "Baltic Petroleum, 15, Vasaros g., Triobiškiai, Marijampolė, Marijampolės savivaldybė, Marijampolės apskritis, 68114, Lietuva"
+  },
+  "mažeikių-r-sav-|mažeikiai-m-daukšos-g-17": {
+    "lat": 56.3050956,
+    "lng": 22.3504695,
+    "display_name": "17, M. Daukšos g., Senamiestis, Mažeikiai, Mažeikių seniūnija, Mažeikių rajono savivaldybė, Telšių apskritis, 89234, Lietuva"
+  },
+  "mažeikių-r-sav-|užežerės-k-gardenio-g-39": {
+    "lat": 56.2596823,
+    "lng": 22.2867095,
+    "display_name": "Mažeikių rajono savivaldybė, Telšių apskritis, Lietuva"
+  },
+  "molėtų-r-sav-|molėtai-vilniaus-g-104": {
+    "lat": 55.2173453,
+    "lng": 25.4033091,
+    "display_name": "Baltic petroleum, 104, Vilniaus g., Molėtai, Luokesos seniūnija, Molėtų rajono savivaldybė, Utenos apskritis, 33114, Lietuva"
+  },
+  "akmenės-r-sav-|n-akmenė-v-kudirkos-g-21a": {
+    "lat": 56.3189063,
+    "lng": 22.8852671,
+    "display_name": "21A, V. Kudirkos g., Naujoji Akmenė, Naujosios Akmenės miesto seniūnija, Akmenės rajono savivaldybė, Šiaulių apskritis, 85145, Lietuva"
+  },
+  "pakruojo-r-sav-|pakruojis-statybininkų-g-28": {
+    "lat": 55.9744618,
+    "lng": 23.8689184,
+    "display_name": "Baltic Petroleum, 28, Statybininkų g., Pakruojis, Pakruojo seniūnija, Pakruojo rajono savivaldybė, Šiaulių apskritis, 83182, Lietuva"
+  },
+  "panevėžio-m-sav-|panevėžys-velžio-kelias-74": {
+    "lat": 55.7278079,
+    "lng": 24.3828894,
+    "display_name": "Velžio kelias, Senamiestis, Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36109, Lietuva"
+  },
+  "pasvalio-r-sav-|aukštikalnio-k-mūšos-g-19": {
+    "lat": 56.0706909,
+    "lng": 24.3842838,
+    "display_name": "Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva"
+  },
+  "plungės-r-sav-|plateliai-ž-kalvarijos-g-1a": {
+    "lat": 55.953916,
+    "lng": 21.8335407,
+    "display_name": "Plungės rajono savivaldybė, Telšių apskritis, Lietuva"
+  },
+  "klaipėdos-r-sav-|priekulė-klaipėdos-g-61": {
+    "lat": 55.5618881,
+    "lng": 21.308762,
+    "display_name": "Baltic petroleum, 61, Klaipėdos g., Priekulė, Priekulės seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96342, Lietuva"
+  },
+  "prienų-r-sav-|prienai-vilniaus-g-3a": {
+    "lat": 54.6284747,
+    "lng": 23.9588356,
+    "display_name": "Baltic Petroleum, 3A, Vilniaus g., Prienai, Prienų seniūnija, Prienų rajono savivaldybė, Kauno apskritis, 59115, Lietuva"
+  },
+  "radviliškio-r-sav-|radviliškis-miško-g-64": {
+    "lat": 55.8006377,
+    "lng": 23.5659386,
+    "display_name": "64, Miško g., Radviliškis, Radviliškio miesto seniūnija, Radviliškio rajono savivaldybė, Šiaulių apskritis, 82182, Lietuva"
+  },
+  "radviliškio-r-sav-|radviliškis-šiaulių-g-1a": {
+    "lat": 55.8255852,
+    "lng": 23.523504,
+    "display_name": "Baltic Petroleum, 1A, Šiaulių g., Radviliškis, Radviliškio miesto seniūnija, Radviliškio rajono savivaldybė, Šiaulių apskritis, 82142, Lietuva"
+  },
+  "raseinių-r-sav-|raseiniai-vilniaus-g-30": {
+    "lat": 55.3709621,
+    "lng": 23.1331497,
+    "display_name": "Baltic Petroleum, 30, Vilniaus g., Raseiniai, Raseinių miesto seniūnija, Raseinių rajono savivaldybė, Kauno apskritis, 60183, Lietuva"
+  },
+  "telšių-r-sav-|ožtakių-k-dariaus-ir-girėno-g-77": {
+    "lat": 56.0130975,
+    "lng": 22.1366723,
+    "display_name": "Telšių apskritis, Lietuva"
+  },
+  "trakų-r-sav-|trakai-vilniaus-g-33": {
+    "lat": 54.6273235,
+    "lng": 24.9485509,
+    "display_name": "Baltic Petroleum, 33, Vilniaus g., Trakai, Trakų seniūnija, Trakų rajono savivaldybė, Vilniaus apskritis, 21118, Lietuva"
+  },
+  "ukmergės-r-sav-|ukmergė-kauno-g-49": {
+    "lat": 55.2408639,
+    "lng": 24.7396036,
+    "display_name": "Baltic Petroleum, 49, Kauno g., Ukmergė, Ukmergės miesto seniūnija, Ukmergės rajono savivaldybė, Vilniaus apskritis, 20118, Lietuva"
+  },
+  "utenos-r-sav-|utena-basanavičiaus-g-1b": {
+    "lat": 55.4953295,
+    "lng": 25.5748777,
+    "display_name": "Baltic Petroleum, 1B, J. Basanavičiaus g., Naujamiestis, Utena, Utenos miesto seniūnija, Utenos rajono savivaldybė, Utenos apskritis, 28138, Lietuva"
+  },
+  "varėnos-r-sav-|varėna-čiurlionio-g-63": {
+    "lat": 54.2183476,
+    "lng": 24.5656262,
+    "display_name": "Baltic Petroleum, 63, M. K. Čiurlionio g., Varėna, Varėnos seniūnija, Varėnos rajono savivaldybė, Alytaus apskritis, 65219, Lietuva"
+  },
+  "varėnos-r-sav-|merkinė-vilniaus-g-87": {
+    "lat": 54.1691323,
+    "lng": 24.2077437,
+    "display_name": "Baltic Petroleum, 87, Vilniaus g., Merkinė, Merkinės seniūnija, Varėnos rajono savivaldybė, Alytaus apskritis, 65333, Lietuva"
+  },
+  "varėnos-r-sav-|senoji-varėna-vilniaus-g-6a": {
+    "lat": 54.2564922,
+    "lng": 24.5470516,
+    "display_name": "Baltic Petroleum, 6A, Vilniaus g., Senoji Varėna, Varėnos seniūnija, Varėnos rajono savivaldybė, Alytaus apskritis, 65489, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-gerosios-vilties-g-33": {
+    "lat": 54.6667672,
+    "lng": 25.2507937,
+    "display_name": "Baltic Petroleum, 33, Gerosios Vilties g., Vilkpėdės seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 03160, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-metalo-g-4b": {
+    "lat": 54.6404777,
+    "lng": 25.2674802,
+    "display_name": "Baltic Petroleum, 4B, Metalo g., Kirtimai, Naujininkų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 02189, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-molėtų-pl-27a": {
+    "lat": 54.7676771,
+    "lng": 25.2725427,
+    "display_name": "Baltic Petroleum, 27A, Molėtų pl., Skersinė, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08409, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-rinktinės-g-59": {
+    "lat": 54.7028044,
+    "lng": 25.2882429,
+    "display_name": "Baltic Petroleum, 59, Rinktinės g., Tuskulėnai, Žirmūnų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 09207, Lietuva"
+  },
+  "šakių-r-sav-|šakiai-sodų-g-1": {
+    "lat": 54.9453642,
+    "lng": 23.0457682,
+    "display_name": "Baltic Petroleum, 1, Sodų g., Šakiai, Šakių seniūnija, Šakių rajono savivaldybė, Marijampolės apskritis, 71136, Lietuva"
+  },
+  "šalčininkų-r-sav-|šalčininkai-vilniaus-g-5a": {
+    "lat": 54.3179349,
+    "lng": 25.3815802,
+    "display_name": "Baltic Petroleum, 5A, Vilniaus g., Šalčininkai, Šalčininkų seniūnija, Šalčininkų rajono savivaldybė, Vilniaus apskritis, 17105, Lietuva"
+  },
+  "šilalės-r-sav-|šilalė-rytinio-kelio-g-2": {
+    "lat": 55.4900659,
+    "lng": 22.2001901,
+    "display_name": "Viada, 2, Rytinio Kelio g., Šilalė, Šilalės miesto seniūnija, Šilalės rajono savivaldybė, Tauragės apskritis, 75122, Lietuva"
+  },
+  "šilutės-r-sav-|šilutė-klaipėdos-g-4a": {
+    "lat": 55.3528865,
+    "lng": 21.4632498,
+    "display_name": "Baltic Petroleum, 4A, Klaipėdos g., Šilutė, Šilutės seniūnija, Šilutės rajono savivaldybė, Klaipėdos apskritis, 99129, Lietuva"
+  },
+  "širvintų-r-sav-|širvintos-musninkų-g-21": {
+    "lat": 55.0322671,
+    "lng": 24.9671225,
+    "display_name": "Baltic Petroleum, 21, Musninkų g., Širvintos, Širvintų seniūnija, Širvintų rajono savivaldybė, Vilniaus apskritis, 19125, Lietuva"
+  },
+  "rietavo-sav-|rietavas-dariaus-ir-girėno-g-19": {
+    "lat": 55.7194009,
+    "lng": 21.9285021,
+    "display_name": "Baltic Petroleum, 19, Dariaus ir Girėno g., Rietavas, Rietavo miesto seniūnija, Rietavo savivaldybė, Telšių apskritis, 90316, Lietuva"
+  },
+  "jonavos-r-sav-|jonava-žemaitės-g-1": {
+    "lat": 55.0823811,
+    "lng": 24.2709727,
+    "display_name": "Baltic Petroleum, 1, Žemaitės g., Jonava, Jonavos seniūnija, Jonavos rajono savivaldybė, Kauno apskritis, 55134, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-brazdžionio-g-2": {
+    "lat": 54.6139256,
+    "lng": 25.3090004,
+    "display_name": "Baltic Petroleum, 2, B. Brazdžionio g., Basiukai, Naujininkų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 13242, Lietuva"
+  },
+  "šiaulių-m-sav-|šiauliai-kupiškio-g-4": {
+    "lat": 55.9577452,
+    "lng": 23.3160647,
+    "display_name": "Naftos dujos, 4, Kupiškio g., Gubernija, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 76136, Lietuva"
+  },
+  "joniškio-r-sav-|joniškis-vilniaus-g-72": {
+    "lat": 56.2234129,
+    "lng": 23.5974166,
+    "display_name": "72, Vilniaus g., Joniškis, Joniškio seniūnija, Joniškio rajono savivaldybė, Šiaulių apskritis, 84166, Lietuva"
+  },
+  "vilniaus-r-sav-|grigaičiai-pavilnės-g": {
+    "lat": 54.6806698,
+    "lng": 25.4115586,
+    "display_name": "Pavilnės g., Naujosios Vilnios seniūnija, Grigaičiai, Šatrininkų seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 11016, Lietuva"
+  },
+  "kauno-r-sav-|ringaudų-k-gėlių-g-1a": {
+    "lat": 54.8894587,
+    "lng": 23.8046471,
+    "display_name": "Baltic Petroleum, 1A, Gėlių g., Ringaudai, Ringaudų seniūnija, Kauno rajono savivaldybė, Kauno apskritis, 53333, Lietuva"
+  },
+  "zarasų-r-sav-|sarakiškių-k-vytauto-g-61": {
+    "lat": 55.7303771,
+    "lng": 26.0387936,
+    "display_name": "Zarasų rajono savivaldybė, Utenos apskritis, Lietuva"
+  },
+  "klaipėdos-m-sav-|klaipėda-tilžės-g-90": {
+    "lat": 55.7003233,
+    "lng": 21.1991789,
+    "display_name": "90, Tilžės g., Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 91101, Lietuva"
+  },
+  "jurbarko-r-sav-|klišių-k-pievų-g-2": {
+    "lat": 55.2176268,
+    "lng": 22.9652342,
+    "display_name": "Jurbarko rajono savivaldybė, Tauragės apskritis, Lietuva"
+  },
+  "kupiškio-r-sav-|noriūnų-k-parko-g-3a": {
+    "lat": 55.7964475,
+    "lng": 24.8888306,
+    "display_name": "Baltic Petroleum, 3A, Parko g., Noriūnai, Noriūnų seniūnija, Kupiškio rajono savivaldybė, Panevėžio apskritis, 40395, Lietuva"
+  },
+  "zarasų-r-sav-|padustėlis-v-striogos-g-4a": {
+    "lat": 55.7303771,
+    "lng": 26.0387936,
+    "display_name": "Zarasų rajono savivaldybė, Utenos apskritis, Lietuva"
+  },
+  "marijampolės-sav-|plytinės-g-2-puskelnių-k": {
+    "lat": 54.6792304,
+    "lng": 23.2004406,
+    "display_name": "Marijampolės apskritis, Lietuva"
+  },
+  "marijampolės-sav-|pietarių-k-kauno-g-164": {
+    "lat": 54.6792304,
+    "lng": 23.2004406,
+    "display_name": "Marijampolės apskritis, Lietuva"
+  },
+  "marijampolės-sav-|pasiekų-k": {
+    "lat": 54.6792304,
+    "lng": 23.2004406,
+    "display_name": "Marijampolės apskritis, Lietuva"
+  },
+  "vilniaus-r-sav-|vilkaraisčio-k": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-kalvarijų-g-161a": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-s-batoro-g-15": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
+  },
+  "vilniaus-r-sav-|užubalių-k-senasis-ukmergės-kelias-4": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
+  },
+  "tauragės-r-sav-|taurų-k-tilžės-pl-36": {
+    "lat": 55.3564378,
+    "lng": 22.405222,
+    "display_name": "Tauragės apskritis, Lietuva"
+  },
+  "skuodo-r-sav-|skuodas-vytauto-g-22": {
+    "lat": 56.2594373,
+    "lng": 21.5301055,
+    "display_name": "Baltic Petroleum, 22, Vytauto g., Skuodas, Skuodo miesto seniūnija, Skuodo rajono savivaldybė, Klaipėdos apskritis, 98123, Lietuva"
+  },
+  "raseinių-r-sav-|girkalnio-k-žemaičių-g-39": {
+    "lat": 55.3183118,
+    "lng": 23.2107843,
+    "display_name": "39, Žemaičių g., Girkalnis, Girkalnio seniūnija, Raseinių rajono savivaldybė, Kauno apskritis, 60314, Lietuva"
+  },
+  "mažeikių-r-sav-|tirkšliai-laukų-g-10": {
+    "lat": 56.2625551,
+    "lng": 22.3104529,
+    "display_name": "10, Laukų g., Tirkšliai, Tirkšlių seniūnija, Mažeikių rajono savivaldybė, Telšių apskritis, 89328, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-zujūnų-g-2a": {
+    "lat": 54.7111087,
+    "lng": 25.161795,
+    "display_name": "2A, Zujūnų g., Padekaniškės, Pilaitės seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 06282, Lietuva"
+  },
+  "klaipėdos-r-sav-|gargždai-dariaus-ir-girėno-g-10": {
+    "lat": 55.7074247,
+    "lng": 21.380302,
+    "display_name": "10, Dariaus ir Girėno g., Gargždai, Gargždų seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96181, Lietuva"
+  },
+  "kauno-r-sav-|baltijos-g-1-mastaičių-k": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
   }
 }
