@@ -128,6 +128,63 @@ def parse_address_parts(address: str, municipality: str = "") -> tuple[str, str]
     return "", clean
 
 
+def genitive_to_nominative(name: str) -> list[str]:
+    """Convert Lithuanian genitive village name to possible nominative forms.
+
+    Village names in data are genitive (kilmininkas), but OSM/Nominatim uses
+    nominative (vardininkas). Returns multiple candidates since Lithuanian
+    declension is ambiguous.
+
+    Examples:
+      "Zujūnų" -> ["Zujūnai"]           (masc plural: -ų -> -ai)
+      "Mastaičių" -> ["Mastaičiai"]      (masc plural: -ių -> -iai)
+      "Giraitės" -> ["Giraitė"]          (fem singular: -ės -> -ė)
+      "Bukiškio" -> ["Bukiškis"]         (masc singular: -io -> -is)
+      "Slabados" -> ["Slabada"]          (fem singular: -os -> -a)
+      "Gavaltuvos" -> ["Gavaltuvа"]      (fem singular: -os -> -a)
+    """
+    candidates = []
+
+    # Handle multi-word names (e.g. "Didžiosios Riešės")
+    # Apply conversion to the last word
+    words = name.split()
+    if len(words) > 1:
+        last = words[-1]
+        prefix_words = words[:-1]
+        for form in genitive_to_nominative(last):
+            # Also try converting prefix words
+            candidates.append(f"{' '.join(prefix_words)} {form}")
+        # Try converting each prefix word too
+        for pw in prefix_words:
+            for form in genitive_to_nominative(pw):
+                candidates.append(f"{form} {last}")
+        return candidates
+
+    # Single word conversions (ordered by frequency for village names)
+    if name.endswith("ių"):
+        candidates.append(name[:-2] + "iai")   # Mastaičių -> Mastaičiai
+    if name.endswith("ų"):
+        candidates.append(name[:-1] + "ai")    # Zujūnų -> Zujūnai
+        candidates.append(name[:-1] + "os")    # rare: -ų -> -os
+    if name.endswith("ės"):
+        candidates.append(name[:-2] + "ė")     # Giraitės -> Giraitė
+    if name.endswith("io"):
+        candidates.append(name[:-2] + "is")    # Bukiškio -> Bukiškis
+    if name.endswith("os"):
+        candidates.append(name[:-2] + "a")     # Slabados -> Slabada
+        candidates.append(name[:-2] + "ė")     # Nausodės... no, this is -ės
+    if name.endswith("aus"):
+        candidates.append(name[:-3] + "us")    # rare: -aus -> -us
+    if name.endswith("ens"):
+        candidates.append(name[:-3] + "uo")    # rare
+
+    # Always include the original genitive form as fallback
+    if name not in candidates:
+        candidates.append(name)
+
+    return candidates
+
+
 def extract_village_name(address: str) -> str | None:
     """Extract village/settlement name from address.
 
@@ -202,22 +259,29 @@ def geocode_address(address: str, municipality: str, company: str = "") -> dict 
         return make_result(results[0])
     time.sleep(RATE_LIMIT_SECONDS)
 
-    # Strategy 4: Village name + company (e.g. "Circle K Mastaičiai")
-    if village and company:
-        results = nominatim_search(f"{company} {village}, Lithuania", headers)
-        if results and is_specific(results[0]):
-            print(f"  Resolved via village+company: {company} {village}")
-            return make_result(results[0], review=True)
-        time.sleep(RATE_LIMIT_SECONDS)
-
-    # Strategy 5: Just the village/settlement name
+    # Strategy 4: Village name in nominative case + company
+    # Lithuanian data uses genitive ("Zujūnų k.") but OSM has nominative ("Zujūnai")
     if village:
-        results = nominatim_search(f"{village}, Lithuania", headers)
-        if results:
-            r = results[0]
-            print(f"  Resolved via village name: {village}")
-            return make_result(r, review=True)
-        time.sleep(RATE_LIMIT_SECONDS)
+        nominative_forms = genitive_to_nominative(village)
+        all_forms = nominative_forms  # nominative first, genitive included as fallback
+
+        # Try village + company first (most specific)
+        if company:
+            for form in all_forms:
+                results = nominatim_search(f"{company} {form}, Lithuania", headers)
+                if results and is_specific(results[0]):
+                    print(f"  Resolved via village+company: {company} {form}")
+                    return make_result(results[0], review=True)
+                time.sleep(RATE_LIMIT_SECONDS)
+
+        # Then just village name
+        for form in all_forms:
+            results = nominatim_search(f"{form}, Lithuania", headers)
+            if results:
+                r = results[0]
+                print(f"  Resolved via village name: {form}")
+                return make_result(r, review=True)
+            time.sleep(RATE_LIMIT_SECONDS)
 
     # Strategy 6: City name from address (for non-village addresses like "Kaunas, Chemijos g. 6")
     if city and city != clean_muni:
