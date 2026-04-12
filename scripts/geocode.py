@@ -29,14 +29,17 @@ def save_geocache(geocache: dict, path: Path):
         json.dump(geocache, f, ensure_ascii=False, indent=2)
 
 
-def nominatim_search(query: str, headers: dict) -> list | None:
+def nominatim_search(query: str, headers: dict, structured: dict = None) -> list | None:
     """Single Nominatim request with 429 retry logic."""
     params = {
         "format": "json",
         "limit": 1,
         "countrycodes": "lt",
-        "q": query,
     }
+    if structured:
+        params.update(structured)
+    else:
+        params["q"] = query
 
     for attempt in range(MAX_RETRIES):
         try:
@@ -68,15 +71,61 @@ def nominatim_search(query: str, headers: dict) -> list | None:
 
 
 def clean_for_nominatim(text: str) -> str:
-    """Strip Lithuanian suffixes that confuse Nominatim (k., r. sav., m. sav., etc)."""
+    """Clean Lithuanian address suffixes for Nominatim.
+
+    - "k." / "km." — stripped (village indicator). The village name is used as
+      the city component in structured search to avoid street-name confusion.
+    - "r. sav." / "m. sav." / "sav." — stripped from municipality names
+    """
     import re
-    # "Baisogalos k." -> "Baisogala" (approximate: just drop " k." suffix)
-    text = re.sub(r"\s+k\.\s*,", ",", text)       # "Foo k., Bar" -> "Foo, Bar"
-    text = re.sub(r"\s+k\.(\s*)$", r"\1", text)    # trailing " k."
-    # "Radviliškio r. sav." -> "Radviliškis" — too complex for regex, just strip suffix
+    text = re.sub(r"\s+k\.\s*,", ",", text)
+    text = re.sub(r"\s+k\.(\s*)$", r"\1", text)
+    text = re.sub(r"\s+km\.\s*,", ",", text)
+    text = re.sub(r"\s+km\.(\s*)$", r"\1", text)
+    # Strip municipality suffixes
     text = re.sub(r"\s+[rm]\.\s*sav\.\s*$", "", text)
     text = re.sub(r"\s+sav\.\s*$", "", text)
     return text.strip()
+
+
+def parse_address_parts(address: str, municipality: str = "") -> tuple[str, str]:
+    """Split address into (street, city) parts for structured Nominatim search.
+
+    Handles formats like:
+      "Palijoniškio g. 1, Utena" -> ("Palijoniškio g. 1", "Utena")
+      "Vilnius, Kalvarijų g. 161A" -> ("Kalvarijų g. 161A", "Vilnius")
+      "Veiverių k., Kauno g. 1" -> ("Kauno g. 1", "Veiverių")
+      "Pietarių k. Kauno g. 164" -> ("Kauno g. 164", "Pietarių")
+    """
+    clean = clean_for_nominatim(address)
+    clean_muni = clean_for_nominatim(municipality) if municipality else ""
+    parts = [p.strip() for p in clean.split(",") if p.strip()]
+
+    street_indicators = ["g.", "pr.", "pl.", "kelias", "kelio", "al."]
+
+    if len(parts) >= 2:
+        # Find which part is the street and which is the city/village
+        street_parts = []
+        city_parts = []
+        for part in parts:
+            if any(ind in part.lower() for ind in street_indicators):
+                street_parts.append(part)
+            else:
+                city_parts.append(part)
+
+        street = " ".join(street_parts) if street_parts else ""
+        city = city_parts[0] if city_parts else ""
+
+        # If we found a street but no city, use municipality
+        if street and not city:
+            city = clean_muni
+
+        return street, city
+
+    # Single part — might be just a village name or just a street
+    if any(ind in clean.lower() for ind in street_indicators):
+        return clean, clean_muni
+    return "", clean
 
 
 def geocode_address(address: str, municipality: str) -> dict | None:
@@ -85,50 +134,63 @@ def geocode_address(address: str, municipality: str) -> dict | None:
 
     clean_addr = clean_for_nominatim(address)
     clean_muni = clean_for_nominatim(municipality)
+    street, city = parse_address_parts(address, municipality)
 
-    # Address field typically includes city (e.g. "Palijoniškio g. 1, Utena")
-    # For village addresses like "Beržų g. 19, Baisogalos k." we clean the "k." suffix
-    queries = [
-        f"{clean_addr}, Lithuania",
-        f"{clean_addr}, {clean_muni}, Lithuania",
-        f"{clean_muni}, Lithuania",
-    ]
-
-    # Vague result types that indicate city/region level, not a specific address
     VAGUE_TYPES = {"city", "town", "village", "county", "state", "administrative", "municipality"}
 
-    for query in queries:
-        results = nominatim_search(query, headers)
+    def is_specific(result):
+        rtype = result.get("type", "")
+        rclass = result.get("class", "")
+        return rtype not in VAGUE_TYPES and rclass != "boundary"
 
-        if results:
+    # Strategy 1: Structured search (most reliable)
+    if street and city:
+        results = nominatim_search(None, headers, structured={
+            "street": street,
+            "city": city,
+            "country": "Lithuania",
+        })
+        if results and is_specific(results[0]):
             r = results[0]
-            rtype = r.get("type", "")
-            rclass = r.get("class", "")
-
-            # Skip vague results (city/region centroid) unless it's the last fallback
-            if rtype in VAGUE_TYPES or rclass == "boundary":
-                print(f"  Skipping vague result ({rclass}/{rtype}): {r.get('display_name', '')[:60]}")
-                time.sleep(RATE_LIMIT_SECONDS)
-                continue
-
             return {
                 "lat": float(r["lat"]),
                 "lng": float(r["lon"]),
                 "display_name": r.get("display_name", ""),
             }
-
         time.sleep(RATE_LIMIT_SECONDS)
 
-    # Last resort: accept even a vague result (municipality centroid) over nothing
-    for query in queries:
-        results = nominatim_search(query, headers)
-        if results:
-            r = results[0]
-            return {
-                "lat": float(r["lat"]),
-                "lng": float(r["lon"]),
-                "display_name": r.get("display_name", ""),
-            }
+    # Strategy 2: Free text with just the address
+    results = nominatim_search(f"{clean_addr}, Lithuania", headers)
+    if results and is_specific(results[0]):
+        r = results[0]
+        return {
+            "lat": float(r["lat"]),
+            "lng": float(r["lon"]),
+            "display_name": r.get("display_name", ""),
+        }
+    time.sleep(RATE_LIMIT_SECONDS)
+
+    # Strategy 3: Free text with municipality added
+    results = nominatim_search(f"{clean_addr}, {clean_muni}, Lithuania", headers)
+    if results and is_specific(results[0]):
+        r = results[0]
+        return {
+            "lat": float(r["lat"]),
+            "lng": float(r["lon"]),
+            "display_name": r.get("display_name", ""),
+        }
+    time.sleep(RATE_LIMIT_SECONDS)
+
+    # Last resort: municipality centroid
+    results = nominatim_search(f"{clean_muni}, Lithuania", headers)
+    if results:
+        r = results[0]
+        print(f"  Using municipality fallback: {r.get('display_name', '')[:60]}")
+        return {
+            "lat": float(r["lat"]),
+            "lng": float(r["lon"]),
+            "display_name": r.get("display_name", ""),
+        }
         time.sleep(RATE_LIMIT_SECONDS)
 
     return None
