@@ -115,9 +115,10 @@
     "display_name": "4, Nuklono g., Naujieji Dainai, Gytariai, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 78365, Lietuva"
   },
   "šiaulių-m-sav-|tilžės-g-223-šiauliai": {
-    "lat": 55.9412708,
-    "lng": 23.3262732,
-    "display_name": "223, Tilžės g., Kalniukas, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 76200, Lietuva"
+    "lat": 55.9406196,
+    "lng": 23.3262751,
+    "display_name": "223, Tilžės g., Kalniukas, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 76200, Lietuva",
+    "manual": true
   },
   "šiaulių-m-sav-|v-bielskio-g-47a-šiauliai": {
     "lat": 55.9563473,
@@ -325,9 +326,10 @@
     "display_name": "Circle K „Kuršėnai“, 1, Plento g., Kuršėnai, Kuršėnų kaimiškoji seniūnija, Šiaulių rajono savivaldybė, Šiaulių apskritis, 81115, Lietuva"
   },
   "klaipėdos-m-sav-|minijos-g-90-klaipėda": {
-    "lat": 55.6864932,
-    "lng": 21.145677,
-    "display_name": "Švaros broliai, 90, Minijos g., Gintaro pelkė, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 93234, Lietuva"
+    "lat": 55.6851005,
+    "lng": 21.147092,
+    "display_name": "Švaros broliai, 90, Minijos g., Gintaro pelkė, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 93234, Lietuva",
+    "manual": true
   },
   "klaipėdos-m-sav-|taikos-pr-61b-klaipėda": {
     "lat": 55.692392,
@@ -1020,9 +1022,10 @@
     "display_name": "Neste „Taikos“, 60, Taikos pr., Arena, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 93225, Lietuva"
   },
   "klaipėdos-m-sav-|minijos-g-119-klaipėda": {
-    "lat": 55.6847139,
-    "lng": 21.1505231,
-    "display_name": "Green Park Hotel Klaipėda, 119, Minijos g., Žvejų sodyba, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 93231, Lietuva"
+    "lat": 55.6843872,
+    "lng": 21.1496218,
+    "display_name": "Green Park Hotel Klaipėda, 119, Minijos g., Žvejų sodyba, Rumpiškė, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 93231, Lietuva",
+    "manual": true
   },
   "klaipėdos-m-sav-|artojo-g-2-klaipėda": {
     "lat": 55.7168107,
@@ -1072,7 +1075,8 @@
   "panevėžio-m-sav-|margirio-g-1b-panevėžys": {
     "lat": 55.7193962,
     "lng": 24.3488668,
-    "display_name": "Neste „Nemuno“, 1B, Margirio g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36250, Lietuva"
+    "display_name": "Neste „Nemuno“, 1B, Margirio g., Panevėžys, Panevėžio miesto savivaldybė, Panevėžio apskritis, 36250, Lietuva",
+    "manual": true
   },
   "panevėžio-m-sav-|klaipėdos-g-144b-panevėžys": {
     "lat": 55.73063,
@@ -1715,9 +1719,10 @@
     "display_name": "Saurida, 373A, Vilniaus g., Užkirkis, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 76326, Lietuva"
   },
   "jurbarko-r-sav-|pašvenčio-km": {
-    "lat": 55.0839161,
-    "lng": 22.6069418,
-    "display_name": "Pašvenčio g., Pašventys, Jurbarkų seniūnija, Jurbarko rajono savivaldybė, Tauragės apskritis, 74218, Lietuva"
+    "lat": 55.0821829,
+    "lng": 22.6109358,
+    "display_name": "Pašvenčio g., Pašventys, Jurbarkų seniūnija, Jurbarko rajono savivaldybė, Tauragės apskritis, 74218, Lietuva",
+    "manual": true
   },
   "lazdijų-r-sav-|panarvės-km": {
     "lat": 54.2507018,
@@ -2796,9 +2801,10 @@
     "display_name": "Viada, 26A, Kauno g., Vievis, Vievio seniūnija, Elektrėnų savivaldybė, Vilniaus apskritis, 21376, Lietuva"
   },
   "vilniaus-r-sav-|avižienių-k-ožiarūčių-g-1a": {
-    "lat": 54.7641105,
-    "lng": 25.1972513,
-    "display_name": "1A, Ožiarūčių g., Avižieniai, Avižienių seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 14198, Lietuva"
+    "lat": 54.7640463,
+    "lng": 25.1966902,
+    "display_name": "1A, Ožiarūčių g., Avižieniai, Avižienių seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 14198, Lietuva",
+    "manual": true
   },
   "vilniaus-m-sav-|vilnius-ateities-g-17b": {
     "lat": 54.7357486,
@@ -3052,7 +3058,8 @@
     "lng": 25.8521638,
     "display_name": "OSM: baltic petroleum Vytauto Striogos g. 4A",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-r-sav-|baltijos-g-1-mastaičių-k": {
     "lat": 55.0786111,
@@ -3078,14 +3085,16 @@
     "lng": 24.3389325,
     "display_name": "OSM: circle k „nemuno“ Klaipėdos g. 92A",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-m-sav-|vakarinis-aplinkkelis-10-kaunas": {
     "lat": 54.6710312,
     "lng": 25.1921158,
     "display_name": "OSM: circle k 1-2-3 Oslo g. 12",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "šilalės-r-sav-|dvaro-g-3-košių-ii-k": {
     "lat": 55.5252224,
@@ -3098,14 +3107,16 @@
     "lng": 21.2630646,
     "display_name": "OSM: circle k „jonušai“ Vilniaus pl. 21",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "trakų-r-sav-|didžiulio-g-5-dėdeliškių-k": {
     "lat": 54.6864295,
     "lng": 25.0540297,
     "display_name": "OSM: circle k grigiškės Didžiulio g. 5",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "lazdijų-r-sav-|nekrūnų-k-1": {
     "lat": 54.1607523,
@@ -3124,28 +3135,32 @@
     "lng": 25.2654451,
     "display_name": "OSM: circle k „baltupiai“ Baltupio g. 10",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kalvarijos-sav-|muitinės-g-5b-brazavo-k": {
     "lat": 54.3681514,
     "lng": 23.1837663,
     "display_name": "OSM: circle k Muitinės g. 5B",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-m-sav-|tvirtovės-alėja-33a-kaunas": {
     "lat": 54.9015799,
     "lng": 23.8950211,
     "display_name": "OSM: circle k „jonavos“ Jonavos g. 38",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "vilniaus-r-sav-|molėtų-g-15-didžiosios-riešės-k": {
     "lat": 54.6950788,
     "lng": 25.298113,
     "display_name": "OSM: circle k „žirmūnų tiltas“ Sporto g. 16A",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "šakių-r-sav-|mozūriškiai-mozūriškių-10": {
     "lat": 54.9557378,
@@ -3158,7 +3173,8 @@
     "lng": 22.1705378,
     "display_name": "OSM: jozita Pietinio Kelio g. 9",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "vilniaus-m-sav-|vilnius-baltosios-vokės-g-35": {
     "lat": 54.6870458,
@@ -3171,14 +3187,16 @@
     "lng": 23.9175793,
     "display_name": "OSM: jozita Jonavos g. 51",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|klipščių-k-šilelių-g-1": {
     "lat": 55.7514506,
     "lng": 21.1732375,
     "display_name": "OSM: jozita Šilelių g. 1",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|-trepkalnių-k-mokyklos-g-2": {
     "lat": 55.7827168,
@@ -3205,10 +3223,11 @@
     "review": true
   },
   "telšių-r-sav-|telšių-g-2-b-rainių-k": {
-    "lat": 55.9539961,
-    "lng": 22.3011056,
+    "lat": 55.9565382,
+    "lng": 22.3011531,
     "display_name": "Rainių TP, Rainiai, Viešvėnų seniūnija, Telšių rajono savivaldybė, Telšių apskritis, Lietuva",
-    "review": true
+    "review": true,
+    "manual": true
   },
   "akmenės-r-sav-|plento-g-2-ventos-m": {
     "lat": 55.9386544,
@@ -3217,10 +3236,11 @@
     "review": true
   },
   "akmenės-r-sav-|skabeikių-k-4": {
-    "lat": 56.1841249,
-    "lng": 22.7693985,
+    "lat": 56.1599576,
+    "lng": 22.7609376,
     "display_name": "Skabeikių miškas, Mažūnaičiai, Papilės seniūnija, Akmenės rajono savivaldybė, Šiaulių apskritis, Lietuva",
-    "review": true
+    "review": true,
+    "manual": true
   },
   "vilniaus-r-sav-|kalnuotės-1-k": {
     "lat": 54.682847,
@@ -3229,10 +3249,11 @@
     "review": true
   },
   "telšių-r-sav-|beržų-g-24-drąsiųjų-7-tryškiai": {
-    "lat": 56.0589416,
-    "lng": 22.5786116,
+    "lat": 56.0620095,
+    "lng": 22.5824343,
     "display_name": "Tryškiai, Tryškių seniūnija, Telšių rajono savivaldybė, Telšių apskritis, 88152, Lietuva",
-    "review": true
+    "review": true,
+    "manual": true
   },
   "raseinių-r-sav-|šilo-g-1-ylių-k": {
     "lat": 55.3764559,
@@ -3241,10 +3262,11 @@
     "review": true
   },
   "raseinių-r-sav-|pievų-g-17-slabados-k": {
-    "lat": 55.3863632,
-    "lng": 23.0967498,
+    "lat": 55.3886298,
+    "lng": 23.125193,
     "display_name": "Slabados g., Raseiniai, Raseinių miesto seniūnija, Raseinių rajono savivaldybė, Kauno apskritis, 60137, Lietuva",
-    "review": true
+    "review": true,
+    "manual": true
   },
   "kauno-r-sav-|vijoklių-g-1c-ramučių-k": {
     "lat": 56.3189202,
@@ -3257,42 +3279,48 @@
     "lng": 23.8738224,
     "display_name": "OSM: neste „domeikavos“ Vakarų g. 14",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-m-sav-|vakarinis-aplinkkelis-18-kaunas": {
     "lat": 54.6808398,
     "lng": 25.2076283,
     "display_name": "OSM: neste „architektų“ Architektų g. 130",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|vilniaus-pl-9-jakų-k": {
     "lat": 55.7066049,
     "lng": 21.2385464,
     "display_name": "OSM: neste „jakų“ ",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|sendvario-g-2-sudmantų-k": {
     "lat": 55.7060737,
     "lng": 21.2025927,
     "display_name": "OSM: neste „sudmantų“ Sendvario g. 2",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "pasvalio-r-sav-|ąžuolpamūšio-g-1a-raubonių-k": {
     "lat": 56.1152757,
     "lng": 24.4706809,
     "display_name": "OSM: neste „pasvalio r.“ Ąžuolpamūšio g. 1A",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "panevėžio-r-sav-|panevėžio-aplinkl-7-šilagalio-k": {
     "lat": 55.7193962,
     "lng": 24.3488668,
     "display_name": "OSM: neste „nemuno“ Margirio g. 1B",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "panevėžio-r-sav-|panevėžio-aplinkl-22-šilagalio-k": {
     "lat": 55.7193962,
@@ -3306,14 +3334,16 @@
     "lng": 25.271346,
     "display_name": "OSM: neste „santariškių“ Molėtų pl. 8",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kalvarijos-sav-|europos-g-6-n-valios-k": {
     "lat": 54.6242546,
     "lng": 25.1117098,
     "display_name": "OSM: neste „trakų vokės“ J. Tiškevičiaus g. 19",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "šilalės-r-sav-|katyčių-k-šilalės-r": {
     "lat": 55.2651603,
@@ -3332,20 +3362,23 @@
     "lng": 22.2402294,
     "display_name": "OSM: neste Šiaulių pl. 1A",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "prienų-r-sav-|alytaus-g-2-verbyliškių-k": {
-    "lat": 54.6334424,
-    "lng": 24.2204708,
+    "lat": 54.578844,
+    "lng": 24.1706387,
     "display_name": "Prienų rajono savivaldybė, Kauno apskritis, Lietuva",
-    "review": true
+    "review": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|vilniaus-pl-13-jakų-k": {
     "lat": 55.7078112,
     "lng": 21.2457385,
     "display_name": "OSM: orlen Vilniaus pl. 13",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "raseinių-r-sav-|pikelių-k-6": {
     "lat": 56.4183967,
@@ -3364,14 +3397,16 @@
     "lng": 24.3031779,
     "display_name": "OSM: orlen Klaipėdos g. 162D",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|šv-kristoforo-g-4-dituvos-k": {
     "lat": 55.581651,
     "lng": 21.2853356,
     "display_name": "OSM: trevena Šv. Kristoforo g. 4",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|veiviržėnų-g-29-pyktiškės-k": {
     "lat": 55.7827168,
@@ -3384,7 +3419,8 @@
     "lng": 25.2584607,
     "display_name": "OSM: viada Ateities g. 17B",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-r-sav-|giraitės-k-automagistralės-g-4": {
     "lat": 54.2733333,
@@ -3397,7 +3433,8 @@
     "lng": 24.0131235,
     "display_name": "OSM: viada Didžioji g. 84",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-r-sav-|kampiškių-k-baltijos-g-41": {
     "lat": 54.8259609,
@@ -3410,48 +3447,55 @@
     "lng": 23.8668279,
     "display_name": "OSM: viada Verslo g. 13A",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|sudmantų-k-vilniaus-pl-6": {
     "lat": 55.7044393,
     "lng": 21.2216132,
     "display_name": "OSM: viada Vilniaus pl. 6",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "panevėžio-r-sav-|šilagalio-k-panevėžio-aplinkl-5": {
     "lat": 55.7143963,
     "lng": 24.3354086,
     "display_name": "OSM: viada Navadolio g. 29",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "panevėžio-r-sav-|tičkūnų-k-tičkūnų-g-31": {
     "lat": 55.7788418,
     "lng": 24.3648008,
     "display_name": "Viada, 31, Tičkūnų g., Tičkūnai, Panevėžio seniūnija, Panevėžio rajono savivaldybė, Panevėžio apskritis, 38410, Lietuva",
-    "review": true
+    "review": true,
+    "manual": true
   },
   "pasvalio-r-sav-|brazdigalos-k-1": {
     "lat": 56.0421867,
     "lng": 24.3781981,
     "display_name": "OSM: viada 1",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "trakų-r-sav-|aukštųjų-semeniukų-k-logistikos-g-9": {
     "lat": 54.7017104,
     "lng": 25.009811,
     "display_name": "OSM: viada Logistikos g. 9",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "ukmergės-r-sav-|šventupės-k-beržų-g-13": {
     "lat": 54.9213912,
     "lng": 23.8105362,
     "display_name": "OSM: viada Raudondvario pl. 288",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "zarasų-r-sav-|juodalaukių-k-2": {
     "lat": 55.7303771,
@@ -3470,20 +3514,23 @@
     "lng": 23.9930898,
     "display_name": "OSM: skulas Kalninės g. 5",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-r-sav-|virbališkių-k-verslo-g-2": {
     "lat": 54.9025695,
     "lng": 23.7628337,
     "display_name": "OSM: skulas Verslo g. 2",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "pasvalio-r-sav-|liepų-g-4-škilinpamūšio-k": {
-    "lat": 56.2663447,
-    "lng": 24.3669048,
+    "lat": 56.2671627,
+    "lng": 24.3706586,
     "display_name": "Škilinpamūšio dvaro sodybos parkas, Gniaužiai, Saločių seniūnija, Pasvalio rajono savivaldybė, Panevėžio apskritis, Lietuva",
-    "review": true
+    "review": true,
+    "manual": true
   },
   "pasvalio-r-sav-|pasienio-g-10-škilinpamūšio-k": {
     "lat": 56.0706909,
@@ -3514,7 +3561,8 @@
     "lng": 21.147092,
     "display_name": "OSM: stateta ",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-r-sav-|erdvės-g-78-ramučių-k": {
     "lat": 56.3189202,
@@ -3527,28 +3575,32 @@
     "lng": 24.4394187,
     "display_name": "OSM: stateta ",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "vilniaus-r-sav-|bukiškio-k-ukmergės-g-437": {
     "lat": 54.753617,
     "lng": 25.211747,
     "display_name": "OSM: emsi Ukmergės g. 437",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-r-sav-|ilgakiemio-k-kauno-g-25": {
     "lat": 54.8851506,
     "lng": 24.0060133,
     "display_name": "OSM: emsi T. Masiulio g. 16C",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|durpyno-63-jonušų-k": {
     "lat": 55.7117951,
     "lng": 21.2650466,
     "display_name": "OSM: emsi Durpyno g. 63",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "klaipėdos-r-sav-|medelyno-g-126-kalotės-k": {
     "lat": 55.9623416,
@@ -3566,7 +3618,8 @@
     "lat": 54.8732412,
     "lng": 25.0734568,
     "display_name": "Emsi, Vievis — Maišiagala — Nemenčinė, Maišiagala, Maišiagalos seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 14242, Lietuva",
-    "review": true
+    "review": true,
+    "manual": true
   },
   "kauno-r-sav-|marijampolės-g-58-mastaičių-k": {
     "lat": 55.0786111,
@@ -3579,7 +3632,8 @@
     "lng": 25.3057008,
     "display_name": "OSM: emsi Liepkalnio g. 112A",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "marijampolės-sav-|kauno-g-165-pietarių-k": {
     "lat": 54.6792304,
@@ -3597,28 +3651,32 @@
     "lat": 54.7075301,
     "lng": 24.9959605,
     "display_name": "Emsi, 2, Sausių g., Sausiai, Lentvario seniūnija, Trakų rajono savivaldybė, Vilniaus apskritis, 21401, Lietuva",
-    "review": true
+    "review": true,
+    "manual": true
   },
   "pasvalio-r-sav-|sereikonių-k-baltijos-kelio-g-2": {
     "lat": 56.0636616,
     "lng": 24.4257676,
     "display_name": "OSM: emsi Taikos g. 24",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "panevėžio-r-sav-|šilagalio-k-panevėžio-aplinkl-12": {
     "lat": 55.7317427,
     "lng": 24.3406939,
     "display_name": "OSM: emsi Nemuno g. 79A",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "marijampolės-sav-|skaisčiūnų-k-europos-g-11": {
     "lat": 54.5582747,
     "lng": 23.2753151,
     "display_name": "OSM: emsi Europos g. 11",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kauno-r-sav-|žemaitkiemis-stasio-krasausko-g-21": {
     "lat": 54.5666898,
@@ -3655,14 +3713,16 @@
     "lng": 22.1992831,
     "display_name": "OSM: saurida Rytinio Kelio g. 19",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "kalvarijos-sav-|kušliškių-km-suvalkijos-g-15": {
     "lat": 54.7219616,
     "lng": 25.2555185,
     "display_name": "OSM: saurida ",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "marijampolės-sav-|marijampolė-statybininkų-g-8": {
     "lat": 54.6792304,
@@ -3675,14 +3735,16 @@
     "lng": 21.1701573,
     "display_name": "OSM: saurida Šilutės pl.",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "alytaus-m-sav-|alytus-pramonės-g-5": {
     "lat": 55.6991552,
     "lng": 21.1701573,
     "display_name": "OSM: saurida Šilutės pl.",
     "review": true,
-    "osm_matched": true
+    "osm_matched": true,
+    "manual": true
   },
   "prienų-r-sav-|ignacavos-km-kauno-pl-18": {
     "lat": 54.6334424,
