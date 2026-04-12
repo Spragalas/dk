@@ -1844,6 +1844,11 @@
     "lng": 23.9510946,
     "display_name": "Rimi, 321, Savanorių pr., Kalniečiai, Eigulių seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 50120, Lietuva"
   },
+  "marijampolės-sav-|plytinės-g-2-puskelnių-k": {
+    "lat": 54.6792304,
+    "lng": 23.2004406,
+    "display_name": "Marijampolės apskritis, Lietuva"
+  },
   "širvintų-r-sav-|paširvio-g-1-paširvinčio-k": {
     "lat": 55.0096018,
     "lng": 24.8883492,
@@ -1969,6 +1974,16 @@
     "lng": 23.375474,
     "display_name": "Baltic Petroleum, 15, Vasaros g., Triobiškiai, Marijampolė, Marijampolės savivaldybė, Marijampolės apskritis, 68114, Lietuva"
   },
+  "marijampolės-sav-|pietarių-k-kauno-g-164": {
+    "lat": 54.6792304,
+    "lng": 23.2004406,
+    "display_name": "Marijampolės apskritis, Lietuva"
+  },
+  "marijampolės-sav-|pasiekų-k": {
+    "lat": 54.6792304,
+    "lng": 23.2004406,
+    "display_name": "Marijampolės apskritis, Lietuva"
+  },
   "mažeikių-r-sav-|mažeikiai-m-daukšos-g-17": {
     "lat": 56.3050956,
     "lng": 22.3504695,
@@ -2069,10 +2084,20 @@
     "lng": 24.5470516,
     "display_name": "Baltic Petroleum, 6A, Vilniaus g., Senoji Varėna, Varėnos seniūnija, Varėnos rajono savivaldybė, Alytaus apskritis, 65489, Lietuva"
   },
+  "vilniaus-r-sav-|vilkaraisčio-k": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
+  },
   "vilniaus-m-sav-|vilnius-gerosios-vilties-g-33": {
     "lat": 54.6667672,
     "lng": 25.2507937,
     "display_name": "Baltic Petroleum, 33, Gerosios Vilties g., Vilkpėdės seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 03160, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-kalvarijų-g-161a": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
   },
   "vilniaus-m-sav-|vilnius-metalo-g-4b": {
     "lat": 54.6404777,
@@ -2088,6 +2113,11 @@
     "lat": 54.7028044,
     "lng": 25.2882429,
     "display_name": "Baltic Petroleum, 59, Rinktinės g., Tuskulėnai, Žirmūnų seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 09207, Lietuva"
+  },
+  "vilniaus-m-sav-|vilnius-s-batoro-g-15": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
   },
   "šakių-r-sav-|šakiai-sodų-g-1": {
     "lat": 54.9453642,
@@ -2123,6 +2153,11 @@
     "lat": 55.0823811,
     "lng": 24.2709727,
     "display_name": "Baltic Petroleum, 1, Žemaitės g., Jonava, Jonavos seniūnija, Jonavos rajono savivaldybė, Kauno apskritis, 55134, Lietuva"
+  },
+  "vilniaus-r-sav-|užubalių-k-senasis-ukmergės-kelias-4": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
   },
   "vilniaus-m-sav-|vilnius-brazdžionio-g-2": {
     "lat": 54.6139256,
@@ -2174,41 +2209,6 @@
     "lng": 26.0387936,
     "display_name": "Zarasų rajono savivaldybė, Utenos apskritis, Lietuva"
   },
-  "marijampolės-sav-|plytinės-g-2-puskelnių-k": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
-  },
-  "marijampolės-sav-|pietarių-k-kauno-g-164": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
-  },
-  "marijampolės-sav-|pasiekų-k": {
-    "lat": 54.6792304,
-    "lng": 23.2004406,
-    "display_name": "Marijampolės apskritis, Lietuva"
-  },
-  "vilniaus-r-sav-|vilkaraisčio-k": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
-  "vilniaus-m-sav-|vilnius-kalvarijų-g-161a": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
-  "vilniaus-m-sav-|vilnius-s-batoro-g-15": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
-  "vilniaus-r-sav-|užubalių-k-senasis-ukmergės-kelias-4": {
-    "lat": 54.682847,
-    "lng": 25.2878406,
-    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01403, Lietuva"
-  },
   "tauragės-r-sav-|taurų-k-tilžės-pl-36": {
     "lat": 55.3564378,
     "lng": 22.405222,
@@ -2243,5 +2243,75 @@
     "lat": 54.8982139,
     "lng": 23.9044817,
     "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "panevėžio-r-sav-|baltijos-kelio-g-33-ūtos-k": {
+    "lat": 55.9155086,
+    "lng": 25.0309026,
+    "display_name": "Panevėžio apskritis, Lietuva"
+  },
+  "ukmergės-r-sav-|ežero-g-7-kurėnų-k": {
+    "lat": 55.301698,
+    "lng": 24.7372908,
+    "display_name": "Ukmergės rajono savivaldybė, Vilniaus apskritis, Lietuva"
+  },
+  "panevėžio-r-sav-|panevėžio-aplinkl-20-šilagalio-k": {
+    "lat": 55.9155086,
+    "lng": 25.0309026,
+    "display_name": "Panevėžio apskritis, Lietuva"
+  },
+  "kauno-m-sav-|vakarinis-aplinkkelis-10-kaunas": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "šilalės-r-sav-|dvaro-g-3-košių-ii-k": {
+    "lat": 55.5252224,
+    "lng": 22.2160078,
+    "display_name": "Šilalės rajono savivaldybė, Tauragės apskritis, Lietuva"
+  },
+  "klaipėdos-r-sav-|vilniaus-pl-21-jakų-k": {
+    "lat": 55.7827168,
+    "lng": 21.3496449,
+    "display_name": "Klaipėdos apskritis, Lietuva"
+  },
+  "trakų-r-sav-|didžiulio-g-5-dėdeliškių-k": {
+    "lat": 54.5642276,
+    "lng": 24.7282274,
+    "display_name": "Trakų rajono savivaldybė, Vilniaus apskritis, Lietuva"
+  },
+  "lazdijų-r-sav-|nekrūnų-k-1": {
+    "lat": 54.1607523,
+    "lng": 23.6775875,
+    "display_name": "Lazdijų rajono savivaldybė, Alytaus apskritis, Lietuva"
+  },
+  "raseinių-r-sav-|pikelių-k-1": {
+    "lat": 55.3764559,
+    "lng": 23.1988999,
+    "display_name": "Raseinių rajono savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "kalvarijos-sav-|europos-g-13a-salaperaugio-k": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
+  },
+  "kalvarijos-sav-|muitinės-g-5b-brazavo-k": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva"
+  },
+  "kauno-m-sav-|tvirtovės-alėja-33a-kaunas": {
+    "lat": 54.8982139,
+    "lng": 23.9044817,
+    "display_name": "Kaunas, Kauno miesto savivaldybė, Kauno apskritis, Lietuva"
+  },
+  "vilniaus-r-sav-|molėtų-g-15-didžiosios-riešės-k": {
+    "lat": 54.682847,
+    "lng": 25.2878406,
+    "display_name": "Vilniaus universitetas, S. Skapo g., Senamiestis, Senamiesčio seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 01122, Lietuva"
+  },
+  "šakių-r-sav-|mozūriškiai-mozūriškių-10": {
+    "lat": 54.9148731,
+    "lng": 23.078048,
+    "display_name": "Šakių rajono savivaldybė, Marijampolės apskritis, Lietuva"
   }
 }
