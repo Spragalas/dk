@@ -496,43 +496,51 @@
       btn.disabled = true;
       status.textContent = "Nustatoma vieta...";
 
-      navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          userLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-          nearMeActive = true;
-          btn.disabled = false;
-          btn.classList.add("active");
-          btn.innerHTML = "&#10005; Išjungti";
-          status.textContent = "";
+      function onPosition(pos) {
+        userLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+        nearMeActive = true;
+        btn.disabled = false;
+        btn.classList.add("active");
+        btn.innerHTML = "&#10005; Išjungti";
+        status.textContent = "";
 
-          // Add user marker
-          if (userMarker) map.removeLayer(userMarker);
-          userMarker = L.marker([userLocation.lat, userLocation.lng], {
-            icon: L.divIcon({
-              className: "user-location-marker",
-              html: '<div class="user-dot"></div>',
-              iconSize: [18, 18],
-              iconAnchor: [9, 9],
-            }),
-            zIndexOffset: 1000,
-          })
-            .addTo(map)
-            .bindPopup("Jūsų vieta");
+        // Add user marker
+        if (userMarker) map.removeLayer(userMarker);
+        userMarker = L.marker([userLocation.lat, userLocation.lng], {
+          icon: L.divIcon({
+            className: "user-location-marker",
+            html: '<div class="user-dot"></div>',
+            iconSize: [18, 18],
+            iconAnchor: [9, 9],
+          }),
+          zIndexOffset: 1000,
+        })
+          .addTo(map)
+          .bindPopup("Jūsų vieta");
 
-          const radius = parseInt(radiusSelect.value);
-          map.setView([userLocation.lat, userLocation.lng], radius <= 10 ? 12 : radius <= 25 ? 10 : 9);
+        const radius = parseInt(radiusSelect.value);
+        map.setView([userLocation.lat, userLocation.lng], radius <= 10 ? 12 : radius <= 25 ? 10 : 9);
+        if (allStations) {
           renderMarkers();
-        },
-        (err) => {
-          btn.disabled = false;
-          if (err.code === 1) {
-            status.textContent = "Vietos prieiga uždrausta.";
-          } else {
-            status.textContent = "Nepavyko nustatyti vietos.";
-          }
-        },
-        { enableHighAccuracy: true, timeout: 10000 }
-      );
+        }
+      }
+
+      function onError(err) {
+        btn.disabled = false;
+        if (err.code === 1) {
+          status.textContent = "Vietos prieiga uždrausta.";
+        } else if (err.code === 3) {
+          status.textContent = "Vietos nustatymas užtruko per ilgai.";
+        } else {
+          status.textContent = "Nepavyko nustatyti vietos.";
+        }
+      }
+
+      navigator.geolocation.getCurrentPosition(onPosition, onError, {
+        enableHighAccuracy: false,
+        timeout: 15000,
+        maximumAge: 300000,
+      });
     });
 
     radiusSelect.addEventListener("change", () => {
