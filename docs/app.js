@@ -122,6 +122,8 @@
     setupClusterMode();
     setupFilters();
     setupNearMe();
+    setupListView();
+    setupTrendsView();
     setupHistory(saved);
 
     // Load geocache first, then station data
@@ -570,6 +572,442 @@
       opt.textContent = company;
       select.appendChild(opt);
     }
+  }
+
+  // --- Side Panel Management ---
+  let activeSideView = null; // "list" or "trends"
+
+  function openSidePanel(view) {
+    const panel = document.getElementById("side-panel");
+    const title = document.getElementById("side-panel-title");
+
+    // If same view is open, close it
+    if (activeSideView === view) {
+      closeSidePanel();
+      return;
+    }
+
+    // Hide all views
+    document.querySelectorAll(".side-view").forEach(v => v.classList.add("hidden"));
+
+    if (view === "list") {
+      title.textContent = "Degalinių sąrašas";
+      document.getElementById("list-view").classList.remove("hidden");
+    } else {
+      title.textContent = "Kainų tendencijos";
+      document.getElementById("trends-view").classList.remove("hidden");
+    }
+
+    panel.classList.remove("hidden");
+    document.body.classList.add("side-open");
+    activeSideView = view;
+
+    // Update button highlights
+    document.getElementById("list-btn").classList.toggle("active", view === "list");
+    document.getElementById("trends-btn").classList.toggle("active", view === "trends");
+
+    // Leaflet needs to know the map container resized
+    setTimeout(() => map.invalidateSize(), 350);
+  }
+
+  function closeSidePanel() {
+    document.getElementById("side-panel").classList.add("hidden");
+    document.body.classList.remove("side-open");
+    activeSideView = null;
+    document.getElementById("list-btn").classList.remove("active");
+    document.getElementById("trends-btn").classList.remove("active");
+    setTimeout(() => map.invalidateSize(), 350);
+  }
+
+  // --- Station List ---
+  let listFuel = "petrol95";
+  let listSort = "price";
+
+  function setupListView() {
+    document.getElementById("list-btn").addEventListener("click", () => {
+      listFuel = currentFuel;
+      document.querySelectorAll(".list-fuel-tab").forEach(b => {
+        b.classList.toggle("active", b.dataset.fuel === listFuel);
+      });
+      renderStationList();
+      openSidePanel("list");
+    });
+
+    document.querySelectorAll(".list-fuel-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".list-fuel-tab").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        listFuel = btn.dataset.fuel;
+        renderStationList();
+      });
+    });
+
+    document.querySelectorAll(".sort-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".sort-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        listSort = btn.dataset.sort;
+        renderStationList();
+      });
+    });
+
+    let listSearchTimeout;
+    document.getElementById("list-search").addEventListener("input", () => {
+      clearTimeout(listSearchTimeout);
+      listSearchTimeout = setTimeout(renderStationList, 200);
+    });
+
+    // Close button
+    document.getElementById("side-panel-close").addEventListener("click", closeSidePanel);
+  }
+
+  function renderStationList() {
+    if (!allStations) return;
+    const container = document.getElementById("station-list");
+    const search = document.getElementById("list-search").value.toLowerCase();
+    const avg = averages ? averages[listFuel] : null;
+
+    let stations = allStations.filter(s => {
+      if (!s.lat || !s.lng) return false;
+      if (search) {
+        const hay = `${s.company} ${s.address} ${s.municipality}`.toLowerCase();
+        if (!hay.includes(search)) return false;
+      }
+      return true;
+    });
+
+    if (listSort === "price") {
+      stations.sort((a, b) => {
+        const pa = a.prices[listFuel], pb = b.prices[listFuel];
+        if (pa == null && pb == null) return 0;
+        if (pa == null) return 1;
+        if (pb == null) return -1;
+        return pa - pb;
+      });
+    } else if (listSort === "company") {
+      stations.sort((a, b) => a.company.localeCompare(b.company, "lt"));
+    } else {
+      stations.sort((a, b) => a.address.localeCompare(b.address, "lt"));
+    }
+
+    const html = stations.map(s => {
+      const price = s.prices[listFuel];
+      const change = s.priceChange ? s.priceChange[listFuel] : null;
+      const priceClass = price == null ? "price-na" :
+        avg && (price - avg) / avg < -0.02 ? "price-low" :
+        avg && (price - avg) / avg > 0.02 ? "price-high" : "price-mid";
+      const priceStr = price != null ? price.toFixed(3) + " \u20ac" : "—";
+
+      let changeStr = "";
+      if (change != null && change !== 0) {
+        const cls = change > 0 ? "change-up" : "change-down";
+        const sign = change > 0 ? "+" : "";
+        changeStr = `<div class="station-price-change ${cls}">${sign}${change.toFixed(3)}</div>`;
+      }
+
+      return `<div class="station-item" data-lat="${s.lat}" data-lng="${s.lng}">
+        <div class="station-info">
+          <div class="station-name">${s.company}</div>
+          <div class="station-addr">${s.address}, ${s.municipality}</div>
+        </div>
+        <div class="station-price-col">
+          <div class="station-price-val ${priceClass}">${priceStr}</div>
+          ${changeStr}
+        </div>
+      </div>`;
+    }).join("");
+
+    container.innerHTML = html;
+
+    container.querySelectorAll(".station-item").forEach(item => {
+      item.addEventListener("click", () => {
+        const lat = parseFloat(item.dataset.lat);
+        const lng = parseFloat(item.dataset.lng);
+        map.setView([lat, lng], 15);
+      });
+    });
+  }
+
+  // --- Price Trends ---
+  let trendsFuel = "petrol95";
+
+  function setupTrendsView() {
+    document.getElementById("trends-btn").addEventListener("click", () => {
+      trendsFuel = currentFuel;
+      document.querySelectorAll(".trends-fuel-tab").forEach(b => {
+        b.classList.toggle("active", b.dataset.fuel === trendsFuel);
+      });
+      loadTrendsData();
+      openSidePanel("trends");
+    });
+
+    document.querySelectorAll(".trends-fuel-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".trends-fuel-tab").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        trendsFuel = btn.dataset.fuel;
+        renderTrends();
+      });
+    });
+  }
+
+  let trendsData = []; // [{ date, stats: { petrol95: {min,avg,median,max}, ... } }]
+
+  function computeStats(stations) {
+    const fuelKeys = ["petrol95", "diesel", "lpg"];
+    const result = {};
+    for (const fuel of fuelKeys) {
+      const prices = stations.map(s => s.prices[fuel]).filter(p => p != null).sort((a, b) => a - b);
+      if (prices.length === 0) {
+        result[fuel] = null;
+        continue;
+      }
+      const sum = prices.reduce((a, b) => a + b, 0);
+      const mid = Math.floor(prices.length / 2);
+      const median = prices.length % 2 === 0
+        ? (prices[mid - 1] + prices[mid]) / 2
+        : prices[mid];
+      result[fuel] = {
+        min: prices[0],
+        avg: Math.round((sum / prices.length) * 1000) / 1000,
+        median: Math.round(median * 1000) / 1000,
+        max: prices[prices.length - 1],
+      };
+    }
+    return result;
+  }
+
+  async function loadTrendsData() {
+    if (trendsData.length > 0) {
+      renderTrends();
+      return;
+    }
+    const chartEl = document.getElementById("trends-chart");
+    chartEl.innerHTML = '<div style="text-align:center;color:var(--text-dim);padding:20px">Kraunama...</div>';
+
+    const results = [];
+    for (const date of historyDates) {
+      try {
+        const resp = await fetch(`data/history/${date}.json`);
+        const hist = await resp.json();
+        results.push({ date: hist.date, stats: computeStats(hist.stations) });
+      } catch { /* skip */ }
+    }
+    trendsData = results.sort((a, b) => a.date.localeCompare(b.date));
+    renderTrends();
+  }
+
+  function renderTrends() {
+    if (trendsData.length === 0) return;
+
+    const showAll = trendsFuel === "all";
+    const fuels = showAll
+      ? [
+          { key: "petrol95", label: "95 benzinas", color: "#4c8bf5" },
+          { key: "diesel", label: "Dyzelinas", color: "#f59e0b" },
+          { key: "lpg", label: "SND", color: "#10b981" },
+        ]
+      : [{ key: trendsFuel, label: FUEL_LABELS[trendsFuel], color: "#4c8bf5" }];
+
+    renderTrendsChart(fuels, showAll);
+    renderTrendsTable(fuels, showAll);
+  }
+
+  function renderTrendsChart(fuels, showAll) {
+    const chartEl = document.getElementById("trends-chart");
+    if (trendsData.length < 2) {
+      chartEl.innerHTML = '<div style="text-align:center;color:var(--text-dim);padding:20px">Reikia bent 2 dienų duomenų</div>';
+      return;
+    }
+
+    const W = 720, H = 340;
+    const pad = { top: 30, right: 20, bottom: 50, left: 60 };
+    const plotW = W - pad.left - pad.right;
+    const plotH = H - pad.top - pad.bottom;
+
+    // Collect all values for y-axis range
+    let allVals = [];
+    for (const f of fuels) {
+      for (const d of trendsData) {
+        const s = d.stats[f.key];
+        if (!s) continue;
+        if (showAll) {
+          allVals.push(s.avg);
+        } else {
+          allVals.push(s.min, s.avg, s.median, s.max);
+        }
+      }
+    }
+    if (allVals.length === 0) {
+      chartEl.innerHTML = '<div style="text-align:center;color:var(--text-dim);padding:20px">Nėra duomenų</div>';
+      return;
+    }
+
+    const minVal = Math.min(...allVals);
+    const maxVal = Math.max(...allVals);
+    const range = maxVal - minVal || 0.01;
+    const yMin = minVal - range * 0.1;
+    const yMax = maxVal + range * 0.1;
+
+    function xPos(i) { return pad.left + (i / (trendsData.length - 1)) * plotW; }
+    function yPos(v) { return pad.top + plotH - ((v - yMin) / (yMax - yMin)) * plotH; }
+
+    // Grid lines
+    let gridLines = "";
+    for (let i = 0; i <= 5; i++) {
+      const v = yMin + (i / 5) * (yMax - yMin);
+      const y = yPos(v);
+      gridLines += `<line x1="${pad.left}" y1="${y}" x2="${W - pad.right}" y2="${y}" stroke="var(--border)" stroke-width="1"/>`;
+      gridLines += `<text x="${pad.left - 8}" y="${y + 4}" text-anchor="end" fill="var(--text-dim)" font-size="11">${v.toFixed(3)}</text>`;
+    }
+
+    // Date labels
+    let dateLabels = "";
+    const step = Math.max(1, Math.floor(trendsData.length / 6));
+    for (let i = 0; i < trendsData.length; i += step) {
+      dateLabels += `<text x="${xPos(i)}" y="${H - 8}" text-anchor="middle" fill="var(--text-dim)" font-size="11">${trendsData[i].date.slice(5)}</text>`;
+    }
+    if ((trendsData.length - 1) % step !== 0) {
+      dateLabels += `<text x="${xPos(trendsData.length - 1)}" y="${H - 8}" text-anchor="middle" fill="var(--text-dim)" font-size="11">${trendsData[trendsData.length - 1].date.slice(5)}</text>`;
+    }
+
+    let lines = "";
+
+    function makeLine(dataPoints, color, width, dash) {
+      if (dataPoints.length < 2) return "";
+      const pathD = dataPoints.map((p, i) => `${i === 0 ? "M" : "L"} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(" ");
+      const dashAttr = dash ? ` stroke-dasharray="${dash}"` : "";
+      return `<path d="${pathD}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round"${dashAttr}/>`;
+    }
+
+    function makeDots(dataPoints, color, r) {
+      return dataPoints.map(p =>
+        `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${r}" fill="${color}" stroke="var(--bg-panel)" stroke-width="1.5"/>`
+      ).join("");
+    }
+
+    for (const f of fuels) {
+      if (showAll) {
+        // "All fuels" mode: just show avg line per fuel
+        const pts = [];
+        for (let i = 0; i < trendsData.length; i++) {
+          const s = trendsData[i].stats[f.key];
+          if (s) pts.push({ x: xPos(i), y: yPos(s.avg) });
+        }
+        lines += makeLine(pts, f.color, 2.5, null);
+        lines += makeDots(pts, f.color, 4);
+      } else {
+        // Single fuel mode: show min, median, max bands
+        const minPts = [], medPts = [], maxPts = [];
+        for (let i = 0; i < trendsData.length; i++) {
+          const s = trendsData[i].stats[f.key];
+          if (!s) continue;
+          const x = xPos(i);
+          minPts.push({ x, y: yPos(s.min) });
+          medPts.push({ x, y: yPos(s.median) });
+          maxPts.push({ x, y: yPos(s.max) });
+        }
+
+        // Shaded area between min and max
+        if (minPts.length >= 2) {
+          const areaD = minPts.map((p, i) => `${i === 0 ? "M" : "L"} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(" ")
+            + [...maxPts].reverse().map(p => ` L ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join("") + " Z";
+          lines += `<path d="${areaD}" fill="${f.color}" fill-opacity="0.08"/>`;
+        }
+
+        // Min line (dashed, thin)
+        lines += makeLine(minPts, getCSSVar("--green"), 1.5, "4 3");
+        // Max line (dashed, thin)
+        lines += makeLine(maxPts, getCSSVar("--red"), 1.5, "4 3");
+        // Median line (solid, bold)
+        lines += makeLine(medPts, f.color, 2.5, null);
+        lines += makeDots(medPts, f.color, 4);
+        lines += makeDots(minPts, getCSSVar("--green"), 3);
+        lines += makeDots(maxPts, getCSSVar("--red"), 3);
+      }
+    }
+
+    // Legend
+    let legend = "";
+    if (showAll) {
+      fuels.forEach((f, i) => {
+        const lx = pad.left + i * 130;
+        legend += `<rect x="${lx}" y="8" width="14" height="3" rx="1.5" fill="${f.color}"/>`;
+        legend += `<text x="${lx + 18}" y="13" fill="var(--text-dim)" font-size="11">${f.label}</text>`;
+      });
+    } else {
+      const items = [
+        { label: "Mažiausia", color: getCSSVar("--green"), dash: "4 3" },
+        { label: "Mediana", color: fuels[0].color, dash: null },
+        { label: "Didžiausia", color: getCSSVar("--red"), dash: "4 3" },
+      ];
+      items.forEach((item, i) => {
+        const lx = pad.left + i * 130;
+        const dashAttr = item.dash ? ` stroke-dasharray="${item.dash}"` : "";
+        legend += `<line x1="${lx}" y1="10" x2="${lx + 14}" y2="10" stroke="${item.color}" stroke-width="2"${dashAttr}/>`;
+        legend += `<text x="${lx + 18}" y="13" fill="var(--text-dim)" font-size="11">${item.label}</text>`;
+      });
+    }
+
+    chartEl.innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">
+      ${gridLines}${dateLabels}${lines}${legend}
+    </svg>`;
+  }
+
+  function renderTrendsTable(fuels, showAll) {
+    const tableEl = document.getElementById("trends-table");
+
+    let headers, rows;
+    if (showAll) {
+      headers = fuels.map(f => `<th>${f.label}</th>`).join("");
+      rows = [...trendsData].reverse().map((d, idx) => {
+        const prev = idx < trendsData.length - 1 ? [...trendsData].reverse()[idx + 1] : null;
+        const cells = fuels.map(f => {
+          const s = d.stats[f.key];
+          if (!s) return "<td>—</td>";
+          let changeHtml = "";
+          if (prev && prev.stats[f.key]) {
+            const diff = s.avg - prev.stats[f.key].avg;
+            if (Math.abs(diff) > 0.0005) {
+              const cls = diff > 0 ? "up" : "down";
+              const sign = diff > 0 ? "+" : "";
+              changeHtml = `<span class="trend-change ${cls}">${sign}${diff.toFixed(3)}</span>`;
+            }
+          }
+          return `<td>${s.avg.toFixed(3)} \u20ac${changeHtml}</td>`;
+        }).join("");
+        return `<tr><td>${d.date}</td>${cells}</tr>`;
+      }).join("");
+    } else {
+      headers = `<th>Min</th><th>Mediana</th><th>Vidurkis</th><th>Max</th>`;
+      const key = fuels[0].key;
+      rows = [...trendsData].reverse().map((d, idx) => {
+        const s = d.stats[key];
+        if (!s) return `<tr><td>${d.date}</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>`;
+        const prev = idx < trendsData.length - 1 ? [...trendsData].reverse()[idx + 1] : null;
+        const prevS = prev ? prev.stats[key] : null;
+
+        function cell(val, prevVal) {
+          let ch = "";
+          if (prevVal != null) {
+            const diff = val - prevVal;
+            if (Math.abs(diff) > 0.0005) {
+              const cls = diff > 0 ? "up" : "down";
+              const sign = diff > 0 ? "+" : "";
+              ch = `<span class="trend-change ${cls}">${sign}${diff.toFixed(3)}</span>`;
+            }
+          }
+          return `<td>${val.toFixed(3)} \u20ac${ch}</td>`;
+        }
+
+        return `<tr><td>${d.date}</td>${cell(s.min, prevS?.min)}${cell(s.median, prevS?.median)}${cell(s.avg, prevS?.avg)}${cell(s.max, prevS?.max)}</tr>`;
+      }).join("");
+    }
+
+    tableEl.innerHTML = `<table class="trends-grid">
+      <thead><tr><th>Data</th>${headers}</tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
   }
 
   document.addEventListener("DOMContentLoaded", init);

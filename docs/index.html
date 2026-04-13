@@ -83,6 +83,11 @@
 
     <div id="stats"></div>
 
+    <div id="views">
+      <button id="list-btn" title="Visų degalinių sąrašas">&#9776; Sąrašas</button>
+      <button id="trends-btn" title="Kainų tendencijos">&#9650; Tendencijos</button>
+    </div>
+
     <div id="attribution">
       Duomenys: <a href="https://www.ena.lt" target="_blank">LEA</a> |
       Žemėlapis: <a href="https://www.openstreetmap.org" target="_blank">OSM</a><br>
@@ -90,6 +95,45 @@
     </div>
 
     </div><!-- end panel-body -->
+  </div>
+
+  <!-- Side panel for list/trends -->
+  <div id="side-panel" class="side-panel hidden">
+    <div id="side-panel-header">
+      <h2 id="side-panel-title"></h2>
+      <button id="side-panel-close">&times;</button>
+    </div>
+
+    <!-- Station List View -->
+    <div id="list-view" class="side-view hidden">
+      <div id="list-controls">
+        <div id="list-fuel-tabs">
+          <button class="list-fuel-tab active" data-fuel="petrol95">95 benzinas</button>
+          <button class="list-fuel-tab" data-fuel="diesel">Dyzelinas</button>
+          <button class="list-fuel-tab" data-fuel="lpg">SND</button>
+        </div>
+        <input type="text" id="list-search" placeholder="Ieškoti pagal pavadinimą ar adresą..." />
+      </div>
+      <div id="list-sort">
+        <span>Rūšiuoti:</span>
+        <button class="sort-btn active" data-sort="price">Kaina</button>
+        <button class="sort-btn" data-sort="company">Tinklas</button>
+        <button class="sort-btn" data-sort="address">Adresas</button>
+      </div>
+      <div id="station-list"></div>
+    </div>
+
+    <!-- Price Trends View -->
+    <div id="trends-view" class="side-view hidden">
+      <div id="trends-fuel-tabs">
+        <button class="trends-fuel-tab" data-fuel="all">Visi degalai</button>
+        <button class="trends-fuel-tab active" data-fuel="petrol95">95 benzinas</button>
+        <button class="trends-fuel-tab" data-fuel="diesel">Dyzelinas</button>
+        <button class="trends-fuel-tab" data-fuel="lpg">SND</button>
+      </div>
+      <div id="trends-chart"></div>
+      <div id="trends-table"></div>
+    </div>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
