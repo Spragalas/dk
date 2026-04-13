@@ -12,6 +12,36 @@
   let userMarker = null;
   let nearMeActive = false;
 
+  // --- State persistence ---
+  const STATE_KEY = "dk-map-state";
+
+  function saveState() {
+    const state = {};
+    if (map) {
+      const c = map.getCenter();
+      state.lat = c.lat;
+      state.lng = c.lng;
+      state.zoom = map.getZoom();
+    }
+    state.fuel = currentFuel;
+    state.clusterMode = clusterMode;
+    const company = document.getElementById("company-select");
+    if (company) state.company = company.value;
+    const search = document.getElementById("search-input");
+    if (search) state.search = search.value;
+    const history = document.getElementById("history-select");
+    if (history) state.historyDate = history.value;
+    const radius = document.getElementById("radius-input");
+    if (radius) state.radius = radius.value;
+    localStorage.setItem(STATE_KEY, JSON.stringify(state));
+  }
+
+  function loadState() {
+    try {
+      return JSON.parse(localStorage.getItem(STATE_KEY)) || {};
+    } catch { return {}; }
+  }
+
   const FUEL_LABELS = {
     petrol95: "95 benzinas",
     diesel: "Dyzelinas",
@@ -19,11 +49,19 @@
   };
 
   function init() {
-    map = L.map("map").setView(MAP_CENTER, MAP_ZOOM);
+    const saved = loadState();
+
+    const initCenter = (saved.lat != null && saved.lng != null) ? [saved.lat, saved.lng] : MAP_CENTER;
+    const initZoom = saved.zoom != null ? saved.zoom : MAP_ZOOM;
+
+    map = L.map("map").setView(initCenter, initZoom);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
       maxZoom: 18,
     }).addTo(map);
+
+    // Save map position on move/zoom
+    map.on("moveend", saveState);
 
     markerCluster = L.markerClusterGroup({
       maxClusterRadius: 40,
@@ -51,17 +89,51 @@
     });
     map.addLayer(markerCluster);
 
+    // Restore fuel tab
+    if (saved.fuel) {
+      currentFuel = saved.fuel;
+      document.querySelectorAll(".fuel-tab").forEach((b) => {
+        b.classList.toggle("active", b.dataset.fuel === currentFuel);
+      });
+    }
+
+    // Restore cluster mode
+    if (saved.clusterMode) {
+      clusterMode = saved.clusterMode;
+      document.querySelectorAll(".mode-tab").forEach((b) => {
+        b.classList.toggle("active", b.dataset.mode === clusterMode);
+      });
+    }
+
+    // Restore search input
+    if (saved.search) {
+      document.getElementById("search-input").value = saved.search;
+    }
+
+    // Restore radius
+    if (saved.radius) {
+      document.getElementById("radius-input").value = saved.radius;
+    }
+
     setupThemeToggle();
     setupPanelToggle();
     setupFuelTabs();
     setupClusterMode();
     setupFilters();
     setupNearMe();
-    setupHistory();
-    loadData("data/stations.json");
+    setupHistory(saved);
+
+    // Restore company filter after data loads, and history date
+    const historyDate = saved.historyDate || null;
+    loadData("data/stations.json", historyDate || undefined).then(() => {
+      if (saved.company) {
+        document.getElementById("company-select").value = saved.company;
+        renderMarkers();
+      }
+    });
   }
 
-  async function setupHistory() {
+  async function setupHistory(saved) {
     try {
       const resp = await fetch("data/history-index.json");
       historyDates = await resp.json();
@@ -75,10 +147,16 @@
         select.appendChild(opt);
       }
 
+      // Restore saved history date
+      if (saved && saved.historyDate && historyDates.includes(saved.historyDate)) {
+        select.value = saved.historyDate;
+      }
+
       select.addEventListener("change", () => {
         const date = select.value;
         if (date) {
           loadData(`data/stations.json`, date);
+          saveState();
         }
       });
     } catch {
@@ -360,6 +438,7 @@
         currentFuel = btn.dataset.fuel;
         renderAverages();
         renderMarkers();
+        saveState();
       });
     });
   }
@@ -371,6 +450,7 @@
         btn.classList.add("active");
         clusterMode = btn.dataset.mode;
         renderMarkers();
+        saveState();
       });
     });
   }
@@ -456,6 +536,7 @@
     });
 
     radiusSelect.addEventListener("change", () => {
+      saveState();
       if (nearMeActive) {
         const radius = parseInt(radiusSelect.value);
         map.setView([userLocation.lat, userLocation.lng], radius <= 10 ? 12 : radius <= 25 ? 10 : 9);
@@ -465,11 +546,17 @@
   }
 
   function setupFilters() {
-    document.getElementById("company-select").addEventListener("change", () => renderMarkers());
+    document.getElementById("company-select").addEventListener("change", () => {
+      renderMarkers();
+      saveState();
+    });
     let searchTimeout;
     document.getElementById("search-input").addEventListener("input", () => {
       clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(() => renderMarkers(), 300);
+      searchTimeout = setTimeout(() => {
+        renderMarkers();
+        saveState();
+      }, 300);
     });
   }
 
