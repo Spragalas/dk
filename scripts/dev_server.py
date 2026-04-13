@@ -71,20 +71,21 @@ class DevHandler(SimpleHTTPRequestHandler):
             with open(geocache_path, encoding="utf-8") as f:
                 geocache = json.load(f)
 
-        # Apply updates
+        # Apply updates — merge all fields from the client
         count = 0
-        for station_id, coords in updates.items():
-            if "lat" in coords and "lng" in coords:
-                if station_id not in geocache:
-                    geocache[station_id] = {}
-                geocache[station_id]["lat"] = coords["lat"]
-                geocache[station_id]["lng"] = coords["lng"]
-                geocache[station_id]["manual"] = True
-                count += 1
+        for station_id, data in updates.items():
+            if station_id not in geocache:
+                geocache[station_id] = {}
+            for key, value in data.items():
+                geocache[station_id][key] = value
+            count += 1
 
-        # Save
+        # Save geocache
         with open(geocache_path, "w", encoding="utf-8") as f:
             json.dump(geocache, f, ensure_ascii=False, indent=2)
+
+        # Propagate coordinate changes to latest.json and docs/data/stations.json
+        updated_files = self._propagate_coords(updates, geocache)
 
         # Respond
         resp = json.dumps({"updated": count}).encode()
@@ -94,6 +95,33 @@ class DevHandler(SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(resp)
         print(f"Updated {count} geocache entries")
+        if updated_files:
+            print(f"Propagated coords to: {', '.join(updated_files)}")
+
+    def _propagate_coords(self, updates, geocache):
+        """Update lat/lng in latest.json and docs/data/stations.json to match geocache."""
+        files = [
+            DATA_DIR / "latest.json",
+            DOCS_DIR / "data" / "stations.json",
+        ]
+        updated = []
+        for path in files:
+            if not path.exists():
+                continue
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+            changed = False
+            for station in data.get("stations", []):
+                if station.get("id") in updates:
+                    geo = geocache.get(station["id"], {})
+                    station["lat"] = geo.get("lat")
+                    station["lng"] = geo.get("lng")
+                    changed = True
+            if changed:
+                with open(path, "w", encoding="utf-8") as f:
+                    json.dump(data, f, ensure_ascii=False, indent=2)
+                updated.append(path.name)
+        return updated
 
     def log_message(self, format, *args):
         if "/api/" in str(args[0]) or "editor" in str(args[0]):

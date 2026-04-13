@@ -8,6 +8,9 @@
   let historyDates = [];
   let companyFilterPopulated = false;
   let clusterMode = "min"; // "min" or "max"
+  let userLocation = null; // { lat, lng }
+  let userMarker = null;
+  let nearMeActive = false;
 
   const FUEL_LABELS = {
     petrol95: "95 benzinas",
@@ -53,6 +56,7 @@
     setupFuelTabs();
     setupClusterMode();
     setupFilters();
+    setupNearMe();
     setupHistory();
     loadData("data/stations.json");
   }
@@ -218,7 +222,7 @@
     return `<span class="change-none"> 0.000</span>`;
   }
 
-  function createPopup(station) {
+  function createPopup(station, distance) {
     const fuels = [
       { key: "petrol95", label: "95 benzinas" },
       { key: "diesel", label: "Dyzelinas" },
@@ -237,10 +241,15 @@
       })
       .join("");
 
+    const distStr = distance != null
+      ? `<div class="distance">${distance < 1 ? (distance * 1000).toFixed(0) + " m" : distance.toFixed(1) + " km"}</div>`
+      : "";
+
     return `<div class="station-popup">
       <h3>${station.company}</h3>
       <div class="address">${station.address}</div>
       <div class="company">${station.municipality}</div>
+      ${distStr}
       <div class="prices">${priceRows}</div>
     </div>`;
   }
@@ -250,8 +259,9 @@
     const avg = averages[currentFuel];
     const companyFilter = document.getElementById("company-select").value;
     const searchFilter = document.getElementById("search-input").value.toLowerCase();
+    const radiusKm = nearMeActive ? parseInt(document.getElementById("radius-input").value) : null;
 
-    let shown = 0;
+    let candidates = [];
     for (const station of allStations) {
       if (station.lat == null || station.lng == null) continue;
       if (companyFilter && station.company !== companyFilter) continue;
@@ -260,18 +270,45 @@
         if (!haystack.includes(searchFilter)) continue;
       }
 
+      let distance = null;
+      if (nearMeActive && userLocation) {
+        distance = haversineDistance(userLocation.lat, userLocation.lng, station.lat, station.lng);
+        if (distance > radiusKm) continue;
+      }
+
+      candidates.push({ station, distance });
+    }
+
+    // Sort by price when near-me is active
+    if (nearMeActive) {
+      candidates.sort((a, b) => {
+        const pa = a.station.prices[currentFuel];
+        const pb = b.station.prices[currentFuel];
+        if (pa == null && pb == null) return 0;
+        if (pa == null) return 1;
+        if (pb == null) return -1;
+        return pa - pb;
+      });
+    }
+
+    for (const { station, distance } of candidates) {
       const price = station.prices[currentFuel];
       const color = getColor(price, avg);
       const marker = L.marker([station.lat, station.lng], {
         icon: createMarkerIcon(color, price),
       });
       marker.stationData = station;
-      marker.bindPopup(createPopup(station), { maxWidth: 250 });
+      marker.bindPopup(createPopup(station, distance), { maxWidth: 250 });
       markerCluster.addLayer(marker);
-      shown++;
     }
 
-    updateStats(shown);
+    // Update near-me status with count
+    if (nearMeActive) {
+      const status = document.getElementById("nearme-status");
+      status.textContent = `Rasta: ${candidates.length} degalinių per ${radiusKm} km`;
+    }
+
+    updateStats(candidates.length);
   }
 
   function updateStats(shown) {
@@ -335,6 +372,95 @@
         clusterMode = btn.dataset.mode;
         renderMarkers();
       });
+    });
+  }
+
+  function haversineDistance(lat1, lng1, lat2, lng2) {
+    const R = 6371; // km
+    const toRad = (x) => (x * Math.PI) / 180;
+    const dLat = toRad(lat2 - lat1);
+    const dLng = toRad(lng2 - lng1);
+    const a =
+      Math.sin(dLat / 2) ** 2 +
+      Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  function setupNearMe() {
+    const btn = document.getElementById("nearme-btn");
+    const radiusSelect = document.getElementById("radius-input");
+    const status = document.getElementById("nearme-status");
+
+    btn.addEventListener("click", () => {
+      if (nearMeActive) {
+        // Deactivate
+        nearMeActive = false;
+        userLocation = null;
+        if (userMarker) {
+          map.removeLayer(userMarker);
+          userMarker = null;
+        }
+        btn.classList.remove("active");
+        btn.innerHTML = "&#9737; Šalia manęs";
+        status.textContent = "";
+        map.setView(MAP_CENTER, MAP_ZOOM);
+        renderMarkers();
+        return;
+      }
+
+      if (!navigator.geolocation) {
+        status.textContent = "Naršyklė nepalaiko vietos nustatymo.";
+        return;
+      }
+
+      btn.disabled = true;
+      status.textContent = "Nustatoma vieta...";
+
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          userLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+          nearMeActive = true;
+          btn.disabled = false;
+          btn.classList.add("active");
+          btn.innerHTML = "&#10005; Išjungti";
+          status.textContent = "";
+
+          // Add user marker
+          if (userMarker) map.removeLayer(userMarker);
+          userMarker = L.marker([userLocation.lat, userLocation.lng], {
+            icon: L.divIcon({
+              className: "user-location-marker",
+              html: '<div class="user-dot"></div>',
+              iconSize: [18, 18],
+              iconAnchor: [9, 9],
+            }),
+            zIndexOffset: 1000,
+          })
+            .addTo(map)
+            .bindPopup("Jūsų vieta");
+
+          const radius = parseInt(radiusSelect.value);
+          map.setView([userLocation.lat, userLocation.lng], radius <= 10 ? 12 : radius <= 25 ? 10 : 9);
+          renderMarkers();
+        },
+        (err) => {
+          btn.disabled = false;
+          if (err.code === 1) {
+            status.textContent = "Vietos prieiga uždrausta.";
+          } else {
+            status.textContent = "Nepavyko nustatyti vietos.";
+          }
+        },
+        { enableHighAccuracy: true, timeout: 10000 }
+      );
+    });
+
+    radiusSelect.addEventListener("change", () => {
+      if (nearMeActive) {
+        const radius = parseInt(radiusSelect.value);
+        map.setView([userLocation.lat, userLocation.lng], radius <= 10 ? 12 : radius <= 25 ? 10 : 9);
+        renderMarkers();
+      }
     });
   }
 
