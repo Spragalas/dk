@@ -149,20 +149,11 @@ def compute_averages(stations: list[dict]) -> dict:
     }
 
 
-def merge_with_geocache(stations: list[dict], changes: dict) -> list[dict]:
-    """Add lat/lng from geocache and price changes."""
-    geocache_path = DATA_DIR / "geocache.json"
-    geocache = {}
-    if geocache_path.exists():
-        with open(geocache_path) as f:
-            geocache = json.load(f)
-
+def add_price_changes(stations: list[dict], changes: dict) -> list[dict]:
+    """Add price change data to stations."""
     result = []
     for s in stations:
         entry = dict(s)
-        geo = geocache.get(s["id"], {})
-        entry["lat"] = geo.get("lat")
-        entry["lng"] = geo.get("lng")
         entry["priceChange"] = changes.get(s["id"])
         result.append(entry)
     return result
@@ -257,8 +248,8 @@ def main():
             print(f"Computed price changes vs {check_date.strftime('%Y-%m-%d')}")
             break
 
-    # Merge with geocache and build frontend data
-    enriched = merge_with_geocache(stations, changes)
+    # Add price changes
+    enriched = add_price_changes(stations, changes)
     averages = compute_averages(stations)
 
     frontend_data = {
@@ -277,6 +268,11 @@ def main():
         json.dump(frontend_data, f, ensure_ascii=False, indent=2)
 
     print(f"Updated stations.json with {len(enriched)} stations")
+
+    # Copy geocache to docs for frontend access
+    geocache_path = DATA_DIR / "geocache.json"
+    if geocache_path.exists():
+        shutil.copy2(geocache_path, DOCS_DATA / "geocache.json")
 
     # Copy history files to docs for frontend access
     docs_history = DOCS_DATA / "history"

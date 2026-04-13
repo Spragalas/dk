@@ -5,6 +5,7 @@
   const MAP_ZOOM = 8;
 
   let map, markerCluster, allStations, currentFuel = "petrol95", averages;
+  let geocache = {}; // id -> { lat, lng }
   let historyDates = [];
   let companyFilterPopulated = false;
   let clusterMode = "min"; // "min" or "max"
@@ -123,14 +124,19 @@
     setupNearMe();
     setupHistory(saved);
 
-    // Restore company filter after data loads, and history date
+    // Load geocache first, then station data
     const historyDate = saved.historyDate || null;
-    loadData("data/stations.json", historyDate || undefined).then(() => {
-      if (saved.company) {
-        document.getElementById("company-select").value = saved.company;
-        renderMarkers();
-      }
-    });
+    fetch("data/geocache.json")
+      .then((r) => r.json())
+      .then((gc) => { geocache = gc; })
+      .catch(() => { geocache = {}; })
+      .then(() => loadData("data/stations.json", historyDate || undefined))
+      .then(() => {
+        if (saved.company) {
+          document.getElementById("company-select").value = saved.company;
+          renderMarkers();
+        }
+      });
   }
 
   async function setupHistory(saved) {
@@ -168,28 +174,8 @@
     try {
       let data;
       if (historyDate) {
-        // Load from history — but history files don't have coords,
-        // so load current stations.json for coords and overlay history prices
-        const [currentResp, histResp] = await Promise.all([
-          fetch("data/stations.json"),
-          fetch(`data/history/${historyDate}.json`),
-        ]);
-        const current = await currentResp.json();
-        const hist = await histResp.json();
-
-        // Build coord map from current data
-        const coordMap = {};
-        for (const s of current.stations) {
-          coordMap[s.id] = { lat: s.lat, lng: s.lng };
-        }
-
-        // Merge coords into history stations
-        for (const s of hist.stations) {
-          const coords = coordMap[s.id] || {};
-          s.lat = coords.lat || null;
-          s.lng = coords.lng || null;
-        }
-
+        const resp = await fetch(`data/history/${historyDate}.json`);
+        const hist = await resp.json();
         data = {
           date: hist.date,
           stations: hist.stations,
@@ -198,6 +184,13 @@
       } else {
         const resp = await fetch(url);
         data = await resp.json();
+      }
+
+      // Merge coordinates from geocache
+      for (const s of data.stations) {
+        const geo = geocache[s.id];
+        s.lat = geo ? geo.lat : null;
+        s.lng = geo ? geo.lng : null;
       }
 
       allStations = data.stations;

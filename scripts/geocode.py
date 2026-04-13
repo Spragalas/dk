@@ -359,17 +359,11 @@ def main():
             json.dump(failures, f, ensure_ascii=False, indent=2)
         print(f"Failures saved to {failures_path}")
 
-    # Regenerate stations.json with updated coordinates
-    for station in data["stations"]:
-        geo = geocache.get(station["id"], {})
-        station["lat"] = geo.get("lat")
-        station["lng"] = geo.get("lng")
-
+    # Copy geocache to docs/data/ for frontend access
     DOCS_DATA.mkdir(parents=True, exist_ok=True)
-    with open(DOCS_DATA / "stations.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-
-    print("Updated docs/data/stations.json with coordinates")
+    import shutil
+    shutil.copy2(geocache_path, DOCS_DATA / "geocache.json")
+    print("Copied geocache.json to docs/data/")
 
 
 if __name__ == "__main__":
