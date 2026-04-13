@@ -7209,7 +7209,9 @@
         "petrol95": 0.0,
         "diesel": -0.04,
         "lpg": 0.0
-      }
+      },
+      "lat": 54.8495425,
+      "lng": 23.9670557
     },
     {
       "id": "kauno-m-sav-|kaunas-miežėnų-g-18",
