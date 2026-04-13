@@ -3849,5 +3849,95 @@
     "lng": 21.103797456014227,
     "display_name": "Palangos tarptautinis oro uostas, Kunigiškių g., Kunigiškiai, Palanga, Palangos miesto savivaldybė, Klaipėdos apskritis, 00187, Lietuva",
     "review": true
+  },
+  "palangos-m-sav-|palanga-ganyklų-g-28c": {
+    "lat": 55.9234396,
+    "lng": 21.0759718,
+    "display_name": "28C, Ganyklų g., Vanagupė, Palanga, Palangos miesto savivaldybė, Klaipėdos apskritis, 00126, Lietuva",
+    "review": false
+  },
+  "palangos-m-sav-|palanga-klaipėdos-pl-44": {
+    "lat": 55.9156229,
+    "lng": 21.0783812,
+    "display_name": "Baltic Petroleum, 44, Klaipėdos pl., Palanga, Palangos miesto savivaldybė, Klaipėdos apskritis, 00111, Lietuva",
+    "review": false
+  },
+  "palangos-m-sav-|kretingos-g-56-palanga": {
+    "lat": 55.9146664,
+    "lng": 21.0779032,
+    "display_name": "Circle K „Palanga“, 56, Kretingos g., Palanga, Palangos miesto savivaldybė, Klaipėdos apskritis, 00111, Lietuva",
+    "review": false
+  },
+  "šiaulių-m-sav-|gegužių-g-28": {
+    "lat": 55.9059107,
+    "lng": 23.2587205,
+    "display_name": "Aibė, 28, Gegužių g., Senieji Dainai, Gytariai, Šiauliai, Šiaulių miesto savivaldybė, Šiaulių apskritis, 78346, Lietuva",
+    "review": false
+  },
+  "palangos-m-sav-|elijos-g-26-palanga-šventoji": {
+    "lat": 55.9725989,
+    "lng": 21.0946759,
+    "display_name": "Palangos tarptautinis oro uostas, Kunigiškių g., Kunigiškiai, Palanga, Palangos miesto savivaldybė, Klaipėdos apskritis, 00187, Lietuva",
+    "review": true
+  },
+  "kupiškio-r-sav-|slavinčiškio-g-18-slavinčiškis": {
+    "lat": 55.8324305,
+    "lng": 25.0200782,
+    "display_name": "18, Slavinčiškio g., Kraštiečiai, Slavinčiškis, Kupiškis, Kupiškio seniūnija, Kupiškio rajono savivaldybė, Panevėžio apskritis, 40107, Lietuva",
+    "review": false
+  },
+  "kaišiadorių-r-sav-|paukštininkų-g-13-kaišiadorys": {
+    "lat": 54.865105,
+    "lng": 24.434153,
+    "display_name": "13, Paukštininkų g., Kaišiadorys, Kaišiadorių miesto seniūnija, Kaišiadorių rajono savivaldybė, Kauno apskritis, 56163, Lietuva",
+    "review": false
+  },
+  "marijampolės-sav-|gėlyno-g-25-marijampolė": {
+    "lat": 54.5817953,
+    "lng": 23.3672622,
+    "display_name": "Gėlyno g., Laikštė, Marijampolė, Marijampolės savivaldybė, Marijampolės apskritis, 68229, Lietuva",
+    "review": false
+  },
+  "pasvalio-r-sav-|stoties-g-25-pasvalys": {
+    "lat": 56.0673047,
+    "lng": 24.3859087,
+    "display_name": "25, Stoties g., Pasvalys, Pasvalio miesto seniūnija, Pasvalio rajono savivaldybė, Panevėžio apskritis, 39106, Lietuva",
+    "review": false
+  },
+  "kėdainių-r-sav-|j-basanavičiaus-g-103-kėdainiai": {
+    "lat": 55.2742329,
+    "lng": 23.9449674,
+    "display_name": "103, J. Basanavičiaus g., Kėdainiai, Kėdainių miesto seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 57350, Lietuva",
+    "review": false
+  },
+  "kėdainių-r-sav-|šėtos-g-120-kėdainiai": {
+    "lat": 55.2972995,
+    "lng": 24.001282,
+    "display_name": "120, Šėtos g., Senamiestis, Kėdainiai, Kėdainių miesto seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 57218, Lietuva",
+    "review": false
+  },
+  "kėdainių-r-sav-|dariaus-ir-girėno-23-a-kėdainiai": {
+    "lat": 55.3127081,
+    "lng": 23.9781131,
+    "display_name": "23A, S. Dariaus ir S. Girėno g., Kėdainiai, Kėdainių miesto seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 57149, Lietuva",
+    "review": false
+  },
+  "kėdainių-r-sav-|gedimino-g-50-kėdainiai": {
+    "lat": 55.2914813,
+    "lng": 23.96054,
+    "display_name": "50, Gedimino g., Senamiestis, Kėdainiai, Kėdainių miesto seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 57323, Lietuva",
+    "review": false
+  },
+  "kėdainių-r-sav-|vandžiogalos-g-29-saviečių-k": {
+    "lat": 55.1742734,
+    "lng": 24.0026641,
+    "display_name": "Saviečiai, Pelėdnagių seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 58151, Lietuva",
+    "review": true
+  },
+  "rokiškio-r-sav-|vytėnų-vs-9-vytėnai": {
+    "lat": 55.9538411,
+    "lng": 25.6812626,
+    "display_name": "Rokiškio rajono savivaldybė, Panevėžio apskritis, Lietuva",
+    "review": true
   }
 }
