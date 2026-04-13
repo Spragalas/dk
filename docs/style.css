@@ -466,6 +466,31 @@ body {
   margin-bottom: 10px;
 }
 
+/* Install button */
+#install-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: all 0.2s;
+}
+
+#install-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  border-style: solid;
+}
+
+#install-btn.hidden {
+  display: none;
+}
+
 /* Attribution */
 #attribution {
   font-size: 10px;
