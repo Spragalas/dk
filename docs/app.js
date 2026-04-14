@@ -129,13 +129,12 @@
 
     map.on("click", handleRouteMapClick);
 
-    // Load geocache first, then station data
-    const historyDate = saved.historyDate || null;
+    // Load geocache first, then latest station data (always fresh on page load)
     fetch("data/geocache.json")
       .then((r) => r.json())
       .then((gc) => { geocache = gc; })
       .catch(() => { geocache = {}; })
-      .then(() => loadData("data/stations.json", historyDate || undefined))
+      .then(() => loadData("data/stations.json"))
       .then(() => {
         if (saved.company) {
           document.getElementById("company-select").value = saved.company;
@@ -150,6 +149,11 @@
       historyDates = await resp.json();
 
       const select = document.getElementById("history-select");
+      // Add "latest" option
+      const latestOpt = document.createElement("option");
+      latestOpt.value = "";
+      latestOpt.textContent = "Naujausia";
+      select.appendChild(latestOpt);
       // Most recent first
       for (const date of [...historyDates].reverse()) {
         const opt = document.createElement("option");
@@ -158,17 +162,14 @@
         select.appendChild(opt);
       }
 
-      // Restore saved history date
-      if (saved && saved.historyDate && historyDates.includes(saved.historyDate)) {
-        select.value = saved.historyDate;
-      }
-
       select.addEventListener("change", () => {
         const date = select.value;
         if (date) {
           loadData(`data/stations.json`, date);
-          saveState();
+        } else {
+          loadData("data/stations.json");
         }
+        saveState();
       });
     } catch {
       // No history available yet
