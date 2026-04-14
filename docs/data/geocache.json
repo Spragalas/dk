@@ -3939,5 +3939,23 @@
     "lng": 25.6812626,
     "display_name": "Rokiškio rajono savivaldybė, Panevėžio apskritis, Lietuva",
     "review": true
+  },
+  "vilniaus-m-sav-|laisvės-pr-125a-vilnius": {
+    "lat": 54.7277556,
+    "lng": 25.2358211,
+    "display_name": "Autopolis, 125A, Laisvės pr., Pašilaičiai, Pašilaičių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 06118, Lietuva",
+    "review": false
+  },
+  "jonavos-r-sav-|gudžionių-k-plento-g-24": {
+    "lat": 55.0991092,
+    "lng": 24.3159523,
+    "display_name": "Baltic Petroleum, 24, Plento g., Gudžioniai, Šilų seniūnija, Jonavos rajono savivaldybė, Kauno apskritis, 55462, Lietuva",
+    "review": true
+  },
+  "visagino-sav-|taikos-pr-47": {
+    "lat": 55.5903811,
+    "lng": 26.4633608,
+    "display_name": "47, Taikos pr., Visaginas, Visagino savivaldybė, Utenos apskritis, 31146, Lietuva",
+    "review": false
   }
 }
