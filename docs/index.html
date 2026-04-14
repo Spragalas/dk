@@ -94,6 +94,7 @@
     <div id="views">
       <button id="list-btn" title="Visų degalinių sąrašas">&#9776; Sąrašas</button>
       <button id="trends-btn" title="Kainų tendencijos">&#9650; Tendencijos</button>
+      <button id="route-btn" title="Pigiausios degalinės kelyje">&#9654; Maršrutas</button>
     </div>
 
     <button id="install-btn" class="hidden" title="Įdiegti programėlę">&#11015; Įdiegti programėlę</button>
@@ -131,6 +132,48 @@
         <button class="sort-btn" data-sort="address">Adresas</button>
       </div>
       <div id="station-list"></div>
+    </div>
+
+    <!-- Route View -->
+    <div id="route-view" class="side-view hidden">
+      <div id="route-fuel-tabs">
+        <button class="route-fuel-tab active" data-fuel="petrol95">95 benzinas</button>
+        <button class="route-fuel-tab" data-fuel="diesel">Dyzelinas</button>
+        <button class="route-fuel-tab" data-fuel="lpg">SND</button>
+      </div>
+      <div id="route-controls">
+        <div class="route-input-row">
+          <label>A</label>
+          <div class="route-input-wrap">
+            <input type="text" id="route-start-input" placeholder="Ieškoti adreso..." autocomplete="off" />
+            <div id="route-start-suggestions" class="route-suggestions"></div>
+          </div>
+          <button class="route-action-btn" id="route-start-locate" title="Mano vieta">&#9737;</button>
+          <button class="route-action-btn" id="route-start-pick" title="Pasirinkti žemėlapyje">&#9871;</button>
+        </div>
+        <div class="route-input-row">
+          <label>B</label>
+          <div class="route-input-wrap">
+            <input type="text" id="route-end-input" placeholder="Ieškoti adreso..." autocomplete="off" />
+            <div id="route-end-suggestions" class="route-suggestions"></div>
+          </div>
+          <button class="route-action-btn" id="route-end-locate" title="Mano vieta">&#9737;</button>
+          <button class="route-action-btn" id="route-end-pick" title="Pasirinkti žemėlapyje">&#9871;</button>
+        </div>
+        <div id="route-options-row">
+          <div id="route-corridor">
+            <label for="route-radius">Nuo kelio:</label>
+            <select id="route-radius">
+              <option value="2">2 km</option>
+              <option value="5" selected>5 km</option>
+              <option value="10">10 km</option>
+            </select>
+          </div>
+          <button id="route-clear">Išvalyti</button>
+        </div>
+      </div>
+      <div id="route-status"></div>
+      <div id="route-results"></div>
     </div>
 
     <!-- Price Trends View -->

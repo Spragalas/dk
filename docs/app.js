@@ -124,7 +124,10 @@
     setupNearMe();
     setupListView();
     setupTrendsView();
+    setupRouteView();
     setupHistory(saved);
+
+    map.on("click", handleRouteMapClick);
 
     // Load geocache first, then station data
     const historyDate = saved.historyDate || null;
@@ -593,6 +596,9 @@
     if (view === "list") {
       title.textContent = "Degalinių sąrašas";
       document.getElementById("list-view").classList.remove("hidden");
+    } else if (view === "route") {
+      title.textContent = "Maršrutas";
+      document.getElementById("route-view").classList.remove("hidden");
     } else {
       title.textContent = "Kainų tendencijos";
       document.getElementById("trends-view").classList.remove("hidden");
@@ -605,6 +611,7 @@
     // Update button highlights
     document.getElementById("list-btn").classList.toggle("active", view === "list");
     document.getElementById("trends-btn").classList.toggle("active", view === "trends");
+    document.getElementById("route-btn").classList.toggle("active", view === "route");
 
     // Leaflet needs to know the map container resized
     setTimeout(() => map.invalidateSize(), 350);
@@ -616,6 +623,10 @@
     activeSideView = null;
     document.getElementById("list-btn").classList.remove("active");
     document.getElementById("trends-btn").classList.remove("active");
+    document.getElementById("route-btn").classList.remove("active");
+    stopRoutePicking();
+    clearRouteVisuals();
+    if (!map.hasLayer(markerCluster)) map.addLayer(markerCluster);
     setTimeout(() => map.invalidateSize(), 350);
   }
 
@@ -1008,6 +1019,474 @@
       <thead><tr><th>Data</th>${headers}</tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
+  }
+
+  // --- Route Feature ---
+  let routeFuel = "petrol95";
+  let routeStart = null; // { lat, lng }
+  let routeEnd = null;   // { lat, lng }
+  let routePickingState = null; // "start", "end", or null
+  let routePolyline = null;
+  let routeStartMarker = null;
+  let routeEndMarker = null;
+  let routeStationMarkers = [];
+  let routeStop = null; // { lat, lng, stationId }
+  let routeStopMarker = null;
+
+  function setupRouteView() {
+    document.getElementById("route-btn").addEventListener("click", () => {
+      routeFuel = currentFuel;
+      document.querySelectorAll(".route-fuel-tab").forEach(b => {
+        b.classList.toggle("active", b.dataset.fuel === routeFuel);
+      });
+      openSidePanel("route");
+    });
+
+    document.querySelectorAll(".route-fuel-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".route-fuel-tab").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        routeFuel = btn.dataset.fuel;
+        if (routeStart && routeEnd) renderRouteResults();
+      });
+    });
+
+    // Search inputs with geocoding
+    setupRouteSearch("start");
+    setupRouteSearch("end");
+
+    // Pick on map buttons
+    document.getElementById("route-start-pick").addEventListener("click", () => {
+      toggleRoutePicking("start");
+    });
+    document.getElementById("route-end-pick").addEventListener("click", () => {
+      toggleRoutePicking("end");
+    });
+
+    // Locate buttons
+    document.getElementById("route-start-locate").addEventListener("click", () => {
+      geolocateForRoute("start");
+    });
+    document.getElementById("route-end-locate").addEventListener("click", () => {
+      geolocateForRoute("end");
+    });
+
+    document.getElementById("route-clear").addEventListener("click", clearRoute);
+
+    document.getElementById("route-radius").addEventListener("change", () => {
+      if (routeStart && routeEnd) fetchAndDisplayRoute();
+    });
+  }
+
+  let routeSearchTimeouts = { start: null, end: null };
+
+  function setupRouteSearch(which) {
+    const input = document.getElementById(`route-${which}-input`);
+    const suggestionsEl = document.getElementById(`route-${which}-suggestions`);
+
+    input.addEventListener("input", () => {
+      clearTimeout(routeSearchTimeouts[which]);
+      const query = input.value.trim();
+      if (query.length < 2) {
+        suggestionsEl.classList.remove("visible");
+        return;
+      }
+      routeSearchTimeouts[which] = setTimeout(() => geocodeSearch(query, which), 400);
+    });
+
+    input.addEventListener("focus", () => {
+      if (suggestionsEl.children.length > 0) {
+        suggestionsEl.classList.add("visible");
+      }
+    });
+
+    // Close suggestions when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!input.contains(e.target) && !suggestionsEl.contains(e.target)) {
+        suggestionsEl.classList.remove("visible");
+      }
+    });
+  }
+
+  async function geocodeSearch(query, which) {
+    const suggestionsEl = document.getElementById(`route-${which}-suggestions`);
+    try {
+      const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&countrycodes=lt&limit=5&addressdetails=1`;
+      const resp = await fetch(url, {
+        headers: { "Accept-Language": "lt" }
+      });
+      const results = await resp.json();
+
+      if (results.length === 0) {
+        suggestionsEl.innerHTML = '<div class="route-suggestion" style="color:var(--text-muted)">Nieko nerasta</div>';
+        suggestionsEl.classList.add("visible");
+        return;
+      }
+
+      suggestionsEl.innerHTML = results.map((r, i) => {
+        const parts = r.display_name.split(", ");
+        const main = parts[0];
+        const secondary = parts.slice(1, 3).join(", ");
+        return `<div class="route-suggestion" data-idx="${i}">
+          <div>${main}</div>
+          <div class="suggestion-secondary">${secondary}</div>
+        </div>`;
+      }).join("");
+
+      suggestionsEl.querySelectorAll(".route-suggestion").forEach((el, i) => {
+        el.addEventListener("click", () => {
+          const r = results[i];
+          const latlng = { lat: parseFloat(r.lat), lng: parseFloat(r.lon) };
+          const input = document.getElementById(`route-${which}-input`);
+          input.value = r.display_name.split(", ").slice(0, 2).join(", ");
+          input.classList.add("route-set");
+          suggestionsEl.classList.remove("visible");
+          setRoutePoint(which, latlng);
+        });
+      });
+
+      suggestionsEl.classList.add("visible");
+    } catch {
+      suggestionsEl.classList.remove("visible");
+    }
+  }
+
+  function toggleRoutePicking(which) {
+    const btn = document.getElementById(`route-${which}-pick`);
+    if (routePickingState === which) {
+      stopRoutePicking();
+    } else {
+      stopRoutePicking(); // clear any other active picking
+      routePickingState = which;
+      btn.classList.add("active");
+      document.getElementById("map").style.cursor = "crosshair";
+      document.getElementById("route-status").textContent =
+        `Paspauskite žemėlapyje ${which === "start" ? "pradžios" : "pabaigos"} tašką`;
+    }
+  }
+
+  function stopRoutePicking() {
+    routePickingState = null;
+    document.getElementById("map").style.cursor = "";
+    document.getElementById("route-start-pick").classList.remove("active");
+    document.getElementById("route-end-pick").classList.remove("active");
+    const statusEl = document.getElementById("route-status");
+    if (!routeStart || !routeEnd) {
+      statusEl.textContent = "";
+    }
+  }
+
+  function geolocateForRoute(which) {
+    if (!navigator.geolocation) {
+      document.getElementById("route-status").textContent = "Naršyklė nepalaiko vietos nustatymo.";
+      return;
+    }
+    const input = document.getElementById(`route-${which}-input`);
+    input.value = "Nustatoma vieta...";
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const latlng = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+        input.value = "Mano vieta";
+        input.classList.add("route-set");
+        setRoutePoint(which, latlng);
+      },
+      () => {
+        input.value = "";
+        document.getElementById("route-status").textContent = "Nepavyko nustatyti vietos.";
+      },
+      { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 }
+    );
+  }
+
+  function handleRouteMapClick(e) {
+    if (!routePickingState) return;
+    const which = routePickingState;
+    const latlng = { lat: e.latlng.lat, lng: e.latlng.lng };
+    const input = document.getElementById(`route-${which}-input`);
+    input.value = `${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)}`;
+    input.classList.add("route-set");
+    stopRoutePicking();
+    setRoutePoint(which, latlng);
+  }
+
+  function makeRouteIcon(label, color) {
+    return L.divIcon({
+      className: "route-marker",
+      html: `<div class="route-marker-pin" style="background:${color}">${label}</div>`,
+      iconSize: [28, 36],
+      iconAnchor: [14, 36],
+    });
+  }
+
+  function setRoutePoint(which, latlng) {
+    if (which === "start") {
+      routeStart = latlng;
+      if (routeStartMarker) map.removeLayer(routeStartMarker);
+      routeStartMarker = L.marker([latlng.lat, latlng.lng], {
+        icon: makeRouteIcon("A", "#4c8bf5"),
+        zIndexOffset: 900,
+      }).addTo(map);
+    } else {
+      routeEnd = latlng;
+      if (routeEndMarker) map.removeLayer(routeEndMarker);
+      routeEndMarker = L.marker([latlng.lat, latlng.lng], {
+        icon: makeRouteIcon("B", "#dc2626"),
+        zIndexOffset: 900,
+      }).addTo(map);
+    }
+
+    if (routeStart && routeEnd) {
+      fetchAndDisplayRoute();
+    }
+  }
+
+  async function fetchAndDisplayRoute() {
+    const statusEl = document.getElementById("route-status");
+    statusEl.textContent = "Ieškomas maršrutas...";
+
+    // Hide main markers, clear old route visuals
+    map.removeLayer(markerCluster);
+    clearRouteVisuals();
+
+    try {
+      let waypoints = `${routeStart.lng},${routeStart.lat}`;
+      if (routeStop) waypoints += `;${routeStop.lng},${routeStop.lat}`;
+      waypoints += `;${routeEnd.lng},${routeEnd.lat}`;
+      const url = `https://router.project-osrm.org/route/v1/driving/${waypoints}?overview=full&geometries=geojson`;
+      const resp = await fetch(url);
+      const data = await resp.json();
+
+      if (data.code !== "Ok" || !data.routes || data.routes.length === 0) {
+        statusEl.textContent = "Nepavyko rasti maršruto.";
+        return;
+      }
+
+      const route = data.routes[0];
+      const coords = route.geometry.coordinates.map(c => [c[1], c[0]]); // [lng,lat] -> [lat,lng]
+
+      // Draw route on map
+      routePolyline = L.polyline(coords, {
+        color: "#4c8bf5",
+        weight: 4,
+        opacity: 0.7,
+      }).addTo(map);
+
+      map.fitBounds(routePolyline.getBounds(), { padding: [50, 50] });
+
+      // Find stations near the route
+      const radiusKm = parseInt(document.getElementById("route-radius").value);
+      const routeStations = findStationsNearRoute(coords, radiusKm);
+
+      const distKm = (route.distance / 1000).toFixed(0);
+      const durMin = Math.round(route.duration / 60);
+      const gmapsUrl = buildGoogleMapsUrl();
+      statusEl.innerHTML = `Maršrutas: ${distKm} km, ~${durMin} min. Rasta: ${routeStations.length} degalinių<br><a href="${gmapsUrl}" target="_blank" class="gmaps-link">Atidaryti Google Maps</a>`;
+
+      renderRouteStations(routeStations);
+    } catch (err) {
+      console.error("Route fetch error:", err);
+      statusEl.textContent = "Klaida ieškant maršruto. Bandykite dar kartą.";
+    }
+  }
+
+  function distanceToSegment(point, segStart, segEnd) {
+    // Point-to-line-segment distance in km using flat approximation (good enough for short segments)
+    const R = 6371;
+    const toRad = x => x * Math.PI / 180;
+    const lat = toRad(point[0]), lng = toRad(point[1]);
+    const lat1 = toRad(segStart[0]), lng1 = toRad(segStart[1]);
+    const lat2 = toRad(segEnd[0]), lng2 = toRad(segEnd[1]);
+
+    const midLat = (lat1 + lat2) / 2;
+    const cosLat = Math.cos(midLat);
+
+    // Convert to flat coordinates (km)
+    const x = (lng - lng1) * cosLat * R;
+    const y = (lat - lat1) * R;
+    const dx = (lng2 - lng1) * cosLat * R;
+    const dy = (lat2 - lat1) * R;
+
+    const segLen2 = dx * dx + dy * dy;
+    if (segLen2 === 0) return Math.sqrt(x * x + y * y);
+
+    let t = (x * dx + y * dy) / segLen2;
+    t = Math.max(0, Math.min(1, t));
+
+    const projX = t * dx;
+    const projY = t * dy;
+
+    return Math.sqrt((x - projX) ** 2 + (y - projY) ** 2);
+  }
+
+  function findStationsNearRoute(routeCoords, radiusKm) {
+    if (!allStations) return [];
+
+    // Sample route coords (every Nth point for performance)
+    const step = Math.max(1, Math.floor(routeCoords.length / 200));
+    const sampled = [];
+    for (let i = 0; i < routeCoords.length - 1; i += step) {
+      sampled.push(i);
+    }
+    if (sampled[sampled.length - 1] !== routeCoords.length - 2) {
+      sampled.push(routeCoords.length - 2);
+    }
+
+    const results = [];
+    for (const station of allStations) {
+      if (station.lat == null || station.lng == null) continue;
+      const stationPoint = [station.lat, station.lng];
+
+      let minDist = Infinity;
+      for (const i of sampled) {
+        const d = distanceToSegment(stationPoint, routeCoords[i], routeCoords[i + 1]);
+        if (d < minDist) minDist = d;
+        if (minDist < radiusKm) break; // early exit
+      }
+
+      if (minDist <= radiusKm) {
+        results.push({ station, distance: minDist });
+      }
+    }
+
+    return results;
+  }
+
+  function renderRouteResults() {
+    if (!routeStart || !routeEnd) return;
+    const radiusKm = parseInt(document.getElementById("route-radius").value);
+    if (routePolyline) {
+      const coords = routePolyline.getLatLngs().map(ll => [ll.lat, ll.lng]);
+      const stations = findStationsNearRoute(coords, radiusKm);
+      renderRouteStations(stations);
+    }
+  }
+
+  function renderRouteStations(routeStations) {
+    const container = document.getElementById("route-results");
+    const avg = averages ? averages[routeFuel] : null;
+
+    // Sort by price
+    routeStations.sort((a, b) => {
+      const pa = a.station.prices[routeFuel];
+      const pb = b.station.prices[routeFuel];
+      if (pa == null && pb == null) return 0;
+      if (pa == null) return 1;
+      if (pb == null) return -1;
+      return pa - pb;
+    });
+
+    // Clear old station markers
+    routeStationMarkers.forEach(m => map.removeLayer(m));
+    routeStationMarkers = [];
+
+    // Add station markers along route (skip non-stop stations when a stop is selected)
+    for (const { station } of routeStations) {
+      const isStop = routeStop && routeStop.stationId === station.id;
+      if (routeStop && !isStop) continue;
+      const price = station.prices[routeFuel];
+      const color = getColor(price, avg);
+      const marker = L.marker([station.lat, station.lng], {
+        icon: createMarkerIcon(color, price),
+        zIndexOffset: 800,
+      }).addTo(map);
+      marker.bindPopup(createPopup(station, null), { maxWidth: 250 });
+      routeStationMarkers.push(marker);
+    }
+
+    const html = routeStations.map(({ station, distance }) => {
+      const price = station.prices[routeFuel];
+      const priceClass = price == null ? "price-na" :
+        avg && (price - avg) / avg < -0.02 ? "price-low" :
+        avg && (price - avg) / avg > 0.02 ? "price-high" : "price-mid";
+      const priceStr = price != null ? price.toFixed(3) + " \u20ac" : "—";
+      const distStr = distance < 1 ? (distance * 1000).toFixed(0) + " m" : distance.toFixed(1) + " km";
+      const isStop = routeStop && routeStop.stationId === station.id;
+
+      return `<div class="station-item ${isStop ? "route-stop-active" : ""}" data-lat="${station.lat}" data-lng="${station.lng}" data-id="${station.id}">
+        <div class="station-info">
+          <div class="station-name">${station.company}</div>
+          <div class="station-addr">${station.address}, ${station.municipality}</div>
+          <div class="route-distance">${distStr} nuo kelio</div>
+        </div>
+        <div class="station-price-col">
+          <div class="station-price-val ${priceClass}">${priceStr}</div>
+          <button class="route-stop-btn ${isStop ? "active" : ""}" title="${isStop ? "Pašalinti sustojimą" : "Sustoti čia"}">${isStop ? "&#10005;" : "&#9654;"}</button>
+        </div>
+      </div>`;
+    }).join("");
+
+    container.innerHTML = html || '<div style="text-align:center;color:var(--text-dim);padding:20px">Nerasta degalinių šalia maršruto</div>';
+    container.classList.toggle("route-has-stop", !!routeStop);
+
+    container.querySelectorAll(".station-item").forEach(item => {
+      const stopBtn = item.querySelector(".route-stop-btn");
+
+      item.addEventListener("click", (e) => {
+        if (stopBtn.contains(e.target)) return; // handled by stop btn
+        const lat = parseFloat(item.dataset.lat);
+        const lng = parseFloat(item.dataset.lng);
+        map.setView([lat, lng], 15);
+      });
+
+      stopBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const stationId = item.dataset.id;
+        const lat = parseFloat(item.dataset.lat);
+        const lng = parseFloat(item.dataset.lng);
+
+        if (routeStop && routeStop.stationId === stationId) {
+          // Remove stop
+          routeStop = null;
+          if (routeStopMarker) { map.removeLayer(routeStopMarker); routeStopMarker = null; }
+        } else {
+          // Set stop
+          routeStop = { lat, lng, stationId };
+          if (routeStopMarker) map.removeLayer(routeStopMarker);
+          routeStopMarker = L.marker([lat, lng], {
+            icon: makeRouteIcon("S", "#16a34a"),
+            zIndexOffset: 950,
+          }).addTo(map);
+        }
+        fetchAndDisplayRoute();
+      });
+    });
+  }
+
+  function buildGoogleMapsUrl() {
+    let url = "https://www.google.com/maps/dir/";
+    url += `${routeStart.lat},${routeStart.lng}/`;
+    if (routeStop) url += `${routeStop.lat},${routeStop.lng}/`;
+    url += `${routeEnd.lat},${routeEnd.lng}`;
+    return url;
+  }
+
+  function clearRouteVisuals() {
+    if (routePolyline) { map.removeLayer(routePolyline); routePolyline = null; }
+    routeStationMarkers.forEach(m => map.removeLayer(m));
+    routeStationMarkers = [];
+    if (routeStopMarker) { map.removeLayer(routeStopMarker); routeStopMarker = null; }
+  }
+
+  function clearRoute() {
+    routeStart = null;
+    routeEnd = null;
+    routeStop = null;
+    stopRoutePicking();
+    clearRouteVisuals();
+    if (routeStartMarker) { map.removeLayer(routeStartMarker); routeStartMarker = null; }
+    if (routeEndMarker) { map.removeLayer(routeEndMarker); routeEndMarker = null; }
+    const startInput = document.getElementById("route-start-input");
+    const endInput = document.getElementById("route-end-input");
+    startInput.value = "";
+    startInput.classList.remove("route-set");
+    endInput.value = "";
+    endInput.classList.remove("route-set");
+    document.getElementById("route-start-suggestions").classList.remove("visible");
+    document.getElementById("route-end-suggestions").classList.remove("visible");
+    document.getElementById("route-status").textContent = "";
+    document.getElementById("route-results").innerHTML = "";
+    // Restore main markers
+    if (!map.hasLayer(markerCluster)) map.addLayer(markerCluster);
   }
 
   document.addEventListener("DOMContentLoaded", init);
