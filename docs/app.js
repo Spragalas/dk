@@ -447,8 +447,9 @@
         localStorage.setItem("theme", "dark");
         btn.innerHTML = "&#9790;";
       }
-      // Re-render markers to pick up new colors
+      // Re-render markers and trends to pick up new colors
       if (allStations) renderMarkers();
+      if (trendsData.length > 0) renderTrends();
     });
   }
 
@@ -942,14 +943,15 @@
   function renderTrends() {
     if (trendsData.length === 0) return;
 
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
     const showAll = trendsFuel === "all";
     const fuels = showAll
       ? [
-          { key: "petrol95", label: "95 benzinas", color: "#4c8bf5" },
-          { key: "diesel", label: "Dyzelinas", color: "#f59e0b" },
-          { key: "lpg", label: "SND", color: "#10b981" },
+          { key: "petrol95", label: "95 benzinas", color: isDark ? "#e0e0e0" : "#111111" },
+          { key: "diesel", label: "Dyzelinas", color: isDark ? "#888888" : "#666666" },
+          { key: "lpg", label: "SND", color: isDark ? "#555555" : "#bbbbbb" },
         ]
-      : [{ key: trendsFuel, label: FUEL_LABELS[trendsFuel], color: "#4c8bf5" }];
+      : [{ key: trendsFuel, label: FUEL_LABELS[trendsFuel], color: isDark ? "#e0e0e0" : "#111111" }];
 
     renderTrendsChart(fuels, showAll);
     renderTrendsTable(fuels, showAll);
@@ -1354,14 +1356,14 @@
       routeStart = latlng;
       if (routeStartMarker) map.removeLayer(routeStartMarker);
       routeStartMarker = L.marker([latlng.lat, latlng.lng], {
-        icon: makeRouteIcon("A", "#4c8bf5"),
+        icon: makeRouteIcon("A", "#111111"),
         zIndexOffset: 900,
       }).addTo(map);
     } else {
       routeEnd = latlng;
       if (routeEndMarker) map.removeLayer(routeEndMarker);
       routeEndMarker = L.marker([latlng.lat, latlng.lng], {
-        icon: makeRouteIcon("B", "#dc2626"),
+        icon: makeRouteIcon("B", "#555555"),
         zIndexOffset: 900,
       }).addTo(map);
     }
@@ -1397,9 +1399,9 @@
 
       // Draw route on map
       routePolyline = L.polyline(coords, {
-        color: "#4c8bf5",
-        weight: 4,
-        opacity: 0.7,
+        color: "#111111",
+        weight: 3,
+        opacity: 0.6,
       }).addTo(map);
 
       map.fitBounds(routePolyline.getBounds(), { padding: [50, 50] });
@@ -1574,7 +1576,7 @@
           routeStop = { lat, lng, stationId };
           if (routeStopMarker) map.removeLayer(routeStopMarker);
           routeStopMarker = L.marker([lat, lng], {
-            icon: makeRouteIcon("S", "#16a34a"),
+            icon: makeRouteIcon("S", "#16a34a"),  /* keep green — semantic */
             zIndexOffset: 950,
           }).addTo(map);
         }
