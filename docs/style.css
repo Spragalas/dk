@@ -1459,6 +1459,11 @@ body.side-open #map {
     box-shadow: none;
   }
 
+  #panel:has(#panel-body.collapsed) {
+    flex: 0 0 auto;
+    overflow-y: hidden;
+  }
+
   #fuel-tabs {
     flex-wrap: wrap;
   }
