@@ -199,7 +199,7 @@ def main():
             url = build_url(target_date)
             print(f"Downloading {url} ...")
             try:
-                resp = requests.get(url, timeout=30, allow_redirects=False)
+                resp = requests.get(url, timeout=30, allow_redirects=True)
                 if resp.status_code == 200:
                     with tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False) as tmp:
                         tmp.write(resp.content)
