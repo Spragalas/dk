@@ -63,10 +63,36 @@
 
     <div id="filters">
       <div class="filter-section">
-        <label for="company-select">Tinklas:</label>
-        <select id="company-select">
-          <option value="">Visi</option>
-        </select>
+        <label>Tinklas:</label>
+        <div class="multi-select" id="company-filter">
+          <button class="multi-select-btn" type="button">
+            <span class="multi-select-label">Visi</span>
+            <span class="multi-select-arrow">▾</span>
+          </button>
+          <div class="multi-select-dropdown">
+            <div class="multi-select-actions">
+              <button type="button" data-action="all">Visi</button>
+              <button type="button" data-action="none">Joks</button>
+            </div>
+            <div class="multi-select-options"></div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-section">
+        <label>Regionas:</label>
+        <div class="multi-select" id="region-filter">
+          <button class="multi-select-btn" type="button">
+            <span class="multi-select-label">Visi</span>
+            <span class="multi-select-arrow">▾</span>
+          </button>
+          <div class="multi-select-dropdown">
+            <div class="multi-select-actions">
+              <button type="button" data-action="all">Visi</button>
+              <button type="button" data-action="none">Joks</button>
+            </div>
+            <div class="multi-select-options"></div>
+          </div>
+        </div>
       </div>
       <div class="filter-section">
         <label for="search-input">Paieška:</label>

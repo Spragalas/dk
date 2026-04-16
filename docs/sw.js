@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v1";
+const CACHE_VERSION = "v2";
 const STATIC_CACHE = `pilnasbakas-static-${CACHE_VERSION}`;
 const DATA_CACHE = `pilnasbakas-data-${CACHE_VERSION}`;
 
@@ -15,6 +15,9 @@ const STATIC_ASSETS = [
   "https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css",
   "https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js",
 ];
+
+// CDN assets that never change — safe to cache-first
+const CDN_HOSTS = ["unpkg.com"];
 
 // Install: cache static assets
 self.addEventListener("install", (event) => {
@@ -38,36 +41,38 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// Fetch: network-first for data, cache-first for static assets
+// Fetch: network-first for all own assets, cache-first only for CDN
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
 
-  // Data files: network-first, fall back to cache
-  if (url.pathname.startsWith("/data/")) {
+  // CDN assets (versioned, immutable): cache-first
+  if (CDN_HOSTS.some((h) => url.hostname === h)) {
     event.respondWith(
-      fetch(event.request)
-        .then((response) => {
-          const clone = response.clone();
-          caches.open(DATA_CACHE).then((cache) => cache.put(event.request, clone));
+      caches.match(event.request).then((cached) => {
+        if (cached) return cached;
+        return fetch(event.request).then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(STATIC_CACHE).then((cache) => cache.put(event.request, clone));
+          }
           return response;
-        })
-        .catch(() => caches.match(event.request))
+        });
+      })
     );
     return;
   }
 
-  // Static assets: cache-first, fall back to network
+  // All own assets (HTML, JS, CSS, data): network-first, fall back to cache
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      if (cached) return cached;
-      return fetch(event.request).then((response) => {
-        // Cache same-origin responses and CDN assets
-        if (response.ok && (url.origin === self.location.origin || url.hostname === "unpkg.com")) {
+    fetch(event.request)
+      .then((response) => {
+        if (response.ok) {
           const clone = response.clone();
-          caches.open(STATIC_CACHE).then((cache) => cache.put(event.request, clone));
+          const cacheName = url.pathname.startsWith("/data/") ? DATA_CACHE : STATIC_CACHE;
+          caches.open(cacheName).then((cache) => cache.put(event.request, clone));
         }
         return response;
-      });
-    })
+      })
+      .catch(() => caches.match(event.request))
   );
 });

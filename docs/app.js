@@ -9,6 +9,30 @@
   let historyDates = [];
   let companyFilterPopulated = false;
   let clusterMode = "min"; // "min" or "max"
+  let selectedCompanies = null; // null = all, Set = selected
+  let selectedRegions = null; // null = all, Set = selected
+
+  // Lithuania's 10 counties (apskritys) -> municipality prefixes
+  const REGIONS = {
+    "Vilniaus": ["Vilniaus m.", "Vilniaus r.", "Elektrėnų", "Šalčininkų r.", "Širvintų r.", "Švenčionių r.", "Trakų r.", "Ukmergės r."],
+    "Kauno": ["Kauno m.", "Kauno r.", "Jonavos r.", "Kaišiadorių r.", "Kėdainių r.", "Prienų r.", "Raseinių r.", "Birštono"],
+    "Klaipėdos": ["Klaipėdos m.", "Klaipėdos r.", "Kretingos r.", "Neringos", "Palangos m.", "Skuodo r.", "Šilutės r."],
+    "Šiaulių": ["Šiaulių m.", "Šiaulių r.", "Akmenės r.", "Joniškio r.", "Kelmės r.", "Pakruojo r.", "Radviliškio r."],
+    "Panevėžio": ["Panevėžio m.", "Panevėžio r.", "Biržų r.", "Kupiškio r.", "Pasvalio r.", "Rokiškio r."],
+    "Alytaus": ["Alytaus m.", "Alytaus r.", "Druskininkų", "Lazdijų r.", "Varėnos r."],
+    "Marijampolės": ["Marijampolės", "Kalvarijos", "Kazlų Rūdos", "Šakių r.", "Vilkaviškio r."],
+    "Tauragės": ["Tauragės r.", "Jurbarko r.", "Pagėgių", "Šilalės r."],
+    "Telšių": ["Telšių r.", "Mažeikių r.", "Plungės r.", "Rietavo"],
+    "Utenos": ["Utenos r.", "Anykščių r.", "Ignalinos r.", "Molėtų r.", "Visagino", "Zarasų r."],
+  };
+
+  function getRegionForMunicipality(municipality) {
+    const m = municipality.trim();
+    for (const [region, prefixes] of Object.entries(REGIONS)) {
+      if (prefixes.some(p => m.startsWith(p))) return region;
+    }
+    return null;
+  }
   let userLocation = null; // { lat, lng }
   let userMarker = null;
   let nearMeActive = false;
@@ -26,8 +50,8 @@
     }
     state.fuel = currentFuel;
     state.clusterMode = clusterMode;
-    const company = document.getElementById("company-select");
-    if (company) state.company = company.value;
+    if (selectedCompanies) state.companies = [...selectedCompanies];
+    if (selectedRegions) state.regions = [...selectedRegions];
     const search = document.getElementById("search-input");
     if (search) state.search = search.value;
     const history = document.getElementById("history-select");
@@ -136,10 +160,7 @@
       .catch(() => { geocache = {}; })
       .then(() => loadData("data/stations.json"))
       .then(() => {
-        if (saved.company) {
-          document.getElementById("company-select").value = saved.company;
-          renderMarkers();
-        }
+        // Filter state is restored in populateCompanyFilter after data loads
       });
   }
 
@@ -215,6 +236,14 @@
       if (!companyFilterPopulated) {
         populateCompanyFilter();
         companyFilterPopulated = true;
+        // Restore saved filter selections after populating
+        const saved = loadState();
+        if (saved.companies && companyMultiSelect) {
+          companyMultiSelect.setSelected(saved.companies);
+        }
+        if (saved.regions && regionMultiSelect) {
+          regionMultiSelect.setSelected(saved.regions);
+        }
       }
     } catch (err) {
       console.error("Failed to load data:", err);
@@ -334,14 +363,17 @@
   function renderMarkers() {
     markerCluster.clearLayers();
     const avg = averages[currentFuel];
-    const companyFilter = document.getElementById("company-select").value;
     const searchFilter = document.getElementById("search-input").value.toLowerCase();
     const radiusKm = nearMeActive ? parseInt(document.getElementById("radius-input").value) : null;
 
     let candidates = [];
     for (const station of allStations) {
       if (station.lat == null || station.lng == null) continue;
-      if (companyFilter && station.company !== companyFilter) continue;
+      if (selectedCompanies && !selectedCompanies.has(station.company)) continue;
+      if (selectedRegions) {
+        const region = getRegionForMunicipality(station.municipality);
+        if (!region || !selectedRegions.has(region)) continue;
+      }
       if (searchFilter) {
         const haystack = `${station.address} ${station.municipality} ${station.company}`.toLowerCase();
         if (!haystack.includes(searchFilter)) continue;
@@ -552,11 +584,105 @@
     });
   }
 
+  // --- Multi-select dropdown ---
+  function initMultiSelect(containerId, items, onChangeCallback) {
+    const container = document.getElementById(containerId);
+    const btn = container.querySelector(".multi-select-btn");
+    const dropdown = container.querySelector(".multi-select-dropdown");
+    const optionsDiv = container.querySelector(".multi-select-options");
+    const labelSpan = container.querySelector(".multi-select-label");
+
+    // Populate options — items can be strings or { value, label } objects
+    optionsDiv.innerHTML = items.map(item => {
+      const value = typeof item === "string" ? item : item.value;
+      const label = typeof item === "string" ? item : item.label;
+      return `<label class="multi-select-option">
+        <input type="checkbox" value="${value}" checked>
+        <span>${label}</span>
+      </label>`;
+    }).join("");
+
+    function getSelected() {
+      const checked = optionsDiv.querySelectorAll("input:checked");
+      const all = optionsDiv.querySelectorAll("input");
+      if (checked.length === all.length) return null; // all selected
+      return new Set([...checked].map(cb => cb.value));
+    }
+
+    function updateLabel() {
+      const checked = optionsDiv.querySelectorAll("input:checked");
+      const all = optionsDiv.querySelectorAll("input");
+      if (checked.length === 0) {
+        labelSpan.textContent = "Nepasirinkta";
+      } else if (checked.length === all.length) {
+        labelSpan.textContent = "Visi";
+      } else if (checked.length <= 2) {
+        labelSpan.textContent = [...checked].map(cb => cb.value).join(", ");
+      } else {
+        labelSpan.textContent = `${checked.length} iš ${all.length}`;
+      }
+    }
+
+    // Toggle dropdown
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      // Close other dropdowns
+      document.querySelectorAll(".multi-select-dropdown.open").forEach(d => {
+        if (d !== dropdown) d.classList.remove("open");
+      });
+      dropdown.classList.toggle("open");
+    });
+
+    // Select all / none
+    container.querySelectorAll(".multi-select-actions button").forEach(b => {
+      b.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const action = b.dataset.action;
+        optionsDiv.querySelectorAll("input").forEach(cb => { cb.checked = action === "all"; });
+        updateLabel();
+        onChangeCallback(getSelected());
+      });
+    });
+
+    // Checkbox change
+    optionsDiv.addEventListener("change", () => {
+      updateLabel();
+      onChangeCallback(getSelected());
+    });
+
+    // Close on outside click
+    document.addEventListener("click", (e) => {
+      if (!container.contains(e.target)) {
+        dropdown.classList.remove("open");
+      }
+    });
+
+    // Return helpers for state restore
+    return {
+      setSelected(values) {
+        if (!values) return; // keep all checked
+        const valSet = new Set(values);
+        optionsDiv.querySelectorAll("input").forEach(cb => {
+          cb.checked = valSet.has(cb.value);
+        });
+        updateLabel();
+        onChangeCallback(getSelected());
+      }
+    };
+  }
+
+  let companyMultiSelect = null;
+  let regionMultiSelect = null;
+
   function setupFilters() {
-    document.getElementById("company-select").addEventListener("change", () => {
+    // Region filter (static)
+    const regionNames = Object.keys(REGIONS).sort((a, b) => a.localeCompare(b, "lt"));
+    regionMultiSelect = initMultiSelect("region-filter", regionNames, (selected) => {
+      selectedRegions = selected;
       renderMarkers();
       saveState();
     });
+
     let searchTimeout;
     document.getElementById("search-input").addEventListener("input", () => {
       clearTimeout(searchTimeout);
@@ -568,14 +694,18 @@
   }
 
   function populateCompanyFilter() {
-    const companies = [...new Set(allStations.map((s) => s.company))].sort();
-    const select = document.getElementById("company-select");
-    for (const company of companies) {
-      const opt = document.createElement("option");
-      opt.value = company;
-      opt.textContent = company;
-      select.appendChild(opt);
+    const counts = {};
+    for (const s of allStations) {
+      counts[s.company] = (counts[s.company] || 0) + 1;
     }
+    const companies = Object.keys(counts)
+      .sort((a, b) => counts[b] - counts[a] || a.localeCompare(b, "lt"))
+      .map(c => ({ value: c, label: `${c} (${counts[c]})` }));
+    companyMultiSelect = initMultiSelect("company-filter", companies, (selected) => {
+      selectedCompanies = selected;
+      renderMarkers();
+      saveState();
+    });
   }
 
   // --- Side Panel Management ---
