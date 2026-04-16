@@ -57,12 +57,16 @@ def get_sharepoint_link(target_date: str | None = None) -> tuple[str, str]:
     # Sort by date descending to get the latest
     links_with_dates.sort(key=lambda x: x[1], reverse=True)
 
+    print(f"DEBUG: found {len(links_with_dates)} links with dates: {[(d, u[-30:]) for u, d in links_with_dates]}")
+
     if target_date:
-        # Find specific date
+        # Find specific date — first try exact match
         for url, date in links_with_dates:
             if date == target_date:
                 return url, date
-        raise RuntimeError(f"No SharePoint link found for date {target_date}")
+        # If no exact match, return the latest available
+        print(f"No exact match for {target_date}, using latest: {links_with_dates[0][1]}")
+        return links_with_dates[0]
 
     # Return the latest
     return links_with_dates[0]
