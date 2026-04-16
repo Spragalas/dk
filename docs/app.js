@@ -459,6 +459,7 @@
     btn.addEventListener("click", () => {
       body.classList.toggle("collapsed");
       btn.innerHTML = body.classList.contains("collapsed") ? "&#9660;" : "&#9650;";
+      setTimeout(() => map.invalidateSize(), 350);
     });
   }
 
