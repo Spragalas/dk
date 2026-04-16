@@ -1441,10 +1441,13 @@ body.side-open #map {
   }
 
   #map {
-    flex-shrink: 0;
-    height: 60vh !important;
+    flex: 0 0 60vh;
     width: 100% !important;
     order: -1;
+  }
+
+  body:has(#panel-body.collapsed) #map {
+    flex: 1 0 60vh;
   }
 
   #panel {
