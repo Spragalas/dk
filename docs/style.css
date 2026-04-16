@@ -1441,13 +1441,13 @@ body.side-open #map {
   }
 
   #map {
-    flex: 0 0 60vh;
+    flex: 0 0 50vh;
     width: 100% !important;
     order: -1;
   }
 
   body:has(#panel-body.collapsed) #map {
-    flex: 1 0 60vh;
+    flex: 1 0 50vh;
   }
 
   #panel {
@@ -1473,12 +1473,16 @@ body.side-open #map {
 
   .side-panel {
     width: 100%;
-    top: 60vh;
+    top: 0;
     bottom: 0;
-    height: auto;
+    height: 100vh;
     border-left: none;
-    border-top: 1px solid var(--border);
+    border-top: none;
     z-index: 2000;
+  }
+
+  .side-view {
+    overflow-y: auto;
   }
 
   .side-panel.hidden {
