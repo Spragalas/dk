@@ -26,9 +26,9 @@ def get_sharepoint_link(target_date: str | None = None) -> tuple[str, str]:
     html = resp.text
 
     # Find all SharePoint links with their associated dates
-    # Pattern: links like https://ltenergagen.sharepoint.com/...
+    # Pattern: links like https://ltenargagen.sharepoint.com/...
     # Near text like "2026-04-11" or "(2026-04-11)"
-    sp_pattern = r'href="(https://ltenergagen\.sharepoint\.com[^"]+)"'
+    sp_pattern = r'href="(https://ltenargagen\.sharepoint\.com[^"]+)"'
     date_pattern = r'(\d{4}-\d{2}-\d{2})'
 
     matches = list(re.finditer(sp_pattern, html))
