@@ -21,18 +21,21 @@ def get_sharepoint_link(target_date: str | None = None) -> tuple[str, str]:
 
     Returns (sharepoint_url, date_string).
     """
-    resp = requests.get(ENA_PAGE, timeout=15)
+    resp = requests.get(ENA_PAGE, timeout=15, headers={
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    })
     resp.raise_for_status()
     html = resp.text
 
     # Find all SharePoint links with their associated dates
-    # Pattern: links like https://ltenargagen.sharepoint.com/...
+    # Pattern: links like https://ltenergagen.sharepoint.com/...
     # Near text like "2026-04-11" or "(2026-04-11)"
-    sp_pattern = r'href="(https://ltenargagen\.sharepoint\.com[^"]+)"'
+    sp_pattern = r'href="(https://ltenergagen\.sharepoint\.com[^"]+)"'
     date_pattern = r'(\d{4}-\d{2}-\d{2})'
 
     matches = list(re.finditer(sp_pattern, html))
     if not matches:
+        print(f"DEBUG: page length={len(html)}, 'sharepoint' in page={'sharepoint' in html.lower()}")
         raise RuntimeError("No SharePoint links found on ena.lt")
 
     # For each SP link, find the nearest date
