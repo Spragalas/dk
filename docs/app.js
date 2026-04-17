@@ -897,30 +897,6 @@
 
   let trendsData = []; // [{ date, stats: { petrol95: {min,avg,median,max}, ... } }]
 
-  function computeStats(stations) {
-    const fuelKeys = ["petrol95", "diesel", "lpg"];
-    const result = {};
-    for (const fuel of fuelKeys) {
-      const prices = stations.map(s => s.prices[fuel]).filter(p => p != null).sort((a, b) => a - b);
-      if (prices.length === 0) {
-        result[fuel] = null;
-        continue;
-      }
-      const sum = prices.reduce((a, b) => a + b, 0);
-      const mid = Math.floor(prices.length / 2);
-      const median = prices.length % 2 === 0
-        ? (prices[mid - 1] + prices[mid]) / 2
-        : prices[mid];
-      result[fuel] = {
-        min: prices[0],
-        avg: Math.round((sum / prices.length) * 1000) / 1000,
-        median: Math.round(median * 1000) / 1000,
-        max: prices[prices.length - 1],
-      };
-    }
-    return result;
-  }
-
   async function loadTrendsData() {
     if (trendsData.length > 0) {
       renderTrends();
@@ -929,15 +905,22 @@
     const chartEl = document.getElementById("trends-chart");
     chartEl.innerHTML = '<div style="text-align:center;color:var(--text-dim);padding:20px">Kraunama...</div>';
 
-    const results = [];
-    for (const date of historyDates) {
-      try {
-        const resp = await fetch(`data/history/${date}.json`);
-        const hist = await resp.json();
-        results.push({ date: hist.date, stats: computeStats(hist.stations) });
-      } catch { /* skip */ }
+    try {
+      const resp = await fetch("data/price-trends.jsonl");
+      const text = await resp.text();
+      trendsData = text.trim().split("\n")
+        .filter(line => line.length > 0)
+        .map(line => {
+          const entry = JSON.parse(line);
+          return {
+            date: entry.date,
+            stats: { petrol95: entry.petrol95, diesel: entry.diesel, lpg: entry.lpg },
+          };
+        })
+        .sort((a, b) => a.date.localeCompare(b.date));
+    } catch {
+      trendsData = [];
     }
-    trendsData = results.sort((a, b) => a.date.localeCompare(b.date));
     renderTrends();
   }
 

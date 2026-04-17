@@ -4,6 +4,7 @@
 import json
 import os
 import shutil
+import statistics
 import sys
 import tempfile
 from datetime import datetime, timedelta, timezone
@@ -149,6 +150,32 @@ def compute_averages(stations: list[dict]) -> dict:
     }
 
 
+def compute_trend_stats(stations: list[dict]) -> dict:
+    """Return {petrol95: {min,avg,median,max}, diesel: {...}, lpg: {...}}."""
+    result = {}
+    for fuel in ("petrol95", "diesel", "lpg"):
+        prices = [s["prices"][fuel] for s in stations if s["prices"].get(fuel) is not None]
+        if not prices:
+            result[fuel] = None
+            continue
+        result[fuel] = {
+            "min": round(min(prices), 3),
+            "avg": round(sum(prices) / len(prices), 3),
+            "median": round(statistics.median(prices), 3),
+            "max": round(max(prices), 3),
+        }
+    return result
+
+
+def append_trend_line(date_str: str, stations: list[dict]) -> None:
+    """Append one line to docs/data/price-trends.jsonl for this date."""
+    trends_path = DOCS_DATA / "price-trends.jsonl"
+    entry = {"date": date_str, **compute_trend_stats(stations)}
+    trends_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(trends_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+
 def add_price_changes(stations: list[dict], changes: dict) -> list[dict]:
     """Add price change data to stations."""
     result = []
@@ -232,6 +259,9 @@ def main():
         with open(history_file, "w", encoding="utf-8") as f:
             json.dump(history_data, f, ensure_ascii=False, indent=2)
         print(f"Saved {history_file}")
+
+        append_trend_line(date_str, stations)
+        print(f"Appended trend line for {date_str}")
 
     # Load today's data
     with open(history_file, encoding="utf-8") as f:
