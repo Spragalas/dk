@@ -11,6 +11,9 @@
   let clusterMode = "min"; // "min" or "max"
   let selectedCompanies = null; // null = all, Set = selected
   let selectedRegions = null; // null = all, Set = selected
+  let heatmapOn = false;
+  let heatLayer = null;
+  let ltBorder = null; // GeoJSON geometry (Polygon or MultiPolygon)
 
   // Lithuania's 10 counties (apskritys) -> municipality prefixes
   const REGIONS = {
@@ -50,6 +53,7 @@
     }
     state.fuel = currentFuel;
     state.clusterMode = clusterMode;
+    state.heatmapOn = heatmapOn;
     if (selectedCompanies) state.companies = [...selectedCompanies];
     if (selectedRegions) state.regions = [...selectedRegions];
     const search = document.getElementById("search-input");
@@ -125,9 +129,13 @@
     // Restore cluster mode
     if (saved.clusterMode) {
       clusterMode = saved.clusterMode;
-      document.querySelectorAll(".mode-tab").forEach((b) => {
-        b.classList.toggle("active", b.dataset.mode === clusterMode);
-      });
+      document.getElementById("cluster-checkbox").checked = clusterMode === "max";
+    }
+
+    // Restore heatmap toggle
+    if (saved.heatmapOn) {
+      heatmapOn = true;
+      document.getElementById("heatmap-checkbox").checked = true;
     }
 
     // Restore search input
@@ -144,6 +152,7 @@
     setupPanelToggle();
     setupFuelTabs();
     setupClusterMode();
+    setupHeatmapToggle();
     setupFilters();
     setupNearMe();
     setupListView();
@@ -152,6 +161,12 @@
     setupHistory(saved);
 
     map.on("click", handleRouteMapClick);
+
+    // Border used to clip the heatmap — best-effort, don't block data load.
+    fetch("data/lithuania-border.geojson")
+      .then((r) => r.json())
+      .then((g) => { ltBorder = g; if (heatmapOn && allStations) renderMarkers(); })
+      .catch(() => { ltBorder = null; });
 
     // Load geocache first, then latest station data (always fresh on page load)
     fetch("data/geocache.json")
@@ -288,12 +303,12 @@
     const max = Math.max(...prices);
 
     el.innerHTML = [
-      { label: "Mažiausia", value: min },
-      { label: "Vidutin\u0117", value: avg },
-      { label: "Didžiausia", value: max },
+      { label: "Mažiausia", value: min, color: "var(--green)" },
+      { label: "Vidutin\u0117", value: avg, color: "var(--yellow)" },
+      { label: "Didžiausia", value: max, color: "var(--red)" },
     ]
       .map((r) => `<div class="avg-row">
-        <span class="avg-label">${r.label}</span>
+        <span class="avg-label"><span class="dot" style="background:${r.color}"></span>${r.label}</span>
         <span class="avg-value">${r.value.toFixed(3)} \u20ac</span>
       </div>`)
       .join("");
@@ -418,6 +433,184 @@
     }
 
     updateStats(candidates.length);
+    renderHeatmap(candidates);
+  }
+
+  const HEAT_GRADIENT = [
+    [0.0, [30, 64, 175]],     // indigo-800 — cheapest
+    [0.3, [56, 189, 248]],    // sky-400
+    [0.5, [253, 224, 71]],    // yellow-300 — median
+    [0.7, [249, 115, 22]],    // orange-500
+    [1.0, [153, 27, 27]],     // red-800 — most expensive
+  ];
+
+  function gradientColor(t) {
+    t = Math.max(0, Math.min(1, t));
+    for (let i = 0; i < HEAT_GRADIENT.length - 1; i++) {
+      const [t0, c0] = HEAT_GRADIENT[i];
+      const [t1, c1] = HEAT_GRADIENT[i + 1];
+      if (t <= t1) {
+        const f = (t - t0) / (t1 - t0);
+        return [
+          Math.round(c0[0] + f * (c1[0] - c0[0])),
+          Math.round(c0[1] + f * (c1[1] - c0[1])),
+          Math.round(c0[2] + f * (c1[2] - c0[2])),
+        ];
+      }
+    }
+    return HEAT_GRADIENT[HEAT_GRADIENT.length - 1][1];
+  }
+
+  function renderHeatmap(candidates) {
+    if (heatLayer) {
+      map.removeLayer(heatLayer);
+      heatLayer = null;
+    }
+    if (!heatmapOn) return;
+
+    const priced = candidates
+      .map(({ station }) => ({
+        lat: station.lat,
+        lng: station.lng,
+        price: station.prices[currentFuel],
+      }))
+      .filter((s) => s.price != null);
+
+    if (priced.length === 0) return;
+
+    const prices = priced.map((s) => s.price);
+    const sortedPrices = [...prices].sort((a, b) => a - b);
+    // Percentile rank spreads price distribution uniformly across [0,1],
+    // so the full gradient is used regardless of how tightly prices cluster.
+    const percentileRank = (p) => {
+      let lo = 0, hi = sortedPrices.length;
+      while (lo < hi) {
+        const mid = (lo + hi) >> 1;
+        if (sortedPrices[mid] < p) lo = mid + 1;
+        else hi = mid;
+      }
+      return lo / sortedPrices.length;
+    };
+
+    // IDW interpolation onto a regular grid, rendered to a canvas that
+    // Leaflet bilinearly upsamples — giving a smooth price field over all
+    // of Lithuania without visible grid lines.
+    const pad = 0.2;
+    const minLat = Math.min(...priced.map((s) => s.lat)) - pad;
+    const maxLat = Math.max(...priced.map((s) => s.lat)) + pad;
+    const minLng = Math.min(...priced.map((s) => s.lng)) - pad;
+    const maxLng = Math.max(...priced.map((s) => s.lng)) + pad;
+
+    const step = 0.03;
+    const maxDistDeg = 0.5;
+    const maxDist2 = maxDistDeg * maxDistDeg;
+    const falloff2 = (maxDistDeg * 0.6) ** 2; // start fading alpha beyond this
+
+    const rows = Math.floor((maxLat - minLat) / step) + 1;
+    const cols = Math.floor((maxLng - minLng) / step) + 1;
+    const sumWP = new Float64Array(rows * cols);
+    const sumW = new Float64Array(rows * cols);
+    const nearest2 = new Float64Array(rows * cols).fill(Infinity);
+
+    const radiusCells = maxDistDeg / step;
+    for (const s of priced) {
+      const cLat = (s.lat - minLat) / step;
+      const cLng = (s.lng - minLng) / step;
+      const cosLat = Math.cos((s.lat * Math.PI) / 180);
+      const i0 = Math.max(0, Math.floor(cLat - radiusCells));
+      const i1 = Math.min(rows - 1, Math.ceil(cLat + radiusCells));
+      const j0 = Math.max(0, Math.floor(cLng - radiusCells));
+      const j1 = Math.min(cols - 1, Math.ceil(cLng + radiusCells));
+      for (let i = i0; i <= i1; i++) {
+        const lat = minLat + i * step;
+        const dLat = lat - s.lat;
+        for (let j = j0; j <= j1; j++) {
+          const lng = minLng + j * step;
+          const dLng = (lng - s.lng) * cosLat;
+          const d2 = dLat * dLat + dLng * dLng;
+          if (d2 > maxDist2) continue;
+          const idx = i * cols + j;
+          const w = 1 / (d2 + 0.0001);
+          sumWP[idx] += w * s.price;
+          sumW[idx] += w;
+          if (d2 < nearest2[idx]) nearest2[idx] = d2;
+        }
+      }
+    }
+
+    const canvas = document.createElement("canvas");
+    canvas.width = cols;
+    canvas.height = rows;
+    const ctx = canvas.getContext("2d");
+    const img = ctx.createImageData(cols, rows);
+    const data = img.data;
+
+    for (let i = 0; i < rows; i++) {
+      // Canvas Y runs top→bottom; lat runs bottom→top. Flip row index.
+      const canvasRow = rows - 1 - i;
+      for (let j = 0; j < cols; j++) {
+        const idx = i * cols + j;
+        const px = (canvasRow * cols + j) * 4;
+        if (sumW[idx] === 0) {
+          data[px + 3] = 0;
+          continue;
+        }
+        const price = sumWP[idx] / sumW[idx];
+        const norm = percentileRank(price);
+        const [r, g, b] = gradientColor(norm);
+        // Fade alpha in the outer ring where only distant stations influence.
+        let alpha = 200;
+        if (nearest2[idx] > falloff2) {
+          const t = (nearest2[idx] - falloff2) / (maxDist2 - falloff2);
+          alpha = Math.round(200 * (1 - t));
+        }
+        data[px] = r;
+        data[px + 1] = g;
+        data[px + 2] = b;
+        data[px + 3] = alpha;
+      }
+    }
+    ctx.putImageData(img, 0, 0);
+
+    if (ltBorder) {
+      clipCanvasToGeometry(ctx, ltBorder, minLat, maxLat, minLng, maxLng, cols, rows);
+    }
+
+    heatLayer = L.imageOverlay(canvas.toDataURL(), [[minLat, minLng], [maxLat, maxLng]], {
+      opacity: 0.7,
+      interactive: false,
+      zIndex: 200,
+    }).addTo(map);
+  }
+
+  function clipCanvasToGeometry(ctx, geom, minLat, maxLat, minLng, maxLng, cols, rows) {
+    const polygons =
+      geom.type === "MultiPolygon" ? geom.coordinates :
+      geom.type === "Polygon" ? [geom.coordinates] :
+      [];
+    if (polygons.length === 0) return;
+
+    const lngSpan = maxLng - minLng;
+    const latSpan = maxLat - minLat;
+
+    ctx.save();
+    ctx.globalCompositeOperation = "destination-in";
+    ctx.beginPath();
+    for (const rings of polygons) {
+      for (const ring of rings) {
+        for (let k = 0; k < ring.length; k++) {
+          const [lng, lat] = ring[k];
+          const x = ((lng - minLng) / lngSpan) * cols;
+          const y = ((maxLat - lat) / latSpan) * rows;
+          if (k === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+      }
+    }
+    ctx.fillStyle = "#000";
+    ctx.fill("evenodd");
+    ctx.restore();
   }
 
   function updateStats(shown) {
@@ -477,14 +670,20 @@
   }
 
   function setupClusterMode() {
-    document.querySelectorAll(".mode-tab").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".mode-tab").forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
-        clusterMode = btn.dataset.mode;
-        renderMarkers();
-        saveState();
-      });
+    const checkbox = document.getElementById("cluster-checkbox");
+    checkbox.addEventListener("change", () => {
+      clusterMode = checkbox.checked ? "max" : "min";
+      renderMarkers();
+      saveState();
+    });
+  }
+
+  function setupHeatmapToggle() {
+    const checkbox = document.getElementById("heatmap-checkbox");
+    checkbox.addEventListener("change", () => {
+      heatmapOn = checkbox.checked;
+      if (allStations) renderMarkers();
+      saveState();
     });
   }
 
@@ -1025,14 +1224,14 @@
         lines += makeLine(pts, f.color, 2.5, null);
         lines += makeDots(pts, f.color, 4);
       } else {
-        // Single fuel mode: show min, median, max bands
-        const minPts = [], medPts = [], maxPts = [];
+        // Single fuel mode: show min, average, max bands
+        const minPts = [], avgPts = [], maxPts = [];
         for (let i = 0; i < trendsData.length; i++) {
           const s = trendsData[i].stats[f.key];
           if (!s) continue;
           const x = xPos(i);
           minPts.push({ x, y: yPos(s.min) });
-          medPts.push({ x, y: yPos(s.median) });
+          avgPts.push({ x, y: yPos(s.avg) });
           maxPts.push({ x, y: yPos(s.max) });
         }
 
@@ -1047,9 +1246,9 @@
         lines += makeLine(minPts, getCSSVar("--green"), 1.5, "4 3");
         // Max line (dashed, thin)
         lines += makeLine(maxPts, getCSSVar("--red"), 1.5, "4 3");
-        // Median line (solid, bold)
-        lines += makeLine(medPts, f.color, 2.5, null);
-        lines += makeDots(medPts, f.color, 4);
+        // Average line (solid, bold)
+        lines += makeLine(avgPts, f.color, 2.5, null);
+        lines += makeDots(avgPts, f.color, 4);
         lines += makeDots(minPts, getCSSVar("--green"), 3);
         lines += makeDots(maxPts, getCSSVar("--red"), 3);
       }
@@ -1066,7 +1265,7 @@
     } else {
       const items = [
         { label: "Mažiausia", color: getCSSVar("--green"), dash: "4 3" },
-        { label: "Mediana", color: fuels[0].color, dash: null },
+        { label: "Vidurkis", color: fuels[0].color, dash: null },
         { label: "Didžiausia", color: getCSSVar("--red"), dash: "4 3" },
       ];
       items.forEach((item, i) => {

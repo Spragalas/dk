@@ -103,21 +103,6 @@
       </div>
     </div>
 
-    <div id="cluster-mode">
-      <label>Grupėje rodyti:</label>
-      <div id="mode-tabs">
-        <button class="mode-tab active" data-mode="min">Min</button>
-        <button class="mode-tab" data-mode="max">Max</button>
-      </div>
-    </div>
-
-    <div id="legend">
-      <div class="legend-title">Kaina vs vidurkis</div>
-      <div class="legend-row"><span class="dot" style="background:#34d399"></span> Pigiau</div>
-      <div class="legend-row"><span class="dot" style="background:#fbbf24"></span> Apie vidurkį</div>
-      <div class="legend-row"><span class="dot" style="background:#f87171"></span> Brangiau</div>
-    </div>
-
     <div id="stats"></div>
 
     <div id="views">
@@ -125,6 +110,18 @@
       <button id="trends-btn" title="Kainų tendencijos">&#9650; Tendencijos</button>
       <button id="route-btn" title="Pigiausios degalinės kelyje">&#9654; Maršrutas</button>
     </div>
+
+    <label id="heatmap-toggle" class="toggle-row">
+      <span>Heat Map</span>
+      <input type="checkbox" id="heatmap-checkbox">
+      <span class="toggle-slider"></span>
+    </label>
+
+    <label id="cluster-toggle" class="toggle-row">
+      <span>Grupėje rodyti Max</span>
+      <input type="checkbox" id="cluster-checkbox">
+      <span class="toggle-slider"></span>
+    </label>
 
     <button id="install-btn" class="hidden" title="Įdiegti programėlę">&#11015; Įdiegti programėlę</button>
 
