@@ -27,32 +27,30 @@ def get_sharepoint_link(target_date: str | None = None) -> tuple[str, str]:
     resp.raise_for_status()
     html = resp.text
 
-    # Find all SharePoint links with their associated dates
-    # Pattern: links like https://ltenergagen.sharepoint.com/...
-    # Near text like "2026-04-11" or "(2026-04-11)"
-    sp_pattern = r'href="(https://ltenergagen\.sharepoint\.com[^"]+)"'
-    date_pattern = r'(\d{4}-\d{2}-\d{2})'
+    # Each SharePoint link is inside an <a> tag whose title attribute
+    # contains the date, e.g. title="Degalų kainos 2026-04-17".
+    # Parse the tag so we read the date from the same element as the href,
+    # not from nearby HTML (links for different dates can sit right next
+    # to each other and a proximity search will mis-assign dates).
+    a_tag_pattern = re.compile(
+        r'<a\b([^>]*href="(https://ltenergagen\.sharepoint\.com[^"]+)"[^>]*)>',
+        re.IGNORECASE,
+    )
+    date_in_title_pattern = re.compile(
+        r'title="[^"]*?(\d{4}-\d{2}-\d{2})[^"]*?"',
+        re.IGNORECASE,
+    )
 
-    matches = list(re.finditer(sp_pattern, html))
-    if not matches:
-        print(f"DEBUG: page length={len(html)}, 'sharepoint' in page={'sharepoint' in html.lower()}")
-        raise RuntimeError("No SharePoint links found on ena.lt")
-
-    # For each SP link, find the nearest date
     links_with_dates = []
-    for m in matches:
-        url = m.group(1)
-        # Search surrounding context (500 chars before and after) for a date
-        start = max(0, m.start() - 500)
-        end = min(len(html), m.end() + 500)
-        context = html[start:end]
-        dates = re.findall(date_pattern, context)
-        if dates:
-            # Take the date closest to the link
-            links_with_dates.append((url, dates[-1]))
+    for m in a_tag_pattern.finditer(html):
+        attrs, url = m.group(1), m.group(2)
+        title_match = date_in_title_pattern.search(attrs)
+        if title_match:
+            links_with_dates.append((url, title_match.group(1)))
 
     if not links_with_dates:
-        raise RuntimeError("Found SharePoint links but couldn't extract dates")
+        print(f"DEBUG: page length={len(html)}, 'sharepoint' in page={'sharepoint' in html.lower()}")
+        raise RuntimeError("No SharePoint links with dated titles found on ena.lt")
 
     # Sort by date descending to get the latest
     links_with_dates.sort(key=lambda x: x[1], reverse=True)
