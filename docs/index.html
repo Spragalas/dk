@@ -218,6 +218,53 @@
     </div>
   </div>
 
+  <div id="cookie-banner" class="hidden">
+    <span>Naudojame slapukus lankomumo statistikai (Google Analytics).</span>
+    <div id="cookie-banner-actions">
+      <button id="cookie-accept" type="button">Sutinku</button>
+      <button id="cookie-decline" type="button">Atsisakyti</button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = 'cookie-consent';
+      var GA_ID = 'G-YWY5JBL47W';
+
+      function loadGA() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', GA_ID);
+      }
+
+      var choice = null;
+      try { choice = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+
+      if (choice === 'accepted') {
+        loadGA();
+      } else if (choice !== 'declined') {
+        document.addEventListener('DOMContentLoaded', function () {
+          var banner = document.getElementById('cookie-banner');
+          banner.classList.remove('hidden');
+          document.getElementById('cookie-accept').addEventListener('click', function () {
+            try { localStorage.setItem(STORAGE_KEY, 'accepted'); } catch (e) {}
+            banner.classList.add('hidden');
+            loadGA();
+          });
+          document.getElementById('cookie-decline').addEventListener('click', function () {
+            try { localStorage.setItem(STORAGE_KEY, 'declined'); } catch (e) {}
+            banner.classList.add('hidden');
+          });
+        });
+      }
+    })();
+  </script>
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="app.js"></script>
