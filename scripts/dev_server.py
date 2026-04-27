@@ -80,9 +80,13 @@ class DevHandler(SimpleHTTPRequestHandler):
                 geocache[station_id][key] = value
             count += 1
 
-        # Save geocache
+        # Save geocache (and mirror to docs/data so the live site picks it up)
         with open(geocache_path, "w", encoding="utf-8") as f:
             json.dump(geocache, f, ensure_ascii=False, indent=2)
+        docs_geocache_path = DOCS_DIR / "data" / "geocache.json"
+        if docs_geocache_path.exists():
+            with open(docs_geocache_path, "w", encoding="utf-8") as f:
+                json.dump(geocache, f, ensure_ascii=False, indent=2)
 
         # Propagate coordinate changes to latest.json and docs/data/stations.json
         updated_files = self._propagate_coords(updates, geocache)

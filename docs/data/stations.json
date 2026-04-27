@@ -6245,7 +6245,9 @@
         "petrol95": 0.0,
         "diesel": 0.0,
         "lpg": 0.0
-      }
+      },
+      "lat": 54.85134,
+      "lng": 23.8431054
     },
     {
       "id": "kauno-m-sav-|pramonės-pr-37-kaunas",
