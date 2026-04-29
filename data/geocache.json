@@ -3975,5 +3975,23 @@
     "lng": 23.5436826,
     "display_name": "12, Šiaulių g., Radviliškis, Radviliškio miesto seniūnija, Radviliškio rajono savivaldybė, Šiaulių apskritis, 82001, Lietuva",
     "review": false
+  },
+  "šilutės-r-sav-|ramučių-g-43": {
+    "lat": 55.3588294,
+    "lng": 21.5033999,
+    "display_name": "Aibė, 43, Ramučių g., Barzdūnai, Šilutės seniūnija, Šilutės rajono savivaldybė, Klaipėdos apskritis, 99151, Lietuva",
+    "review": false
+  },
+  "kauno-m-sav-|raudondvario-pl-234-kaunas": {
+    "lat": 54.9209907,
+    "lng": 23.8246861,
+    "display_name": "Kauno Techninių Apžiūrų Centras, Vilijampolės techninės apžiūros stotis, 234, Raudondvario pl., Lampėdžiai, Vilijampolės seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 47158, Lietuva",
+    "review": false
+  },
+  "kaišiadorių-r-sav-|kalvių-g-4-šventininkų-k": {
+    "lat": 54.8703918,
+    "lng": 25.631235,
+    "display_name": "Šventininkai, Buivydžių seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, Lietuva",
+    "review": true
   }
 }
