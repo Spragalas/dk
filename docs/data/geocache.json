@@ -3993,5 +3993,71 @@
     "lng": 25.631235,
     "display_name": "Šventininkai, Buivydžių seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, Lietuva",
     "review": true
+  },
+  "utenos-r-sav-|molėtų-g-94-utena": {
+    "lat": 55.4829587,
+    "lng": 25.5710264,
+    "display_name": "94, Molėtų g., Šilinė, Utena, Utenos miesto seniūnija, Utenos rajono savivaldybė, Utenos apskritis, 28135, Lietuva",
+    "review": false
+  },
+  "kelmės-r-sav-|ramučių-k-luokės-2": {
+    "lat": 55.8287638,
+    "lng": 22.8557058,
+    "display_name": "Ramučiai, Užvenčio seniūnija, Kelmės rajono savivaldybė, Šiaulių apskritis, 86377, Lietuva",
+    "review": true
+  },
+  "rokiškio-r-sav-|panevėžio-7c-rokiškis": {
+    "lat": 55.9430601,
+    "lng": 25.5856573,
+    "display_name": "Reksvalis, 7C, Panevėžio g., Rokiškis, Rokiškio miesto seniūnija, Rokiškio rajono savivaldybė, Panevėžio apskritis, 42162, Lietuva",
+    "review": false
+  },
+  "mažeikių-r-sav-|laukų-g-2c-tirkšlių-m": {
+    "lat": 56.3063427,
+    "lng": 22.3520035,
+    "display_name": "Tirkšlių g., Senamiestis, Mažeikiai, Mažeikių seniūnija, Mažeikių rajono savivaldybė, Telšių apskritis, 89234, Lietuva",
+    "review": true
+  },
+  "vilniaus-r-sav-|pagirių-k-durpių-g-45": {
+    "lat": 54.5691646,
+    "lng": 25.1878104,
+    "display_name": "Dina, 45, Durpių g., Pagiriai, Pagirių seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 14118, Lietuva",
+    "review": false
+  },
+  "tauragės-r-sav-|tilžės-pl-46-taurai": {
+    "lat": 55.2423921,
+    "lng": 22.2496937,
+    "display_name": "Bonsa, 46, Tilžės pl., Taurai, Tauragės seniūnija, Tauragės rajono savivaldybė, Tauragės apskritis, 72142, Lietuva",
+    "review": false
+  },
+  "tauragės-r-sav-|-vaidatonių-k-1": {
+    "lat": 55.4812844,
+    "lng": 22.6579734,
+    "display_name": "Vaidatonių g., Vaidatoniai, Pakražančio seniūnija, Kelmės rajono savivaldybė, Šiaulių apskritis, 86304, Lietuva",
+    "review": false
+  },
+  "jonavos-r-sav-|kauno-g-2a-ručiūnų-k": {
+    "lat": 55.1378212,
+    "lng": 24.1933962,
+    "display_name": "Vimijula, 2A, Kauno g., Ručiūnai, Kulvos seniūnija, Jonavos rajono savivaldybė, Kauno apskritis, 55355, Lietuva",
+    "review": true
+  },
+  "ukmergės-r-sav-|dariaus-ir-girėmo-g-31-ukmergė": {
+    "lat": 55.2477293,
+    "lng": 24.7599714,
+    "display_name": "Ukmergė, Ukmergės miesto seniūnija, Ukmergės rajono savivaldybė, Vilniaus apskritis, Lietuva",
+    "review": true
+  },
+  "klaipėdos-r-sav-|dvaro-g-1-gobergiškės-k": {
+    "lat": 55.7202095,
+    "lng": 21.292922,
+    "display_name": "Vlantana, 1B, Dvaro g., UAB „Vlantana“, Gobergiškė, Dauparų-Kvietinių seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis, 96173, Lietuva",
+    "review": true
+  },
+  "vilkaviškio-r-sav-|vytauto-g-2d-vilkaviškis": {
+    "lat": 54.6433403,
+    "lng": 23.0530856,
+    "display_name": "Vildega, 2D, Vytauto g., Naujamiestis, Vilkaviškis, Vilkaviškio miesto seniūnija, Vilkaviškio rajono savivaldybė, Marijampolės apskritis, 70137, Lietuva",
+    "review": false
   }
 }
