@@ -2,8 +2,8 @@ name: Update Fuel Prices
 
 on:
   schedule:
-    - cron: '0 8 * * *'   # 08:00 UTC = 11:00 EEST (summer)
-    - cron: '0 9 * * *'   # 09:00 UTC = 11:00 EET (winter)
+    - cron: '0 6 * * *'
+    - cron: '0 7 * * *'
   workflow_dispatch: {}
 
 jobs:
