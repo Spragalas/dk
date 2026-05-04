@@ -237,15 +237,15 @@ def main():
                     raise requests.HTTPError(f"Status {resp.status_code}")
             except (requests.HTTPError, requests.RequestException) as e:
                 print(f"Direct download failed ({e}), trying SharePoint...")
-                from download_sharepoint import get_sharepoint_link, download_from_sharepoint
-                sp_url, sp_date = get_sharepoint_link(date_str)
+                from download_sharepoint import get_sharepoint_links, download_from_sharepoint_any
+                sp_urls, sp_date = get_sharepoint_links(date_str)
                 if sp_date != date_str:
                     print(f"SharePoint has {sp_date} but need {date_str} — data not published yet, skipping")
                     sys.exit(0)
                 dl_dir = DATA_DIR / "downloads"
                 dl_dir.mkdir(parents=True, exist_ok=True)
                 xlsx_path = str(dl_dir / f"dk-{date_str}.xlsx")
-                download_from_sharepoint(sp_url, Path(xlsx_path))
+                download_from_sharepoint_any(sp_urls, Path(xlsx_path))
                 stations = parse_excel(xlsx_path)
 
         print(f"Parsed {len(stations)} stations")
