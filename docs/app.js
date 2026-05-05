@@ -7,6 +7,24 @@
   let map, markerCluster, allStations, currentFuel = "petrol95", averages;
   let geocache = {}; // id -> { lat, lng }
   let historyDates = [];
+  // Optional per-fuel color range from ?colorRange=<json>, e.g.
+  // ?colorRange={"petrol95":[1.40,1.60],"diesel":[1.30,1.55]}.
+  // When set for the current fuel, markers use a continuous gradient instead of
+  // the day-relative green/yellow/red bucketing — useful for cross-day comparison.
+  const COLOR_RANGES = (() => {
+    try {
+      const raw = new URLSearchParams(location.search).get("colorRange");
+      if (!raw) return {};
+      const parsed = JSON.parse(raw);
+      const out = {};
+      for (const [k, v] of Object.entries(parsed)) {
+        if (Array.isArray(v) && v.length === 2 && v.every((n) => typeof n === "number")) {
+          out[k] = v;
+        }
+      }
+      return out;
+    } catch { return {}; }
+  })();
   let companyFilterPopulated = false;
   let clusterMode = "min"; // "min" or "max"
   let selectedCompanies = null; // null = all, Set = selected
@@ -79,11 +97,27 @@
 
   function init() {
     const saved = loadState();
+    const params = new URLSearchParams(location.search);
 
-    const initCenter = (saved.lat != null && saved.lng != null) ? [saved.lat, saved.lng] : MAP_CENTER;
-    const initZoom = saved.zoom != null ? saved.zoom : MAP_ZOOM;
+    let initCenter = (saved.lat != null && saved.lng != null) ? [saved.lat, saved.lng] : MAP_CENTER;
+    let initZoom = saved.zoom != null ? saved.zoom : MAP_ZOOM;
 
-    map = L.map("map").setView(initCenter, initZoom);
+    // ?center=lat,lng and ?zoom=N override saved/default view (used by screenshot tooling).
+    const centerParam = params.get("center");
+    if (centerParam) {
+      const parts = centerParam.split(",").map(Number);
+      if (parts.length === 2 && parts.every((n) => Number.isFinite(n))) {
+        initCenter = parts;
+      }
+    }
+    const zoomParam = Number(params.get("zoom"));
+    if (Number.isFinite(zoomParam)) initZoom = zoomParam;
+
+    const mapOpts = {};
+    if (params.has("zoom") && !Number.isInteger(initZoom)) {
+      mapOpts.zoomSnap = 0;
+    }
+    map = L.map("map", mapOpts).setView(initCenter, initZoom);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
       maxZoom: 18,
@@ -318,8 +352,43 @@
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
 
+  function parseColor(str) {
+    const s = str.trim();
+    if (s.startsWith("#")) {
+      const h = s.slice(1);
+      const n = h.length === 3
+        ? h.split("").map((c) => parseInt(c + c, 16))
+        : [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
+      return n;
+    }
+    const m = s.match(/rgba?\(([^)]+)\)/);
+    if (m) return m[1].split(",").slice(0, 3).map((v) => parseInt(v.trim(), 10));
+    return [128, 128, 128];
+  }
+
+  function lerpColor(c0, c1, f) {
+    return [
+      Math.round(c0[0] + f * (c1[0] - c0[0])),
+      Math.round(c0[1] + f * (c1[1] - c0[1])),
+      Math.round(c0[2] + f * (c1[2] - c0[2])),
+    ];
+  }
+
   function getColor(price, avg) {
-    if (price == null || avg == null) return "#999";
+    if (price == null) return "#999";
+    const range = COLOR_RANGES[currentFuel];
+    if (range) {
+      const [lo, hi] = range;
+      const t = hi > lo ? Math.max(0, Math.min(1, (price - lo) / (hi - lo))) : 0.5;
+      const green = parseColor(getCSSVar("--green"));
+      const yellow = parseColor(getCSSVar("--yellow"));
+      const red = parseColor(getCSSVar("--red"));
+      const [r, g, b] = t <= 0.5
+        ? lerpColor(green, yellow, t / 0.5)
+        : lerpColor(yellow, red, (t - 0.5) / 0.5);
+      return `rgb(${r}, ${g}, ${b})`;
+    }
+    if (avg == null) return "#999";
     const pct = (price - avg) / avg;
     if (pct < -0.02) return getCSSVar("--green");
     if (pct > 0.02) return getCSSVar("--red");
