@@ -110,12 +110,13 @@
         initCenter = parts;
       }
     }
-    const zoomParam = Number(params.get("zoom"));
-    if (Number.isFinite(zoomParam)) initZoom = zoomParam;
-
     const mapOpts = {};
-    if (params.has("zoom") && !Number.isInteger(initZoom)) {
-      mapOpts.zoomSnap = 0;
+    if (params.has("zoom")) {
+      const zoomParam = Number(params.get("zoom"));
+      if (Number.isFinite(zoomParam)) {
+        initZoom = zoomParam;
+        if (!Number.isInteger(zoomParam)) mapOpts.zoomSnap = 0;
+      }
     }
     map = L.map("map", mapOpts).setView(initCenter, initZoom);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
