@@ -36,28 +36,36 @@ def get_sharepoint_links(target_date: str | None = None) -> tuple[list[str], str
     resp.raise_for_status()
     html = resp.text
 
-    # Each SharePoint link is inside an <a> tag whose title attribute
-    # contains the date, e.g. title="Degalų kainos 2026-04-17".
-    # Parse the tag so we read the date from the same element as the href,
-    # not from nearby HTML (links for different dates can sit right next
-    # to each other and a proximity search will mis-assign dates).
+    # ena.lt has placed the date for each SharePoint share link in
+    # several spots over time: a `title="Degalų kainos YYYY-MM-DD"`
+    # attribute, the anchor's own inner text (e.g. `Naujausios degalų
+    # kainos (2026-05-06)` for the freshly-published day with no title),
+    # or — historically — an adjacent span. Rather than hard-code those
+    # locations, scan each anchor tag for any YYYY-MM-DD; if the tag
+    # itself carries none, fall back to the latest date that appears
+    # anywhere on the page, which the news headline always advertises
+    # (e.g. `Naujausias pranešimas apie degalų kainas (YYYY-MM-DD)`).
+    # This keeps the date bound to the same href instead of relying on
+    # proximity, while degrading gracefully when ena.lt reshuffles the
+    # markup around the link.
+    date_pattern = re.compile(r'\d{4}-\d{2}-\d{2}')
     a_tag_pattern = re.compile(
-        r'<a\b([^>]*href="(https://ltenergagen\.sharepoint\.com[^"]+)"[^>]*)>',
-        re.IGNORECASE,
-    )
-    date_in_title_pattern = re.compile(
-        r'title="[^"]*?(\d{4}-\d{2}-\d{2})[^"]*?"',
+        r'<a\b[^>]*href="(https://ltenergagen\.sharepoint\.com[^"]+)"[^>]*>[^<]*</a>',
         re.IGNORECASE,
     )
 
+    page_dates = date_pattern.findall(html)
+    fallback_date = max(page_dates) if page_dates else None
+
     links_with_dates: list[tuple[str, str]] = []
     for m in a_tag_pattern.finditer(html):
-        attrs, url = m.group(1), m.group(2)
-        title_match = date_in_title_pattern.search(attrs)
-        if title_match:
-            # The href in HTML is entity-encoded (e.g. &amp;). Decode so the
-            # share token query params (d=..., e=...) are usable directly.
-            links_with_dates.append((html_mod.unescape(url), title_match.group(1)))
+        in_tag = date_pattern.search(m.group(0))
+        date_str = in_tag.group(0) if in_tag else fallback_date
+        if not date_str:
+            continue
+        # The href in HTML is entity-encoded (e.g. &amp;). Decode so the
+        # share token query params (d=..., e=...) are usable directly.
+        links_with_dates.append((html_mod.unescape(m.group(1)), date_str))
 
     if not links_with_dates:
         print(f"DEBUG: page length={len(html)}, 'sharepoint' in page={'sharepoint' in html.lower()}")
