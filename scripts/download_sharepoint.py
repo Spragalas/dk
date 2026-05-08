@@ -49,9 +49,11 @@ def get_sharepoint_links(target_date: str | None = None) -> tuple[list[str], str
     # proximity, while degrading gracefully when ena.lt reshuffles the
     # markup around the link.
     date_pattern = re.compile(r'\d{4}-\d{2}-\d{2}')
+    # Inner is `.*?` with DOTALL so nested tags (e.g. <strong>...</strong>,
+    # which ena.lt sometimes wraps the link text in) don't break matching.
     a_tag_pattern = re.compile(
-        r'<a\b[^>]*href="(https://ltenergagen\.sharepoint\.com[^"]+)"[^>]*>[^<]*</a>',
-        re.IGNORECASE,
+        r'<a\b[^>]*href="(https://ltenergagen\.sharepoint\.com[^"]+)"[^>]*>.*?</a>',
+        re.IGNORECASE | re.DOTALL,
     )
 
     page_dates = date_pattern.findall(html)
