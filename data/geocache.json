@@ -4065,5 +4065,77 @@
     "lng": 22.3424876,
     "display_name": "Tripletas, 16, Sedos g., Senamiestis, Mažeikiai, Mažeikių seniūnija, Mažeikių rajono savivaldybė, Telšių apskritis, 89239, Lietuva",
     "review": false
+  },
+  "šilutės-r-sav-|bažnyčios-7-pavilnučio-k": {
+    "lat": 55.5085278,
+    "lng": 21.6003889,
+    "display_name": "Pavilnučio piliakalnis, Bažnyčios g., Kalkiškė, Švėkšnos seniūnija, Šilutės rajono savivaldybė, Klaipėdos apskritis, 99392, Lietuva",
+    "review": true
+  },
+  "kauno-m-sav-|islandijos-pl-191d-kaunas": {
+    "lat": 54.9315959,
+    "lng": 23.9513989,
+    "display_name": "Plaunu pats, 191D, Islandijos pl., Naujasodis, Eigulių seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 49100, Lietuva",
+    "review": false
+  },
+  "kėdainių-r-sav-|basanavičiaus-g-91e-kėdainiai": {
+    "lat": 55.2781085,
+    "lng": 23.959972,
+    "display_name": "Neste „Kėdainiai“, 91E, J. Basanavičiaus g., Senamiestis, Kėdainiai, Kėdainių miesto seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 57367, Lietuva",
+    "review": false
+  },
+  "kauno-m-sav-|linkuvos-g-77-kaunas": {
+    "lat": 54.9142998,
+    "lng": 23.8877048,
+    "display_name": "Stateta, 77, Linkuvos g., Vilijampolė, Vilijampolės seniūnija, Kaunas, Kauno miesto savivaldybė, Kauno apskritis, 48314, Lietuva",
+    "review": false
+  },
+  "trakų-r-sav-|senkelio-g-13-trakai": {
+    "lat": 54.6308624,
+    "lng": 24.9225879,
+    "display_name": "13, Senkelio g., Naujasodis, Trakai, Trakų seniūnija, Trakų rajono savivaldybė, Vilniaus apskritis, 21107, Lietuva",
+    "review": false
+  },
+  "kėdainių-r-sav-|kėdainių-g-44-šingalių-k": {
+    "lat": 55.2546021,
+    "lng": 23.8764134,
+    "display_name": "Šingaliai, Josvainių seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 58191, Lietuva",
+    "review": true
+  },
+  "joniškio-r-sav-|turgaus-g-3-joniškis": {
+    "lat": 56.2289344,
+    "lng": 23.6100885,
+    "display_name": "3, Turgaus g., Joniškis, Joniškio seniūnija, Joniškio rajono savivaldybė, Šiaulių apskritis, 84174, Lietuva",
+    "review": false
+  },
+  "joniškio-r-sav-|miškininkų-g-14-pelėdnagiai": {
+    "lat": 55.2525072,
+    "lng": 23.9679701,
+    "display_name": "SR, 14, Miškininkų g., Pelėdnagiai, Pelėdnagių seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 58164, Lietuva",
+    "review": false
+  },
+  "telšių-r-sav-|telšių-g-66-lt-88238-luokė": {
+    "lat": 55.9013437,
+    "lng": 22.5062918,
+    "display_name": "66, Telšių g., Luokė, Luokės seniūnija, Telšių rajono savivaldybė, Telšių apskritis, 88238, Lietuva",
+    "review": false
+  },
+  "vilniaus-r-sav-|miško-g-6-kena": {
+    "lat": 54.6460569,
+    "lng": 25.6251383,
+    "display_name": "Autoerdvė LT, 6, Miško g., Kena, Kalvelių seniūnija, Vilniaus rajono savivaldybė, Vilniaus apskritis, 13146, Lietuva",
+    "review": false
+  },
+  "kėdainių-r-sav-|ramygalos-g-55-šėta": {
+    "lat": 55.2903578,
+    "lng": 24.2529976,
+    "display_name": "55, Ramygalos g., Šėta, Šėtos seniūnija, Kėdainių rajono savivaldybė, Kauno apskritis, 58129, Lietuva",
+    "review": false
+  },
+  "kretingos-r-sav-|kretingos-51-kartena": {
+    "lat": 55.9169838,
+    "lng": 21.4675181,
+    "display_name": "51, Kretingos g., Kartena, Kartenos seniūnija, Kretingos rajono savivaldybė, Klaipėdos apskritis, 97353, Lietuva",
+    "review": false
   }
 }
