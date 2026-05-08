@@ -1246,7 +1246,17 @@
     const yMin = minVal - range * 0.1;
     const yMax = maxVal + range * 0.1;
 
-    function xPos(i) { return pad.left + (i / (trendsData.length - 1)) * plotW; }
+    // x-axis is calendar-day based so gaps (weekends/holidays) take real width
+    // and the line drawn between adjacent points visually interpolates across them.
+    function dayIndex(dateStr) {
+      const [y, m, d] = dateStr.split("-").map(Number);
+      return Date.UTC(y, m - 1, d) / 86400000;
+    }
+    const dayIdx = trendsData.map(d => dayIndex(d.date));
+    const dayMin = dayIdx[0];
+    const daySpan = Math.max(1, dayIdx[dayIdx.length - 1] - dayMin);
+
+    function xPos(i) { return pad.left + ((dayIdx[i] - dayMin) / daySpan) * plotW; }
     function yPos(v) { return pad.top + plotH - ((v - yMin) / (yMax - yMin)) * plotH; }
 
     // Grid lines
