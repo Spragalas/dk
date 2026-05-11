@@ -4137,5 +4137,11 @@
     "lng": 21.4675181,
     "display_name": "51, Kretingos g., Kartena, Kartenos seniūnija, Kretingos rajono savivaldybė, Klaipėdos apskritis, 97353, Lietuva",
     "review": false
+  },
+  "vilkaviškio-r-sav-|pamiškės-g-1-osijos-k": {
+    "lat": 54.6330721,
+    "lng": 23.0121895,
+    "display_name": "Osija, Šeimenos seniūnija, Vilkaviškio rajono savivaldybė, Marijampolės apskritis, 70180, Lietuva",
+    "review": true
   }
 }
