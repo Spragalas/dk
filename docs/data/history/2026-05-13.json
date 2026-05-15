@@ -7,8 +7,8 @@
       "municipality": "Utenos r. sav.",
       "address": "Palijoniškio g. 1, Utena",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.959,
+        "petrol95": 1.694,
+        "diesel": 1.854,
         "lpg": 0.899
       }
     },
@@ -18,9 +18,9 @@
       "municipality": "Visagino sav.",
       "address": "Kosmoso g. 3, Visaginas",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.979,
-        "lpg": 0.859
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.799
       }
     },
     {
@@ -29,8 +29,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Palemono g. 171, Kaunas",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.979,
+        "petrol95": 1.759,
+        "diesel": 1.899,
         "lpg": null
       }
     },
@@ -40,9 +40,9 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Kalvarijų g. 204G, Vilnius",
       "prices": {
-        "petrol95": 1.774,
-        "diesel": 1.964,
-        "lpg": 0.859
+        "petrol95": 1.694,
+        "diesel": 1.854,
+        "lpg": 0.799
       }
     },
     {
@@ -51,9 +51,9 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Kirtimų g. 23A, Vilnius",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
-        "lpg": 0.919
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.799
       }
     },
     {
@@ -62,9 +62,9 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Pelesos g. 1/2, Vilnius",
       "prices": {
-        "petrol95": 1.929,
-        "diesel": 2.039,
-        "lpg": 0.899
+        "petrol95": 1.799,
+        "diesel": 1.859,
+        "lpg": 0.799
       }
     },
     {
@@ -73,9 +73,9 @@
       "municipality": "Ukmergės r. sav.",
       "address": "Kauno g. 37, Ukmergė",
       "prices": {
-        "petrol95": 1.884,
-        "diesel": 1.984,
-        "lpg": 0.864
+        "petrol95": 1.694,
+        "diesel": 1.854,
+        "lpg": 0.799
       }
     },
     {
@@ -84,8 +84,8 @@
       "municipality": "Utenos r. sav.",
       "address": "Plento g. 17, Daugailiai",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.959,
+        "petrol95": 1.694,
+        "diesel": 1.854,
         "lpg": 0.899
       }
     },
@@ -97,7 +97,7 @@
       "prices": {
         "petrol95": 1.779,
         "diesel": 1.949,
-        "lpg": 0.879
+        "lpg": 0.889
       }
     },
     {
@@ -107,8 +107,8 @@
       "address": "Plento g. 2B, Kairiai",
       "prices": {
         "petrol95": 1.749,
-        "diesel": 1.989,
-        "lpg": 0.899
+        "diesel": 1.949,
+        "lpg": 0.849
       }
     },
     {
@@ -117,9 +117,9 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilniaus g. 8, Grigiškės",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.979,
-        "lpg": 0.879
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.799
       }
     },
     {
@@ -128,8 +128,8 @@
       "municipality": "Marijampolės sav.",
       "address": "Plytinės g. 2, Puskelnių k.",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.969,
+        "petrol95": 1.694,
+        "diesel": 1.854,
         "lpg": null
       }
     },
@@ -139,9 +139,9 @@
       "municipality": "Marijampolės sav.",
       "address": "Stoties g. 49, Marijampolė",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.979,
-        "lpg": 0.859
+        "petrol95": 1.694,
+        "diesel": 1.854,
+        "lpg": 0.799
       }
     },
     {
@@ -150,9 +150,9 @@
       "municipality": "Širvintų r. sav.",
       "address": "Paširvio g. 1, Paširvinčio k.",
       "prices": {
-        "petrol95": 1.794,
-        "diesel": 1.974,
-        "lpg": 0.874
+        "petrol95": 1.694,
+        "diesel": 1.854,
+        "lpg": 0.799
       }
     },
     {
@@ -161,8 +161,8 @@
       "municipality": "Šakių r. sav.",
       "address": "Šakių g. 51, Kudirkos Naumiestis",
       "prices": {
-        "petrol95": 1.789,
-        "diesel": 1.999,
+        "petrol95": 1.775,
+        "diesel": 1.925,
         "lpg": 0.899
       }
     },
@@ -172,8 +172,8 @@
       "municipality": "Šalčininkų r. sav.",
       "address": "Skraičionių g. 1, Skraičionių k.",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.039,
+        "petrol95": 1.749,
+        "diesel": 1.949,
         "lpg": 0.904
       }
     },
@@ -183,8 +183,8 @@
       "municipality": "Kalvarijos sav.",
       "address": "Europos g. 17, Salaperaugio k.",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.039,
+        "petrol95": 1.869,
+        "diesel": 1.979,
         "lpg": 0.929
       }
     },
@@ -194,9 +194,9 @@
       "municipality": "Ignalinos r. sav.",
       "address": "Švenčionių g. 29A, Ignalina",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 2.029,
-        "lpg": 0.869
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.799
       }
     },
     {
@@ -205,9 +205,9 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Šiaurės g. 39, Vilnius",
       "prices": {
-        "petrol95": 1.774,
-        "diesel": 1.974,
-        "lpg": 0.899
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.829
       }
     },
     {
@@ -216,8 +216,8 @@
       "municipality": "Marijampolės sav.",
       "address": "Sporto g. 50A, Marijampolė",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.979,
+        "petrol95": 1.694,
+        "diesel": 1.854,
         "lpg": null
       }
     },
@@ -227,9 +227,9 @@
       "municipality": "Utenos r. sav.",
       "address": "J. Basanavičiaus g. 1C, Utena",
       "prices": {
-        "petrol95": 1.794,
-        "diesel": 1.954,
-        "lpg": 0.894
+        "petrol95": 1.694,
+        "diesel": 1.854,
+        "lpg": 0.799
       }
     },
     {
@@ -238,8 +238,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Šv. Stepono g. 44, Vilnius",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.979,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": null
       }
     },
@@ -249,8 +249,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Buivydiškių g. 5, Vilnius",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.979,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": null
       }
     },
@@ -260,8 +260,8 @@
       "municipality": "Alytaus r. sav.",
       "address": "Santaikos g. 2A, Santaikos k.",
       "prices": {
-        "petrol95": 1.789,
-        "diesel": 1.969,
+        "petrol95": 1.699,
+        "diesel": 1.869,
         "lpg": 0.889
       }
     },
@@ -271,8 +271,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Laisvės pr. 125A, Vilnius",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.959,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": null
       }
     },
@@ -282,8 +282,8 @@
       "municipality": "Rokiškio r. sav.",
       "address": "Dariaus ir Girėno g. 36, Obeliai",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 1.999,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": null
       }
     },
@@ -293,9 +293,9 @@
       "municipality": "Anykščių r. sav.",
       "address": "A. Vienuolio g. 32A, Anykščiai",
       "prices": {
-        "petrol95": 1.754,
-        "diesel": 1.954,
-        "lpg": 0.849
+        "petrol95": 1.694,
+        "diesel": 1.854,
+        "lpg": 0.799
       }
     },
     {
@@ -305,7 +305,7 @@
       "address": "Vilniaus g.16, Šiauliai",
       "prices": {
         "petrol95": 1.829,
-        "diesel": 1.979,
+        "diesel": 1.959,
         "lpg": 0.879
       }
     },
@@ -315,8 +315,8 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Pramonės g. 3A, Šiauliai",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.995,
+        "petrol95": 1.84,
+        "diesel": 1.969,
         "lpg": 0.899
       }
     },
@@ -327,7 +327,7 @@
       "address": "Pramonės g. 28, Šiauliai",
       "prices": {
         "petrol95": 1.849,
-        "diesel": 1.999,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -338,7 +338,7 @@
       "address": "Nuklono g. 4, Šiauliai",
       "prices": {
         "petrol95": 1.849,
-        "diesel": 1.999,
+        "diesel": 1.969,
         "lpg": 0.899
       }
     },
@@ -349,7 +349,7 @@
       "address": "Tilžės g. 223, Šiauliai",
       "prices": {
         "petrol95": 1.849,
-        "diesel": 1.995,
+        "diesel": 1.969,
         "lpg": 0.899
       }
     },
@@ -360,7 +360,7 @@
       "address": "V. Bielskio g. 47A, Šiauliai",
       "prices": {
         "petrol95": 1.84,
-        "diesel": 1.98,
+        "diesel": 1.96,
         "lpg": 0.89
       }
     },
@@ -392,8 +392,8 @@
       "municipality": "Joniškio r. sav.",
       "address": "Radikių k.",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 2.029,
+        "petrol95": 1.779,
+        "diesel": 1.939,
         "lpg": 0.925
       }
     },
@@ -414,8 +414,8 @@
       "municipality": "Jonavos r. sav.",
       "address": "Gudžionių k., Plento g. 24",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.919
       }
     },
@@ -425,8 +425,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Gerosios Vilties g. 33",
       "prices": {
-        "petrol95": 1.909,
-        "diesel": 2.029,
+        "petrol95": 1.869,
+        "diesel": 2.019,
         "lpg": 0.949
       }
     },
@@ -447,7 +447,7 @@
       "municipality": "Kauno m. sav.",
       "address": "Kaunas, Raudondvario pl. 82",
       "prices": {
-        "petrol95": 1.839,
+        "petrol95": 1.799,
         "diesel": 1.969,
         "lpg": 0.889
       }
@@ -469,8 +469,8 @@
       "municipality": "Kauno r. sav.",
       "address": "Jaučiakių k.",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.049,
+        "petrol95": 1.869,
+        "diesel": 2.029,
         "lpg": 0.959
       }
     },
@@ -480,9 +480,9 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Klaipėda, Šilutės pl. 1",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.989,
-        "lpg": 0.899
+        "petrol95": 1.789,
+        "diesel": 1.949,
+        "lpg": 0.879
       }
     },
     {
@@ -503,7 +503,7 @@
       "address": "Šilutė, Klaipėdos g. 4A",
       "prices": {
         "petrol95": 1.759,
-        "diesel": 1.959,
+        "diesel": 1.939,
         "lpg": 0.889
       }
     },
@@ -524,8 +524,8 @@
       "municipality": "Alytaus m. sav.",
       "address": "Alytus, Santaikos g. 33",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.959,
+        "petrol95": 1.789,
+        "diesel": 1.939,
         "lpg": 0.859
       }
     },
@@ -535,8 +535,8 @@
       "municipality": "Druskininkų sav.",
       "address": "Druskininkai, Gardino g. 79",
       "prices": {
-        "petrol95": 1.909,
-        "diesel": 2.039,
+        "petrol95": 1.889,
+        "diesel": 2.019,
         "lpg": 0.949
       }
     },
@@ -546,7 +546,7 @@
       "municipality": "Lazdijų r. sav.",
       "address": "Lazdijai, Turistų g. 88",
       "prices": {
-        "petrol95": 1.709,
+        "petrol95": 1.719,
         "diesel": 1.909,
         "lpg": 0.889
       }
@@ -557,8 +557,8 @@
       "municipality": "Telšių r. sav.",
       "address": "Telšiai, Šiaulių pl. 12",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.019,
+        "petrol95": 1.869,
+        "diesel": 1.979,
         "lpg": 0.929
       }
     },
@@ -590,8 +590,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Panevėžys, Velžio kelias 74",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.969,
+        "petrol95": 1.799,
+        "diesel": 1.939,
         "lpg": 0.879
       }
     },
@@ -601,8 +601,8 @@
       "municipality": "Utenos r. sav.",
       "address": "Utena, Basanavičiaus g. 1B",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.959,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.899
       }
     },
@@ -612,8 +612,8 @@
       "municipality": "Raseinių r. sav.",
       "address": "Raseiniai, Vilniaus g. 30",
       "prices": {
-        "petrol95": 1.769,
-        "diesel": 1.969,
+        "petrol95": 1.719,
+        "diesel": 1.949,
         "lpg": 0.86
       }
     },
@@ -635,7 +635,7 @@
       "address": "Prienai, Vilniaus g. 3A",
       "prices": {
         "petrol95": 1.839,
-        "diesel": 1.969,
+        "diesel": 1.959,
         "lpg": 0.909
       }
     },
@@ -645,8 +645,8 @@
       "municipality": "Kėdainių r. sav.",
       "address": "Kėdainiai, J. Basanavičiaus g. 95B",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.889,
+        "diesel": 1.989,
         "lpg": 0.929
       }
     },
@@ -656,8 +656,8 @@
       "municipality": "Ukmergės r. sav.",
       "address": "Ukmergė, Kauno g. 49",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 1.989,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.869
       }
     },
@@ -667,8 +667,8 @@
       "municipality": "Biržų r. sav.",
       "address": "Valantiškio k.",
       "prices": {
-        "petrol95": 1.809,
-        "diesel": 1.999,
+        "petrol95": 1.799,
+        "diesel": 1.979,
         "lpg": 0.929
       }
     },
@@ -689,8 +689,8 @@
       "municipality": "Skuodo r. sav.",
       "address": "Skuodas, Vytauto g. 22",
       "prices": {
-        "petrol95": 1.789,
-        "diesel": 1.939,
+        "petrol95": 1.779,
+        "diesel": 1.919,
         "lpg": 0.88
       }
     },
@@ -700,8 +700,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius  Kalvarijų g. 161A",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.969,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.859
       }
     },
@@ -711,8 +711,8 @@
       "municipality": "Trakų r. sav.",
       "address": "Trakai, Vilniaus g. 33",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.049,
+        "petrol95": 1.889,
+        "diesel": 2.039,
         "lpg": 0.949
       }
     },
@@ -722,8 +722,8 @@
       "municipality": "Molėtų r. sav.",
       "address": "Molėtai, Vilniaus g.104",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.839,
+        "diesel": 1.969,
         "lpg": 0.899
       }
     },
@@ -755,9 +755,9 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Klaipėda, Tilžės g. 90",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.989,
-        "lpg": 0.909
+        "petrol95": 1.789,
+        "diesel": 1.949,
+        "lpg": 0.859
       }
     },
     {
@@ -766,8 +766,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Metalo g. 4B",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.989,
+        "petrol95": 1.849,
+        "diesel": 1.959,
         "lpg": 0.889
       }
     },
@@ -788,8 +788,8 @@
       "municipality": "Širvintų r. sav.",
       "address": "Širvintos, Musninkų g. 21",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.979,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.879
       }
     },
@@ -799,7 +799,7 @@
       "municipality": "Kauno m. sav.",
       "address": "Kaunas, Chemijos g. 6",
       "prices": {
-        "petrol95": 1.859,
+        "petrol95": 1.819,
         "diesel": 1.959,
         "lpg": 0.899
       }
@@ -821,9 +821,9 @@
       "municipality": "Vilniaus r. sav.",
       "address": "Vilkaraisčio k.",
       "prices": {
-        "petrol95": 1.85,
-        "diesel": 1.96,
-        "lpg": 0.89
+        "petrol95": 1.83,
+        "diesel": 1.93,
+        "lpg": 0.86
       }
     },
     {
@@ -832,8 +832,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Panevėžys, Smėlynės g. 169",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.969,
+        "petrol95": 1.809,
+        "diesel": 1.939,
         "lpg": 0.899
       }
     },
@@ -865,7 +865,7 @@
       "municipality": "Marijampolės sav.",
       "address": "Pasiekų k.",
       "prices": {
-        "petrol95": 1.889,
+        "petrol95": 1.869,
         "diesel": 1.999,
         "lpg": 0.919
       }
@@ -876,8 +876,8 @@
       "municipality": "Marijampolės sav.",
       "address": "Pietarių k. Kauno g. 164",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.969,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.939
       }
     },
@@ -888,7 +888,7 @@
       "address": "Vilnius, Molėtų pl. 27A",
       "prices": {
         "petrol95": 1.779,
-        "diesel": 1.949,
+        "diesel": 1.909,
         "lpg": 0.939
       }
     },
@@ -898,8 +898,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, S. Batoro g. 15",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.959,
+        "petrol95": 1.829,
+        "diesel": 1.949,
         "lpg": 0.919
       }
     },
@@ -920,8 +920,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Rinktinės g. 59",
       "prices": {
-        "petrol95": 1.869,
-        "diesel": 1.969,
+        "petrol95": 1.819,
+        "diesel": 1.919,
         "lpg": 0.949
       }
     },
@@ -931,8 +931,8 @@
       "municipality": "Marijampolės sav.",
       "address": "Marijampolė, Vasaros g. 15",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.969,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.909
       }
     },
@@ -942,8 +942,8 @@
       "municipality": "Telšių r. sav.",
       "address": "Ožtakių k., Dariaus ir Girėno g. 77",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.019,
+        "petrol95": 1.879,
+        "diesel": 1.989,
         "lpg": 0.929
       }
     },
@@ -953,7 +953,7 @@
       "municipality": "Rokiškio r. sav.",
       "address": "Pandėlio k., Elektrinės g. 1",
       "prices": {
-        "petrol95": 1.929,
+        "petrol95": 1.889,
         "diesel": 2.039,
         "lpg": 0.849
       }
@@ -999,7 +999,7 @@
       "prices": {
         "petrol95": 1.779,
         "diesel": 1.969,
-        "lpg": 0.899
+        "lpg": 0.859
       }
     },
     {
@@ -1030,8 +1030,8 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Užežerės k., Gardenio g. 39",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.969,
+        "petrol95": 1.829,
+        "diesel": 1.909,
         "lpg": 0.889
       }
     },
@@ -1041,8 +1041,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Kaunas, Taikos pr. 120",
       "prices": {
-        "petrol95": 1.789,
-        "diesel": 1.939,
+        "petrol95": 1.759,
+        "diesel": 1.919,
         "lpg": 0.899
       }
     },
@@ -1063,8 +1063,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Klaipėda, Liepų g. 79A",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.989,
+        "petrol95": 1.799,
+        "diesel": 1.949,
         "lpg": 0.909
       }
     },
@@ -1074,8 +1074,8 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Mažeikiai, M. Daukšos g. 17",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.969,
+        "petrol95": 1.829,
+        "diesel": 1.909,
         "lpg": 0.869
       }
     },
@@ -1085,8 +1085,8 @@
       "municipality": "Druskininkų sav.",
       "address": "Druskininkai, Leipalingio g. 26",
       "prices": {
-        "petrol95": 1.909,
-        "diesel": 2.039,
+        "petrol95": 1.889,
+        "diesel": 2.019,
         "lpg": 0.949
       }
     },
@@ -1096,8 +1096,8 @@
       "municipality": "Varėnos r. sav.",
       "address": "Merkinė, Vilniaus g. 87",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.049,
+        "petrol95": 1.899,
+        "diesel": 2.029,
         "lpg": 0.969
       }
     },
@@ -1186,7 +1186,7 @@
       "prices": {
         "petrol95": 1.779,
         "diesel": 1.979,
-        "lpg": 0.939
+        "lpg": 0.869
       }
     },
     {
@@ -1197,7 +1197,7 @@
       "prices": {
         "petrol95": 1.779,
         "diesel": 1.979,
-        "lpg": 0.949
+        "lpg": 0.869
       }
     },
     {
@@ -1208,7 +1208,7 @@
       "prices": {
         "petrol95": 1.779,
         "diesel": 1.979,
-        "lpg": 0.929
+        "lpg": 0.869
       }
     },
     {
@@ -1295,8 +1295,8 @@
       "address": "Vilnius, Zujūnų g. 2A",
       "prices": {
         "petrol95": 1.799,
-        "diesel": 1.959,
-        "lpg": 0.919
+        "diesel": 1.919,
+        "lpg": 0.869
       }
     },
     {
@@ -1305,8 +1305,8 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Tirkšliai, Laukų g. 10",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.969,
+        "petrol95": 1.829,
+        "diesel": 1.909,
         "lpg": null
       }
     },
@@ -1338,8 +1338,8 @@
       "municipality": "Marijampolės sav.",
       "address": "Marijampolė, P. Armino g. 69",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.969,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.889
       }
     },
@@ -1349,7 +1349,7 @@
       "municipality": "Radviliškio r. sav.",
       "address": "Radviliškis, Šiaulių g. 1A",
       "prices": {
-        "petrol95": 1.859,
+        "petrol95": 1.849,
         "diesel": 1.949,
         "lpg": 0.89
       }
@@ -1360,8 +1360,8 @@
       "municipality": "Druskininkų sav.",
       "address": "Leipalingis, Merkinės g. 37",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.049,
+        "petrol95": 1.899,
+        "diesel": 2.029,
         "lpg": 0.949
       }
     },
@@ -1393,8 +1393,8 @@
       "municipality": "Anykščių r. sav.",
       "address": "Anykščiai, Mindaugo g. 23",
       "prices": {
-        "petrol95": 1.759,
-        "diesel": 1.959,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.849
       }
     },
@@ -1437,8 +1437,8 @@
       "municipality": "Birštono sav.",
       "address": "Prienų g. 14, Birštonas",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.819,
+        "diesel": 1.939,
         "lpg": 0.909
       }
     },
@@ -1449,7 +1449,7 @@
       "address": "Geležinio Vilko g. 2A, Vilnius",
       "prices": {
         "petrol95": 1.959,
-        "diesel": 2.079,
+        "diesel": 2.069,
         "lpg": 0.959
       }
     },
@@ -1459,8 +1459,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Baltupio g. 10, Vilnius",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 2.019,
+        "petrol95": 1.869,
+        "diesel": 1.959,
         "lpg": 0.929
       }
     },
@@ -1470,8 +1470,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "A. P. Kavoliuko g. 32A, Vilnius",
       "prices": {
-        "petrol95": 1.969,
-        "diesel": 2.069,
+        "petrol95": 1.869,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -1481,8 +1481,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Sporto g. 16A, Vilnius",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.059,
         "lpg": null
       }
     },
@@ -1492,8 +1492,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Ukmergės g. 231, Vilnius",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.059,
+        "petrol95": 1.879,
+        "diesel": 1.989,
         "lpg": null
       }
     },
@@ -1503,8 +1503,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Kareivių g. 13, Vilnius",
       "prices": {
-        "petrol95": 1.979,
-        "diesel": 2.034,
+        "petrol95": 1.904,
+        "diesel": 2.009,
         "lpg": 0.969
       }
     },
@@ -1514,8 +1514,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "A. Goštauto g. 13, Vilnius",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.059,
+        "petrol95": 1.879,
+        "diesel": 1.999,
         "lpg": null
       }
     },
@@ -1525,7 +1525,7 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Laisvės pr. 43C, Vilnius",
       "prices": {
-        "petrol95": 1.819,
+        "petrol95": 1.849,
         "diesel": 1.979,
         "lpg": 0.959
       }
@@ -1536,8 +1536,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "J. Tiškevičiaus g. 24, Vilnius",
       "prices": {
-        "petrol95": 1.944,
-        "diesel": 2.064,
+        "petrol95": 1.904,
+        "diesel": 2.044,
         "lpg": 0.959
       }
     },
@@ -1547,8 +1547,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Eišiškių pl. 11, Vilnius",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.909,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -1558,8 +1558,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Pramonės pr. 18, Kaunas",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.024,
+        "petrol95": 1.889,
+        "diesel": 2.009,
         "lpg": 0.949
       }
     },
@@ -1569,7 +1569,7 @@
       "municipality": "Kauno r. sav.",
       "address": "Baltijos g. 1, Mastaičių k.",
       "prices": {
-        "petrol95": 1.979,
+        "petrol95": 1.959,
         "diesel": 2.099,
         "lpg": 0.999
       }
@@ -1580,8 +1580,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Raudondvario pl. 107A, Kaunas",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.029,
+        "petrol95": 1.834,
+        "diesel": 2.004,
         "lpg": 0.959
       }
     },
@@ -1591,8 +1591,8 @@
       "municipality": "Vilniaus r. sav.",
       "address": "Sudervės g. 2G, Avižienių k.",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 2.024,
+        "petrol95": 1.934,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -1602,8 +1602,8 @@
       "municipality": "Kauno m. sav.",
       "address": "R. Kalantos g. 159, Kaunas",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.014,
+        "petrol95": 1.889,
+        "diesel": 1.989,
         "lpg": 0.969
       }
     },
@@ -1613,8 +1613,8 @@
       "municipality": "Alytaus m. sav.",
       "address": "Naujoji g. 120, Alytus",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 1.99,
+        "petrol95": 1.869,
+        "diesel": 2.019,
         "lpg": 0.919
       }
     },
@@ -1624,8 +1624,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Savanorių pr. 321, Kaunas",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.069,
+        "petrol95": 1.864,
+        "diesel": 2.029,
         "lpg": null
       }
     },
@@ -1635,8 +1635,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Veiverių g. 49A, Kaunas",
       "prices": {
-        "petrol95": 1.964,
-        "diesel": 2.084,
+        "petrol95": 1.934,
+        "diesel": 2.024,
         "lpg": null
       }
     },
@@ -1646,9 +1646,9 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Dubijos g. 20A, Šiauliai",
       "prices": {
-        "petrol95": 1.969,
-        "diesel": 2.069,
-        "lpg": 0.969
+        "petrol95": 1.879,
+        "diesel": 1.979,
+        "lpg": 0.959
       }
     },
     {
@@ -1657,8 +1657,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Talino g. 2B, Vilnius",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.869,
+        "diesel": 1.999,
         "lpg": 0.999
       }
     },
@@ -1668,9 +1668,9 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Pramonės g. 17a, Šiauliai",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.059,
-        "lpg": 0.949
+        "petrol95": 1.869,
+        "diesel": 1.989,
+        "lpg": 0.929
       }
     },
     {
@@ -1679,9 +1679,9 @@
       "municipality": "Elektrėnų sav.",
       "address": "Sabališkių g. 1F, Elektrėnai",
       "prices": {
-        "petrol95": 1.979,
-        "diesel": 2.089,
-        "lpg": 0.969
+        "petrol95": 1.959,
+        "diesel": 2.079,
+        "lpg": 0.949
       }
     },
     {
@@ -1690,8 +1690,8 @@
       "municipality": "Utenos r. sav.",
       "address": "J. Basanavičiaus g. 108a, Utena",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.019,
+        "petrol95": 1.889,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -1701,8 +1701,8 @@
       "municipality": "Panevėžio r. sav.",
       "address": "Baltijos Kelio g. 33, Ūtos k.",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.029,
+        "petrol95": 1.859,
+        "diesel": 1.979,
         "lpg": 0.979
       }
     },
@@ -1734,8 +1734,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Minijos g. 90, Klaipėda",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.069,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.949
       }
     },
@@ -1745,8 +1745,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Taikos pr. 61B, Klaipėda",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.069,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": null
       }
     },
@@ -1756,8 +1756,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "H. Manto g. 96, Klaipėda",
       "prices": {
-        "petrol95": 1.979,
-        "diesel": 2.089,
+        "petrol95": 1.904,
+        "diesel": 2.034,
         "lpg": null
       }
     },
@@ -1767,9 +1767,9 @@
       "municipality": "Marijampolės sav.",
       "address": "Kauno g. 130, Marijampolė",
       "prices": {
-        "petrol95": 1.929,
-        "diesel": 2.049,
-        "lpg": 0.92
+        "petrol95": 1.889,
+        "diesel": 1.989,
+        "lpg": 0.859
       }
     },
     {
@@ -1778,8 +1778,8 @@
       "municipality": "Alytaus m. sav.",
       "address": "Rūtų g. 2B, Alytus",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.059,
+        "petrol95": 1.889,
+        "diesel": 2.009,
         "lpg": 0.919
       }
     },
@@ -1789,8 +1789,8 @@
       "municipality": "Druskininkų sav.",
       "address": "M. K. Čiurlionio g. 113, Druskininkai",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.069,
+        "petrol95": 1.909,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -1800,8 +1800,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "J. Basanavičiaus g. 63, Panevėžys",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.939
       }
     },
@@ -1811,8 +1811,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Parko g. 7A, Panevėžys",
       "prices": {
-        "petrol95": 1.934,
-        "diesel": 2.029,
+        "petrol95": 1.834,
+        "diesel": 2.009,
         "lpg": 0.959
       }
     },
@@ -1822,8 +1822,8 @@
       "municipality": "Marijampolės sav.",
       "address": "Jono Dailidės g. 10, Marijampolė",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.029,
+        "petrol95": 1.859,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -1833,8 +1833,8 @@
       "municipality": "Kėdainių r. sav.",
       "address": "J. Basanavičiaus g. 40a, Kėdainiai",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.889,
+        "diesel": 1.989,
         "lpg": null
       }
     },
@@ -1844,7 +1844,7 @@
       "municipality": "Ukmergės r. sav.",
       "address": "Ežero g. 7, Kurėnų k.",
       "prices": {
-        "petrol95": 1.979,
+        "petrol95": 1.959,
         "diesel": 2.099,
         "lpg": 0.999
       }
@@ -1856,7 +1856,7 @@
       "address": "Luokės g. 70, Telšiai",
       "prices": {
         "petrol95": 1.929,
-        "diesel": 2.069,
+        "diesel": 2.049,
         "lpg": 0.929
       }
     },
@@ -1866,8 +1866,8 @@
       "municipality": "Šilutės r. sav.",
       "address": "Cintjoniškių g. 15, Šilutė",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.035,
+        "petrol95": 1.844,
+        "diesel": 2.039,
         "lpg": 0.95
       }
     },
@@ -1888,9 +1888,9 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Žemaitijos g. 57, Mažeikiai",
       "prices": {
-        "petrol95": 1.909,
-        "diesel": 2.039,
-        "lpg": 0.959
+        "petrol95": 1.879,
+        "diesel": 1.999,
+        "lpg": 0.939
       }
     },
     {
@@ -1899,7 +1899,7 @@
       "municipality": "Joniškio r. sav.",
       "address": "Sidabros g. 2A, Satkūnų k.",
       "prices": {
-        "petrol95": 1.899,
+        "petrol95": 1.889,
         "diesel": 2.069,
         "lpg": 0.925
       }
@@ -1921,8 +1921,8 @@
       "municipality": "Jonavos r. sav.",
       "address": "Vasario 16-osios g. 33, Jonava",
       "prices": {
-        "petrol95": 1.979,
-        "diesel": 2.089,
+        "petrol95": 1.949,
+        "diesel": 2.059,
         "lpg": 0.949
       }
     },
@@ -1932,8 +1932,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Geležinio Vilko g. 39, Vilnius",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.059,
+        "petrol95": 1.879,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -1954,8 +1954,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Prūsų g. 26 A, Vilnius",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.909,
+        "diesel": 2.019,
         "lpg": 0.999
       }
     },
@@ -1965,9 +1965,9 @@
       "municipality": "Radviliškio r. sav.",
       "address": "Gedimino g. 42B, Radviliškis",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.069,
-        "lpg": 0.94
+        "petrol95": 1.849,
+        "diesel": 1.979,
+        "lpg": 0.93
       }
     },
     {
@@ -1976,8 +1976,8 @@
       "municipality": "Tauragės r. sav.",
       "address": "Gedimino g. 47, Tauragė",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.099,
+        "petrol95": 1.909,
+        "diesel": 1.989,
         "lpg": 0.929
       }
     },
@@ -1987,8 +1987,8 @@
       "municipality": "Panevėžio r. sav.",
       "address": "Panevėžio aplinkl. 20, Šilagalio k.",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.029,
+        "petrol95": 1.859,
+        "diesel": 1.979,
         "lpg": 0.949
       }
     },
@@ -1998,9 +1998,9 @@
       "municipality": "Kauno m. sav.",
       "address": "Vakarinis aplinkkelis 10, Kaunas",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.023,
-        "lpg": 0.949
+        "petrol95": 1.839,
+        "diesel": 1.999,
+        "lpg": 0.959
       }
     },
     {
@@ -2009,9 +2009,9 @@
       "municipality": "Kauno m. sav.",
       "address": "Žemaičių pl. 19, Kaunas",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.014,
-        "lpg": 0.929
+        "petrol95": 1.899,
+        "diesel": 1.974,
+        "lpg": 0.939
       }
     },
     {
@@ -2020,9 +2020,9 @@
       "municipality": "Šilalės r. sav.",
       "address": "Dvaro g. 3, Košių II k.",
       "prices": {
-        "petrol95": 1.979,
+        "petrol95": 1.959,
         "diesel": 2.099,
-        "lpg": 0.969
+        "lpg": 0.989
       }
     },
     {
@@ -2031,8 +2031,8 @@
       "municipality": "Klaipėdos r. sav.",
       "address": "Vilniaus pl. 21, Jakų k.",
       "prices": {
-        "petrol95": 1.969,
-        "diesel": 2.079,
+        "petrol95": 1.959,
+        "diesel": 2.069,
         "lpg": 0.94
       }
     },
@@ -2042,8 +2042,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Geležinio Vilko g. 24, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.839,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -2053,8 +2053,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Taikos pr. 52A, Kaunas",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.049,
+        "petrol95": 1.854,
+        "diesel": 2.014,
         "lpg": null
       }
     },
@@ -2064,8 +2064,8 @@
       "municipality": "Biržų r. sav.",
       "address": "Kilučių g. 93, Biržai",
       "prices": {
-        "petrol95": 1.814,
-        "diesel": 1.994,
+        "petrol95": 1.819,
+        "diesel": 1.999,
         "lpg": 0.96
       }
     },
@@ -2097,8 +2097,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Karaliaus Mindaugo pr. 34A, Kaunas",
       "prices": {
-        "petrol95": 1.984,
-        "diesel": 2.084,
+        "petrol95": 1.954,
+        "diesel": 2.024,
         "lpg": null
       }
     },
@@ -2108,7 +2108,7 @@
       "municipality": "Trakų r. sav.",
       "address": "Didžiulio g. 5, Dėdeliškių k.",
       "prices": {
-        "petrol95": 1.979,
+        "petrol95": 1.959,
         "diesel": 2.099,
         "lpg": 0.999
       }
@@ -2119,9 +2119,9 @@
       "municipality": "Utenos r. sav.",
       "address": "J. Basanavičiaus g. 3, Utena",
       "prices": {
-        "petrol95": 1.909,
-        "diesel": 2.009,
-        "lpg": 0.969
+        "petrol95": 1.784,
+        "diesel": 1.944,
+        "lpg": 0.869
       }
     },
     {
@@ -2130,8 +2130,8 @@
       "municipality": "Lazdijų r. sav.",
       "address": "Nekrūnų k. 1",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.999,
+        "petrol95": 1.769,
+        "diesel": 1.969,
         "lpg": 0.929
       }
     },
@@ -2152,8 +2152,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Taikos pr. 112A, Klaipėda",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.039,
+        "petrol95": 1.875,
+        "diesel": 2.005,
         "lpg": 0.92
       }
     },
@@ -2163,8 +2163,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Vilniaus pl. 1A, Klaipėda",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.064,
+        "petrol95": 1.869,
+        "diesel": 1.979,
         "lpg": 0.959
       }
     },
@@ -2174,9 +2174,9 @@
       "municipality": "Raseinių r. sav.",
       "address": "Pikelių k. 1",
       "prices": {
-        "petrol95": 1.979,
+        "petrol95": 1.959,
         "diesel": 2.099,
-        "lpg": 0.969
+        "lpg": 0.989
       }
     },
     {
@@ -2185,7 +2185,7 @@
       "municipality": "Kalvarijos sav.",
       "address": "Europos g. 13a, Salaperaugio k.",
       "prices": {
-        "petrol95": 1.979,
+        "petrol95": 1.959,
         "diesel": 2.099,
         "lpg": null
       }
@@ -2196,7 +2196,7 @@
       "municipality": "Kalvarijos sav.",
       "address": "Muitinės g. 5B, Brazavo k.",
       "prices": {
-        "petrol95": 1.979,
+        "petrol95": 1.959,
         "diesel": 2.099,
         "lpg": null
       }
@@ -2207,8 +2207,8 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Vilniaus g. 62, Šiauliai",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.039,
+        "petrol95": 1.849,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -2218,8 +2218,8 @@
       "municipality": "Kauno m. sav.",
       "address": "R. Kalantos g. 68, Kaunas",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 1.984,
+        "petrol95": 1.859,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -2229,8 +2229,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Varnių g. 46, Kaunas",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.999,
+        "petrol95": 1.794,
+        "diesel": 1.979,
         "lpg": null
       }
     },
@@ -2240,8 +2240,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Oslo g. 12, Vilnius",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.019,
+        "petrol95": 1.829,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -2251,8 +2251,8 @@
       "municipality": "Tauragės r. sav.",
       "address": "Dariaus ir Girėno g. 83A, Tauragė",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.879,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -2262,8 +2262,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Islandijos pl. 32, Kaunas",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.024,
+        "petrol95": 1.909,
+        "diesel": 1.984,
         "lpg": null
       }
     },
@@ -2273,8 +2273,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Savanorių pr. 118, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.054,
+        "petrol95": 1.849,
+        "diesel": 1.989,
         "lpg": 0.919
       }
     },
@@ -2284,8 +2284,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "P. Žadeikos g. 1a, Vilnius",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.024,
+        "petrol95": 1.849,
+        "diesel": 1.999,
         "lpg": 0.949
       }
     },
@@ -2295,8 +2295,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Savanorių pr. 119A, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.054,
+        "petrol95": 1.849,
+        "diesel": 1.989,
         "lpg": 0.919
       }
     },
@@ -2306,8 +2306,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Kareivių g. 3, Vilnius",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.969,
+        "petrol95": 1.859,
+        "diesel": 1.959,
         "lpg": 0.939
       }
     },
@@ -2317,8 +2317,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Geležinio Vilko g. 4, Vilnius",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.059,
+        "petrol95": 1.879,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -2328,8 +2328,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Gariūnų g. 45, Vilnius",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.029,
+        "petrol95": 1.839,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -2339,8 +2339,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Savanorių pr. 404B, Kaunas",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.019,
+        "petrol95": 1.834,
+        "diesel": 1.989,
         "lpg": 0.949
       }
     },
@@ -2350,8 +2350,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Tvirtovės alėja 33a, Kaunas",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.039,
+        "petrol95": 1.834,
+        "diesel": 2.019,
         "lpg": null
       }
     },
@@ -2361,8 +2361,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Sukilėlių pr. 120, Kaunas",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 2.019,
+        "petrol95": 1.844,
+        "diesel": 1.989,
         "lpg": 0.899
       }
     },
@@ -2372,8 +2372,8 @@
       "municipality": "Kauno m. sav.",
       "address": "K. Baršausko g. 57, Kaunas",
       "prices": {
-        "petrol95": 1.944,
-        "diesel": 2.044,
+        "petrol95": 1.914,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -2383,7 +2383,7 @@
       "municipality": "Kauno m. sav.",
       "address": "Jonavos g. 38, Kaunas",
       "prices": {
-        "petrol95": 1.879,
+        "petrol95": 1.829,
         "diesel": 2.029,
         "lpg": 0.9
       }
@@ -2394,9 +2394,9 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Tilžės g. 25, Šiauliai",
       "prices": {
-        "petrol95": 1.929,
-        "diesel": 2.049,
-        "lpg": 0.969
+        "petrol95": 1.859,
+        "diesel": 1.979,
+        "lpg": 0.959
       }
     },
     {
@@ -2405,9 +2405,9 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Tilžės g. 56A, Klaipėda",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.049,
-        "lpg": 0.929
+        "petrol95": 1.849,
+        "diesel": 1.999,
+        "lpg": 0.939
       }
     },
     {
@@ -2416,8 +2416,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Jūrininkų pr. 31, Klaipėda",
       "prices": {
-        "petrol95": 1.929,
-        "diesel": 2.049,
+        "petrol95": 1.854,
+        "diesel": 2.01,
         "lpg": null
       }
     },
@@ -2427,8 +2427,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Sausio 15-osios g. 2, Klaipėda",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.069,
+        "petrol95": 1.869,
+        "diesel": 2.019,
         "lpg": null
       }
     },
@@ -2438,8 +2438,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Klaipėdos g. 92A, Panevėžys",
       "prices": {
-        "petrol95": 1.914,
-        "diesel": 2.009,
+        "petrol95": 1.814,
+        "diesel": 1.989,
         "lpg": null
       }
     },
@@ -2449,8 +2449,8 @@
       "municipality": "Vilniaus r. sav.",
       "address": "Molėtų g. 15, Didžiosios Riešės k.",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.989,
+        "petrol95": 1.799,
+        "diesel": 1.929,
         "lpg": null
       }
     },
@@ -2472,7 +2472,7 @@
       "address": "Muitinės g. 32, Jurbarkas",
       "prices": {
         "petrol95": 1.76,
-        "diesel": 1.91,
+        "diesel": 1.95,
         "lpg": 0.87
       }
     },
@@ -2483,7 +2483,7 @@
       "address": "Knygnešių g. 9, Jurbarkas",
       "prices": {
         "petrol95": 1.76,
-        "diesel": 1.91,
+        "diesel": 1.95,
         "lpg": 0.87
       }
     },
@@ -2494,7 +2494,7 @@
       "address": "Aristavos g. 4, Aristava",
       "prices": {
         "petrol95": 1.76,
-        "diesel": 1.91,
+        "diesel": 1.95,
         "lpg": 0.9
       }
     },
@@ -2516,7 +2516,7 @@
       "address": "Sūduvos g. 3, Kiduliai ",
       "prices": {
         "petrol95": 1.76,
-        "diesel": 1.91,
+        "diesel": 1.95,
         "lpg": 0.87
       }
     },
@@ -2527,7 +2527,7 @@
       "address": "Kauno g. 50, Girėnai",
       "prices": {
         "petrol95": 1.78,
-        "diesel": 1.91,
+        "diesel": 1.95,
         "lpg": 0.9
       }
     },
@@ -2538,7 +2538,7 @@
       "address": "S. Šimkaus g. 69, Seredžius",
       "prices": {
         "petrol95": 1.76,
-        "diesel": 1.91,
+        "diesel": 1.95,
         "lpg": null
       }
     },
@@ -2548,9 +2548,9 @@
       "municipality": "Vilkaviškio r. sav.",
       "address": "Marijampolės g. 8, Rūdos k.",
       "prices": {
-        "petrol95": 1.78,
-        "diesel": 1.91,
-        "lpg": 0.91
+        "petrol95": 1.79,
+        "diesel": 1.96,
+        "lpg": 0.87
       }
     },
     {
@@ -2560,7 +2560,7 @@
       "address": "S. Daukanto g. 66, Jurbarkas ",
       "prices": {
         "petrol95": 1.76,
-        "diesel": 1.91,
+        "diesel": 1.95,
         "lpg": 0.87
       }
     },
@@ -2900,8 +2900,8 @@
       "municipality": "Prienų r. sav.",
       "address": "Alytaus pl. 2, Mardosų k.",
       "prices": {
-        "petrol95": 1.77,
-        "diesel": 1.92,
+        "petrol95": 1.79,
+        "diesel": 1.93,
         "lpg": 0.97
       }
     },
@@ -2966,7 +2966,7 @@
       "municipality": "Plungės r. sav.",
       "address": "Dariaus ir Girėno g. 31, Plungė",
       "prices": {
-        "petrol95": 1.79,
+        "petrol95": 1.85,
         "diesel": 1.99,
         "lpg": null
       }
@@ -2988,8 +2988,8 @@
       "municipality": "Raseinių r. sav.",
       "address": "Jurbarko g. 34, Raseiniai ",
       "prices": {
-        "petrol95": 1.75,
-        "diesel": 1.95,
+        "petrol95": 1.73,
+        "diesel": 1.93,
         "lpg": 0.86
       }
     },
@@ -3021,8 +3021,8 @@
       "municipality": "Šilalės r. sav.",
       "address": "Rytinio Kelio g. 2a, Šilalė",
       "prices": {
-        "petrol95": 1.74,
-        "diesel": 1.95,
+        "petrol95": 1.75,
+        "diesel": 1.92,
         "lpg": 0.85
       }
     },
@@ -3032,7 +3032,7 @@
       "municipality": "Telšių r. sav.",
       "address": "Mažeikių g. 1, Telšiai",
       "prices": {
-        "petrol95": 1.91,
+        "petrol95": 1.89,
         "diesel": 2.01,
         "lpg": 0.92
       }
@@ -3054,7 +3054,7 @@
       "municipality": "Plungės r. sav.",
       "address": "Minijos g. 1, Aleksandravo k.",
       "prices": {
-        "petrol95": 1.79,
+        "petrol95": 1.85,
         "diesel": 1.99,
         "lpg": 0.96
       }
@@ -3131,7 +3131,7 @@
       "municipality": "Kėdainių r. sav.",
       "address": "Ruoščių k. 1",
       "prices": {
-        "petrol95": 1.723,
+        "petrol95": 1.733,
         "diesel": 1.899,
         "lpg": 0.92
       }
@@ -3186,9 +3186,9 @@
       "municipality": "Raseinių r. sav.",
       "address": "Pievų g. 17, Slabados k.",
       "prices": {
-        "petrol95": 1.77,
-        "diesel": 1.97,
-        "lpg": 0.87
+        "petrol95": 1.81,
+        "diesel": 1.94,
+        "lpg": 0.85
       }
     },
     {
@@ -3197,7 +3197,7 @@
       "municipality": "Pakruojo r. sav.",
       "address": "Topolių g. 1, Degučių k.",
       "prices": {
-        "petrol95": 1.69,
+        "petrol95": 1.75,
         "diesel": 1.9,
         "lpg": 0.86
       }
@@ -3208,7 +3208,7 @@
       "municipality": "Raseinių r. sav.",
       "address": "Vilniaus g. 3B, Raseiniai",
       "prices": {
-        "petrol95": 1.719,
+        "petrol95": 1.72,
         "diesel": 1.949,
         "lpg": 0.86
       }
@@ -3220,7 +3220,7 @@
       "address": "Kikonių g. 10, Aleksandrijos k.",
       "prices": {
         "petrol95": 1.829,
-        "diesel": 2.019,
+        "diesel": 1.999,
         "lpg": 0.969
       }
     },
@@ -3242,7 +3242,7 @@
       "address": "Sausalaukės k. 2",
       "prices": {
         "petrol95": 1.819,
-        "diesel": 1.999,
+        "diesel": 1.959,
         "lpg": 0.899
       }
     },
@@ -3285,8 +3285,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Servečės g. 2, Vilnius",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -3296,8 +3296,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Ukmergės g. 296, Vilnius",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 2.019,
+        "petrol95": 1.819,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -3307,8 +3307,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Talino g. 2C, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.019,
+        "petrol95": 1.839,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -3318,8 +3318,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Erfurto g. 41, Vilnius",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -3329,8 +3329,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Geležinio Vilko g. 63, Vilnius",
       "prices": {
-        "petrol95": 1.884,
-        "diesel": 1.989,
+        "petrol95": 1.809,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -3340,8 +3340,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "S. Stanevičiaus g. 3, Vilnius",
       "prices": {
-        "petrol95": 1.894,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -3351,8 +3351,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Žirmūnų g. 68B, Vilnius",
       "prices": {
-        "petrol95": 1.904,
-        "diesel": 1.989,
+        "petrol95": 1.849,
+        "diesel": 1.944,
         "lpg": null
       }
     },
@@ -3362,8 +3362,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Rygos g. 2, Vilnius",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.829,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3373,8 +3373,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Savanorių pr. 220A, Vilnius",
       "prices": {
-        "petrol95": 1.874,
-        "diesel": 2.014,
+        "petrol95": 1.819,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -3384,8 +3384,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Parodų g. 1A, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.019,
+        "petrol95": 1.829,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3395,8 +3395,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Kauno g. 26, Vilnius",
       "prices": {
-        "petrol95": 1.929,
-        "diesel": 2.019,
+        "petrol95": 1.894,
+        "diesel": 1.974,
         "lpg": null
       }
     },
@@ -3406,8 +3406,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Savanorių pr. 187, Vilnius",
       "prices": {
-        "petrol95": 1.874,
-        "diesel": 2.014,
+        "petrol95": 1.819,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -3417,8 +3417,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Kedrų g. 2, Vilnius",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.029,
+        "petrol95": 1.914,
+        "diesel": 1.994,
         "lpg": null
       }
     },
@@ -3428,8 +3428,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Molėtų pl. 8, Vilnius",
       "prices": {
-        "petrol95": 1.874,
-        "diesel": 1.979,
+        "petrol95": 1.799,
+        "diesel": 1.929,
         "lpg": null
       }
     },
@@ -3439,8 +3439,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "P. Lukšio g. 22, Vilnius",
       "prices": {
-        "petrol95": 1.894,
-        "diesel": 1.984,
+        "petrol95": 1.839,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -3450,8 +3450,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Žirmūnų g. 54C, Vilnius",
       "prices": {
-        "petrol95": 1.904,
-        "diesel": 1.989,
+        "petrol95": 1.849,
+        "diesel": 1.944,
         "lpg": null
       }
     },
@@ -3461,8 +3461,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Subačiaus g. 64, Vilnius",
       "prices": {
-        "petrol95": 1.914,
-        "diesel": 2.019,
+        "petrol95": 1.869,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3472,8 +3472,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Dariaus ir Girėno g. 17, Vilnius",
       "prices": {
-        "petrol95": 1.929,
-        "diesel": 2.039,
+        "petrol95": 1.869,
+        "diesel": 1.979,
         "lpg": null
       }
     },
@@ -3483,8 +3483,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Architektų g. 130, Vilnius",
       "prices": {
-        "petrol95": 1.914,
-        "diesel": 2.014,
+        "petrol95": 1.824,
+        "diesel": 1.944,
         "lpg": null
       }
     },
@@ -3494,8 +3494,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Justiniškių g. 14B, Vilnius",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.859,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -3505,8 +3505,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Geležinio Vilko g. 37A, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.979,
         "lpg": null
       }
     },
@@ -3516,8 +3516,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Pilaitės pr. 27, Vilnius",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.979,
+        "petrol95": 1.819,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3527,8 +3527,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Žirnių g. 17, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.849,
+        "diesel": 1.979,
         "lpg": null
       }
     },
@@ -3538,8 +3538,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "J. Tiškevičiaus g. 19, Vilnius",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 2.029,
+        "petrol95": 1.834,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3549,8 +3549,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Eišiškių pl. 82, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.859,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3560,8 +3560,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Gariūnų g. 55, Vilnius",
       "prices": {
-        "petrol95": 1.914,
-        "diesel": 1.994,
+        "petrol95": 1.819,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -3571,8 +3571,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Panerių g. 42, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 1.999,
+        "petrol95": 1.884,
+        "diesel": 1.954,
         "lpg": null
       }
     },
@@ -3582,8 +3582,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Geležinio Vilko g. 41, Vilnius",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.979,
         "lpg": null
       }
     },
@@ -3593,8 +3593,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Pramonės pr. 6A, Kaunas",
       "prices": {
-        "petrol95": 1.894,
-        "diesel": 1.994,
+        "petrol95": 1.849,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3604,8 +3604,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Jonavos g. 110, Kaunas",
       "prices": {
-        "petrol95": 1.829,
-        "diesel": 1.989,
+        "petrol95": 1.794,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3615,8 +3615,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Veiverių g. 132D, Kaunas",
       "prices": {
-        "petrol95": 1.924,
-        "diesel": 2.044,
+        "petrol95": 1.889,
+        "diesel": 1.989,
         "lpg": null
       }
     },
@@ -3626,8 +3626,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Žemaičių pl. 26, Kaunas",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 1.974,
+        "petrol95": 1.859,
+        "diesel": 1.954,
         "lpg": null
       }
     },
@@ -3637,8 +3637,8 @@
       "municipality": "Kauno m. sav.",
       "address": "R. Kalantos g. 27, Kaunas",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.984,
+        "petrol95": 1.859,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -3648,8 +3648,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Ateities pl. 50B, Kaunas",
       "prices": {
-        "petrol95": 1.824,
-        "diesel": 1.984,
+        "petrol95": 1.789,
+        "diesel": 1.964,
         "lpg": null
       }
     },
@@ -3659,8 +3659,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Taikos pr. 80A, Kaunas",
       "prices": {
-        "petrol95": 1.894,
-        "diesel": 2.014,
+        "petrol95": 1.819,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3670,8 +3670,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Birželio 23-iosios g. 23A, Kaunas",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.019,
+        "petrol95": 1.824,
+        "diesel": 1.974,
         "lpg": null
       }
     },
@@ -3681,8 +3681,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Islandijos pl. 191E, Kaunas",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.989,
+        "petrol95": 1.829,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -3692,8 +3692,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Raudondvario pl. 103, Kaunas",
       "prices": {
-        "petrol95": 1.839,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3703,8 +3703,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Kuršių g. 1, Kaunas",
       "prices": {
-        "petrol95": 1.829,
-        "diesel": 1.989,
+        "petrol95": 1.794,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3714,8 +3714,8 @@
       "municipality": "Kauno r. sav.",
       "address": "Vijoklių g. 1C, Ramučių k.",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.994,
+        "petrol95": 1.814,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -3725,8 +3725,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Tunelio g. 26, Kaunas",
       "prices": {
-        "petrol95": 1.914,
-        "diesel": 2.014,
+        "petrol95": 1.869,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3736,8 +3736,8 @@
       "municipality": "Kauno r. sav.",
       "address": "Vakarų g. 14, Kumpių k.",
       "prices": {
-        "petrol95": 1.844,
-        "diesel": 1.999,
+        "petrol95": 1.809,
+        "diesel": 1.979,
         "lpg": null
       }
     },
@@ -3747,8 +3747,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Savanorių pr. 441C, Kaunas",
       "prices": {
-        "petrol95": 1.869,
-        "diesel": 1.989,
+        "petrol95": 1.814,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -3758,8 +3758,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Vakarinis aplinkkelis 18, Kaunas",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.994,
+        "petrol95": 1.819,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3769,8 +3769,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Europos pr. 43, Kaunas",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.884,
+        "diesel": 1.984,
         "lpg": null
       }
     },
@@ -3780,8 +3780,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Plieno g. 1, Klaipėda",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -3791,8 +3791,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Šilutės pl. 30, Klaipėda",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 1.994,
+        "petrol95": 1.819,
+        "diesel": 1.929,
         "lpg": null
       }
     },
@@ -3802,8 +3802,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Taikos pr. 60, Klaipėda",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.989,
+        "petrol95": 1.819,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3813,8 +3813,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Minijos g. 119, Klaipėda",
       "prices": {
-        "petrol95": 1.869,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -3824,8 +3824,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Artojo g. 2, Klaipėda",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.999,
+        "petrol95": 1.799,
+        "diesel": 1.929,
         "lpg": null
       }
     },
@@ -3835,8 +3835,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Smiltelės g. 17, Klaipėda",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.999,
+        "petrol95": 1.809,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -3846,8 +3846,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Šilutės pl. 5C, Klaipėda",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.029,
+        "petrol95": 1.829,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3857,8 +3857,8 @@
       "municipality": "Klaipėdos r. sav.",
       "address": "Vilniaus pl. 9, Jakų k.",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.019,
+        "petrol95": 1.839,
+        "diesel": 1.979,
         "lpg": null
       }
     },
@@ -3868,8 +3868,8 @@
       "municipality": "Klaipėdos r. sav.",
       "address": "Sendvario g. 2, Sudmantų k.",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 2.029,
+        "petrol95": 1.849,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3879,8 +3879,8 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Gegužių g. 28, Šiauliai",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.799,
+        "diesel": 1.929,
         "lpg": null
       }
     },
@@ -3890,8 +3890,8 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Tilžės g. 72, Šiauliai",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.804,
+        "diesel": 1.934,
         "lpg": null
       }
     },
@@ -3901,8 +3901,8 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Dubijos g. 18A, Šiauliai",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.019,
+        "petrol95": 1.849,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3912,8 +3912,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Klaipėdos g. 81, Panevėžys",
       "prices": {
-        "petrol95": 1.894,
-        "diesel": 1.999,
+        "petrol95": 1.814,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3923,8 +3923,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Ramygalos g. 145B, Panevėžys",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3934,8 +3934,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Klaipėdos g. 66,  Panevėžys",
       "prices": {
-        "petrol95": 1.894,
-        "diesel": 1.999,
+        "petrol95": 1.814,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3945,8 +3945,8 @@
       "municipality": "Pasvalio r. sav.",
       "address": "Ąžuolpamūšio g. 1A, Raubonių k..",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.019,
+        "petrol95": 1.849,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -3956,8 +3956,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Margirio g. 1B, Panevėžys",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3967,8 +3967,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Klaipėdos g. 144B, Panevėžys",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3978,8 +3978,8 @@
       "municipality": "Panevėžio r. sav.",
       "address": "Panevėžio aplinkl. 7, Šilagalio k.",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.994,
+        "petrol95": 1.829,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -3989,8 +3989,8 @@
       "municipality": "Panevėžio r. sav.",
       "address": "Panevėžio aplinkl. 22, Šilagalio k.",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 1.984,
+        "petrol95": 1.819,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -4000,8 +4000,8 @@
       "municipality": "Alytaus m. sav.",
       "address": "Santaikos g. 34A, Alytus",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.029,
+        "petrol95": 1.849,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -4011,8 +4011,8 @@
       "municipality": "Alytaus m. sav.",
       "address": "Ūdrijos g. 31, Alytus",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.029,
+        "petrol95": 1.849,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -4022,8 +4022,8 @@
       "municipality": "Marijampolės sav.",
       "address": "Stoties g. 4C, Marijampolė",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.999,
+        "petrol95": 1.839,
+        "diesel": 1.939,
         "lpg": null
       }
     },
@@ -4033,8 +4033,8 @@
       "municipality": "Marijampolės sav.",
       "address": "Vilkaviškio g. 61D, Marijampolė",
       "prices": {
-        "petrol95": 1.894,
-        "diesel": 1.994,
+        "petrol95": 1.834,
+        "diesel": 1.934,
         "lpg": null
       }
     },
@@ -4044,8 +4044,8 @@
       "municipality": "Kalvarijos sav.",
       "address": "Europos g. 1, Salaperaugio k.",
       "prices": {
-        "petrol95": 1.929,
-        "diesel": 2.029,
+        "petrol95": 1.869,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -4056,7 +4056,7 @@
       "address": "Europos g. 6, N.Valios k.",
       "prices": {
         "petrol95": null,
-        "diesel": 2.029,
+        "diesel": 1.969,
         "lpg": null
       }
     },
@@ -4066,8 +4066,8 @@
       "municipality": "Mažeikių r. sav.",
       "address": "M. Daukšos g. 29, Mažeikiai",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 1.999,
+        "petrol95": 1.829,
+        "diesel": 1.929,
         "lpg": null
       }
     },
@@ -4077,8 +4077,8 @@
       "municipality": "Šilalės r. sav.",
       "address": "Katyčių k., Šilalės r.",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.999,
+        "petrol95": 1.839,
+        "diesel": 1.989,
         "lpg": null
       }
     },
@@ -4088,8 +4088,8 @@
       "municipality": "Kėdainių r. sav.",
       "address": "J. Basanavičiaus g. 91E, Kėdainiai",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 2.019,
+        "petrol95": 1.849,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -4099,8 +4099,8 @@
       "municipality": "Ukmergės r. sav.",
       "address": "Kauno g. 45B, Ukmergė",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.019,
+        "petrol95": 1.819,
+        "diesel": 1.919,
         "lpg": null
       }
     },
@@ -4110,8 +4110,8 @@
       "municipality": "Utenos r. sav.",
       "address": "J. Basanavičiaus g. 129, Utena",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.979,
+        "petrol95": 1.849,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -4121,8 +4121,8 @@
       "municipality": "Utenos r. sav.",
       "address": "Kupiškio g. 12, Utena",
       "prices": {
-        "petrol95": 1.894,
-        "diesel": 1.974,
+        "petrol95": 1.844,
+        "diesel": 1.954,
         "lpg": null
       }
     },
@@ -4132,8 +4132,8 @@
       "municipality": "Molėtų r. sav.",
       "address": "Aplinkkelio g. 165, Molėtai",
       "prices": {
-        "petrol95": 1.884,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -4143,8 +4143,8 @@
       "municipality": "Švenčionių r. sav.",
       "address": "Vilniaus g. 94, Pabradė",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.019,
+        "petrol95": 1.859,
+        "diesel": 1.929,
         "lpg": null
       }
     },
@@ -4154,8 +4154,8 @@
       "municipality": "Jonavos r. sav.",
       "address": "Plento g. 7, Gudžionių k.",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.859,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -4165,8 +4165,8 @@
       "municipality": "Radviliškio r. sav.",
       "address": "Versmės g. 2, Radviliškis",
       "prices": {
-        "petrol95": 1.889,
-        "diesel": 1.999,
+        "petrol95": 1.819,
+        "diesel": 1.949,
         "lpg": null
       }
     },
@@ -4176,8 +4176,8 @@
       "municipality": "Raseinių r. sav.",
       "address": "Pušyno g. 11, Ylių k.",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.019,
+        "petrol95": 1.859,
+        "diesel": 2.009,
         "lpg": null
       }
     },
@@ -4187,8 +4187,8 @@
       "municipality": "Tauragės r. sav.",
       "address": "Dariaus ir Girėno g. 130A, Tauragė",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.029,
+        "petrol95": 1.849,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -4198,8 +4198,8 @@
       "municipality": "Elektrėnų sav.",
       "address": "Sabališkių g. 1U, Elektrėnai",
       "prices": {
-        "petrol95": 1.934,
-        "diesel": 2.039,
+        "petrol95": 1.879,
+        "diesel": 2.029,
         "lpg": null
       }
     },
@@ -4209,8 +4209,8 @@
       "municipality": "Telšių r. sav.",
       "address": "Šiaulių pl. 1A, Gaudikaičių k.",
       "prices": {
-        "petrol95": 1.914,
-        "diesel": 1.994,
+        "petrol95": 1.879,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -4220,9 +4220,9 @@
       "municipality": "Alytaus m. sav.",
       "address": "Kauno g. 73, Alytus",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.979,
-        "lpg": 0.869
+        "petrol95": 1.729,
+        "diesel": 1.879,
+        "lpg": 0.829
       }
     },
     {
@@ -4231,9 +4231,9 @@
       "municipality": "Elektrėnų sav.",
       "address": "​Žilvičių g. 1 A, Kakliniškių k.",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.019,
-        "lpg": 0.899
+        "petrol95": 1.859,
+        "diesel": 1.979,
+        "lpg": 0.879
       }
     },
     {
@@ -4242,9 +4242,9 @@
       "municipality": "Prienų r. sav.",
       "address": "Alytaus g. 2, ​Verbyliškių k.",
       "prices": {
-        "petrol95": 1.869,
-        "diesel": 1.999,
-        "lpg": 0.889
+        "petrol95": 1.839,
+        "diesel": 1.969,
+        "lpg": 0.879
       }
     },
     {
@@ -4253,9 +4253,9 @@
       "municipality": "Kaišiadorių r. sav.",
       "address": "Žiežmarių k.",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.019,
-        "lpg": 0.899
+        "petrol95": 1.859,
+        "diesel": 1.979,
+        "lpg": 0.879
       }
     },
     {
@@ -4264,9 +4264,9 @@
       "municipality": "Kauno r. sav.",
       "address": "Biruliškių k.",
       "prices": {
-        "petrol95": 1.839,
-        "diesel": 1.979,
-        "lpg": 0.879
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.799
       }
     },
     {
@@ -4275,8 +4275,8 @@
       "municipality": "Kauno r. sav.",
       "address": "Beržų g. 2N, Ringaudai",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.999,
+        "petrol95": 1.799,
+        "diesel": 1.939,
         "lpg": 0.899
       }
     },
@@ -4286,8 +4286,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Kalvarijos g. 138, Kaunas",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.999,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.879
       }
     },
@@ -4297,8 +4297,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Pramonės pr. 37, Kaunas",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.989,
+        "petrol95": 1.729,
+        "diesel": 1.879,
         "lpg": 0.879
       }
     },
@@ -4308,8 +4308,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Varnių g. 50, Kaunas ",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.969,
+        "petrol95": 1.729,
+        "diesel": 1.879,
         "lpg": 0.869
       }
     },
@@ -4319,9 +4319,9 @@
       "municipality": "Kauno m. sav.",
       "address": "Veiverių g. 148 B, Kaunas",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.999,
-        "lpg": 0.879
+        "petrol95": 1.729,
+        "diesel": 1.879,
+        "lpg": 0.839
       }
     },
     {
@@ -4330,8 +4330,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Minijos g. 44, Klaipėda",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.989,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.879
       }
     },
@@ -4341,9 +4341,9 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Šilutės pl. 26 A, Klaipėda",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
-        "lpg": 0.869
+        "petrol95": 1.729,
+        "diesel": 1.859,
+        "lpg": 0.819
       }
     },
     {
@@ -4352,9 +4352,9 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Šilutės pl. 94, Klaipėda",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.979,
-        "lpg": 0.879
+        "petrol95": 1.699,
+        "diesel": 1.879,
+        "lpg": 0.839
       }
     },
     {
@@ -4363,8 +4363,8 @@
       "municipality": "Klaipėdos r. sav.",
       "address": "Vilniaus pl. 13, Jakų k.",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 2.029,
+        "petrol95": 1.849,
+        "diesel": 1.959,
         "lpg": 0.889
       }
     },
@@ -4375,7 +4375,7 @@
       "address": "Pikelių k. 6",
       "prices": {
         "petrol95": 1.929,
-        "diesel": 2.079,
+        "diesel": 2.059,
         "lpg": 0.919
       }
     },
@@ -4386,7 +4386,7 @@
       "address": "Pikelių k. 8",
       "prices": {
         "petrol95": 1.929,
-        "diesel": 2.079,
+        "diesel": 2.059,
         "lpg": 0.919
       }
     },
@@ -4396,9 +4396,9 @@
       "municipality": "Marijampolės sav.",
       "address": "Aleksandravo k.",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
-        "lpg": 0.859
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.799
       }
     },
     {
@@ -4407,9 +4407,9 @@
       "municipality": "Mažeikių r. sav.",
       "address": "​Skuodo g. 14, Mažeikiai ",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.979,
-        "lpg": 0.879
+        "petrol95": 1.699,
+        "diesel": 1.879,
+        "lpg": 0.829
       }
     },
     {
@@ -4418,9 +4418,9 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Žemaitijos g. 42, Mažeikiai",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.969,
-        "lpg": 0.889
+        "petrol95": 1.729,
+        "diesel": 1.879,
+        "lpg": 0.849
       }
     },
     {
@@ -4429,8 +4429,8 @@
       "municipality": "Kretingos r. sav.",
       "address": "Vilimiškės k.",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.999,
+        "petrol95": 1.839,
+        "diesel": 1.949,
         "lpg": 0.899
       }
     },
@@ -4440,9 +4440,9 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Klaipėdos g. 162 D, Panevėžys",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.999,
-        "lpg": 0.889
+        "petrol95": 1.729,
+        "diesel": 1.879,
+        "lpg": 0.869
       }
     },
     {
@@ -4451,9 +4451,9 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Senamiesčio g. 115, Panevėžys",
       "prices": {
-        "petrol95": 1.839,
-        "diesel": 1.959,
-        "lpg": 0.869
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.829
       }
     },
     {
@@ -4462,9 +4462,9 @@
       "municipality": "Panevėžio r. sav.",
       "address": "Šiaulių g. 50, Nausodės k.",
       "prices": {
-        "petrol95": 1.869,
-        "diesel": 2.029,
-        "lpg": 0.899
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.879
       }
     },
     {
@@ -4473,9 +4473,9 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Serbentų g. 82, Šiauliai",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.999,
-        "lpg": 0.879
+        "petrol95": 1.729,
+        "diesel": 1.879,
+        "lpg": 0.859
       }
     },
     {
@@ -4484,8 +4484,8 @@
       "municipality": "Tauragės r. sav.",
       "address": "Gedimino g. 46, Tauragė ",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.999,
+        "petrol95": 1.729,
+        "diesel": 1.879,
         "lpg": 0.879
       }
     },
@@ -4495,8 +4495,8 @@
       "municipality": "Telšių r. sav.",
       "address": "​Plungės g. 33 D, Telšiai",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.999,
+        "petrol95": 1.729,
+        "diesel": 1.879,
         "lpg": 0.879
       }
     },
@@ -4506,8 +4506,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Juodasis kl. 32, Vilnius",
       "prices": {
-        "petrol95": 1.869,
-        "diesel": 1.999,
+        "petrol95": 1.729,
+        "diesel": 1.859,
         "lpg": 0.899
       }
     },
@@ -4517,8 +4517,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "O. ​Milašiaus g. 31, Vilnius",
       "prices": {
-        "petrol95": 1.869,
-        "diesel": 1.999,
+        "petrol95": 1.699,
+        "diesel": 1.859,
         "lpg": 0.899
       }
     },
@@ -4528,8 +4528,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Ukmergės g. 319, Vilnius",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.979,
+        "petrol95": 1.759,
+        "diesel": 1.919,
         "lpg": 0.889
       }
     },
@@ -4539,8 +4539,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Žirmūnų g. 1T, Vilnius",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.979,
+        "petrol95": 1.759,
+        "diesel": 1.919,
         "lpg": 0.889
       }
     },
@@ -4551,7 +4551,7 @@
       "address": "Gardino g. 98, Druskininkai",
       "prices": {
         "petrol95": 1.85,
-        "diesel": 1.96,
+        "diesel": 1.99,
         "lpg": 0.95
       }
     },
@@ -4710,90 +4710,13 @@
       }
     },
     {
-      "id": "alytaus-r-sav-|simnas-alytaus-g-48",
-      "company": "Skulas",
-      "municipality": "Alytaus r. sav.",
-      "address": "Simnas, Alytaus g. 48",
-      "prices": {
-        "petrol95": 1.79,
-        "diesel": 1.97,
-        "lpg": 0.89
-      }
-    },
-    {
-      "id": "alytaus-r-sav-|likiškėlių-k-kalninės-g-5",
-      "company": "Skulas",
-      "municipality": "Alytaus r. sav.",
-      "address": "Likiškėlių k., Kalninės g. 5",
-      "prices": {
-        "petrol95": 1.78,
-        "diesel": 1.96,
-        "lpg": 0.88
-      }
-    },
-    {
-      "id": "kauno-m-sav-|kaunas-ašigalio-g-1-a",
-      "company": "Skulas",
-      "municipality": "Kauno m. sav.",
-      "address": "Kaunas, Ašigalio g. 1 A",
-      "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.929,
-        "lpg": 0.829
-      }
-    },
-    {
-      "id": "kauno-m-sav-|-kaunas-marvelės-g-106-d",
-      "company": "Skulas",
-      "municipality": "Kauno m. sav.",
-      "address": " Kaunas, Marvelės g. 106 D",
-      "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.929,
-        "lpg": null
-      }
-    },
-    {
-      "id": "kauno-r-sav-|virbališkių-k-verslo-g-2",
-      "company": "Skulas",
-      "municipality": "Kauno r. sav.",
-      "address": "Virbališkių k., Verslo g. 2",
-      "prices": {
-        "petrol95": 1.8,
-        "diesel": 1.93,
-        "lpg": 0.83
-      }
-    },
-    {
-      "id": "pasvalio-r-sav-|pasvalys-mūšos-g-2-e",
-      "company": "Skulas",
-      "municipality": "Pasvalio r. sav.",
-      "address": "Pasvalys, Mūšos g. 2 E",
-      "prices": {
-        "petrol95": 1.75,
-        "diesel": 1.9,
-        "lpg": 0.82
-      }
-    },
-    {
-      "id": "vilniaus-m-sav-|vilnius-j-kazlausko-g-34",
-      "company": "Skulas",
-      "municipality": "Vilniaus m. sav.",
-      "address": "Vilnius, J.Kazlausko g. 34",
-      "prices": {
-        "petrol95": 1.789,
-        "diesel": 1.959,
-        "lpg": 0.849
-      }
-    },
-    {
       "id": "alytaus-r-sav-|daugų-k-neveiglo-g-25",
       "company": "Viada",
       "municipality": "Alytaus r. sav. ",
       "address": "Daugų k., Neveiglo g. 25",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.019,
         "lpg": 0.939
       }
     },
@@ -4803,8 +4726,8 @@
       "municipality": "Alytaus m. sav. ",
       "address": "Alytus, Naujoji g. 27",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.059,
+        "petrol95": 1.889,
+        "diesel": 1.999,
         "lpg": 0.919
       }
     },
@@ -4814,8 +4737,8 @@
       "municipality": "Alytaus m. sav. ",
       "address": "Alytus, Ulonų g. 33B",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.059,
+        "petrol95": 1.889,
+        "diesel": 1.999,
         "lpg": 0.919
       }
     },
@@ -4825,7 +4748,7 @@
       "municipality": "Anykščių r. sav.",
       "address": "Anykščiai, A. Vienuolio g. 34",
       "prices": {
-        "petrol95": 1.899,
+        "petrol95": 1.859,
         "diesel": 2.059,
         "lpg": 0.939
       }
@@ -4836,7 +4759,7 @@
       "municipality": "Anykščių r. sav.",
       "address": "Anykščiai, Piliakalnio g. 9",
       "prices": {
-        "petrol95": 1.899,
+        "petrol95": 1.859,
         "diesel": 2.059,
         "lpg": 0.939
       }
@@ -4848,7 +4771,7 @@
       "address": "Biržai, Parodos g. 2",
       "prices": {
         "petrol95": 1.819,
-        "diesel": 2.009,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -4859,7 +4782,7 @@
       "address": "Biržai, Pasvalio g. 1B",
       "prices": {
         "petrol95": 1.819,
-        "diesel": 2.009,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -4880,7 +4803,7 @@
       "municipality": "Ignalinos r. sav.",
       "address": "Ignalina, Turistų g. 28A",
       "prices": {
-        "petrol95": 1.959,
+        "petrol95": 1.939,
         "diesel": 2.079,
         "lpg": 0.959
       }
@@ -4891,8 +4814,8 @@
       "municipality": "Jonavos r. sav.",
       "address": "Jonava, Darbininkų g. 4D",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.949,
+        "diesel": 2.059,
         "lpg": 0.949
       }
     },
@@ -4902,7 +4825,7 @@
       "municipality": "Joniškio r. sav. ",
       "address": "Joniškis, Vilniaus g. 51",
       "prices": {
-        "petrol95": 1.899,
+        "petrol95": 1.889,
         "diesel": 2.069,
         "lpg": 0.929
       }
@@ -4913,7 +4836,7 @@
       "municipality": "Kaišiadorių r. sav.",
       "address": "Kaišiadorys, Gedimino g. 135",
       "prices": {
-        "petrol95": 1.959,
+        "petrol95": 1.899,
         "diesel": 2.079,
         "lpg": 0.959
       }
@@ -4947,7 +4870,7 @@
       "address": "Kaunas, A. Juozapavičiaus pr. 90",
       "prices": {
         "petrol95": 1.959,
-        "diesel": 2.079,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -4968,8 +4891,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Ateities pl. 37A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.069,
+        "petrol95": 1.899,
+        "diesel": 1.999,
         "lpg": 0.949
       }
     },
@@ -4979,8 +4902,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Kaunas, Baltijos g. 90B",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.899,
+        "diesel": 1.979,
         "lpg": 0.929
       }
     },
@@ -4990,8 +4913,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Biruliškių g. 18A",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.069,
+        "petrol95": 1.899,
+        "diesel": 2.019,
         "lpg": null
       }
     },
@@ -5001,8 +4924,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Didžioji g. 84",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -5023,8 +4946,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, K. Baršausko g. 64",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.069,
+        "petrol95": 1.919,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -5035,7 +4958,7 @@
       "address": "Kaunas, Karaliaus Mindaugo pr. 54",
       "prices": {
         "petrol95": 1.959,
-        "diesel": 2.079,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -5045,8 +4968,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Marijampolės pl. 29",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -5056,8 +4979,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Miežėnų g. 18",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.899,
+        "diesel": 1.979,
         "lpg": 0.929
       }
     },
@@ -5067,8 +4990,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, P. Lukšio g. 66A",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.059,
+        "petrol95": 1.869,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5078,8 +5001,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Pramonės pr. 44",
       "prices": {
-        "petrol95": 1.919,
-        "diesel": 2.029,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.949
       }
     },
@@ -5089,8 +5012,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Raudondvario pl. 288",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.069,
+        "petrol95": 1.869,
+        "diesel": 2.029,
         "lpg": 0.959
       }
     },
@@ -5100,8 +5023,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Statybininkų g. 3A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.069,
+        "petrol95": 1.869,
+        "diesel": 2.029,
         "lpg": 0.959
       }
     },
@@ -5111,8 +5034,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, T. Masiulio g. 22B",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.069,
+        "petrol95": 1.889,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -5122,8 +5045,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Veiverių g. 117",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -5133,8 +5056,8 @@
       "municipality": "Kauno m. sav. ",
       "address": "Kaunas, Veiverių g. 124B",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -5188,8 +5111,8 @@
       "municipality": "Kauno r. sav.",
       "address": "Margavos k.",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.919,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -5199,8 +5122,8 @@
       "municipality": "Kauno r. sav.",
       "address": "Zapyškis, Vytauto g. 20A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -5243,8 +5166,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Klaipėda, Liepojos g. 242",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -5254,8 +5177,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Klaipėda, Nemuno g. 139",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.069,
+        "petrol95": 1.879,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5265,8 +5188,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Klaipėda, Priestočio g. 28",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.069,
+        "petrol95": 1.879,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5276,8 +5199,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Klaipėda, Šilutės pl. 52",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -5287,8 +5210,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Klaipėda, Taikos pr. 70A-1",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.069,
+        "petrol95": 1.879,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5353,8 +5276,8 @@
       "municipality": "Kupiškio r. sav. ",
       "address": "Kerelių k. 1A",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.059,
+        "petrol95": 1.859,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5364,8 +5287,8 @@
       "municipality": "Kupiškio r. sav. ",
       "address": "Kupiškis, Pergalės g. 15",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 2.059,
+        "petrol95": 1.859,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5375,8 +5298,8 @@
       "municipality": "Lazdijų r. sav.",
       "address": "Lazdijai, Turistų g. 32",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 2.059,
+        "petrol95": 1.799,
+        "diesel": 1.999,
         "lpg": 0.929
       }
     },
@@ -5386,9 +5309,9 @@
       "municipality": "Marijampolės sav.",
       "address": "Marijampolė, Geležinkelio g. 5",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.059,
-        "lpg": 0.929
+        "petrol95": 1.889,
+        "diesel": 1.989,
+        "lpg": 0.899
       }
     },
     {
@@ -5397,9 +5320,9 @@
       "municipality": "Marijampolės sav.",
       "address": "Marijampolė, J. Ambrazevičiaus-Brazaičio g. 2",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.059,
-        "lpg": 0.929
+        "petrol95": 1.889,
+        "diesel": 1.989,
+        "lpg": 0.899
       }
     },
     {
@@ -5408,9 +5331,9 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Mažeikiai, Montuotojų g. 2A",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.039,
-        "lpg": 0.959
+        "petrol95": 1.879,
+        "diesel": 1.999,
+        "lpg": 0.899
       }
     },
     {
@@ -5419,9 +5342,9 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Mažeikiai, Žemaitijos g. 75",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.039,
-        "lpg": 0.959
+        "petrol95": 1.879,
+        "diesel": 1.999,
+        "lpg": 0.899
       }
     },
     {
@@ -5430,8 +5353,8 @@
       "municipality": "Molėtų r. sav. ",
       "address": "Molėtai, Vilniaus g. 101",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5441,8 +5364,8 @@
       "municipality": "Molėtų r. sav. ",
       "address": "Gojaus k., Utenos g. 16",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5452,7 +5375,7 @@
       "municipality": "Pakruojo r. sav. ",
       "address": "Pakruojis, Vytauto Didžiojo g. 98",
       "prices": {
-        "petrol95": 1.899,
+        "petrol95": 1.889,
         "diesel": 2.049,
         "lpg": 0.959
       }
@@ -5485,8 +5408,8 @@
       "municipality": "Panevėžio r. sav. ",
       "address": "Šilagalio k., Panevėžio aplinkl. 5",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.049,
+        "petrol95": 1.859,
+        "diesel": 1.979,
         "lpg": null
       }
     },
@@ -5496,8 +5419,8 @@
       "municipality": "Panevėžio r. sav. ",
       "address": "Tičkūnų k., Tičkūnų g. 31",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -5507,8 +5430,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Panevėžys, J. Janonio g. 28A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -5518,8 +5441,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Panevėžys, Navadolio g. 31",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.939
       }
     },
@@ -5529,8 +5452,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Panevėžys, Pušaloto g. 193A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -5540,8 +5463,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Panevėžys, Ramygalos g. 155",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.939
       }
     },
@@ -5551,8 +5474,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Panevėžys, Ramygalos g. 186G",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.939
       }
     },
@@ -5562,8 +5485,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Panevėžys, Senamiesčio g. 116A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.949
       }
     },
@@ -5573,8 +5496,8 @@
       "municipality": "Panevėžio m. sav.",
       "address": "Panevėžys, Venslaviškio g. 16",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -5595,8 +5518,8 @@
       "municipality": "Pasvalio r. sav.",
       "address": "Pasvalys, Vilniaus g. 50",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.929,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -5606,7 +5529,7 @@
       "municipality": "Plungės r. sav. ",
       "address": "Plungė, J. Tumo-Vaižganto g. 102",
       "prices": {
-        "petrol95": 1.899,
+        "petrol95": 1.879,
         "diesel": 2.039,
         "lpg": 0.959
       }
@@ -5617,7 +5540,7 @@
       "municipality": "Plungės r. sav. ",
       "address": "Plungė, Žaltakalnio g. 10",
       "prices": {
-        "petrol95": 1.899,
+        "petrol95": 1.879,
         "diesel": 2.039,
         "lpg": 0.959
       }
@@ -5683,8 +5606,8 @@
       "municipality": "Skuodo r. sav. ",
       "address": "Skuodas, Vilniaus g. 50",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.889,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -5705,8 +5628,8 @@
       "municipality": "Šiaulių m. sav. ",
       "address": "Šiauliai, Dubijos g. 1C",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5716,8 +5639,8 @@
       "municipality": "Šiaulių m. sav. ",
       "address": "Šiauliai, Gegužių g. 26",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.879,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -5727,8 +5650,8 @@
       "municipality": "Šiaulių m. sav. ",
       "address": "Šiauliai, J. Basanavičiaus g. 122A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5738,8 +5661,8 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Šiauliai, Tilžės g. 274",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5749,8 +5672,8 @@
       "municipality": "Šiaulių m. sav. ",
       "address": "Šiauliai, Užmiesčio g. 2",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -5804,7 +5727,7 @@
       "municipality": "Šilutės r. sav.",
       "address": "Šilutė, Tilžės g. 59",
       "prices": {
-        "petrol95": 1.919,
+        "petrol95": 1.849,
         "diesel": 2.039,
         "lpg": 0.959
       }
@@ -5816,7 +5739,7 @@
       "address": "Širvintos, Plento g. 4",
       "prices": {
         "petrol95": 1.899,
-        "diesel": 2.079,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -5848,8 +5771,8 @@
       "municipality": "Švenčionių r. sav. ",
       "address": "Pabradė, Vilniaus g. 116B",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 2.029,
         "lpg": 0.959
       }
     },
@@ -5870,8 +5793,8 @@
       "municipality": "Tauragės r. sav. ",
       "address": "Tauragė, Dariaus ir Girėno g. 138A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.929,
+        "diesel": 2.059,
         "lpg": 0.929
       }
     },
@@ -5881,8 +5804,8 @@
       "municipality": "Tauragės r. sav. ",
       "address": "Tauragė, Pramonės g. 1",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.929,
+        "diesel": 2.059,
         "lpg": 0.929
       }
     },
@@ -5892,8 +5815,8 @@
       "municipality": "Telšių r. sav.",
       "address": "Telšiai, Pramonės g. 2A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.069,
+        "petrol95": 1.929,
+        "diesel": 2.049,
         "lpg": 0.929
       }
     },
@@ -5914,8 +5837,8 @@
       "municipality": "Ukmergės r. sav. ",
       "address": "Ukmergė, Žiedo g. 15",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.899,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -5947,8 +5870,8 @@
       "municipality": "Utenos r. sav.",
       "address": "Utena, Metalo g. 8",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -5958,8 +5881,8 @@
       "municipality": "Utenos r. sav.",
       "address": "Utena, Pramonės g. 23",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -5969,8 +5892,8 @@
       "municipality": "Utenos r. sav.",
       "address": "Gedimino k., Vyturio g. 2",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 1.999,
         "lpg": 0.939
       }
     },
@@ -6014,7 +5937,7 @@
       "address": "Avižienių k., Ožiarūčių g. 1a",
       "prices": {
         "petrol95": 1.939,
-        "diesel": 2.049,
+        "diesel": 2.039,
         "lpg": 0.959
       }
     },
@@ -6024,8 +5947,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Ateities g. 17B",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.049,
+        "petrol95": 1.869,
+        "diesel": 2.019,
         "lpg": 0.929
       }
     },
@@ -6035,8 +5958,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Dariaus ir Girėno g. 30A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.909,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -6046,8 +5969,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Gariūnų g. 16A",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.059,
+        "petrol95": 1.899,
+        "diesel": 1.999,
         "lpg": 0.959
       }
     },
@@ -6057,8 +5980,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Grigiškės, Kovo 11-osios g. 75",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -6068,8 +5991,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Justiniškių g. 12",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.059,
+        "petrol95": 1.899,
+        "diesel": 2.019,
         "lpg": null
       }
     },
@@ -6091,7 +6014,7 @@
       "address": "Vilnius, Laisvės pr. 8",
       "prices": {
         "petrol95": 1.959,
-        "diesel": 2.079,
+        "diesel": 2.069,
         "lpg": 0.959
       }
     },
@@ -6101,8 +6024,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Liepkalnio g. 128A",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -6112,8 +6035,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Naugarduko g. 74",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.929,
+        "diesel": 2.069,
         "lpg": 0.959
       }
     },
@@ -6123,8 +6046,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Nemenčinės pl. 5",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -6134,8 +6057,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Olandų g. 57",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.939,
+        "diesel": 2.059,
         "lpg": 0.959
       }
     },
@@ -6145,8 +6068,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Ozo g. 12",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.069,
+        "petrol95": 1.889,
+        "diesel": 2.019,
         "lpg": 0.959
       }
     },
@@ -6156,8 +6079,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Pilaitės pr. 13",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.059,
+        "petrol95": 1.919,
+        "diesel": 2.049,
         "lpg": 0.959
       }
     },
@@ -6167,8 +6090,85 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Pilaitės pr. 28",
       "prices": {
-        "petrol95": 1.949,
+        "petrol95": 1.919,
+        "diesel": 2.049,
+        "lpg": 0.959
+      }
+    },
+    {
+      "id": "vilniaus-m-sav-|vilnius-saltoniškių-g-12",
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Saltoniškių g. 12",
+      "prices": {
+        "petrol95": 1.879,
+        "diesel": 1.999,
+        "lpg": 0.959
+      }
+    },
+    {
+      "id": "vilniaus-m-sav-|vilnius-sodų-g-22",
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Sodų g. 22",
+      "prices": {
+        "petrol95": 1.899,
+        "diesel": 2.019,
+        "lpg": 0.959
+      }
+    },
+    {
+      "id": "vilniaus-m-sav-|vilnius-verkių-g-52",
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Verkių g. 52",
+      "prices": {
+        "petrol95": 1.899,
+        "diesel": 1.999,
+        "lpg": null
+      }
+    },
+    {
+      "id": "vilniaus-m-sav-|vilnius-vilkpėdės-g-2",
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Vilkpėdės g. 2",
+      "prices": {
+        "petrol95": 1.849,
+        "diesel": 1.989,
+        "lpg": null
+      }
+    },
+    {
+      "id": "visagino-sav-|visaginas-statybininkų-g-1",
+      "company": "Viada",
+      "municipality": "Visagino sav. ",
+      "address": "Visaginas, Statybininkų g. 1",
+      "prices": {
+        "petrol95": 1.939,
         "diesel": 2.059,
+        "lpg": 0.959
+      }
+    },
+    {
+      "id": "visagino-sav-|visaginas-taikos-pr-23b",
+      "company": "Viada",
+      "municipality": "Visagino sav. ",
+      "address": "Visaginas, Taikos pr. 23B",
+      "prices": {
+        "petrol95": 1.939,
+        "diesel": 2.059,
+        "lpg": 0.959
+      }
+    },
+    {
+      "id": "zarasų-r-sav-|juodalaukių-k-2",
+      "company": "Viada",
+      "municipality": "Zarasų r. sav. ",
+      "address": "Juodalaukių k. 2",
+      "prices": {
+        "petrol95": 1.939,
+        "diesel": 2.079,
         "lpg": 0.959
       }
     },
@@ -6178,8 +6178,8 @@
       "municipality": "Visagino sav. ",
       "address": "Taikos pr. 47",
       "prices": {
-        "petrol95": 1.854,
-        "diesel": 1.976,
+        "petrol95": 1.698,
+        "diesel": 1.876,
         "lpg": null
       }
     },
@@ -6189,8 +6189,8 @@
       "municipality": "Kalvarijos sav.",
       "address": "Kazlavo km. 4 Kalvarijos sav.",
       "prices": {
-        "petrol95": 1.92,
-        "diesel": 2.03,
+        "petrol95": 1.88,
+        "diesel": 1.98,
         "lpg": null
       }
     },
@@ -6201,85 +6201,85 @@
       "address": "Utena, Pramonės g. 16",
       "prices": {
         "petrol95": null,
-        "diesel": 1.919,
+        "diesel": 1.849,
         "lpg": null
       }
     },
     {
-      "id": "vilniaus-m-sav-|vilnius-saltoniškių-g-12",
-      "company": "Viada",
-      "municipality": "Vilniaus m. sav.",
-      "address": "Vilnius, Saltoniškių g. 12",
+      "id": "alytaus-r-sav-|simnas-alytaus-g-48",
+      "company": "Skulas",
+      "municipality": "Alytaus r. sav.",
+      "address": "Simnas, Alytaus g. 48",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.059,
-        "lpg": 0.959
+        "petrol95": 1.79,
+        "diesel": 1.97,
+        "lpg": 0.89
       }
     },
     {
-      "id": "vilniaus-m-sav-|vilnius-sodų-g-22",
-      "company": "Viada",
-      "municipality": "Vilniaus m. sav.",
-      "address": "Vilnius, Sodų g. 22",
+      "id": "alytaus-r-sav-|likiškėlių-k-kalninės-g-5",
+      "company": "Skulas",
+      "municipality": "Alytaus r. sav.",
+      "address": "Likiškėlių k., Kalninės g. 5",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.059,
-        "lpg": 0.959
+        "petrol95": 1.78,
+        "diesel": 1.95,
+        "lpg": 0.88
       }
     },
     {
-      "id": "vilniaus-m-sav-|vilnius-verkių-g-52",
-      "company": "Viada",
-      "municipality": "Vilniaus m. sav.",
-      "address": "Vilnius, Verkių g. 52",
+      "id": "kauno-m-sav-|kaunas-ašigalio-g-1-a",
+      "company": "Skulas",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Ašigalio g. 1 A",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.049,
+        "petrol95": 1.799,
+        "diesel": 1.929,
+        "lpg": 0.829
+      }
+    },
+    {
+      "id": "kauno-m-sav-|-kaunas-marvelės-g-106-d",
+      "company": "Skulas",
+      "municipality": "Kauno m. sav.",
+      "address": " Kaunas, Marvelės g. 106 D",
+      "prices": {
+        "petrol95": 1.799,
+        "diesel": 1.929,
         "lpg": null
       }
     },
     {
-      "id": "vilniaus-m-sav-|vilnius-vilkpėdės-g-2",
-      "company": "Viada",
+      "id": "kauno-r-sav-|virbališkių-k-verslo-g-2",
+      "company": "Skulas",
+      "municipality": "Kauno r. sav.",
+      "address": "Virbališkių k., Verslo g. 2",
+      "prices": {
+        "petrol95": 1.8,
+        "diesel": 1.93,
+        "lpg": 0.83
+      }
+    },
+    {
+      "id": "pasvalio-r-sav-|pasvalys-mūšos-g-2-e",
+      "company": "Skulas",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasvalys, Mūšos g. 2 E",
+      "prices": {
+        "petrol95": 1.71,
+        "diesel": 1.87,
+        "lpg": 0.8
+      }
+    },
+    {
+      "id": "vilniaus-m-sav-|vilnius-j-kazlausko-g-34",
+      "company": "Skulas",
       "municipality": "Vilniaus m. sav.",
-      "address": "Vilnius, Vilkpėdės g. 2",
+      "address": "Vilnius, J.Kazlausko g. 34",
       "prices": {
-        "petrol95": 1.949,
-        "diesel": 2.059,
-        "lpg": null
-      }
-    },
-    {
-      "id": "visagino-sav-|visaginas-statybininkų-g-1",
-      "company": "Viada",
-      "municipality": "Visagino sav. ",
-      "address": "Visaginas, Statybininkų g. 1",
-      "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
-        "lpg": 0.959
-      }
-    },
-    {
-      "id": "visagino-sav-|visaginas-taikos-pr-23b",
-      "company": "Viada",
-      "municipality": "Visagino sav. ",
-      "address": "Visaginas, Taikos pr. 23B",
-      "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
-        "lpg": 0.959
-      }
-    },
-    {
-      "id": "zarasų-r-sav-|juodalaukių-k-2",
-      "company": "Viada",
-      "municipality": "Zarasų r. sav. ",
-      "address": "Juodalaukių k. 2",
-      "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
-        "lpg": 0.959
+        "petrol95": 1.779,
+        "diesel": 1.949,
+        "lpg": 0.849
       }
     },
     {
@@ -6420,8 +6420,8 @@
       "municipality": "Telšių r. sav.",
       "address": "Telšiai, Masčio g. 21",
       "prices": {
-        "petrol95": 1.975,
-        "diesel": 2.065,
+        "petrol95": 1.925,
+        "diesel": 2.045,
         "lpg": 0.929
       }
     },
@@ -6431,8 +6431,8 @@
       "municipality": "Šiaulių r. sav.",
       "address": "Ginkūnų k., Aušros g. 26",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.059,
+        "petrol95": 1.919,
+        "diesel": 2.039,
         "lpg": 0.939
       }
     },
@@ -6442,8 +6442,8 @@
       "municipality": "Kelmės r. sav.",
       "address": "Kęstučio g. 1B, Kelmė",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.059,
+        "petrol95": 1.919,
+        "diesel": 2.039,
         "lpg": 0.939
       }
     },
@@ -6465,7 +6465,7 @@
       "address": "Marvelės g. 132, Kaunas",
       "prices": {
         "petrol95": 1.949,
-        "diesel": 2.069,
+        "diesel": 2.049,
         "lpg": 0.95
       }
     },
@@ -6486,8 +6486,8 @@
       "municipality": "Molėtų r. sav.",
       "address": "Smėlinkos k.",
       "prices": {
-        "petrol95": 1.899,
-        "diesel": 1.99,
+        "petrol95": 1.86,
+        "diesel": 2.01,
         "lpg": 0.89
       }
     },
@@ -6497,8 +6497,8 @@
       "municipality": "Utenos r. sav.",
       "address": "Zarasų g. 9, Utena",
       "prices": {
-        "petrol95": 1.929,
-        "diesel": 1.979,
+        "petrol95": 1.869,
+        "diesel": 1.969,
         "lpg": 0.899
       }
     },
@@ -6508,8 +6508,8 @@
       "municipality": "Kelmės r. sav.",
       "address": "Maironių k., Kuršių g. 2",
       "prices": {
-        "petrol95": 1.8,
-        "diesel": 1.95,
+        "petrol95": 1.79,
+        "diesel": 1.94,
         "lpg": 0.85
       }
     },
@@ -6519,8 +6519,8 @@
       "municipality": "Marijampolės sav.",
       "address": "Kantališkių k.",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6530,8 +6530,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Ukmergės g. 246, Vilnius",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6541,8 +6541,8 @@
       "municipality": "Alytaus r. sav.",
       "address": "Alytaus k.",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6552,8 +6552,8 @@
       "municipality": "Alytaus r. sav.",
       "address": "Kauno g.1, Miklusėnai",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6563,8 +6563,8 @@
       "municipality": "Alytaus r. sav.",
       "address": "Kaniukų k.",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6574,8 +6574,8 @@
       "municipality": "Prienų r. sav.",
       "address": "Gustaičių k.",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6585,8 +6585,8 @@
       "municipality": "Kauno r. sav.",
       "address": "Erdvės g. 78, Ramučių k.",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6596,8 +6596,8 @@
       "municipality": "Panevėžio r. sav.",
       "address": "Žemdirbių g. 15, Paliūniškio k.",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6607,8 +6607,8 @@
       "municipality": "Kupiškio r. sav.",
       "address": "Panevėžio g. 9, Kupiškis",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6618,8 +6618,8 @@
       "municipality": "Kalvarijos sav.",
       "address": "Turgaus g. 4, Kreivukė",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6629,8 +6629,8 @@
       "municipality": "Klaipėdos m. sav.",
       "address": "Minijos g. 90, Klaipėda ",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6640,8 +6640,8 @@
       "municipality": "Utenos r. sav.",
       "address": "Palangos g. 66, Utena",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.929,
+        "petrol95": 1.749,
+        "diesel": 1.867,
         "lpg": 0.899
       }
     },
@@ -6673,7 +6673,7 @@
       "municipality": "Kauno m. sav.",
       "address": "Ateities pl.40B, Kaunas",
       "prices": {
-        "petrol95": 1.719,
+        "petrol95": 1.759,
         "diesel": 1.919,
         "lpg": null
       }
@@ -6684,8 +6684,8 @@
       "municipality": "Biržų r. sav.",
       "address": "Jaunimo g.2a, Biržai",
       "prices": {
-        "petrol95": 1.779,
-        "diesel": 1.969,
+        "petrol95": 1.769,
+        "diesel": 1.949,
         "lpg": 0.89
       }
     },
@@ -6696,7 +6696,7 @@
       "address": "Bukiškio k. Ukmergės g.437",
       "prices": {
         "petrol95": 1.839,
-        "diesel": 1.979,
+        "diesel": 1.969,
         "lpg": 0.89
       }
     },
@@ -6706,8 +6706,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Draugystės g.8B, Kaunas",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.999,
+        "petrol95": 1.829,
+        "diesel": 1.959,
         "lpg": 0.869
       }
     },
@@ -6739,8 +6739,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Jeruzalės 2, Vilnius",
       "prices": {
-        "petrol95": 1.739,
-        "diesel": 1.919,
+        "petrol95": 1.779,
+        "diesel": 1.969,
         "lpg": 0.859
       }
     },
@@ -6750,7 +6750,7 @@
       "municipality": "Jonavos r. sav.",
       "address": "Vasario 16-osios g.70, Jonava",
       "prices": {
-        "petrol95": 1.799,
+        "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": null
       }
@@ -6761,8 +6761,8 @@
       "municipality": "Klaipėdos r. sav.",
       "address": "Durpyno 63, Jonušų k. ",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.989,
+        "petrol95": 1.869,
+        "diesel": 1.979,
         "lpg": 0.89
       }
     },
@@ -6794,8 +6794,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Kareivių g. 4, Vilnius",
       "prices": {
-        "petrol95": 1.879,
-        "diesel": 1.959,
+        "petrol95": 1.799,
+        "diesel": 1.929,
         "lpg": 0.879
       }
     },
@@ -6849,8 +6849,8 @@
       "municipality": "Trakų r. sav.",
       "address": "Sodų g.3A, Lentvaris",
       "prices": {
-        "petrol95": 1.85,
-        "diesel": 1.97,
+        "petrol95": 1.82,
+        "diesel": 1.96,
         "lpg": 0.899
       }
     },
@@ -6860,7 +6860,7 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Liepkalnio g.112A, Vilnius",
       "prices": {
-        "petrol95": 1.759,
+        "petrol95": 1.779,
         "diesel": 1.959,
         "lpg": 0.89
       }
@@ -6883,7 +6883,7 @@
       "address": "Mokyklos g. 26, Maišiagalos mstl. ",
       "prices": {
         "petrol95": 1.839,
-        "diesel": 1.979,
+        "diesel": 1.969,
         "lpg": 0.899
       }
     },
@@ -6904,8 +6904,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Masiulio g.16C, Kaunas",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.969,
+        "petrol95": 1.839,
+        "diesel": 1.939,
         "lpg": 0.899
       }
     },
@@ -6926,7 +6926,7 @@
       "municipality": "Vilniaus r. sav.",
       "address": "Medininkų k., Pasieniečių g.10",
       "prices": {
-        "petrol95": 1.799,
+        "petrol95": 1.819,
         "diesel": 1.999,
         "lpg": null
       }
@@ -6948,8 +6948,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Savanorių pr.402A, Kaunas",
       "prices": {
-        "petrol95": 1.839,
-        "diesel": 1.959,
+        "petrol95": 1.809,
+        "diesel": 1.949,
         "lpg": 0.899
       }
     },
@@ -6959,9 +6959,9 @@
       "municipality": "Vilniaus r. sav.",
       "address": "Taikos g.1, Kreivalaužių k.",
       "prices": {
-        "petrol95": 1.75,
-        "diesel": 1.91,
-        "lpg": 0.89
+        "petrol95": 1.83,
+        "diesel": 1.93,
+        "lpg": 0.86
       }
     },
     {
@@ -6981,8 +6981,8 @@
       "municipality": "Kauno m. sav.",
       "address": "Palemono g. 3A, Kaunas",
       "prices": {
-        "petrol95": 1.75,
-        "diesel": 1.91,
+        "petrol95": 1.73,
+        "diesel": 1.89,
         "lpg": null
       }
     },
@@ -7058,7 +7058,7 @@
       "municipality": "Raseinių r. sav.",
       "address": "Raščių k. 1A",
       "prices": {
-        "petrol95": 1.799,
+        "petrol95": 1.779,
         "diesel": 1.959,
         "lpg": 0.899
       }
@@ -7103,8 +7103,8 @@
       "address": "Sembos g.5, Šiauliai",
       "prices": {
         "petrol95": 1.779,
-        "diesel": 1.919,
-        "lpg": 0.86
+        "diesel": 1.929,
+        "lpg": 0.85
       }
     },
     {
@@ -7113,7 +7113,7 @@
       "municipality": "Panevėžio r. sav.",
       "address": "Šilagalio k., Panevėžio aplinkl.12",
       "prices": {
-        "petrol95": 1.849,
+        "petrol95": 1.799,
         "diesel": 1.949,
         "lpg": 0.879
       }
@@ -7124,7 +7124,7 @@
       "municipality": "Šilutės r. sav.",
       "address": "Gluosnių g.4A, Šilutė",
       "prices": {
-        "petrol95": 1.75,
+        "petrol95": 1.76,
         "diesel": 1.96,
         "lpg": 0.88
       }
@@ -7157,8 +7157,8 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Gunkliškių g.2F, Vilnius",
       "prices": {
-        "petrol95": 1.859,
-        "diesel": 1.979,
+        "petrol95": 1.829,
+        "diesel": 1.969,
         "lpg": 0.899
       }
     },
@@ -7179,8 +7179,8 @@
       "municipality": "Vilkaviškio r. sav.",
       "address": "S.Nėries g.38, Vilkaviškis",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.979,
+        "petrol95": 1.739,
+        "diesel": 1.959,
         "lpg": 0.89
       }
     },
@@ -7190,7 +7190,7 @@
       "municipality": "Kauno r. sav.",
       "address": "Žemaitkiemis, Stasio Krasausko g. 21",
       "prices": {
-        "petrol95": 1.799,
+        "petrol95": 1.779,
         "diesel": 1.959,
         "lpg": 0.899
       }
@@ -7290,8 +7290,8 @@
       "address": "Klaipėda Jūrininkų pr. 29",
       "prices": {
         "petrol95": 1.75,
-        "diesel": 1.95,
-        "lpg": 0.86
+        "diesel": 1.93,
+        "lpg": 0.82
       }
     },
     {
@@ -7564,8 +7564,8 @@
       "municipality": "Marijampolės sav.",
       "address": "L.Taunio g. 3, Pasūduonės km.",
       "prices": {
-        "petrol95": 1.964,
-        "diesel": 2.054,
+        "petrol95": 1.884,
+        "diesel": 1.984,
         "lpg": 0.915
       }
     },
@@ -7586,9 +7586,9 @@
       "municipality": "Šakių r. sav.",
       "address": "Kauno g. 68, Girėnų k.",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
+        "petrol95": 1.937,
+        "diesel": 2.057,
+        "lpg": 0.987
       }
     },
     {
@@ -7597,8 +7597,8 @@
       "municipality": "Jurbarko r. sav.",
       "address": "Muitinės g. 34A, Jurbarkas",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
+        "petrol95": 1.937,
+        "diesel": 2.057,
         "lpg": null
       }
     },
@@ -7773,9 +7773,9 @@
       "municipality": "Plungės r. sav. ",
       "address": "Pramogų g. 4, Truikių k.",
       "prices": {
-        "petrol95": 1.788,
-        "diesel": 1.955,
-        "lpg": 0.909
+        "petrol95": 1.859,
+        "diesel": 1.999,
+        "lpg": 0.929
       }
     },
     {
@@ -7850,9 +7850,9 @@
       "municipality": "Ignalinos r. sav.",
       "address": "Švenčionių 35, Ignalina",
       "prices": {
-        "petrol95": 1.869,
-        "diesel": 2.059,
-        "lpg": 0.88
+        "petrol95": 1.759,
+        "diesel": 1.919,
+        "lpg": 0.83
       }
     },
     {
@@ -7861,9 +7861,9 @@
       "municipality": "Švenčionių r. sav.",
       "address": "Aukštaičių g. 2a, Cirkliškio k.",
       "prices": {
-        "petrol95": 1.92,
-        "diesel": 2.06,
-        "lpg": 0.93
+        "petrol95": 1.76,
+        "diesel": 1.92,
+        "lpg": 0.85
       }
     },
     {
@@ -7873,7 +7873,7 @@
       "address": "Laisvės g. 50, Maciuičių k.",
       "prices": {
         "petrol95": 1.79,
-        "diesel": 1.98,
+        "diesel": 1.95,
         "lpg": 0.93
       }
     },
@@ -7927,9 +7927,9 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Viekšnių g. 24, Mažeikiai",
       "prices": {
-        "petrol95": 1.849,
-        "diesel": 1.959,
-        "lpg": 0.859
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.799
       }
     },
     {
@@ -7938,9 +7938,9 @@
       "municipality": "Plungės r. sav. ",
       "address": "Telšių g. 127, Jovaišiškės k.",
       "prices": {
-        "petrol95": 1.79,
-        "diesel": 1.92,
-        "lpg": 0.85
+        "petrol95": 1.699,
+        "diesel": 1.859,
+        "lpg": 0.8
       }
     },
     {
@@ -7949,9 +7949,9 @@
       "municipality": "Plungės r. sav. ",
       "address": "Stoties g. 7C, Plungė",
       "prices": {
-        "petrol95": 1.79,
-        "diesel": 1.92,
-        "lpg": 0.85
+        "petrol95": 1.7,
+        "diesel": 1.86,
+        "lpg": 0.8
       }
     },
     {
@@ -7972,8 +7972,8 @@
       "address": "Elijos g.26 Palanga (Šventoji)",
       "prices": {
         "petrol95": 1.919,
-        "diesel": 2.059,
-        "lpg": 0.999
+        "diesel": 2.039,
+        "lpg": 0.959
       }
     },
     {
@@ -7982,7 +7982,7 @@
       "municipality": "Šiaulių r. sav.",
       "address": "Vytauto 80, Kuršėnai",
       "prices": {
-        "petrol95": 1.85,
+        "petrol95": 1.88,
         "diesel": 2.05,
         "lpg": 0.95
       }
@@ -8037,8 +8037,8 @@
       "municipality": "Kėdainių r. sav.",
       "address": "J.Basanavičiaus g. 103, Kėdainiai",
       "prices": {
-        "petrol95": 1.959,
-        "diesel": 2.079,
+        "petrol95": 1.889,
+        "diesel": 1.989,
         "lpg": 0.939
       }
     },
@@ -8048,8 +8048,8 @@
       "municipality": "Kėdainių r. sav.",
       "address": "Šėtos g. 120 , Kėdainiai",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.959,
         "lpg": null
       }
     },
@@ -8059,8 +8059,8 @@
       "municipality": "Kėdainių r. sav.",
       "address": "Dariaus ir Girėno 23 A, Kėdainiai",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.959,
         "lpg": 0.91
       }
     },
@@ -8070,8 +8070,8 @@
       "municipality": "Kėdainių r. sav.",
       "address": "Gedimino g. 50 , Kėdainiai",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.959,
         "lpg": 0.91
       }
     },
@@ -8081,8 +8081,8 @@
       "municipality": "Kėdainių r. sav.",
       "address": "Vandžiogalos g 29,Saviečių k.",
       "prices": {
-        "petrol95": 1.939,
-        "diesel": 2.039,
+        "petrol95": 1.859,
+        "diesel": 1.959,
         "lpg": 0.91
       }
     },
@@ -8180,8 +8180,8 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Laukų g. 2C.,Tirkšlių m.",
       "prices": {
-        "petrol95": 1.85,
-        "diesel": 1.96,
+        "petrol95": 1.82,
+        "diesel": 1.9,
         "lpg": 0.87
       }
     },
@@ -8191,8 +8191,8 @@
       "municipality": "Vilniaus r. sav.",
       "address": "Pagirių k., Durpių g.45",
       "prices": {
-        "petrol95": 1.79,
-        "diesel": 1.99,
+        "petrol95": 1.84,
+        "diesel": 1.97,
         "lpg": 0.93
       }
     },
@@ -8246,8 +8246,8 @@
       "municipality": "Klaipėdos r. sav. ",
       "address": "Dvaro g. 1, Gobergiškės k.",
       "prices": {
-        "petrol95": 1.77,
-        "diesel": 1.94,
+        "petrol95": 1.78,
+        "diesel": 1.96,
         "lpg": null
       }
     },
@@ -8257,8 +8257,8 @@
       "municipality": "Vilkaviškio r. sav. ",
       "address": "Vytauto g. 2D, Vilkaviškis",
       "prices": {
-        "petrol95": 1.799,
-        "diesel": 1.979,
+        "petrol95": 1.739,
+        "diesel": 1.959,
         "lpg": 0.89
       }
     },
@@ -8292,7 +8292,7 @@
       "prices": {
         "petrol95": null,
         "diesel": null,
-        "lpg": 0.83
+        "lpg": null
       }
     },
     {
@@ -8303,7 +8303,7 @@
       "prices": {
         "petrol95": null,
         "diesel": null,
-        "lpg": 0.83
+        "lpg": null
       }
     },
     {
@@ -8314,7 +8314,7 @@
       "prices": {
         "petrol95": null,
         "diesel": null,
-        "lpg": 0.91
+        "lpg": null
       }
     },
     {
@@ -8334,9 +8334,9 @@
       "municipality": "Trakų r. sav.",
       "address": "Senkelio g. 13, Trakai",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
+        "petrol95": 1.949,
+        "diesel": 2.059,
+        "lpg": 0.959
       }
     },
     {
@@ -8378,7 +8378,7 @@
       "municipality": "Telšių r. sav.",
       "address": "Telšių g. 66, LT-88238, Luokė",
       "prices": {
-        "petrol95": 1.87,
+        "petrol95": 1.92,
         "diesel": 2.08,
         "lpg": 0.92
       }
@@ -8389,9 +8389,9 @@
       "municipality": "Vilniaus r. sav.",
       "address": "Miško g.6, Kena",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
+        "petrol95": 1.909,
+        "diesel": 2.019,
+        "lpg": 0.959
       }
     },
     {
@@ -8401,7 +8401,7 @@
       "address": "Ramygalos g 55, Šėta",
       "prices": {
         "petrol95": 1.84,
-        "diesel": 1.95,
+        "diesel": 1.9,
         "lpg": null
       }
     },
@@ -8411,8 +8411,8 @@
       "municipality": "Kretingos r. sav.",
       "address": "Kretingos 51, Kartena",
       "prices": {
-        "petrol95": 1.86,
-        "diesel": 2.12,
+        "petrol95": null,
+        "diesel": null,
         "lpg": null
       }
     },
@@ -8424,7 +8424,7 @@
       "prices": {
         "petrol95": null,
         "diesel": null,
-        "lpg": 0.96
+        "lpg": 0.92
       }
     },
     {
@@ -8434,7 +8434,7 @@
       "address": "Kalvių g. 4, Šventininkų k.",
       "prices": {
         "petrol95": 1.76,
-        "diesel": 1.89,
+        "diesel": 1.86,
         "lpg": 0.86
       }
     }

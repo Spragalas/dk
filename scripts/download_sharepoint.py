@@ -36,18 +36,14 @@ def get_sharepoint_links(target_date: str | None = None) -> tuple[list[str], str
     resp.raise_for_status()
     html = resp.text
 
-    # ena.lt has placed the date for each SharePoint share link in
-    # several spots over time: a `title="Degalų kainos YYYY-MM-DD"`
-    # attribute, the anchor's own inner text (e.g. `Naujausios degalų
-    # kainos (2026-05-06)` for the freshly-published day with no title),
-    # or — historically — an adjacent span. Rather than hard-code those
-    # locations, scan each anchor tag for any YYYY-MM-DD; if the tag
-    # itself carries none, fall back to the latest date that appears
-    # anywhere on the page, which the news headline always advertises
-    # (e.g. `Naujausias pranešimas apie degalų kainas (YYYY-MM-DD)`).
-    # This keeps the date bound to the same href instead of relying on
-    # proximity, while degrading gracefully when ena.lt reshuffles the
-    # markup around the link.
+    # ena.lt places the date for each SharePoint share link inside the
+    # anchor tag itself: a `title="Degalų kainos YYYY-MM-DD"` attribute,
+    # or the anchor's own inner text (e.g. `Naujausios degalų kainos
+    # (2026-05-15)`). We require a date inside each anchor — stale
+    # promo/icon anchors with no inline date must be ignored, otherwise
+    # they get mis-attributed to today and silently override the real
+    # current-day link (the same href can linger in the promo box for
+    # days after the underlying file has been replaced).
     date_pattern = re.compile(r'\d{4}-\d{2}-\d{2}')
     # Inner is `.*?` with DOTALL so nested tags (e.g. <strong>...</strong>,
     # which ena.lt sometimes wraps the link text in) don't break matching.
@@ -56,15 +52,12 @@ def get_sharepoint_links(target_date: str | None = None) -> tuple[list[str], str
         re.IGNORECASE | re.DOTALL,
     )
 
-    page_dates = date_pattern.findall(html)
-    fallback_date = max(page_dates) if page_dates else None
-
     links_with_dates: list[tuple[str, str]] = []
     for m in a_tag_pattern.finditer(html):
         in_tag = date_pattern.search(m.group(0))
-        date_str = in_tag.group(0) if in_tag else fallback_date
-        if not date_str:
+        if not in_tag:
             continue
+        date_str = in_tag.group(0)
         # The href in HTML is entity-encoded (e.g. &amp;). Decode so the
         # share token query params (d=..., e=...) are usable directly.
         links_with_dates.append((html_mod.unescape(m.group(1)), date_str))

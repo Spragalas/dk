@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v29";
+const CACHE_VERSION = "v30";
 const STATIC_CACHE = `pilnasbakas-static-${CACHE_VERSION}`;
 const DATA_CACHE = `pilnasbakas-data-${CACHE_VERSION}`;
 
