@@ -4143,5 +4143,17 @@
     "lng": 23.0121895,
     "display_name": "Osija, Šeimenos seniūnija, Vilkaviškio rajono savivaldybė, Marijampolės apskritis, 70180, Lietuva",
     "review": true
+  },
+  "šilutės-r-sav-|ramučių-g-43-barzdūnų-k": {
+    "lat": 55.3587747,
+    "lng": 21.5031877,
+    "display_name": "Andopas, 43, Ramučių g., Barzdūnai, Šilutės seniūnija, Šilutės rajono savivaldybė, Klaipėdos apskritis, 99151, Lietuva",
+    "review": true
+  },
+  "kalvarijos-sav-|kazlavo-k": {
+    "lat": 54.7397108,
+    "lng": 25.2804959,
+    "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva",
+    "review": true
   }
 }

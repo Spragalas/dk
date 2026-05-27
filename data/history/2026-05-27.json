@@ -1,11 +1,5 @@
 {
   "date": "2026-05-27",
-  "updatedAt": "2026-05-27T09:38:51.381158+00:00",
-  "averages": {
-    "petrol95": 1.855,
-    "diesel": 1.946,
-    "lpg": 0.875
-  },
   "stations": [
     {
       "id": "kaišiadorių-r-sav-|kalvių-g-4-šventininkų-k",
@@ -16,11 +10,6 @@
         "petrol95": 1.77,
         "diesel": 1.86,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -32,11 +21,6 @@
         "petrol95": 1.84,
         "diesel": 1.98,
         "lpg": 0.93
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -48,11 +32,6 @@
         "petrol95": 1.734,
         "diesel": 1.834,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.125,
-        "diesel": -0.105,
-        "lpg": -0.06
       }
     },
     {
@@ -64,11 +43,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.759
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.18,
-        "lpg": -0.1
       }
     },
     {
@@ -79,11 +53,6 @@
       "prices": {
         "petrol95": 1.799,
         "diesel": 1.889,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.09,
-        "diesel": -0.09,
         "lpg": null
       }
     },
@@ -96,11 +65,6 @@
         "petrol95": 1.734,
         "diesel": 1.834,
         "lpg": 0.774
-      },
-      "priceChange": {
-        "petrol95": -0.165,
-        "diesel": -0.165,
-        "lpg": -0.125
       }
     },
     {
@@ -112,11 +76,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.759
-      },
-      "priceChange": {
-        "petrol95": -0.09,
-        "diesel": -0.1,
-        "lpg": -0.09
       }
     },
     {
@@ -128,11 +87,6 @@
         "petrol95": 1.779,
         "diesel": 1.819,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.16,
-        "diesel": -0.21,
-        "lpg": -0.1
       }
     },
     {
@@ -144,11 +98,6 @@
         "petrol95": 1.734,
         "diesel": 1.834,
         "lpg": 0.774
-      },
-      "priceChange": {
-        "petrol95": -0.125,
-        "diesel": -0.105,
-        "lpg": -0.065
       }
     },
     {
@@ -160,11 +109,6 @@
         "petrol95": 1.734,
         "diesel": 1.834,
         "lpg": 0.774
-      },
-      "priceChange": {
-        "petrol95": -0.125,
-        "diesel": -0.105,
-        "lpg": -0.085
       }
     },
     {
@@ -176,11 +120,6 @@
         "petrol95": 1.789,
         "diesel": 1.889,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -192,11 +131,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -208,11 +142,6 @@
         "petrol95": 1.779,
         "diesel": 1.819,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.16,
-        "lpg": -0.06
       }
     },
     {
@@ -223,11 +152,6 @@
       "prices": {
         "petrol95": 1.729,
         "diesel": 1.819,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.08,
         "lpg": null
       }
     },
@@ -240,11 +164,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.759
-      },
-      "priceChange": {
-        "petrol95": -0.13,
-        "diesel": -0.12,
-        "lpg": -0.06
       }
     },
     {
@@ -256,11 +175,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.759
-      },
-      "priceChange": {
-        "petrol95": -0.11,
-        "diesel": -0.12,
-        "lpg": -0.07
       }
     },
     {
@@ -272,11 +186,6 @@
         "petrol95": 1.839,
         "diesel": 1.959,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -288,11 +197,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.09,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -304,11 +208,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -320,11 +219,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.759
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.18,
-        "lpg": -0.11
       }
     },
     {
@@ -336,11 +230,6 @@
         "petrol95": 1.749,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": -0.03
       }
     },
     {
@@ -351,11 +240,6 @@
       "prices": {
         "petrol95": 1.729,
         "diesel": 1.819,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.13,
-        "diesel": -0.12,
         "lpg": null
       }
     },
@@ -368,11 +252,6 @@
         "petrol95": 1.734,
         "diesel": 1.834,
         "lpg": 0.774
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
-        "lpg": -0.06
       }
     },
     {
@@ -383,11 +262,6 @@
       "prices": {
         "petrol95": 1.729,
         "diesel": 1.819,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.16,
         "lpg": null
       }
     },
@@ -400,11 +274,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.14,
-        "diesel": -0.12,
-        "lpg": null
       }
     },
     {
@@ -416,11 +285,6 @@
         "petrol95": 1.749,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.07,
-        "lpg": -0.06
       }
     },
     {
@@ -431,11 +295,6 @@
       "prices": {
         "petrol95": 1.729,
         "diesel": 1.819,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.08,
         "lpg": null
       }
     },
@@ -448,11 +307,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.21,
-        "diesel": -0.18,
-        "lpg": null
       }
     },
     {
@@ -464,11 +318,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.759
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": -0.04
       }
     },
     {
@@ -480,8 +329,7 @@
         "petrol95": 1.77,
         "diesel": 1.87,
         "lpg": 0.85
-      },
-      "priceChange": null
+      }
     },
     {
       "id": "kelmės-r-sav-|tytuvėnai-žemaitės-g-14",
@@ -492,11 +340,6 @@
         "petrol95": 1.92,
         "diesel": 1.99,
         "lpg": 0.93
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -508,11 +351,6 @@
         "petrol95": 1.829,
         "diesel": 1.919,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -524,11 +362,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.0,
-        "lpg": -0.009
       }
     },
     {
@@ -539,11 +372,6 @@
       "prices": {
         "petrol95": 1.839,
         "diesel": 1.939,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -556,11 +384,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.0,
-        "lpg": -0.009
       }
     },
     {
@@ -572,11 +395,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.0,
-        "lpg": -0.009
       }
     },
     {
@@ -588,11 +406,6 @@
         "petrol95": 1.83,
         "diesel": 1.93,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.01
       }
     },
     {
@@ -604,11 +417,6 @@
         "petrol95": 1.879,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.004,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -620,11 +428,6 @@
         "petrol95": 1.859,
         "diesel": 1.979,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": -0.001,
-        "diesel": 0.009,
-        "lpg": 0.0
       }
     },
     {
@@ -636,11 +439,6 @@
         "petrol95": 1.799,
         "diesel": 1.889,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.07,
-        "lpg": -0.036
       }
     },
     {
@@ -652,11 +450,6 @@
         "petrol95": 1.84,
         "diesel": 1.94,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -665,11 +458,6 @@
       "municipality": "Visagino sav. ",
       "address": "Taikos pr. 47",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -684,11 +472,6 @@
         "petrol95": 1.839,
         "diesel": 1.919,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -700,11 +483,6 @@
         "petrol95": 1.859,
         "diesel": 1.959,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -716,11 +494,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -732,11 +505,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -748,11 +516,6 @@
         "petrol95": 1.819,
         "diesel": 1.899,
         "lpg": 0.819
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -764,11 +527,6 @@
         "petrol95": 1.759,
         "diesel": 1.849,
         "lpg": 0.819
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -780,11 +538,6 @@
         "petrol95": 1.829,
         "diesel": 1.899,
         "lpg": 0.889
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -796,11 +549,6 @@
         "petrol95": 1.829,
         "diesel": 1.919,
         "lpg": 0.809
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -812,11 +560,6 @@
         "petrol95": 1.829,
         "diesel": 1.899,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -828,11 +571,6 @@
         "petrol95": 1.799,
         "diesel": 1.929,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -843,11 +581,6 @@
       "prices": {
         "petrol95": 1.919,
         "diesel": 2.039,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -860,11 +593,6 @@
         "petrol95": 1.769,
         "diesel": 1.899,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": -0.09,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -876,11 +604,6 @@
         "petrol95": 1.909,
         "diesel": 1.999,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -892,11 +615,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": 0.789
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": null
       }
     },
     {
@@ -908,11 +626,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -924,11 +637,6 @@
         "petrol95": 1.749,
         "diesel": 1.839,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": -0.03
       }
     },
     {
@@ -940,11 +648,6 @@
         "petrol95": 1.819,
         "diesel": 1.939,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -956,11 +659,6 @@
         "petrol95": 1.819,
         "diesel": 1.899,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -972,11 +670,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
-        "lpg": -0.06
       }
     },
     {
@@ -988,11 +681,6 @@
         "petrol95": 1.809,
         "diesel": 1.979,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1004,11 +692,6 @@
         "petrol95": 1.81,
         "diesel": 1.88,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1020,11 +703,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1036,11 +714,6 @@
         "petrol95": 1.869,
         "diesel": 1.959,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -1052,11 +725,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
-        "lpg": -0.06
       }
     },
     {
@@ -1068,11 +736,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -1084,11 +747,6 @@
         "petrol95": 1.85,
         "diesel": 1.97,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1100,11 +758,6 @@
         "petrol95": 1.749,
         "diesel": 1.839,
         "lpg": 0.77
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
-        "lpg": -0.05
       }
     },
     {
@@ -1116,11 +769,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.08,
-        "lpg": -0.02
       }
     },
     {
@@ -1132,11 +780,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1148,11 +791,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1164,11 +802,6 @@
         "petrol95": 1.839,
         "diesel": 1.919,
         "lpg": 0.889
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.04,
-        "lpg": -0.03
       }
     },
     {
@@ -1180,11 +813,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.889
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1196,11 +824,6 @@
         "petrol95": 1.819,
         "diesel": 1.899,
         "lpg": 0.789
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1212,11 +835,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.819
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.02
       }
     },
     {
@@ -1228,11 +846,6 @@
         "petrol95": 1.919,
         "diesel": 2.039,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.08
       }
     },
     {
@@ -1244,11 +857,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
-        "lpg": -0.05
       }
     },
     {
@@ -1260,11 +868,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1276,11 +879,6 @@
         "petrol95": 1.799,
         "diesel": 1.879,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -1292,11 +890,6 @@
         "petrol95": 1.79,
         "diesel": 1.89,
         "lpg": 0.79
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -1308,11 +901,6 @@
         "petrol95": 1.799,
         "diesel": 1.869,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -1324,11 +912,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1340,11 +923,6 @@
         "petrol95": 1.799,
         "diesel": 1.889,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -1356,11 +934,6 @@
         "petrol95": 1.869,
         "diesel": 1.999,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1372,11 +945,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
-        "lpg": -0.11
       }
     },
     {
@@ -1388,11 +956,6 @@
         "petrol95": 1.809,
         "diesel": 1.909,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -1404,11 +967,6 @@
         "petrol95": 1.819,
         "diesel": 1.899,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1420,11 +978,6 @@
         "petrol95": 1.819,
         "diesel": 1.919,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -1436,11 +989,6 @@
         "petrol95": 1.819,
         "diesel": 1.919,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -1452,11 +1000,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
-        "lpg": -0.11
       }
     },
     {
@@ -1468,11 +1011,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1484,11 +1022,6 @@
         "petrol95": 1.879,
         "diesel": 1.989,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1500,11 +1033,6 @@
         "petrol95": 1.799,
         "diesel": 1.919,
         "lpg": 0.81
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1516,11 +1044,6 @@
         "petrol95": 1.869,
         "diesel": 1.989,
         "lpg": 0.949
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1532,11 +1055,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1548,11 +1066,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1564,11 +1077,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1580,11 +1088,6 @@
         "petrol95": 1.86,
         "diesel": 1.97,
         "lpg": 0.91
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1596,11 +1099,6 @@
         "petrol95": 1.829,
         "diesel": 1.899,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -1612,11 +1110,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
-        "lpg": -0.07
       }
     },
     {
@@ -1628,11 +1121,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1644,11 +1132,6 @@
         "petrol95": 1.829,
         "diesel": 1.919,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -1660,11 +1143,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1676,11 +1154,6 @@
         "petrol95": 1.909,
         "diesel": 1.999,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -1692,11 +1165,6 @@
         "petrol95": 1.929,
         "diesel": 2.029,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1708,11 +1176,6 @@
         "petrol95": 1.799,
         "diesel": 1.959,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1724,11 +1187,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1740,11 +1198,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1755,11 +1208,6 @@
       "prices": {
         "petrol95": 1.84,
         "diesel": 1.96,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -1772,11 +1220,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": null
       }
     },
     {
@@ -1788,11 +1231,6 @@
         "petrol95": 1.779,
         "diesel": 1.899,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -1804,11 +1242,6 @@
         "petrol95": 1.789,
         "diesel": 1.879,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -1820,11 +1253,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.809
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1836,11 +1264,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1852,11 +1275,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.819
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1868,11 +1286,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1884,11 +1297,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
-        "lpg": -0.02
       }
     },
     {
@@ -1900,11 +1308,6 @@
         "petrol95": 1.81,
         "diesel": 1.88,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1915,11 +1318,6 @@
       "prices": {
         "petrol95": 1.859,
         "diesel": 1.939,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -1932,11 +1330,6 @@
         "petrol95": 1.79,
         "diesel": 1.93,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -1948,11 +1341,6 @@
         "petrol95": 1.779,
         "diesel": 1.889,
         "lpg": 0.77
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.04
       }
     },
     {
@@ -1964,11 +1352,6 @@
         "petrol95": 1.819,
         "diesel": 1.919,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1980,11 +1363,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.81
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -1995,11 +1373,6 @@
       "prices": {
         "petrol95": 1.829,
         "diesel": 1.899,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.04,
         "lpg": null
       }
     },
@@ -2012,11 +1385,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2028,11 +1396,6 @@
         "petrol95": 1.919,
         "diesel": 2.019,
         "lpg": 0.91
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.02
       }
     },
     {
@@ -2044,11 +1407,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
-        "lpg": -0.07
       }
     },
     {
@@ -2060,11 +1418,6 @@
         "petrol95": 1.819,
         "diesel": 1.939,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2076,11 +1429,6 @@
         "petrol95": 1.929,
         "diesel": 2.029,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2092,11 +1440,6 @@
         "petrol95": 1.819,
         "diesel": 1.899,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2107,11 +1450,6 @@
       "prices": {
         "petrol95": 1.76,
         "diesel": 1.87,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -2124,11 +1462,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.05,
-        "lpg": -0.01
       }
     },
     {
@@ -2140,11 +1473,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2156,11 +1484,6 @@
         "petrol95": 1.79,
         "diesel": 1.89,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2172,11 +1495,6 @@
         "petrol95": 1.729,
         "diesel": 1.829,
         "lpg": 0.749
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.02
       }
     },
     {
@@ -2188,11 +1506,6 @@
         "petrol95": 1.78,
         "diesel": 1.82,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2204,11 +1517,6 @@
         "petrol95": 1.919,
         "diesel": 2.009,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -2220,11 +1528,6 @@
         "petrol95": 1.919,
         "diesel": 2.009,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -2236,11 +1539,6 @@
         "petrol95": 1.979,
         "diesel": 2.049,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -2252,11 +1550,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.94
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2268,11 +1561,6 @@
         "petrol95": 1.979,
         "diesel": 2.049,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -2284,11 +1572,6 @@
         "petrol95": 1.86,
         "diesel": 1.95,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -2300,11 +1583,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -2316,11 +1594,6 @@
         "petrol95": 1.78,
         "diesel": 1.88,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -2332,11 +1605,6 @@
         "petrol95": 1.82,
         "diesel": 1.89,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2348,11 +1616,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2364,11 +1627,6 @@
         "petrol95": 1.82,
         "diesel": 1.89,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2380,11 +1638,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -2396,11 +1649,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -2412,11 +1660,6 @@
         "petrol95": 1.879,
         "diesel": 1.979,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -2427,11 +1670,6 @@
       "prices": {
         "petrol95": 1.939,
         "diesel": 2.039,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -2444,11 +1682,6 @@
         "petrol95": 1.919,
         "diesel": 2.029,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": null
       }
     },
     {
@@ -2460,11 +1693,6 @@
         "petrol95": 1.889,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.055,
-        "lpg": 0.0
       }
     },
     {
@@ -2475,11 +1703,6 @@
       "prices": {
         "petrol95": 1.889,
         "diesel": 1.999,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
         "lpg": null
       }
     },
@@ -2492,11 +1715,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -2508,11 +1726,6 @@
         "petrol95": 1.959,
         "diesel": 2.044,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": -0.025,
-        "diesel": -0.02,
-        "lpg": -0.01
       }
     },
     {
@@ -2524,11 +1737,6 @@
         "petrol95": 1.959,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -2540,11 +1748,6 @@
         "petrol95": 1.874,
         "diesel": 1.974,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": -0.025,
-        "diesel": -0.005,
-        "lpg": 0.0
       }
     },
     {
@@ -2556,11 +1759,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.969
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -2572,11 +1770,6 @@
         "petrol95": 1.864,
         "diesel": 1.964,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.095,
-        "diesel": -0.055,
-        "lpg": 0.0
       }
     },
     {
@@ -2588,11 +1781,6 @@
         "petrol95": 1.889,
         "diesel": 1.984,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.065,
-        "lpg": 0.0
       }
     },
     {
@@ -2604,11 +1792,6 @@
         "petrol95": 1.874,
         "diesel": 1.974,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": -0.085,
-        "diesel": -0.065,
-        "lpg": 0.0
       }
     },
     {
@@ -2620,11 +1803,6 @@
         "petrol95": 1.819,
         "diesel": 1.949,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -2635,11 +1813,6 @@
       "prices": {
         "petrol95": 1.889,
         "diesel": 1.989,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
         "lpg": null
       }
     },
@@ -2652,11 +1825,6 @@
         "petrol95": 1.949,
         "diesel": 2.024,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.055,
-        "lpg": null
       }
     },
     {
@@ -2668,11 +1836,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -2684,11 +1847,6 @@
         "petrol95": 1.889,
         "diesel": 1.979,
         "lpg": 0.969
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -2700,11 +1858,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -2716,11 +1869,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -2732,11 +1880,6 @@
         "petrol95": 1.919,
         "diesel": 2.009,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -2748,11 +1891,6 @@
         "petrol95": 1.929,
         "diesel": 1.944,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.125,
-        "lpg": -0.02
       }
     },
     {
@@ -2764,11 +1902,6 @@
         "petrol95": 1.929,
         "diesel": 2.009,
         "lpg": 0.889
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": 0.004
       }
     },
     {
@@ -2780,11 +1913,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -2796,11 +1924,6 @@
         "petrol95": 1.909,
         "diesel": 2.019,
         "lpg": 0.949
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -2811,11 +1934,6 @@
       "prices": {
         "petrol95": 1.909,
         "diesel": 2.019,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -2828,11 +1946,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.0,
-        "lpg": null
       }
     },
     {
@@ -2844,11 +1957,6 @@
         "petrol95": 1.909,
         "diesel": 2.004,
         "lpg": 0.819
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.005,
-        "lpg": -0.06
       }
     },
     {
@@ -2860,11 +1968,6 @@
         "petrol95": 1.849,
         "diesel": 1.944,
         "lpg": 0.889
-      },
-      "priceChange": {
-        "petrol95": -0.14,
-        "diesel": -0.13,
-        "lpg": 0.0
       }
     },
     {
@@ -2876,11 +1979,6 @@
         "petrol95": 1.929,
         "diesel": 2.019,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -2892,11 +1990,6 @@
         "petrol95": 1.889,
         "diesel": 1.924,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.115,
-        "lpg": -0.001
       }
     },
     {
@@ -2908,11 +2001,6 @@
         "petrol95": 1.959,
         "diesel": 1.949,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.1,
-        "lpg": 0.0
       }
     },
     {
@@ -2923,11 +2011,6 @@
       "prices": {
         "petrol95": 1.879,
         "diesel": 1.984,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.005,
         "lpg": null
       }
     },
@@ -2940,11 +2023,6 @@
         "petrol95": 1.859,
         "diesel": 1.949,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.1,
-        "lpg": null
       }
     },
     {
@@ -2956,11 +2034,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.969
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -2972,11 +2045,6 @@
         "petrol95": 1.949,
         "diesel": 2.049,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -2988,11 +2056,6 @@
         "petrol95": 1.875,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.014,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -3004,11 +2067,6 @@
         "petrol95": 1.889,
         "diesel": 1.979,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -3020,11 +2078,6 @@
         "petrol95": 1.909,
         "diesel": 1.989,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -3036,11 +2089,6 @@
         "petrol95": 1.889,
         "diesel": 1.979,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -3052,11 +2100,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -3068,11 +2111,6 @@
         "petrol95": 1.919,
         "diesel": 2.019,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -3084,11 +2122,6 @@
         "petrol95": 1.889,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -3100,11 +2133,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -3116,11 +2144,6 @@
         "petrol95": 1.959,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -3132,11 +2155,6 @@
         "petrol95": 1.869,
         "diesel": 1.959,
         "lpg": 0.9
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -3148,11 +2166,6 @@
         "petrol95": 1.949,
         "diesel": 2.019,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -3164,11 +2177,6 @@
         "petrol95": 1.929,
         "diesel": 1.944,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.125,
-        "lpg": -0.02
       }
     },
     {
@@ -3180,11 +2188,6 @@
         "petrol95": 1.889,
         "diesel": 1.919,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.075,
-        "diesel": -0.145,
-        "lpg": 0.0
       }
     },
     {
@@ -3196,11 +2199,6 @@
         "petrol95": 1.874,
         "diesel": 1.944,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.075,
-        "lpg": 0.0
       }
     },
     {
@@ -3212,11 +2210,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.969
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -3228,11 +2221,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.9
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -3243,11 +2231,6 @@
       "prices": {
         "petrol95": 1.879,
         "diesel": 1.979,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
         "lpg": null
       }
     },
@@ -3260,11 +2243,6 @@
         "petrol95": 1.874,
         "diesel": 1.974,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.065,
-        "diesel": -0.045,
-        "lpg": null
       }
     },
     {
@@ -3276,11 +2254,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": 0.93
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": -0.01
       }
     },
     {
@@ -3292,11 +2265,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -3307,11 +2275,6 @@
       "prices": {
         "petrol95": 1.959,
         "diesel": 2.049,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
         "lpg": null
       }
     },
@@ -3324,11 +2287,6 @@
         "petrol95": 1.949,
         "diesel": 2.024,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.055,
-        "lpg": null
       }
     },
     {
@@ -3340,11 +2298,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.969
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -3356,11 +2309,6 @@
         "petrol95": 1.859,
         "diesel": 1.909,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": -0.085,
-        "diesel": -0.115,
-        "lpg": 0.0
       }
     },
     {
@@ -3372,11 +2320,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -3388,11 +2331,6 @@
         "petrol95": 1.839,
         "diesel": 1.979,
         "lpg": 0.92
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": 0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -3404,11 +2342,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -3420,11 +2353,6 @@
         "petrol95": 1.929,
         "diesel": 2.014,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.015,
-        "lpg": 0.0
       }
     },
     {
@@ -3436,11 +2364,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.969
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -3451,11 +2374,6 @@
       "prices": {
         "petrol95": 1.939,
         "diesel": 2.019,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
         "lpg": null
       }
     },
@@ -3468,11 +2386,6 @@
         "petrol95": 1.939,
         "diesel": 2.019,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
-        "lpg": null
       }
     },
     {
@@ -3483,11 +2396,6 @@
       "prices": {
         "petrol95": 1.849,
         "diesel": 1.939,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.05,
         "lpg": null
       }
     },
@@ -3500,11 +2408,6 @@
         "petrol95": 1.844,
         "diesel": 1.944,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.085,
-        "diesel": -0.065,
-        "lpg": null
       }
     },
     {
@@ -3515,11 +2418,6 @@
       "prices": {
         "petrol95": 1.849,
         "diesel": 1.949,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.06,
         "lpg": null
       }
     },
@@ -3532,11 +2430,6 @@
         "petrol95": 1.859,
         "diesel": 1.959,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
-        "lpg": null
       }
     },
     {
@@ -3547,11 +2440,6 @@
       "prices": {
         "petrol95": 1.919,
         "diesel": 1.989,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
         "lpg": null
       }
     },
@@ -3564,11 +2452,6 @@
         "petrol95": 1.884,
         "diesel": 1.954,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.075,
-        "lpg": null
       }
     },
     {
@@ -3580,11 +2463,6 @@
         "petrol95": 1.944,
         "diesel": 2.024,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": -0.025,
-        "diesel": -0.025,
-        "lpg": 0.0
       }
     },
     {
@@ -3596,11 +2474,6 @@
         "petrol95": 1.884,
         "diesel": 1.984,
         "lpg": 0.949
-      },
-      "priceChange": {
-        "petrol95": -0.045,
-        "diesel": -0.015,
-        "lpg": 0.0
       }
     },
     {
@@ -3612,11 +2485,6 @@
         "petrol95": 1.944,
         "diesel": 2.024,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": -0.025,
-        "diesel": -0.025,
-        "lpg": 0.0
       }
     },
     {
@@ -3628,11 +2496,6 @@
         "petrol95": 1.849,
         "diesel": 1.949,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -3644,11 +2507,6 @@
         "petrol95": 1.889,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -3659,11 +2517,6 @@
       "prices": {
         "petrol95": 1.869,
         "diesel": 1.969,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
         "lpg": null
       }
     },
@@ -3676,11 +2529,6 @@
         "petrol95": 1.869,
         "diesel": 1.959,
         "lpg": 0.909
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -3691,11 +2539,6 @@
       "prices": {
         "petrol95": 1.889,
         "diesel": 1.989,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.09,
-        "diesel": -0.06,
         "lpg": null
       }
     },
@@ -3708,11 +2551,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": -0.09,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -3724,11 +2562,6 @@
         "petrol95": 1.879,
         "diesel": 1.974,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.09,
-        "diesel": -0.045,
-        "lpg": 0.0
       }
     },
     {
@@ -3740,11 +2573,6 @@
         "petrol95": 1.899,
         "diesel": 2.009,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -3756,11 +2584,6 @@
         "petrol95": 1.869,
         "diesel": 1.959,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -3772,11 +2595,6 @@
         "petrol95": 1.869,
         "diesel": 1.959,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -3787,11 +2605,6 @@
       "prices": {
         "petrol95": 1.879,
         "diesel": 1.979,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -3804,11 +2617,6 @@
         "petrol95": 1.869,
         "diesel": 1.959,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": null
       }
     },
     {
@@ -3819,11 +2627,6 @@
       "prices": {
         "petrol95": 1.939,
         "diesel": 1.929,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.1,
         "lpg": null
       }
     },
@@ -3836,11 +2639,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
-        "lpg": null
       }
     },
     {
@@ -3852,11 +2650,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -3868,11 +2661,6 @@
         "petrol95": 1.779,
         "diesel": 1.889,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": 0.04,
-        "diesel": 0.05,
-        "lpg": -0.06
       }
     },
     {
@@ -3884,11 +2672,6 @@
         "petrol95": 1.939,
         "diesel": 2.013,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -3900,11 +2683,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.88
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -3916,11 +2694,6 @@
         "petrol95": 1.779,
         "diesel": 1.859,
         "lpg": 0.789
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -3932,11 +2705,6 @@
         "petrol95": 1.779,
         "diesel": 1.859,
         "lpg": 0.789
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -3948,11 +2716,6 @@
         "petrol95": 1.779,
         "diesel": 1.859,
         "lpg": 0.789
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -3964,11 +2727,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -3980,11 +2738,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.79
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -3996,11 +2749,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.79
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.09,
-        "lpg": null
       }
     },
     {
@@ -4012,11 +2760,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -4028,11 +2771,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -4044,11 +2782,6 @@
         "petrol95": 1.76,
         "diesel": 1.87,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.01,
-        "diesel": 0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -4060,11 +2793,6 @@
         "petrol95": 1.899,
         "diesel": 1.979,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4075,11 +2803,6 @@
       "prices": {
         "petrol95": 1.839,
         "diesel": 1.919,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -4092,11 +2815,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4108,11 +2826,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.01,
-        "diesel": 0.01,
-        "lpg": -0.01
       }
     },
     {
@@ -4124,11 +2837,6 @@
         "petrol95": 1.849,
         "diesel": 1.939,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": 0.02,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4140,11 +2848,6 @@
         "petrol95": 1.879,
         "diesel": 1.959,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -4156,11 +2859,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4172,11 +2870,6 @@
         "petrol95": 1.819,
         "diesel": 1.919,
         "lpg": 0.819
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4187,11 +2880,6 @@
       "prices": {
         "petrol95": 1.879,
         "diesel": 1.979,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -4204,11 +2892,6 @@
         "petrol95": 1.889,
         "diesel": 1.969,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -4220,11 +2903,6 @@
         "petrol95": 1.899,
         "diesel": 1.979,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4236,11 +2914,6 @@
         "petrol95": 1.82,
         "diesel": 1.9,
         "lpg": 0.82
-      },
-      "priceChange": {
-        "petrol95": 0.01,
-        "diesel": 0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -4252,11 +2925,6 @@
         "petrol95": 1.819,
         "diesel": 1.919,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -4268,11 +2936,6 @@
         "petrol95": 1.799,
         "diesel": 1.879,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.02,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4284,11 +2947,6 @@
         "petrol95": 1.849,
         "diesel": 1.929,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4300,11 +2958,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.01
       }
     },
     {
@@ -4315,11 +2968,6 @@
       "prices": {
         "petrol95": 1.839,
         "diesel": 1.939,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.07,
-        "diesel": 0.02,
         "lpg": null
       }
     },
@@ -4332,11 +2980,6 @@
         "petrol95": 1.88,
         "diesel": 1.96,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": -0.01
       }
     },
     {
@@ -4348,11 +2991,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -4364,11 +3002,6 @@
         "petrol95": 1.779,
         "diesel": 1.879,
         "lpg": 0.809
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4380,11 +3013,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": 0.819
-      },
-      "priceChange": {
-        "petrol95": 0.01,
-        "diesel": 0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -4396,11 +3024,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.82
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4412,11 +3035,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": -0.01
       }
     },
     {
@@ -4428,11 +3046,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4443,11 +3056,6 @@
       "prices": {
         "petrol95": 1.859,
         "diesel": 1.959,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -4460,11 +3068,6 @@
         "petrol95": 1.77,
         "diesel": 1.87,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4476,11 +3079,6 @@
         "petrol95": 1.839,
         "diesel": 1.919,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.02,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -4492,11 +3090,6 @@
         "petrol95": 1.79,
         "diesel": 1.89,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.05,
-        "diesel": 0.04,
-        "lpg": -0.02
       }
     },
     {
@@ -4508,11 +3101,6 @@
         "petrol95": 1.779,
         "diesel": 1.879,
         "lpg": 0.809
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4523,11 +3111,6 @@
       "prices": {
         "petrol95": 1.79,
         "diesel": 1.88,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -4540,11 +3123,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.02
       }
     },
     {
@@ -4556,11 +3134,6 @@
         "petrol95": 1.879,
         "diesel": 1.959,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -4572,11 +3145,6 @@
         "petrol95": 1.719,
         "diesel": 1.829,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4588,11 +3156,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.81
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4604,11 +3167,6 @@
         "petrol95": 1.819,
         "diesel": 1.939,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4620,11 +3178,6 @@
         "petrol95": 1.759,
         "diesel": 1.879,
         "lpg": 0.81
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4636,11 +3189,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4652,11 +3200,6 @@
         "petrol95": 1.85,
         "diesel": 1.93,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -4668,11 +3211,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4684,11 +3222,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.02
       }
     },
     {
@@ -4700,11 +3233,6 @@
         "petrol95": 1.779,
         "diesel": 1.879,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.01,
-        "diesel": 0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -4716,11 +3244,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": 0.04,
-        "diesel": 0.04,
-        "lpg": -0.02
       }
     },
     {
@@ -4732,11 +3255,6 @@
         "petrol95": 1.79,
         "diesel": 1.92,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4748,11 +3266,6 @@
         "petrol95": 1.759,
         "diesel": 1.859,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4764,11 +3277,6 @@
         "petrol95": 1.77,
         "diesel": 1.87,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4780,11 +3288,6 @@
         "petrol95": 1.889,
         "diesel": 1.969,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": -0.01
       }
     },
     {
@@ -4796,11 +3299,6 @@
         "petrol95": 1.83,
         "diesel": 1.93,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.02,
-        "diesel": 0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -4812,11 +3310,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -4828,11 +3321,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4844,11 +3332,6 @@
         "petrol95": 1.79,
         "diesel": 1.89,
         "lpg": 0.95
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4860,11 +3343,6 @@
         "petrol95": 1.89,
         "diesel": 1.91,
         "lpg": 0.92
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4876,11 +3354,6 @@
         "petrol95": 1.739,
         "diesel": 1.839,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4892,11 +3365,6 @@
         "petrol95": 1.93,
         "diesel": 2.03,
         "lpg": 0.94
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4908,11 +3376,6 @@
         "petrol95": 1.79,
         "diesel": 1.93,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4924,11 +3387,6 @@
         "petrol95": 1.85,
         "diesel": 1.95,
         "lpg": 0.94
-      },
-      "priceChange": {
-        "petrol95": 0.03,
-        "diesel": 0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -4939,11 +3397,6 @@
       "prices": {
         "petrol95": 1.79,
         "diesel": 1.89,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -4956,11 +3409,6 @@
         "petrol95": 1.89,
         "diesel": 1.99,
         "lpg": 0.93
-      },
-      "priceChange": {
-        "petrol95": 0.07,
-        "diesel": 0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -4972,11 +3420,6 @@
         "petrol95": 1.79,
         "diesel": 1.89,
         "lpg": 0.88
-      },
-      "priceChange": {
-        "petrol95": 0.03,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -4988,11 +3431,6 @@
         "petrol95": 1.94,
         "diesel": 2.04,
         "lpg": 0.96
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5004,11 +3442,6 @@
         "petrol95": 1.85,
         "diesel": 1.95,
         "lpg": 0.94
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5020,11 +3453,6 @@
         "petrol95": 1.79,
         "diesel": 1.89,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.03,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5036,11 +3464,6 @@
         "petrol95": 1.89,
         "diesel": 1.99,
         "lpg": 0.91
-      },
-      "priceChange": {
-        "petrol95": 0.07,
-        "diesel": 0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -5052,11 +3475,6 @@
         "petrol95": 1.85,
         "diesel": 1.95,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": 0.03,
-        "diesel": 0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -5068,11 +3486,6 @@
         "petrol95": 1.79,
         "diesel": 1.89,
         "lpg": 0.93
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5084,11 +3497,6 @@
         "petrol95": 1.779,
         "diesel": 1.879,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5100,11 +3508,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5116,11 +3519,6 @@
         "petrol95": 1.769,
         "diesel": 1.869,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5132,11 +3530,6 @@
         "petrol95": 1.789,
         "diesel": 1.889,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -5148,11 +3541,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": 0.01,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5164,11 +3552,6 @@
         "petrol95": 1.79,
         "diesel": 1.85,
         "lpg": 0.95
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5180,11 +3563,6 @@
         "petrol95": 1.793,
         "diesel": 1.864,
         "lpg": 0.92
-      },
-      "priceChange": {
-        "petrol95": 0.01,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -5196,11 +3574,6 @@
         "petrol95": 1.789,
         "diesel": 1.889,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -5212,11 +3585,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.01,
-        "diesel": 0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -5228,11 +3596,6 @@
         "petrol95": 1.86,
         "diesel": 1.95,
         "lpg": 0.92
-      },
-      "priceChange": {
-        "petrol95": 0.04,
-        "diesel": 0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -5244,11 +3607,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.759
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.11,
-        "lpg": -0.07
       }
     },
     {
@@ -5260,11 +3618,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.76
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.0,
-        "lpg": -0.02
       }
     },
     {
@@ -5276,11 +3629,6 @@
         "petrol95": 1.73,
         "diesel": 1.82,
         "lpg": 0.76
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.0,
-        "lpg": -0.02
       }
     },
     {
@@ -5291,11 +3639,6 @@
       "prices": {
         "petrol95": 1.749,
         "diesel": 1.849,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -5308,11 +3651,6 @@
         "petrol95": 1.85,
         "diesel": 1.94,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5324,11 +3662,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -5340,11 +3673,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -5356,11 +3684,6 @@
         "petrol95": 1.85,
         "diesel": 1.97,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.02
       }
     },
     {
@@ -5372,11 +3695,6 @@
         "petrol95": 1.81,
         "diesel": 1.88,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5388,11 +3706,6 @@
         "petrol95": 1.81,
         "diesel": 1.88,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5404,11 +3717,6 @@
         "petrol95": 1.83,
         "diesel": 1.93,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.04,
-        "lpg": -0.03
       }
     },
     {
@@ -5419,11 +3727,6 @@
       "prices": {
         "petrol95": 1.83,
         "diesel": 1.9,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.07,
         "lpg": null
       }
     },
@@ -5436,11 +3739,6 @@
         "petrol95": 1.81,
         "diesel": 1.88,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5452,11 +3750,6 @@
         "petrol95": 1.85,
         "diesel": 1.97,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": -0.02
       }
     },
     {
@@ -5467,11 +3760,6 @@
       "prices": {
         "petrol95": 1.81,
         "diesel": 1.88,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -5484,11 +3772,6 @@
         "petrol95": 1.833,
         "diesel": 1.933,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5500,11 +3783,6 @@
         "petrol95": 1.81,
         "diesel": 1.88,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5516,11 +3794,6 @@
         "petrol95": 1.937,
         "diesel": 2.037,
         "lpg": 0.957
-      },
-      "priceChange": {
-        "petrol95": 0.03,
-        "diesel": 0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -5532,11 +3805,6 @@
         "petrol95": 1.937,
         "diesel": 2.037,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.03,
-        "diesel": 0.03,
-        "lpg": null
       }
     },
     {
@@ -5545,11 +3813,6 @@
       "municipality": "Kretingos r. sav.",
       "address": "Kretingos 51, Kartena",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -5564,11 +3827,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5580,11 +3838,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5596,11 +3849,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5612,11 +3860,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5628,11 +3871,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5644,11 +3882,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -5660,11 +3893,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5676,11 +3904,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5692,11 +3915,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5708,11 +3926,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5724,11 +3937,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5740,11 +3948,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5756,11 +3959,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5772,11 +3970,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5788,11 +3981,6 @@
         "petrol95": 1.77,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5804,11 +3992,6 @@
         "petrol95": 1.72,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5820,11 +4003,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5836,11 +4014,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5852,11 +4025,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5868,11 +4036,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5884,11 +4047,6 @@
         "petrol95": 1.72,
         "diesel": 1.82,
         "lpg": 0.77
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5900,11 +4058,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.79
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -5916,11 +4069,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5932,11 +4080,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.79
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -5948,11 +4091,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5964,11 +4102,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5980,11 +4113,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -5996,11 +4124,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6012,11 +4135,6 @@
         "petrol95": 1.79,
         "diesel": 1.87,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6028,11 +4146,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -6041,11 +4154,6 @@
       "municipality": "Šiaulių m. sav.",
       "address": "Žemaitės g. 131c",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -6060,11 +4168,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -6073,11 +4176,6 @@
       "municipality": "Šiaulių r. sav.",
       "address": "M. Katiliškio g. 50, Gruzdžiai",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -6092,11 +4190,6 @@
         "petrol95": 1.959,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -6108,11 +4201,6 @@
         "petrol95": 1.939,
         "diesel": 2.039,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -6124,11 +4212,6 @@
         "petrol95": 1.93,
         "diesel": 2.06,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.03,
-        "diesel": 0.0,
-        "lpg": null
       }
     },
     {
@@ -6137,11 +4220,6 @@
       "municipality": "Telšių r. sav.",
       "address": "Telšių g. 66, LT-88238, Luokė",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -6156,11 +4234,6 @@
         "petrol95": 1.85,
         "diesel": 1.9,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": null
       }
     },
     {
@@ -6172,11 +4245,6 @@
         "petrol95": 1.9,
         "diesel": 1.99,
         "lpg": 0.93
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6188,11 +4256,6 @@
         "petrol95": 1.75,
         "diesel": 1.86,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6204,11 +4267,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -6220,11 +4278,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -6236,11 +4289,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.78
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -6252,11 +4300,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.79
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -6268,11 +4311,6 @@
         "petrol95": 1.89,
         "diesel": 1.99,
         "lpg": 0.93
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6284,11 +4322,6 @@
         "petrol95": 1.79,
         "diesel": 1.92,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -6300,11 +4333,6 @@
         "petrol95": 1.79,
         "diesel": 1.92,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -6316,11 +4344,6 @@
         "petrol95": 1.79,
         "diesel": 1.92,
         "lpg": 0.86
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.01,
-        "lpg": -0.04
       }
     },
     {
@@ -6331,11 +4354,6 @@
       "prices": {
         "petrol95": 1.84,
         "diesel": 1.9,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -6348,11 +4366,6 @@
         "petrol95": 1.82,
         "diesel": 1.92,
         "lpg": 0.9
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6364,11 +4377,6 @@
         "petrol95": 1.81,
         "diesel": 1.89,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6380,11 +4388,6 @@
         "petrol95": 1.75,
         "diesel": 1.85,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6396,11 +4399,6 @@
         "petrol95": 1.81,
         "diesel": 1.979,
         "lpg": 0.83
-      },
-      "priceChange": {
-        "petrol95": 0.03,
-        "diesel": 0.0,
-        "lpg": 0.03
       }
     },
     {
@@ -6412,11 +4410,6 @@
         "petrol95": 1.829,
         "diesel": 1.999,
         "lpg": 0.969
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6428,11 +4421,6 @@
         "petrol95": 1.849,
         "diesel": 1.929,
         "lpg": 0.949
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6444,11 +4432,6 @@
         "petrol95": 1.829,
         "diesel": 1.939,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6460,11 +4443,6 @@
         "petrol95": 1.829,
         "diesel": 1.919,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6476,11 +4454,6 @@
         "petrol95": 1.829,
         "diesel": 1.929,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6492,11 +4465,6 @@
         "petrol95": 1.829,
         "diesel": 1.919,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -6507,11 +4475,6 @@
       "prices": {
         "petrol95": 1.869,
         "diesel": 1.969,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
         "lpg": null
       }
     },
@@ -6524,11 +4487,6 @@
         "petrol95": 1.859,
         "diesel": 1.949,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.04,
-        "lpg": null
       }
     },
     {
@@ -6539,11 +4497,6 @@
       "prices": {
         "petrol95": 1.849,
         "diesel": 1.939,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.05,
         "lpg": null
       }
     },
@@ -6556,11 +4509,6 @@
         "petrol95": 1.839,
         "diesel": 1.949,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.06,
-        "lpg": null
       }
     },
     {
@@ -6571,11 +4519,6 @@
       "prices": {
         "petrol95": 1.849,
         "diesel": 1.949,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
         "lpg": null
       }
     },
@@ -6588,11 +4531,6 @@
         "petrol95": 1.834,
         "diesel": 1.949,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.075,
-        "diesel": -0.066,
-        "lpg": null
       }
     },
     {
@@ -6603,11 +4541,6 @@
       "prices": {
         "petrol95": 1.854,
         "diesel": 1.949,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.055,
-        "diesel": -0.065,
         "lpg": null
       }
     },
@@ -6620,11 +4553,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": null
       }
     },
     {
@@ -6635,11 +4563,6 @@
       "prices": {
         "petrol95": 1.914,
         "diesel": 1.994,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.055,
-        "diesel": -0.055,
         "lpg": null
       }
     },
@@ -6652,11 +4575,6 @@
         "petrol95": 1.849,
         "diesel": 1.959,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.06,
-        "lpg": null
       }
     },
     {
@@ -6667,11 +4585,6 @@
       "prices": {
         "petrol95": 1.924,
         "diesel": 2.024,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -6684,11 +4597,6 @@
         "petrol95": 1.914,
         "diesel": 1.994,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.055,
-        "diesel": -0.055,
-        "lpg": null
       }
     },
     {
@@ -6699,11 +4607,6 @@
       "prices": {
         "petrol95": 1.919,
         "diesel": 2.009,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
         "lpg": null
       }
     },
@@ -6716,11 +4619,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": null
       }
     },
     {
@@ -6731,11 +4629,6 @@
       "prices": {
         "petrol95": 1.844,
         "diesel": 1.944,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.055,
-        "diesel": -0.065,
         "lpg": null
       }
     },
@@ -6748,11 +4641,6 @@
         "petrol95": 1.854,
         "diesel": 1.949,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.055,
-        "diesel": -0.065,
-        "lpg": null
       }
     },
     {
@@ -6763,11 +4651,6 @@
       "prices": {
         "petrol95": 1.864,
         "diesel": 1.964,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.055,
-        "diesel": -0.065,
         "lpg": null
       }
     },
@@ -6780,11 +4663,6 @@
         "petrol95": 1.919,
         "diesel": 2.009,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
-        "lpg": null
       }
     },
     {
@@ -6795,11 +4673,6 @@
       "prices": {
         "petrol95": 1.844,
         "diesel": 1.954,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.06,
         "lpg": null
       }
     },
@@ -6812,11 +4685,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.05,
-        "lpg": null
       }
     },
     {
@@ -6827,11 +4695,6 @@
       "prices": {
         "petrol95": 1.869,
         "diesel": 1.979,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
         "lpg": null
       }
     },
@@ -6844,11 +4707,6 @@
         "petrol95": 1.849,
         "diesel": 1.949,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": null
       }
     },
     {
@@ -6859,11 +4717,6 @@
       "prices": {
         "petrol95": 1.889,
         "diesel": 1.979,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.05,
         "lpg": null
       }
     },
@@ -6876,11 +4729,6 @@
         "petrol95": 1.929,
         "diesel": 2.009,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.025,
-        "diesel": -0.025,
-        "lpg": null
       }
     },
     {
@@ -6891,11 +4739,6 @@
       "prices": {
         "petrol95": 1.909,
         "diesel": 1.999,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
         "lpg": null
       }
     },
@@ -6908,11 +4751,6 @@
         "petrol95": 1.839,
         "diesel": 1.939,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
-        "lpg": null
       }
     },
     {
@@ -6923,11 +4761,6 @@
       "prices": {
         "petrol95": 1.914,
         "diesel": 2.004,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -6940,11 +4773,6 @@
         "petrol95": 1.869,
         "diesel": 1.979,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": null
       }
     },
     {
@@ -6955,11 +4783,6 @@
       "prices": {
         "petrol95": 1.834,
         "diesel": 1.929,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.025,
-        "diesel": -0.04,
         "lpg": null
       }
     },
@@ -6972,11 +4795,6 @@
         "petrol95": 1.829,
         "diesel": 1.929,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.09,
-        "lpg": null
       }
     },
     {
@@ -6987,11 +4805,6 @@
       "prices": {
         "petrol95": 1.844,
         "diesel": 1.944,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.085,
-        "diesel": -0.095,
         "lpg": null
       }
     },
@@ -7004,11 +4817,6 @@
         "petrol95": 1.844,
         "diesel": 1.904,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.09,
-        "diesel": -0.095,
-        "lpg": null
       }
     },
     {
@@ -7019,11 +4827,6 @@
       "prices": {
         "petrol95": 1.829,
         "diesel": 1.919,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
         "lpg": null
       }
     },
@@ -7036,11 +4839,6 @@
         "petrol95": 1.824,
         "diesel": 1.924,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.09,
-        "lpg": null
       }
     },
     {
@@ -7051,11 +4849,6 @@
       "prices": {
         "petrol95": 1.834,
         "diesel": 1.929,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.125,
-        "diesel": -0.06,
         "lpg": null
       }
     },
@@ -7068,11 +4861,6 @@
         "petrol95": 1.844,
         "diesel": 1.934,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.115,
-        "diesel": -0.105,
-        "lpg": null
       }
     },
     {
@@ -7083,11 +4871,6 @@
       "prices": {
         "petrol95": 1.829,
         "diesel": 1.919,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.12,
         "lpg": null
       }
     },
@@ -7100,11 +4883,6 @@
         "petrol95": 1.839,
         "diesel": 1.929,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.1,
-        "lpg": null
       }
     },
     {
@@ -7115,11 +4893,6 @@
       "prices": {
         "petrol95": 1.829,
         "diesel": 1.929,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.07,
         "lpg": null
       }
     },
@@ -7132,11 +4905,6 @@
         "petrol95": 1.834,
         "diesel": 1.924,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
-        "lpg": null
       }
     },
     {
@@ -7147,11 +4915,6 @@
       "prices": {
         "petrol95": 1.834,
         "diesel": 1.934,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.085,
-        "diesel": -0.055,
         "lpg": null
       }
     },
@@ -7164,11 +4927,6 @@
         "petrol95": 1.844,
         "diesel": 1.939,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.09,
-        "lpg": null
       }
     },
     {
@@ -7179,11 +4937,6 @@
       "prices": {
         "petrol95": 1.829,
         "diesel": 1.919,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -7196,11 +4949,6 @@
         "petrol95": 1.854,
         "diesel": 1.884,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.095,
-        "diesel": -0.16,
-        "lpg": null
       }
     },
     {
@@ -7211,11 +4959,6 @@
       "prices": {
         "petrol95": 1.839,
         "diesel": 1.939,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.09,
         "lpg": null
       }
     },
@@ -7228,11 +4971,6 @@
         "petrol95": 1.829,
         "diesel": 1.929,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.04,
-        "lpg": null
       }
     },
     {
@@ -7243,11 +4981,6 @@
       "prices": {
         "petrol95": 1.859,
         "diesel": 1.944,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -7260,11 +4993,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
-        "lpg": null
       }
     },
     {
@@ -7275,11 +5003,6 @@
       "prices": {
         "petrol95": 1.869,
         "diesel": 1.969,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
         "lpg": null
       }
     },
@@ -7292,11 +5015,6 @@
         "petrol95": 1.849,
         "diesel": 1.939,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
-        "lpg": null
       }
     },
     {
@@ -7307,11 +5025,6 @@
       "prices": {
         "petrol95": 1.829,
         "diesel": 1.929,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.04,
         "lpg": null
       }
     },
@@ -7324,11 +5037,6 @@
         "petrol95": 1.839,
         "diesel": 1.929,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": null
       }
     },
     {
@@ -7339,11 +5047,6 @@
       "prices": {
         "petrol95": 1.889,
         "diesel": 1.989,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
         "lpg": null
       }
     },
@@ -7356,11 +5059,6 @@
         "petrol95": 1.859,
         "diesel": 1.959,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": null
       }
     },
     {
@@ -7371,11 +5069,6 @@
       "prices": {
         "petrol95": 1.819,
         "diesel": 1.909,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
         "lpg": null
       }
     },
@@ -7388,11 +5081,6 @@
         "petrol95": 1.824,
         "diesel": 1.914,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
-        "lpg": null
       }
     },
     {
@@ -7403,11 +5091,6 @@
       "prices": {
         "petrol95": 1.839,
         "diesel": 1.929,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.05,
         "lpg": null
       }
     },
@@ -7420,11 +5103,6 @@
         "petrol95": 1.939,
         "diesel": 1.924,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.125,
-        "lpg": null
       }
     },
     {
@@ -7435,11 +5113,6 @@
       "prices": {
         "petrol95": 1.819,
         "diesel": 1.904,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.005,
         "lpg": null
       }
     },
@@ -7452,11 +5125,6 @@
         "petrol95": 1.939,
         "diesel": 1.924,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.105,
-        "lpg": null
       }
     },
     {
@@ -7467,11 +5135,6 @@
       "prices": {
         "petrol95": 1.829,
         "diesel": 1.924,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.095,
-        "diesel": -0.085,
         "lpg": null
       }
     },
@@ -7484,11 +5147,6 @@
         "petrol95": 1.899,
         "diesel": 1.904,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.115,
-        "lpg": null
       }
     },
     {
@@ -7499,11 +5157,6 @@
       "prices": {
         "petrol95": 1.909,
         "diesel": 1.894,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.125,
         "lpg": null
       }
     },
@@ -7516,11 +5169,6 @@
         "petrol95": 1.899,
         "diesel": 1.914,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.125,
-        "lpg": null
       }
     },
     {
@@ -7531,11 +5179,6 @@
       "prices": {
         "petrol95": 1.889,
         "diesel": 1.904,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.125,
         "lpg": null
       }
     },
@@ -7548,11 +5191,6 @@
         "petrol95": 1.789,
         "diesel": 1.919,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.14,
-        "diesel": -0.1,
-        "lpg": null
       }
     },
     {
@@ -7563,11 +5201,6 @@
       "prices": {
         "petrol95": 1.789,
         "diesel": 1.919,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.14,
-        "diesel": -0.1,
         "lpg": null
       }
     },
@@ -7580,11 +5213,6 @@
         "petrol95": 1.879,
         "diesel": 1.974,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.005,
-        "lpg": null
       }
     },
     {
@@ -7595,11 +5223,6 @@
       "prices": {
         "petrol95": 1.874,
         "diesel": 1.969,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.005,
         "lpg": null
       }
     },
@@ -7612,11 +5235,6 @@
         "petrol95": 1.909,
         "diesel": 2.004,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": 0.005,
-        "lpg": null
       }
     },
     {
@@ -7627,11 +5245,6 @@
       "prices": {
         "petrol95": null,
         "diesel": 2.004,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": 0.005,
         "lpg": null
       }
     },
@@ -7644,11 +5257,6 @@
         "petrol95": 1.879,
         "diesel": 1.959,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.08,
-        "lpg": null
       }
     },
     {
@@ -7659,11 +5267,6 @@
       "prices": {
         "petrol95": 1.859,
         "diesel": 1.949,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -7676,11 +5279,6 @@
         "petrol95": 1.839,
         "diesel": 1.929,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.1,
-        "lpg": null
       }
     },
     {
@@ -7691,11 +5289,6 @@
       "prices": {
         "petrol95": 1.769,
         "diesel": 1.869,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
         "lpg": null
       }
     },
@@ -7708,11 +5301,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.08,
-        "lpg": null
       }
     },
     {
@@ -7723,11 +5311,6 @@
       "prices": {
         "petrol95": 1.874,
         "diesel": 1.964,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.08,
         "lpg": null
       }
     },
@@ -7740,11 +5323,6 @@
         "petrol95": 1.849,
         "diesel": 1.959,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.07,
-        "lpg": null
       }
     },
     {
@@ -7755,11 +5333,6 @@
       "prices": {
         "petrol95": 1.884,
         "diesel": 1.984,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.055,
-        "diesel": -0.055,
         "lpg": null
       }
     },
@@ -7772,11 +5345,6 @@
         "petrol95": 1.839,
         "diesel": 1.929,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.135,
-        "diesel": -0.125,
-        "lpg": null
       }
     },
     {
@@ -7787,11 +5355,6 @@
       "prices": {
         "petrol95": 1.839,
         "diesel": 1.909,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
         "lpg": null
       }
     },
@@ -7804,11 +5367,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.02,
-        "lpg": null
       }
     },
     {
@@ -7819,11 +5377,6 @@
       "prices": {
         "petrol95": 1.899,
         "diesel": 1.959,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.052,
         "lpg": null
       }
     },
@@ -7836,11 +5389,6 @@
         "petrol95": 1.914,
         "diesel": 1.989,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.035,
-        "diesel": -0.02,
-        "lpg": null
       }
     },
     {
@@ -7851,11 +5399,6 @@
       "prices": {
         "petrol95": 1.869,
         "diesel": 1.959,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.08,
         "lpg": null
       }
     },
@@ -7868,8 +5411,7 @@
         "petrol95": 1.89,
         "diesel": 1.99,
         "lpg": null
-      },
-      "priceChange": null
+      }
     },
     {
       "id": "alytaus-m-sav-|kauno-g-73-alytus",
@@ -7880,11 +5422,6 @@
         "petrol95": 1.749,
         "diesel": 1.819,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.14,
-        "diesel": -0.16,
-        "lpg": -0.04
       }
     },
     {
@@ -7896,11 +5433,6 @@
         "petrol95": 1.899,
         "diesel": 1.969,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -7912,11 +5444,6 @@
         "petrol95": 1.859,
         "diesel": 1.959,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -7928,11 +5455,6 @@
         "petrol95": 1.899,
         "diesel": 1.969,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -7944,11 +5466,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -7960,11 +5477,6 @@
         "petrol95": 1.879,
         "diesel": 1.959,
         "lpg": 0.889
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -7976,11 +5488,6 @@
         "petrol95": 1.859,
         "diesel": 1.939,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -7992,11 +5499,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.15,
-        "diesel": -0.16,
-        "lpg": -0.04
       }
     },
     {
@@ -8008,11 +5510,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": -0.15,
-        "diesel": -0.15,
-        "lpg": 0.0
       }
     },
     {
@@ -8024,11 +5521,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.17,
-        "lpg": 0.0
       }
     },
     {
@@ -8040,11 +5532,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.16,
-        "lpg": 0.0
       }
     },
     {
@@ -8056,11 +5543,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -8072,11 +5554,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
-        "lpg": 0.0
       }
     },
     {
@@ -8088,11 +5565,6 @@
         "petrol95": 1.899,
         "diesel": 1.969,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -8104,11 +5576,6 @@
         "petrol95": 1.959,
         "diesel": 2.039,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8120,11 +5587,6 @@
         "petrol95": 1.959,
         "diesel": 2.039,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8136,11 +5598,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -8152,11 +5609,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.17,
-        "lpg": -0.03
       }
     },
     {
@@ -8168,11 +5620,6 @@
         "petrol95": 1.759,
         "diesel": 1.849,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": -0.14,
-        "diesel": -0.14,
-        "lpg": 0.0
       }
     },
     {
@@ -8184,11 +5631,6 @@
         "petrol95": 1.879,
         "diesel": 1.959,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -8200,11 +5642,6 @@
         "petrol95": 1.859,
         "diesel": 1.899,
         "lpg": 0.839
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.09,
-        "lpg": 0.0
       }
     },
     {
@@ -8216,11 +5653,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.799
-      },
-      "priceChange": {
-        "petrol95": -0.15,
-        "diesel": -0.13,
-        "lpg": 0.0
       }
     },
     {
@@ -8232,11 +5664,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.849
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.18,
-        "lpg": 0.0
       }
     },
     {
@@ -8248,11 +5675,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.16,
-        "lpg": 0.0
       }
     },
     {
@@ -8264,11 +5686,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.16,
-        "lpg": 0.0
       }
     },
     {
@@ -8280,11 +5697,6 @@
         "petrol95": 1.729,
         "diesel": 1.819,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.17,
-        "diesel": -0.16,
-        "lpg": 0.0
       }
     },
     {
@@ -8296,11 +5708,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -8312,11 +5719,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.889
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -8328,11 +5730,6 @@
         "petrol95": 1.819,
         "diesel": 1.919,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -8344,11 +5741,6 @@
         "petrol95": 1.859,
         "diesel": 1.959,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -8360,11 +5752,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.92
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -8376,11 +5763,6 @@
         "petrol95": 1.79,
         "diesel": 1.94,
         "lpg": 0.95
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8392,11 +5774,6 @@
         "petrol95": 1.79,
         "diesel": 1.94,
         "lpg": 0.95
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8408,11 +5785,6 @@
         "petrol95": 1.79,
         "diesel": 1.95,
         "lpg": 0.94
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8424,11 +5796,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -8440,11 +5807,6 @@
         "petrol95": 1.869,
         "diesel": 1.999,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -8456,11 +5818,6 @@
         "petrol95": 1.945,
         "diesel": 2.045,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.01
       }
     },
     {
@@ -8472,11 +5829,6 @@
         "petrol95": 1.79,
         "diesel": 1.88,
         "lpg": 0.76
-      },
-      "priceChange": {
-        "petrol95": -0.139,
-        "diesel": -0.149,
-        "lpg": -0.11
       }
     },
     {
@@ -8488,11 +5840,6 @@
         "petrol95": 1.799,
         "diesel": 1.889,
         "lpg": 0.76
-      },
-      "priceChange": {
-        "petrol95": -0.171,
-        "diesel": -0.161,
-        "lpg": -0.16
       }
     },
     {
@@ -8504,11 +5851,6 @@
         "petrol95": 1.8,
         "diesel": 1.89,
         "lpg": 0.92
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8520,11 +5862,6 @@
         "petrol95": 1.82,
         "diesel": 1.95,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8536,11 +5873,6 @@
         "petrol95": 1.82,
         "diesel": 1.94,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8552,11 +5884,6 @@
         "petrol95": 1.84,
         "diesel": 1.97,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8568,11 +5895,6 @@
         "petrol95": 1.82,
         "diesel": 1.95,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8584,11 +5906,6 @@
         "petrol95": 1.77,
         "diesel": 1.86,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8597,11 +5914,6 @@
       "municipality": "Mažeikių r. sav.",
       "address": "Algirdo g. 42, Mažeikiai",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -8616,11 +5928,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -8629,11 +5936,6 @@
       "municipality": "Švenčionių r. sav.",
       "address": "Mokyklos g. 23, Švenčionys",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -8648,11 +5950,6 @@
         "petrol95": 1.789,
         "diesel": 1.869,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": -0.02
       }
     },
     {
@@ -8664,11 +5961,6 @@
         "petrol95": 1.849,
         "diesel": 1.939,
         "lpg": 0.889
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -8679,11 +5971,6 @@
       "prices": {
         "petrol95": 1.839,
         "diesel": 1.929,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
         "lpg": null
       }
     },
@@ -8696,11 +5983,6 @@
         "petrol95": 1.839,
         "diesel": 1.929,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -8712,11 +5994,6 @@
         "petrol95": 1.839,
         "diesel": 1.929,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -8728,11 +6005,6 @@
         "petrol95": 1.839,
         "diesel": 1.929,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -8744,11 +6016,6 @@
         "petrol95": 1.859,
         "diesel": 1.949,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.11,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -8757,11 +6024,6 @@
       "municipality": "Akmenės r. sav.",
       "address": "Naujoji Akmenė V. Kudirkos 18A",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -8776,11 +6038,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -8789,11 +6046,6 @@
       "municipality": "Akmenės r. sav.",
       "address": "Pašakarnių km. Pašakarnių g. 1",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -8808,11 +6060,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -8821,11 +6068,6 @@
       "municipality": "Šiaulių m. sav. ",
       "address": "Šiauliai Pramonės g. 7C",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -8840,11 +6082,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -8853,11 +6090,6 @@
       "municipality": "Radviliškio r. sav.",
       "address": "Velžių km .Radviliškio plentas 2",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -8872,11 +6104,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -8885,11 +6112,6 @@
       "municipality": "Klaipėdos r. sav.",
       "address": "Klaipėda Jūrininkų pr. 29",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -8904,11 +6126,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -8917,11 +6134,6 @@
       "municipality": "Jurbarko r. sav.",
       "address": "Pašvenčio km.",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -8936,11 +6148,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -8949,11 +6156,6 @@
       "municipality": "Kalvarijos sav.",
       "address": "Kušliškių km. Suvalkijos g. 15",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -8968,11 +6170,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -8981,11 +6178,6 @@
       "municipality": "Alytaus m. sav. ",
       "address": "Alytus Miškininkų g. 7",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9000,11 +6192,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -9013,11 +6200,6 @@
       "municipality": "Lazdijų r. sav.",
       "address": "Panarvės km.",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9032,11 +6214,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -9045,11 +6222,6 @@
       "municipality": "Kauno r. sav.",
       "address": "Domeikava Muitinės g. 2",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9064,11 +6236,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -9077,11 +6244,6 @@
       "municipality": "Kauno r. sav.",
       "address": "Babtai Vandžiogalos g. 3",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9096,11 +6258,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -9109,11 +6266,6 @@
       "municipality": "Šakių r. sav.",
       "address": "Lėkėčių km. Šakių g. 3",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9128,11 +6280,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -9141,11 +6288,6 @@
       "municipality": "Ukmergės r. sav.",
       "address": "Ukmergė Kareivinių g. 64",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9160,11 +6302,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -9173,11 +6310,6 @@
       "municipality": "Ukmergės r. sav.",
       "address": "Pageležių km.",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9192,11 +6324,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -9205,11 +6332,6 @@
       "municipality": "Vilniaus r. sav. ",
       "address": "Zujūnai Buivydiškių g. 1A",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9224,11 +6346,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -9237,11 +6354,6 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius, Jankiškių g. 43a",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9256,11 +6368,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
       }
     },
     {
@@ -9269,11 +6376,6 @@
       "municipality": "Vilniaus m. sav.",
       "address": "Vilnius Stanevičiaus g. 3A",
       "prices": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": null
-      },
-      "priceChange": {
         "petrol95": null,
         "diesel": null,
         "lpg": null
@@ -9288,11 +6390,6 @@
         "petrol95": 1.79,
         "diesel": 1.99,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": null
       }
     },
     {
@@ -9304,11 +6401,6 @@
         "petrol95": 1.79,
         "diesel": 1.91,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.02,
-        "lpg": -0.01
       }
     },
     {
@@ -9320,11 +6412,6 @@
         "petrol95": 1.74,
         "diesel": 1.83,
         "lpg": 0.77
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.08,
-        "lpg": -0.06
       }
     },
     {
@@ -9336,11 +6423,6 @@
         "petrol95": 1.8,
         "diesel": 1.88,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.02,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9351,11 +6433,6 @@
       "prices": {
         "petrol95": 1.8,
         "diesel": 1.88,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.02,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -9368,11 +6445,6 @@
         "petrol95": 1.79,
         "diesel": 1.88,
         "lpg": 0.8
-      },
-      "priceChange": {
-        "petrol95": 0.01,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9384,11 +6456,6 @@
         "petrol95": 1.73,
         "diesel": 1.82,
         "lpg": 0.76
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.07,
-        "lpg": -0.04
       }
     },
     {
@@ -9400,11 +6467,6 @@
         "petrol95": 1.809,
         "diesel": 1.919,
         "lpg": 0.829
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -9416,11 +6478,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9432,11 +6489,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9448,11 +6500,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9464,11 +6511,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9480,11 +6522,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9496,11 +6533,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9512,11 +6544,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9528,11 +6555,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9544,11 +6566,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9560,11 +6577,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9576,11 +6588,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9592,11 +6599,6 @@
         "petrol95": 1.747,
         "diesel": 1.837,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -9608,11 +6610,6 @@
         "petrol95": 1.959,
         "diesel": 2.059,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9624,11 +6621,6 @@
         "petrol95": 1.89,
         "diesel": 1.99,
         "lpg": 0.95
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9639,11 +6631,6 @@
       "prices": {
         "petrol95": 1.919,
         "diesel": 2.039,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
         "lpg": null
       }
     },
@@ -9656,11 +6643,6 @@
         "petrol95": 1.929,
         "diesel": 2.049,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": null
       }
     },
     {
@@ -9672,11 +6654,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -9688,11 +6665,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -9704,11 +6676,6 @@
         "petrol95": null,
         "diesel": null,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": null,
-        "lpg": 0.0
       }
     },
     {
@@ -9719,11 +6686,6 @@
       "prices": {
         "petrol95": 1.79,
         "diesel": 1.87,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -9736,11 +6698,6 @@
         "petrol95": 1.83,
         "diesel": 1.95,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9752,11 +6709,6 @@
         "petrol95": 1.79,
         "diesel": 1.89,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9768,11 +6720,6 @@
         "petrol95": 1.83,
         "diesel": 1.92,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9784,11 +6731,6 @@
         "petrol95": 1.83,
         "diesel": 1.95,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9800,11 +6742,6 @@
         "petrol95": 1.83,
         "diesel": 1.95,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9816,11 +6753,6 @@
         "petrol95": 1.95,
         "diesel": 2.04,
         "lpg": 0.94
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9832,11 +6764,6 @@
         "petrol95": 1.95,
         "diesel": 2.04,
         "lpg": 0.94
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9848,11 +6775,6 @@
         "petrol95": 1.83,
         "diesel": 1.95,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9864,11 +6786,6 @@
         "petrol95": 1.83,
         "diesel": 1.92,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9880,11 +6797,6 @@
         "petrol95": 1.83,
         "diesel": 1.95,
         "lpg": 0.89
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9896,11 +6808,6 @@
         "petrol95": 1.83,
         "diesel": 1.94,
         "lpg": 0.87
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9912,11 +6819,6 @@
         "petrol95": 1.81,
         "diesel": 1.92,
         "lpg": 0.84
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9928,11 +6830,6 @@
         "petrol95": 1.83,
         "diesel": 1.93,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.03,
-        "diesel": -0.03,
-        "lpg": -0.02
       }
     },
     {
@@ -9944,11 +6841,6 @@
         "petrol95": 1.85,
         "diesel": 1.99,
         "lpg": 0.95
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -9959,11 +6851,6 @@
       "prices": {
         "petrol95": null,
         "diesel": 1.819,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": null,
-        "diesel": -0.04,
         "lpg": null
       }
     },
@@ -9976,11 +6863,6 @@
         "petrol95": 1.83,
         "diesel": 1.92,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -9992,11 +6874,6 @@
         "petrol95": 1.839,
         "diesel": 1.929,
         "lpg": 0.779
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10008,11 +6885,6 @@
         "petrol95": 1.719,
         "diesel": 1.809,
         "lpg": 0.749
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.04,
-        "lpg": -0.02
       }
     },
     {
@@ -10024,11 +6896,6 @@
         "petrol95": 1.859,
         "diesel": 1.959,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.14,
-        "diesel": -0.12,
-        "lpg": 0.0
       }
     },
     {
@@ -10040,11 +6907,6 @@
         "petrol95": 1.849,
         "diesel": 1.949,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.14,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -10056,11 +6918,6 @@
         "petrol95": 1.849,
         "diesel": 1.949,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.14,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -10072,11 +6929,6 @@
         "petrol95": 1.839,
         "diesel": 1.959,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10088,11 +6940,6 @@
         "petrol95": 1.839,
         "diesel": 1.959,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10104,11 +6951,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.01
       }
     },
     {
@@ -10120,11 +6962,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.01
       }
     },
     {
@@ -10136,11 +6973,6 @@
         "petrol95": 1.979,
         "diesel": 2.049,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -10152,11 +6984,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -10168,11 +6995,6 @@
         "petrol95": 1.919,
         "diesel": 2.019,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10184,11 +7006,6 @@
         "petrol95": 1.889,
         "diesel": 1.979,
         "lpg": 0.869
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -10200,11 +7017,6 @@
         "petrol95": 1.979,
         "diesel": 2.059,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -10216,11 +7028,6 @@
         "petrol95": 1.939,
         "diesel": 2.019,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -10231,11 +7038,6 @@
       "prices": {
         "petrol95": 1.939,
         "diesel": 2.019,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
         "lpg": null
       }
     },
@@ -10248,11 +7050,6 @@
         "petrol95": 1.949,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -10264,11 +7061,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10280,11 +7072,6 @@
         "petrol95": 1.879,
         "diesel": 1.979,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -10296,11 +7083,6 @@
         "petrol95": 1.899,
         "diesel": 1.969,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -10311,11 +7093,6 @@
       "prices": {
         "petrol95": 1.879,
         "diesel": 1.979,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
         "lpg": null
       }
     },
@@ -10328,11 +7105,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -10344,11 +7116,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10360,11 +7127,6 @@
         "petrol95": 1.879,
         "diesel": 1.979,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.09,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -10376,11 +7138,6 @@
         "petrol95": 1.949,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -10392,11 +7149,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -10408,11 +7160,6 @@
         "petrol95": 1.899,
         "diesel": 1.969,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -10424,11 +7171,6 @@
         "petrol95": 1.879,
         "diesel": 1.979,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.1,
-        "lpg": 0.0
       }
     },
     {
@@ -10440,11 +7182,6 @@
         "petrol95": 1.879,
         "diesel": 1.969,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -10456,11 +7193,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.13,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -10472,11 +7204,6 @@
         "petrol95": 1.879,
         "diesel": 1.979,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.1,
-        "lpg": 0.0
       }
     },
     {
@@ -10488,11 +7215,6 @@
         "petrol95": 1.879,
         "diesel": 1.979,
         "lpg": 0.919
-      },
-      "priceChange": {
-        "petrol95": -0.12,
-        "diesel": -0.1,
-        "lpg": 0.0
       }
     },
     {
@@ -10504,11 +7226,6 @@
         "petrol95": 1.949,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -10520,11 +7237,6 @@
         "petrol95": 1.949,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -10536,11 +7248,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10552,11 +7259,6 @@
         "petrol95": 1.919,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -10568,11 +7270,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10584,11 +7281,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10600,11 +7292,6 @@
         "petrol95": 1.949,
         "diesel": 2.039,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -10616,11 +7303,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -10632,11 +7314,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10648,11 +7325,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10664,11 +7336,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10680,11 +7347,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -10696,11 +7358,6 @@
         "petrol95": 1.899,
         "diesel": 2.019,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -10712,11 +7369,6 @@
         "petrol95": 1.899,
         "diesel": 2.019,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -10728,11 +7380,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -10744,11 +7391,6 @@
         "petrol95": 1.899,
         "diesel": 2.019,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -10760,11 +7402,6 @@
         "petrol95": 1.979,
         "diesel": 2.059,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -10776,11 +7413,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10792,11 +7424,6 @@
         "petrol95": 1.979,
         "diesel": 2.059,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -10808,11 +7435,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10824,11 +7446,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10840,11 +7457,6 @@
         "petrol95": 1.859,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -10856,11 +7468,6 @@
         "petrol95": 1.859,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -10872,11 +7479,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -10888,11 +7490,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -10904,11 +7501,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -10920,11 +7512,6 @@
         "petrol95": 1.899,
         "diesel": 1.989,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -10936,11 +7523,6 @@
         "petrol95": 1.899,
         "diesel": 1.989,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.07,
-        "lpg": 0.0
       }
     },
     {
@@ -10952,11 +7534,6 @@
         "petrol95": 1.899,
         "diesel": 2.029,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -10968,11 +7545,6 @@
         "petrol95": 1.899,
         "diesel": 2.029,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -10984,11 +7556,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11000,11 +7567,6 @@
         "petrol95": 1.959,
         "diesel": 2.059,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11016,11 +7578,6 @@
         "petrol95": 1.959,
         "diesel": 2.059,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11031,11 +7588,6 @@
       "prices": {
         "petrol95": 1.929,
         "diesel": 1.949,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.12,
         "lpg": null
       }
     },
@@ -11048,11 +7600,6 @@
         "petrol95": 1.889,
         "diesel": 1.929,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -11064,11 +7611,6 @@
         "petrol95": 1.889,
         "diesel": 1.929,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -11080,11 +7622,6 @@
         "petrol95": 1.889,
         "diesel": 1.929,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -11096,11 +7633,6 @@
         "petrol95": 1.889,
         "diesel": 1.929,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -11112,11 +7644,6 @@
         "petrol95": 1.889,
         "diesel": 1.929,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -11128,11 +7655,6 @@
         "petrol95": 1.889,
         "diesel": 1.929,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -11144,11 +7666,6 @@
         "petrol95": 1.889,
         "diesel": 1.929,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -11160,11 +7677,6 @@
         "petrol95": 1.889,
         "diesel": 1.929,
         "lpg": 0.879
-      },
-      "priceChange": {
-        "petrol95": -0.08,
-        "diesel": -0.11,
-        "lpg": 0.0
       }
     },
     {
@@ -11176,11 +7688,6 @@
         "petrol95": 1.929,
         "diesel": 2.039,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -11192,11 +7699,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -11208,11 +7710,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -11224,11 +7721,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -11240,11 +7732,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.95
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11256,11 +7743,6 @@
         "petrol95": 1.919,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -11272,11 +7754,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11288,11 +7765,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11304,11 +7776,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11320,11 +7787,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11336,11 +7798,6 @@
         "petrol95": 1.959,
         "diesel": 2.059,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11352,11 +7809,6 @@
         "petrol95": 1.889,
         "diesel": 1.979,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -11368,11 +7820,6 @@
         "petrol95": 1.889,
         "diesel": 1.979,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -11384,11 +7831,6 @@
         "petrol95": 1.889,
         "diesel": 1.979,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -11400,11 +7842,6 @@
         "petrol95": 1.889,
         "diesel": 1.979,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -11416,11 +7853,6 @@
         "petrol95": 1.899,
         "diesel": 1.979,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -11432,11 +7864,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11448,11 +7875,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11464,11 +7886,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11480,11 +7897,6 @@
         "petrol95": 1.899,
         "diesel": 2.059,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11496,11 +7908,6 @@
         "petrol95": 1.879,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11512,11 +7919,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11528,11 +7930,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11543,11 +7940,6 @@
       "prices": {
         "petrol95": 1.999,
         "diesel": 2.079,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
         "lpg": null
       }
     },
@@ -11560,11 +7952,6 @@
         "petrol95": 1.959,
         "diesel": 2.059,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11576,11 +7963,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11592,11 +7974,6 @@
         "petrol95": 1.949,
         "diesel": 2.019,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -11608,11 +7985,6 @@
         "petrol95": 1.949,
         "diesel": 2.019,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -11624,11 +7996,6 @@
         "petrol95": 1.949,
         "diesel": 2.049,
         "lpg": 0.939
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11640,11 +8007,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11656,11 +8018,6 @@
         "petrol95": 1.929,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -11672,11 +8029,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11688,11 +8040,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11704,11 +8051,6 @@
         "petrol95": 1.919,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -11720,11 +8062,6 @@
         "petrol95": 1.919,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -11736,11 +8073,6 @@
         "petrol95": 1.919,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -11752,11 +8084,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11768,11 +8095,6 @@
         "petrol95": 1.999,
         "diesel": 2.079,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -11784,11 +8106,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.929
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11800,11 +8117,6 @@
         "petrol95": 1.889,
         "diesel": 1.989,
         "lpg": 0.859
-      },
-      "priceChange": {
-        "petrol95": -0.11,
-        "diesel": -0.09,
-        "lpg": 0.0
       }
     },
     {
@@ -11816,11 +8128,6 @@
         "petrol95": 1.869,
         "diesel": 1.969,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -11832,11 +8139,6 @@
         "petrol95": 1.959,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.01,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11848,11 +8150,6 @@
         "petrol95": 1.919,
         "diesel": 2.019,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.02,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11864,11 +8161,6 @@
         "petrol95": 1.969,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -11879,11 +8171,6 @@
       "prices": {
         "petrol95": 1.859,
         "diesel": 1.959,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.1,
         "lpg": null
       }
     },
@@ -11896,11 +8183,6 @@
         "petrol95": 1.969,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.02,
-        "lpg": 0.0
       }
     },
     {
@@ -11912,11 +8194,6 @@
         "petrol95": 1.969,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -11928,11 +8205,6 @@
         "petrol95": 1.969,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -11944,11 +8216,6 @@
         "petrol95": 1.969,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -11960,11 +8227,6 @@
         "petrol95": 1.959,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
-        "lpg": 0.0
       }
     },
     {
@@ -11976,11 +8238,6 @@
         "petrol95": 1.969,
         "diesel": 2.049,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.03,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -11992,11 +8249,6 @@
         "petrol95": 1.899,
         "diesel": 2.019,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -12008,11 +8260,6 @@
         "petrol95": 1.919,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -12024,11 +8271,6 @@
         "petrol95": 1.919,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     },
     {
@@ -12040,11 +8282,6 @@
         "petrol95": 1.889,
         "diesel": 1.999,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.05,
-        "diesel": -0.06,
-        "lpg": 0.0
       }
     },
     {
@@ -12056,11 +8293,6 @@
         "petrol95": 1.959,
         "diesel": 2.029,
         "lpg": 0.959
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.05,
-        "lpg": 0.0
       }
     },
     {
@@ -12071,11 +8303,6 @@
       "prices": {
         "petrol95": 1.849,
         "diesel": 1.949,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.07,
-        "diesel": -0.08,
         "lpg": null
       }
     },
@@ -12088,11 +8315,6 @@
         "petrol95": 1.949,
         "diesel": 2.029,
         "lpg": null
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.04,
-        "lpg": null
       }
     },
     {
@@ -12104,11 +8326,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -12120,11 +8337,6 @@
         "petrol95": 1.899,
         "diesel": 1.999,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": -0.1,
-        "diesel": -0.08,
-        "lpg": 0.0
       }
     },
     {
@@ -12136,11 +8348,6 @@
         "petrol95": 1.959,
         "diesel": 2.039,
         "lpg": 0.899
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -12152,11 +8359,6 @@
         "petrol95": 1.799,
         "diesel": 1.899,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": -0.06,
-        "diesel": -0.04,
-        "lpg": 0.0
       }
     },
     {
@@ -12168,11 +8370,6 @@
         "petrol95": 1.87,
         "diesel": 1.98,
         "lpg": 0.95
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -12184,11 +8381,6 @@
         "petrol95": 1.964,
         "diesel": 2.054,
         "lpg": 0.874
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -12200,11 +8392,6 @@
         "petrol95": 1.85,
         "diesel": 1.93,
         "lpg": 0.85
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -12215,11 +8402,6 @@
       "prices": {
         "petrol95": 1.79,
         "diesel": 1.88,
-        "lpg": null
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": -0.01,
         "lpg": null
       }
     },
@@ -12232,11 +8414,6 @@
         "petrol95": 1.896,
         "diesel": 1.987,
         "lpg": 0.906
-      },
-      "priceChange": {
-        "petrol95": 0.0,
-        "diesel": 0.0,
-        "lpg": 0.0
       }
     },
     {
@@ -12248,11 +8425,6 @@
         "petrol95": 1.92,
         "diesel": 2.02,
         "lpg": 0.91
-      },
-      "priceChange": {
-        "petrol95": -0.04,
-        "diesel": -0.03,
-        "lpg": 0.0
       }
     }
   ]
