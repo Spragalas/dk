@@ -1057,6 +1057,32 @@ body {
 }
 
 /* Trends split + entity picker */
+#trends-mode-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.trends-mode-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-dim);
+  padding: 8px 4px 9px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  margin-bottom: -1px;
+}
+
+.trends-mode-tab.active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
 #trends-split-tabs {
   display: flex;
   gap: 4px;
@@ -1092,8 +1118,31 @@ body {
 .trends-multi.hidden,
 #trends-station-search.hidden,
 #trends-station-suggestions.hidden,
+#trends-comp-unit.hidden,
 #trends-split-tabs.hidden {
   display: none;
+}
+
+#trends-comp-unit {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.comp-unit-tab {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 5px 14px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.comp-unit-tab.active {
+  background: var(--accent);
+  color: var(--bg-panel);
+  border-color: var(--accent);
 }
 
 .trends-multi {
@@ -1329,6 +1378,10 @@ body.side-open #map {
   color: var(--bg-panel);
 }
 
+.trends-fuel-tab.hidden {
+  display: none;
+}
+
 #list-search {
   width: 100%;
   padding: 10px 12px;
@@ -1492,20 +1545,131 @@ body.side-open #map {
   display: block;
 }
 
-#trends-table {
-  flex: 1;
-  overflow-y: auto;
+#trends-competition-note {
+  margin: 4px 0 10px;
 }
 
-#trends-table::-webkit-scrollbar {
+.comp-verdict {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border-left: 4px solid var(--border);
+  background: var(--bg-panel);
+}
+
+.comp-verdict.comp-up {
+  border-left-color: var(--green);
+}
+
+.comp-verdict.comp-down {
+  border-left-color: var(--red);
+}
+
+.comp-verdict.comp-flat {
+  border-left-color: var(--text-dim);
+}
+
+.comp-method {
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.45;
+  margin: 6px 2px 8px;
+}
+
+/* Competition heatmap: networks × weeks */
+.comp-heat-wrap {
+  overflow-x: auto;
+}
+
+.comp-heat {
+  border-collapse: separate;
+  border-spacing: 2px;
+  font-size: 11px;
+  width: 100%;
+}
+
+.comp-heat th {
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.comp-heat thead th {
+  text-align: center;
+  padding: 2px 0 4px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.comp-heat .heat-corner {
+  text-align: left;
+}
+
+.comp-heat .heat-row-label {
+  text-align: left;
+  padding-right: 8px;
+  white-space: nowrap;
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.comp-heat td {
+  text-align: center;
+  padding: 5px 2px;
+  border-radius: 3px;
+  font-variant-numeric: tabular-nums;
+  min-width: 26px;
+}
+
+.comp-heat td.heat-empty {
+  background: var(--bg-input);
+  color: var(--text-dim);
+}
+
+.comp-heat-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.comp-heat-bar {
+  flex: 1;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+}
+
+/* Scrollable content region below the fixed fuel/split tabs. Lets the whole
+   note + chart + table column scroll when it's taller than the panel (e.g. the
+   competition view, where the chart sits above a tall verdict block). */
+#trends-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#trends-table {
+  flex: 0 0 auto;
+}
+
+#trends-scroll::-webkit-scrollbar {
   width: 6px;
 }
 
-#trends-table::-webkit-scrollbar-track {
+#trends-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
 
-#trends-table::-webkit-scrollbar-thumb {
+#trends-scroll::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 0;
 }

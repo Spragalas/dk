@@ -1261,6 +1261,9 @@
   let trendsSelectedRegions = null;  // Set<string> | null
   let trendsNetworkMS = null; // multi-select instance (lazy-created)
   let trendsRegionMS = null;
+  let trendsSelectedChains = null; // Set<string> | null (competition split)
+  let trendsChainMS = null;
+  let compUnit = "pct"; // competition premium display: "ct" | "pct"
 
   // Raw cached payloads, populated on demand by ensureSplitData().
   const trendsRaw = {
@@ -1276,12 +1279,20 @@
   function setupTrendsView() {
     document.getElementById("trends-btn").addEventListener("click", () => {
       trendsFuel = currentFuel;
-      document.querySelectorAll(".trends-fuel-tab").forEach(b => {
-        b.classList.toggle("active", b.dataset.fuel === trendsFuel);
-      });
-      applySplitVisibility();
+      // Reopen in whichever mode was last active (prices vs competition).
+      setTrendsMode(trendsSplit === "competition" ? "competition" : "prices");
       openSidePanel("trends");
       loadTrendsData();
+    });
+
+    document.querySelectorAll(".trends-mode-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const mode = btn.dataset.mode;
+        if ((trendsSplit === "competition") === (mode === "competition")) return;
+        trendsEntity = null;
+        setTrendsMode(mode);
+        loadTrendsData();
+      });
     });
 
     document.querySelectorAll(".trends-fuel-tab").forEach(btn => {
@@ -1324,16 +1335,51 @@
       });
     });
 
+    // Competition-only ct/% unit toggle. Both units are precomputed, so this is
+    // a pure re-render of the verdict + heatmap.
+    document.querySelectorAll(".comp-unit-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (btn.dataset.unit === compUnit) return;
+        compUnit = btn.dataset.unit;
+        document.querySelectorAll(".comp-unit-tab").forEach(b => b.classList.toggle("active", b === btn));
+        renderTrendsChartAndTable();
+      });
+    });
+
     setupStationSearch();
   }
 
   function applySplitVisibility() {
     const splitTabs = document.getElementById("trends-split-tabs");
-    splitTabs.classList.toggle("hidden", trendsFuel === "all");
+    // The split row belongs to the "prices" mode only; the competition mode is
+    // a separate trend tab with its own (chain) picker, so hide splits there.
+    const isComp = trendsSplit === "competition";
+    splitTabs.classList.toggle("hidden", isComp || trendsFuel === "all");
     if (trendsFuel === "all") {
       // Picker is split-driven; if splits are hidden, hide the picker too.
       document.getElementById("trends-entity-picker").classList.add("hidden");
     }
+  }
+
+  // Switches the trends panel between its two top-level tabs: "prices" (the
+  // fuel/split charts) and "competition" (the network-premium heatmap). The
+  // competition tab is single-fuel, so it drops the "Visi degalai" option.
+  function setTrendsMode(mode) {
+    const isComp = mode === "competition";
+    document.querySelectorAll(".trends-mode-tab").forEach(b =>
+      b.classList.toggle("active", b.dataset.mode === mode));
+    document.querySelector('.trends-fuel-tab[data-fuel="all"]').classList.toggle("hidden", isComp);
+    if (isComp) {
+      if (trendsFuel === "all") trendsFuel = "petrol95";
+      trendsSplit = "competition";
+    } else if (trendsSplit === "competition") {
+      trendsSplit = "overall";
+    }
+    document.querySelectorAll(".trends-fuel-tab").forEach(b =>
+      b.classList.toggle("active", b.dataset.fuel === trendsFuel));
+    document.querySelectorAll(".trends-split-tab").forEach(b =>
+      b.classList.toggle("active", b.dataset.split === trendsSplit));
+    applySplitVisibility();
   }
 
   async function loadTrendsData() {
@@ -1375,8 +1421,12 @@
       }
       for (const arr of grouped.values()) arr.sort((a, b) => a.date.localeCompare(b.date));
       trendsRaw[split] = grouped;
-    } else if (split === "station") {
-      trendsRaw.station = await (await fetch("data/station-history.json")).json();
+    } else if (split === "station" || split === "competition") {
+      // Competition derives chain-vs-cheapest premiums from per-station prices,
+      // so it shares the station-history payload with the "station" split.
+      if (!trendsRaw.station) {
+        trendsRaw.station = await (await fetch("data/station-history.json")).json();
+      }
     }
   }
 
@@ -1389,8 +1439,13 @@
     const label = document.getElementById("trends-entity-label");
     const netMS = document.getElementById("trends-network-multiselect");
     const regMS = document.getElementById("trends-region-multiselect");
+    const chainMS = document.getElementById("trends-chain-multiselect");
     const stationSearch = document.getElementById("trends-station-search");
     const stationSugg = document.getElementById("trends-station-suggestions");
+    const unitBar = document.getElementById("trends-comp-unit");
+
+    // The ct/% unit toggle only applies to the competition heatmap.
+    unitBar.classList.toggle("hidden", trendsSplit !== "competition");
 
     if (trendsSplit === "overall") {
       picker.classList.add("hidden");
@@ -1401,6 +1456,7 @@
     // Hide everything, then reveal the one for the active split.
     netMS.classList.add("hidden");
     regMS.classList.add("hidden");
+    chainMS.classList.add("hidden");
     stationSearch.classList.add("hidden");
     stationSugg.classList.add("hidden");
 
@@ -1433,7 +1489,34 @@
       stationSearch.classList.remove("hidden");
       const meta = trendsEntity ? trendsRaw.station.stations[trendsEntity] : null;
       stationSearch.value = meta ? `${meta.company} — ${meta.address}` : "";
+    } else if (trendsSplit === "competition") {
+      label.textContent = "Tinklas:";
+      chainMS.classList.remove("hidden");
+      if (!trendsChainMS) {
+        const items = buildChainItems();
+        // Default to the 10 biggest networks; the user can add any/all of them.
+        const topN = new Set(items.slice(0, 10).map(it => it.value));
+        trendsSelectedChains = topN;
+        trendsChainMS = initMultiSelect("trends-chain-multiselect", items, (sel) => {
+          trendsSelectedChains = sel;
+          computeAndRender();
+        }, { initialChecked: topN });
+      }
     }
+  }
+
+  // Chain picker items for the competition split, built straight from the
+  // station-history payload (ranked by number of stations in the chain).
+  function buildChainItems() {
+    const counts = new Map();
+    for (const s of Object.values(trendsRaw.station.stations)) {
+      counts.set(s.company, (counts.get(s.company) || 0) + 1);
+    }
+    const items = [...counts.entries()].map(([value, count]) => ({
+      value, count, label: `${escapeText(value)} <span class="entity-count">(${count})</span>`,
+    }));
+    items.sort((a, b) => b.count - a.count || a.value.localeCompare(b.value, "lt"));
+    return items;
   }
 
   // `trendsEntitiesData` holds [{label, rows}] for multi-entity views
@@ -1477,8 +1560,219 @@
           }));
         }
       }
+    } else if (trendsSplit === "competition") {
+      trendsEntitiesData = computeCompetitionSeries();
+      const longest = trendsEntitiesData.reduce((best, e) => e.rows.length > (best?.rows.length || 0) ? e : best, null);
+      trendsData = longest ? longest.rows.map(r => ({ date: r.date, stats: {} })) : [];
     }
     renderTrendsChartAndTable();
+  }
+
+  // Competition view: for each selected chain, how far its daily MEDIAN price
+  // sits ABOVE OR BELOW the national average (median across all stations) that
+  // day. Negative = cheaper than the market (green), ~0 = at the market (white),
+  // positive = pricier (red). Computed for all three fuels so switching the fuel
+  // tab is a pure re-render.
+  function computeCompetitionSeries() {
+    const sd = trendsRaw.station;
+    if (!sd) return [];
+    const FUELS = [["petrol95", "p95"], ["diesel", "diesel"], ["lpg", "lpg"]];
+    const dates = sd.dates;
+    const stations = Object.values(sd.stations);
+    const median = (arr) => arr.length ? arr[Math.floor((arr.length - 1) / 2)] : null;
+
+    // National average price (median across every station) per fuel per day.
+    const natMed = {};
+    for (const [fk, ak] of FUELS) {
+      natMed[fk] = dates.map((_, i) => {
+        const vals = [];
+        for (const s of stations) { const v = s[ak][i]; if (v) vals.push(v); }
+        vals.sort((a, b) => a - b);
+        return median(vals);
+      });
+    }
+
+    const byChain = new Map();
+    for (const s of stations) {
+      if (!byChain.has(s.company)) byChain.set(s.company, []);
+      byChain.get(s.company).push(s);
+    }
+    const chains = [...byChain.keys()]
+      .filter(c => !trendsSelectedChains || trendsSelectedChains.has(c))
+      .sort((a, b) => a.localeCompare(b, "lt"));
+
+    return chains.map(co => ({
+      label: co,
+      rows: dates.map((d, i) => {
+        const stats = {};
+        for (const [fk, ak] of FUELS) {
+          const nat = natMed[fk][i];
+          if (nat == null) continue;
+          const vals = byChain.get(co).map(s => s[ak][i]).filter(v => v).sort((a, b) => a - b);
+          if (vals.length === 0) continue;
+          const dev = median(vals) - nat; // €/L vs the national average (signed)
+          // `avg` is the absolute deviation in €; `pct` is the same relative to
+          // the average, so the heatmap/verdict can switch units freely.
+          stats[fk] = { avg: dev, pct: nat ? dev / nat : null };
+        }
+        return Object.keys(stats).length ? { date: d, stats } : null;
+      }).filter(Boolean),
+    })).filter(e => e.rows.length > 0);
+  }
+
+  // Renders the plain-language verdict above the competition chart. Pass null
+  // (any non-competition view) to hide it.
+  function renderCompetitionNote(fuelKey) {
+    const el = document.getElementById("trends-competition-note");
+    if (!fuelKey || !Array.isArray(trendsEntitiesData) || trendsEntitiesData.length === 0) {
+      el.classList.add("hidden");
+      el.innerHTML = "";
+      return;
+    }
+
+    const val = (s) => compUnit === "pct" ? s.pct : s.avg; // fraction either way
+    const U = compUnit === "pct" ? "%" : "ct";
+    const eps = compUnit === "pct" ? 0.005 : 0.01; // "no change" band (0.5 pp / 1 ct)
+    const fmt = (x) => (x * 100).toFixed(1); // fraction → ct or percentage points
+    const winAvg = (arr, from, len) => {
+      const sl = arr.slice(from, from + len);
+      return sl.reduce((s, v) => s + v, 0) / sl.length;
+    };
+
+    // Per-date average DISTANCE from the market average across the shown chains
+    // (absolute deviation). Smaller = networks cluster near the market price.
+    const perDate = new Map();
+    for (const e of trendsEntitiesData) {
+      for (const r of e.rows) {
+        const s = r.stats[fuelKey];
+        if (!s || val(s) == null) continue;
+        if (!perDate.has(r.date)) perDate.set(r.date, []);
+        perDate.get(r.date).push(Math.abs(val(s)));
+      }
+    }
+    if (perDate.size === 0) { el.classList.add("hidden"); el.innerHTML = ""; return; }
+    const dates = [...perDate.keys()].sort();
+    const avgSeries = dates.map(d => {
+      const a = perDate.get(d);
+      return a.reduce((s, v) => s + v, 0) / a.length;
+    });
+
+    // Compare the first vs last window of days rather than raw endpoints:
+    // daily prices swing on a weekly (weekend) cycle, so two single days can
+    // disagree purely by phase. Window averaging gives a robust trend read.
+    const w = Math.max(1, Math.min(5, Math.floor(avgSeries.length / 3)));
+    const firstAvg = winAvg(avgSeries, 0, w);
+    const lastAvg = winAvg(avgSeries, avgSeries.length - w, w);
+    const change = lastAvg - firstAvg; // +ve = spread grew = less convergence
+
+    let verdict, cls;
+    if (change <= -eps) {
+      verdict = `Tinklų kainos PRIARTĖJO prie rinkos vidurkio (vid. skirtumas ${fmt(firstAvg)} → ${fmt(lastAvg)} ${U}) — kainos labiau suvienodėjo, t. y. konkurencija STIPRĖJA.`;
+      cls = "up";
+    } else if (change >= eps) {
+      verdict = `Tinklų kainos NUTOLO nuo rinkos vidurkio (vid. skirtumas ${fmt(firstAvg)} → ${fmt(lastAvg)} ${U}) — kainų skirtumai padidėjo, konkurencijos stiprėjimo nematyti.`;
+      cls = "down";
+    } else {
+      verdict = `Tinklų atstumas iki rinkos vidurkio beveik nepakito (${fmt(firstAvg)} → ${fmt(lastAvg)} ${U}) — aiškaus konkurencijos pokyčio nematyti.`;
+      cls = "flat";
+    }
+
+    const periodLabel = `${dates[0].slice(5)}–${dates[dates.length - 1].slice(5)}`;
+    el.classList.remove("hidden");
+    el.innerHTML = `
+      <div class="comp-verdict comp-${cls}">${verdict}</div>
+      <div class="comp-method">Žemėlapyje – kiek kiekvieno tinklo savaitės <b>mediana</b> skiriasi nuo <b>Lietuvos vidurkio</b> (${FUEL_LABELS[fuelKey]}, ${U}). Žalia = pigiau už vidurkį, balta ≈ vidurkis, raudona = brangiau. ${periodLabel}.</div>`;
+  }
+
+  // Heatmap: networks (rows) × weeks (columns), cell colour = how far that
+  // network's weekly median sat above (red) or below (green) the national
+  // average, white ≈ at the average. A row drifting toward white over the weeks
+  // is a network converging on the market price.
+  function renderCompetitionHeatmap(fuelKey) {
+    const el = document.getElementById("trends-chart");
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    if (!Array.isArray(trendsEntitiesData) || trendsEntitiesData.length === 0) {
+      el.innerHTML = `<div style="text-align:center;color:var(--text-dim);padding:20px">Pasirinkite bent vieną tinklą</div>`;
+      return;
+    }
+
+    const dayIndex = (d) => { const [y, m, da] = d.split("-").map(Number); return Date.UTC(y, m - 1, da) / 86400000; };
+    const allDates = [...new Set(trendsEntitiesData.flatMap(e => e.rows.map(r => r.date)))].sort();
+    if (allDates.length === 0) { el.innerHTML = ""; return; }
+    const base = dayIndex(allDates[0]);
+    const weekOf = (d) => Math.floor((dayIndex(d) - base) / 7);
+    const weeks = [...new Set(allDates.map(weekOf))].sort((a, b) => a - b);
+    const weekLabel = {};
+    for (const d of allDates) { const wk = weekOf(d); if (weekLabel[wk] == null) weekLabel[wk] = d; }
+
+    const val = (s) => compUnit === "pct" ? s.pct : s.avg; // signed, fraction either way
+    const U = compUnit === "pct" ? "%" : "ct";
+    // ct shows whole cents; % shows one decimal. Signed: "+5" above avg, "-3" below.
+    const mag = (v) => compUnit === "pct" ? (v * 100).toFixed(1) : String(Math.round(v * 100));
+    const cellText = (v) => (v > 0 ? "+" : "") + mag(v);
+
+    // Build one deviation-per-week value per network, plus a row mean for sorting.
+    const rows = trendsEntitiesData.map(e => {
+      const buckets = new Map(); // week -> [deviations]
+      for (const r of e.rows) {
+        const s = r.stats[fuelKey];
+        if (!s || val(s) == null) continue;
+        const wk = weekOf(r.date);
+        if (!buckets.has(wk)) buckets.set(wk, []);
+        buckets.get(wk).push(val(s));
+      }
+      const cells = weeks.map(wk => {
+        const a = buckets.get(wk);
+        return a && a.length ? a.reduce((s, v) => s + v, 0) / a.length : null;
+      });
+      const present = cells.filter(v => v != null);
+      const mean = present.length ? present.reduce((s, v) => s + v, 0) / present.length : Infinity;
+      return { label: e.label, cells, mean };
+    }).filter(r => r.cells.some(v => v != null));
+
+    // Priciest (above average) networks at the top, cheapest at the bottom.
+    rows.sort((a, b) => b.mean - a.mean);
+    const maxAbs = Math.max(...rows.flatMap(r => r.cells.filter(v => v != null).map(Math.abs)), 0.001);
+
+    // Diverging scale: green (below avg) → white/neutral (at avg) → red (above).
+    const swatch = (t) => { // t in [-1, 1]
+      const m = Math.min(1, Math.abs(t));
+      const hue = t >= 0 ? 8 : 145; // red vs green
+      const L = isDark ? 26 + m * 20 : 97 - m * 45;
+      const S = isDark ? m * 60 : m * 78;
+      return { bg: `hsl(${hue}, ${S}%, ${L}%)`, L };
+    };
+    const cellColor = (v) => {
+      const { bg, L } = swatch(v / maxAbs);
+      const fg = isDark ? "#eee" : (L < 60 ? "#fff" : "#222");
+      return { bg, fg };
+    };
+
+    const headCells = weeks.map(wk => `<th>${weekLabel[wk].slice(5)}</th>`).join("");
+    const bodyRows = rows.map(r => {
+      const tds = r.cells.map(v => {
+        if (v == null) return `<td class="heat-empty">·</td>`;
+        const { bg, fg } = cellColor(v);
+        return `<td style="background:${bg};color:${fg}">${cellText(v)}</td>`;
+      }).join("");
+      return `<tr><th class="heat-row-label" title="${escapeAttr(r.label)}">${escapeText(r.label)}</th>${tds}</tr>`;
+    }).join("");
+
+    // Diverging colour-scale legend: −max (green) … 0 … +max (red).
+    const legendStops = [-1, -0.5, 0, 0.5, 1].map(t => swatch(t).bg).join(", ");
+
+    el.innerHTML = `
+      <div class="comp-heat-wrap">
+        <table class="comp-heat">
+          <thead><tr><th class="heat-corner">Tinklas</th>${headCells}</tr></thead>
+          <tbody>${bodyRows}</tbody>
+        </table>
+      </div>
+      <div class="comp-heat-legend">
+        <span>−${mag(maxAbs)} ${U}<br>pigiau</span>
+        <span class="comp-heat-bar" style="background:linear-gradient(to right, ${legendStops})"></span>
+        <span>+${mag(maxAbs)} ${U}<br>brangiau</span>
+      </div>`;
   }
 
   function renderTrendsChartAndTable() {
@@ -1489,18 +1783,31 @@
       document.getElementById("trends-chart").innerHTML =
         `<div style="text-align:center;color:var(--text-dim);padding:20px">${msg}</div>`;
       document.getElementById("trends-table").innerHTML = "";
+      document.getElementById("trends-competition-note").classList.add("hidden");
       return;
     }
     const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-    const showAll = trendsFuel === "all";
+    // Competition is always a single-fuel view (premiums for one fuel at a time).
+    const showAll = trendsFuel === "all" && trendsSplit !== "competition";
+    const compFuel = trendsFuel === "all" ? "petrol95" : trendsFuel;
     const fuels = showAll
       ? [
           { key: "petrol95", label: "95 benzinas", color: isDark ? "#e0e0e0" : "#111111" },
           { key: "diesel", label: "Dyzelinas", color: isDark ? "#888888" : "#666666" },
           { key: "lpg", label: "SND", color: isDark ? "#555555" : "#bbbbbb" },
         ]
-      : [{ key: trendsFuel, label: FUEL_LABELS[trendsFuel], color: isDark ? "#e0e0e0" : "#111111" }];
+      : [{ key: trendsSplit === "competition" ? compFuel : trendsFuel,
+          label: FUEL_LABELS[trendsSplit === "competition" ? compFuel : trendsFuel],
+          color: isDark ? "#e0e0e0" : "#111111" }];
 
+    if (trendsSplit === "competition") {
+      renderCompetitionNote(compFuel);
+      renderCompetitionHeatmap(compFuel);
+      document.getElementById("trends-table").innerHTML = "";
+      return;
+    }
+
+    renderCompetitionNote(null);
     renderTrendsChart(fuels, showAll);
     if (Array.isArray(trendsEntitiesData) && trendsEntitiesData.length > 0) {
       // Multi-entity tables would have one column per entity which is
@@ -1602,7 +1909,7 @@
     // or station sits relative to the whole market. Skipped in "all fuels"
     // mode because that view already has three lines per entity — adding
     // three more market-avg lines would be visual noise.
-    const showCompare = trendsSplit !== "overall" && !showAll && Array.isArray(trendsRaw.overall);
+    const showCompare = trendsSplit !== "overall" && trendsSplit !== "competition" && !showAll && Array.isArray(trendsRaw.overall);
     const compareSeries = {};
     if (showCompare) {
       for (const fuel of ["petrol95", "diesel", "lpg"]) compareSeries[fuel] = {};

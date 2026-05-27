@@ -221,6 +221,10 @@
 
     <!-- Price Trends View -->
     <div id="trends-view" class="side-view hidden">
+      <div id="trends-mode-tabs">
+        <button class="trends-mode-tab active" data-mode="prices">Kainos</button>
+        <button class="trends-mode-tab" data-mode="competition">Konkurencija</button>
+      </div>
       <div id="trends-fuel-tabs">
         <button class="trends-fuel-tab" data-fuel="all">Visi degalai</button>
         <button class="trends-fuel-tab active" data-fuel="petrol95">95 benzinas</button>
@@ -261,11 +265,31 @@
             <div class="multi-select-options"></div>
           </div>
         </div>
+        <div class="multi-select trends-multi hidden" id="trends-chain-multiselect">
+          <button class="multi-select-btn" type="button">
+            <span class="multi-select-label">Visi</span>
+            <span class="multi-select-arrow">▾</span>
+          </button>
+          <div class="multi-select-dropdown">
+            <div class="multi-select-actions">
+              <button type="button" data-action="all">Visi</button>
+              <button type="button" data-action="none">Joks</button>
+            </div>
+            <div class="multi-select-options"></div>
+          </div>
+        </div>
         <input type="text" id="trends-station-search" class="hidden" placeholder="Ieškoti degalinės (adresas, miestas, tinklas)…" autocomplete="off" />
         <div id="trends-station-suggestions" class="hidden"></div>
       </div>
-      <div id="trends-chart"></div>
-      <div id="trends-table"></div>
+      <div id="trends-comp-unit" class="hidden">
+        <button class="comp-unit-tab" data-unit="ct">centai</button>
+        <button class="comp-unit-tab active" data-unit="pct">%</button>
+      </div>
+      <div id="trends-scroll">
+        <div id="trends-competition-note" class="hidden"></div>
+        <div id="trends-chart"></div>
+        <div id="trends-table"></div>
+      </div>
     </div>
   </div>
 
