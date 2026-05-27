@@ -5,6 +5,8 @@
   const MAP_ZOOM = 8;
 
   let map, markerCluster, allStations, currentFuel = "petrol95", averages;
+  let recentDates = []; // dates aligned to station.recentPrices arrays
+  let recentAverages = null; // { petrol95: [...], diesel: [...], lpg: [...] } aligned to recentDates
   let geocache = {}; // id -> { lat, lng }
   let historyDates = [];
   // Optional per-fuel color range from ?colorRange=<json>, e.g.
@@ -272,6 +274,8 @@
 
       allStations = data.stations;
       averages = data.averages;
+      recentDates = data.recentDates || [];
+      recentAverages = data.recentAverages || null;
 
       // Set history select to match
       const histSelect = document.getElementById("history-select");
@@ -436,12 +440,78 @@
       ? `<div class="distance">${distance < 1 ? (distance * 1000).toFixed(0) + " m" : distance.toFixed(1) + " km"}</div>`
       : "";
 
+    const sparkline = renderPopupSparkline(station);
+
     return `<div class="station-popup">
       <h3>${station.company}</h3>
       <div class="address">${station.address}</div>
       <div class="company">${station.municipality}</div>
       ${distStr}
       <div class="prices">${priceRows}</div>
+      ${sparkline}
+    </div>`;
+  }
+
+  // Last-N-days price sparkline for the currently selected fuel.
+  // Hidden when viewing legacy history (those payloads don't carry
+  // recentPrices) or when the station has no data in the window.
+  function renderPopupSparkline(station) {
+    const series = station.recentPrices && station.recentPrices[currentFuel];
+    if (!series || !recentDates.length) return "";
+    const points = [];
+    for (let i = 0; i < series.length; i++) {
+      if (series[i] != null) points.push({ i, v: series[i] });
+    }
+    if (points.length < 2) return "";
+
+    // Overlay Lithuania-wide avg as a faint dashed comparison line.
+    const avgSeries = recentAverages && recentAverages[currentFuel];
+    const avgPoints = [];
+    if (avgSeries) {
+      for (let i = 0; i < avgSeries.length; i++) {
+        if (avgSeries[i] != null) avgPoints.push({ i, v: avgSeries[i] });
+      }
+    }
+
+    const W = 200, H = 44;
+    const padX = 4, padY = 8;
+    const plotW = W - padX * 2;
+    const plotH = H - padY * 2;
+
+    // Include avg in the y-range so the comparison line doesn't get clipped.
+    const allVals = points.map(p => p.v).concat(avgPoints.map(p => p.v));
+    const vMin = Math.min(...allVals);
+    const vMax = Math.max(...allVals);
+    const vRange = (vMax - vMin) || 0.001;
+    const iMin = 0;
+    const iMax = series.length - 1;
+    const iRange = (iMax - iMin) || 1;
+
+    const xOf = (i) => padX + ((i - iMin) / iRange) * plotW;
+    const yOf = (v) => padY + plotH - ((v - vMin) / vRange) * plotH;
+
+    const pathFor = (pts) => pts.map((p, k) =>
+      `${k === 0 ? "M" : "L"} ${xOf(p.i).toFixed(1)} ${yOf(p.v).toFixed(1)}`
+    ).join(" ");
+    const path = pathFor(points);
+    const avgPath = avgPoints.length >= 2 ? pathFor(avgPoints) : "";
+    const dots = points.map(p =>
+      `<circle cx="${xOf(p.i).toFixed(1)}" cy="${yOf(p.v).toFixed(1)}" r="1.5" fill="var(--text)"/>`
+    ).join("");
+
+    const firstDate = recentDates[points[0].i];
+    const lastDate = recentDates[points[points.length - 1].i];
+    const first = points[0].v.toFixed(3);
+    const last = points[points.length - 1].v.toFixed(3);
+
+    return `<div class="popup-spark">
+      <div class="popup-spark-label">${FUEL_LABELS[currentFuel]} • ${firstDate.slice(5)} – ${lastDate.slice(5)}</div>
+      <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" class="popup-spark-svg">
+        ${avgPath ? `<path d="${avgPath}" fill="none" stroke="var(--text-dim)" stroke-width="1" stroke-dasharray="2 2" stroke-linejoin="round" stroke-linecap="round" opacity="0.75"/>` : ""}
+        <path d="${path}" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+        ${dots}
+      </svg>
+      <div class="popup-spark-ends"><span>${first} €</span><span>${last} €</span></div>
     </div>`;
   }
 
@@ -712,7 +782,7 @@
       }
       // Re-render markers and trends to pick up new colors
       if (allStations) renderMarkers();
-      if (trendsData.length > 0) renderTrends();
+      if (trendsData.length > 0) renderTrendsChartAndTable();
     });
   }
 
@@ -856,27 +926,43 @@
   }
 
   // --- Multi-select dropdown ---
-  function initMultiSelect(containerId, items, onChangeCallback) {
+  // Options:
+  //   maxSelected:   number — block further selection past this count.
+  //                  Also hides the "Visi" button and changes the empty-label
+  //                  text since "all" isn't a valid state when capped.
+  //   initialChecked: Set<string> | null — initial selection.
+  //                   Defaults to "all checked" (legacy behavior) when omitted.
+  function initMultiSelect(containerId, items, onChangeCallback, options = {}) {
     const container = document.getElementById(containerId);
     const btn = container.querySelector(".multi-select-btn");
     const dropdown = container.querySelector(".multi-select-dropdown");
     const optionsDiv = container.querySelector(".multi-select-options");
     const labelSpan = container.querySelector(".multi-select-label");
+    const actionsDiv = container.querySelector(".multi-select-actions");
 
-    // Populate options — items can be strings or { value, label } objects
+    const maxSelected = options.maxSelected || null;
+    const initialChecked = options.initialChecked || null;
+
     optionsDiv.innerHTML = items.map(item => {
       const value = typeof item === "string" ? item : item.value;
       const label = typeof item === "string" ? item : item.label;
+      const checked = initialChecked == null ? true : initialChecked.has(value);
       return `<label class="multi-select-option">
-        <input type="checkbox" value="${value}" checked>
+        <input type="checkbox" value="${value.replace(/"/g, "&quot;")}"${checked ? " checked" : ""}>
         <span>${label}</span>
       </label>`;
     }).join("");
 
+    // When a max is set, "Visi" no longer makes sense — hide that action.
+    if (maxSelected && actionsDiv) {
+      const allBtn = actionsDiv.querySelector('button[data-action="all"]');
+      if (allBtn) allBtn.style.display = "none";
+    }
+
     function getSelected() {
       const checked = optionsDiv.querySelectorAll("input:checked");
       const all = optionsDiv.querySelectorAll("input");
-      if (checked.length === all.length) return null; // all selected
+      if (!maxSelected && checked.length === all.length) return null; // all selected sentinel
       return new Set([...checked].map(cb => cb.value));
     }
 
@@ -884,58 +970,77 @@
       const checked = optionsDiv.querySelectorAll("input:checked");
       const all = optionsDiv.querySelectorAll("input");
       if (checked.length === 0) {
-        labelSpan.textContent = "Nepasirinkta";
-      } else if (checked.length === all.length) {
+        labelSpan.textContent = maxSelected ? "Pasirinkti…" : "Nepasirinkta";
+      } else if (!maxSelected && checked.length === all.length) {
         labelSpan.textContent = "Visi";
       } else if (checked.length <= 2) {
         labelSpan.textContent = [...checked].map(cb => cb.value).join(", ");
       } else {
-        labelSpan.textContent = `${checked.length} iš ${all.length}`;
+        labelSpan.textContent = `${checked.length}${maxSelected ? "/" + maxSelected : " iš " + all.length}`;
       }
     }
 
-    // Toggle dropdown
+    // Disable unchecked boxes once the cap is hit so a user gets a clear
+    // signal rather than a silent click that does nothing.
+    function refreshDisabledAtCap() {
+      if (!maxSelected) return;
+      const checked = optionsDiv.querySelectorAll("input:checked");
+      const atCap = checked.length >= maxSelected;
+      optionsDiv.querySelectorAll("input").forEach(cb => {
+        cb.disabled = atCap && !cb.checked;
+      });
+    }
+
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
-      // Close other dropdowns
       document.querySelectorAll(".multi-select-dropdown.open").forEach(d => {
         if (d !== dropdown) d.classList.remove("open");
       });
       dropdown.classList.toggle("open");
     });
 
-    // Select all / none
     container.querySelectorAll(".multi-select-actions button").forEach(b => {
       b.addEventListener("click", (e) => {
         e.stopPropagation();
         const action = b.dataset.action;
         optionsDiv.querySelectorAll("input").forEach(cb => { cb.checked = action === "all"; });
+        refreshDisabledAtCap();
         updateLabel();
         onChangeCallback(getSelected());
       });
     });
 
-    // Checkbox change
-    optionsDiv.addEventListener("change", () => {
+    optionsDiv.addEventListener("change", (e) => {
+      // Enforce the cap on the latest click instead of silently allowing it.
+      if (maxSelected) {
+        const checked = optionsDiv.querySelectorAll("input:checked");
+        if (checked.length > maxSelected && e.target.checked) {
+          e.target.checked = false;
+          return;
+        }
+      }
+      refreshDisabledAtCap();
       updateLabel();
       onChangeCallback(getSelected());
     });
 
-    // Close on outside click
     document.addEventListener("click", (e) => {
       if (!container.contains(e.target)) {
         dropdown.classList.remove("open");
       }
     });
 
-    // Return helpers for state restore
+    refreshDisabledAtCap();
+    updateLabel();
+
     return {
       setSelected(values) {
-        if (!values) return; // keep all checked
+        if (!values) return;
         const valSet = new Set(values);
         optionsDiv.querySelectorAll("input").forEach(cb => {
           cb.checked = valSet.has(cb.value);
         });
+        refreshDisabledAtCap();
         updateLabel();
         onChangeCallback(getSelected());
       }
@@ -1142,7 +1247,31 @@
   }
 
   // --- Price Trends ---
+  // The trends panel supports four "splits": overall (entire country), by
+  // gas-station network, by region, and by individual station. Each split
+  // has its own data file; we lazy-load it on first use and cache it.
+  //
+  // The render path is deliberately uniform: whichever split is active,
+  // we compute `trendsData = [{date, stats: {petrol95, diesel, lpg}}, ...]`
+  // for the chosen entity, then call the same chart/table renderers.
   let trendsFuel = "petrol95";
+  let trendsSplit = "overall"; // "overall" | "network" | "region" | "station"
+  let trendsEntity = null;     // station id (single, for "station" split)
+  let trendsSelectedNetworks = null; // Set<string> | null (null = all selected)
+  let trendsSelectedRegions = null;  // Set<string> | null
+  let trendsNetworkMS = null; // multi-select instance (lazy-created)
+  let trendsRegionMS = null;
+
+  // Raw cached payloads, populated on demand by ensureSplitData().
+  const trendsRaw = {
+    overall: null,   // [{date, petrol95, diesel, lpg}, ...]
+    network: null,   // Map<network, [{date, petrol95, diesel, lpg}, ...]>
+    region:  null,   // Map<region,  [{date, petrol95, diesel, lpg}, ...]>
+    station: null,   // { dates: [...], stations: { id: { company, address, municipality, p95:[], diesel:[], lpg:[] } } }
+  };
+
+  // Derived view, refreshed every time the user changes split/entity.
+  let trendsData = []; // [{ date, stats: { petrol95: {min,avg,median,max}, ... } }]
 
   function setupTrendsView() {
     document.getElementById("trends-btn").addEventListener("click", () => {
@@ -1150,8 +1279,9 @@
       document.querySelectorAll(".trends-fuel-tab").forEach(b => {
         b.classList.toggle("active", b.dataset.fuel === trendsFuel);
       });
-      loadTrendsData();
+      applySplitVisibility();
       openSidePanel("trends");
+      loadTrendsData();
     });
 
     document.querySelectorAll(".trends-fuel-tab").forEach(btn => {
@@ -1159,43 +1289,208 @@
         document.querySelectorAll(".trends-fuel-tab").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
         trendsFuel = btn.dataset.fuel;
-        renderTrends();
+        // "Visi degalai" combines all fuels into one view; splits and the
+        // entity picker aren't meaningful there, so hide them and snap
+        // back to overall.
+        if (trendsFuel === "all") {
+          if (trendsSplit !== "overall") {
+            trendsSplit = "overall";
+            document.querySelectorAll(".trends-split-tab").forEach(b => {
+              b.classList.toggle("active", b.dataset.split === "overall");
+            });
+            loadTrendsData();
+          } else {
+            applySplitVisibility();
+            renderTrendsChartAndTable();
+          }
+        } else {
+          applySplitVisibility();
+          renderTrendsChartAndTable();
+        }
       });
     });
+
+    document.querySelectorAll(".trends-split-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const split = btn.dataset.split;
+        if (split === trendsSplit) return;
+        document.querySelectorAll(".trends-split-tab").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        trendsSplit = split;
+        // Reset the station-specific selection but keep network/region picks
+        // sticky across split toggles so the user doesn't lose them.
+        trendsEntity = null;
+        loadTrendsData();
+      });
+    });
+
+    setupStationSearch();
   }
 
-  let trendsData = []; // [{ date, stats: { petrol95: {min,avg,median,max}, ... } }]
+  function applySplitVisibility() {
+    const splitTabs = document.getElementById("trends-split-tabs");
+    splitTabs.classList.toggle("hidden", trendsFuel === "all");
+    if (trendsFuel === "all") {
+      // Picker is split-driven; if splits are hidden, hide the picker too.
+      document.getElementById("trends-entity-picker").classList.add("hidden");
+    }
+  }
 
   async function loadTrendsData() {
-    if (trendsData.length > 0) {
-      renderTrends();
+    showLoading("Kraunama...");
+    try {
+      await ensureSplitData(trendsSplit);
+      // Any non-overall split overlays the Lithuania-wide avg as a faint
+      // comparison line, so we always need overall data alongside it.
+      if (trendsSplit !== "overall") await ensureSplitData("overall");
+    } catch (e) {
+      console.error(e);
+      showLoading("Nepavyko užkrauti duomenų");
       return;
     }
-    const chartEl = document.getElementById("trends-chart");
-    chartEl.innerHTML = '<div style="text-align:center;color:var(--text-dim);padding:20px">Kraunama...</div>';
-
-    try {
-      const resp = await fetch("data/price-trends.jsonl");
-      const text = await resp.text();
-      trendsData = text.trim().split("\n")
-        .filter(line => line.length > 0)
-        .map(line => {
-          const entry = JSON.parse(line);
-          return {
-            date: entry.date,
-            stats: { petrol95: entry.petrol95, diesel: entry.diesel, lpg: entry.lpg },
-          };
-        })
-        .sort((a, b) => a.date.localeCompare(b.date));
-    } catch {
-      trendsData = [];
-    }
-    renderTrends();
+    refreshEntityPicker();
+    computeAndRender();
   }
 
-  function renderTrends() {
-    if (trendsData.length === 0) return;
+  function showLoading(msg) {
+    document.getElementById("trends-chart").innerHTML =
+      `<div style="text-align:center;color:var(--text-dim);padding:20px">${msg}</div>`;
+    document.getElementById("trends-table").innerHTML = "";
+  }
 
+  async function ensureSplitData(split) {
+    if (trendsRaw[split]) return;
+    if (split === "overall") {
+      const text = await (await fetch("data/price-trends.jsonl")).text();
+      trendsRaw.overall = parseJsonl(text);
+    } else if (split === "network" || split === "region") {
+      const file = split === "network" ? "trends-by-network.jsonl" : "trends-by-region.jsonl";
+      const text = await (await fetch(`data/${file}`)).text();
+      const rows = parseJsonl(text);
+      const grouped = new Map();
+      const groupKey = split === "network" ? "network" : "region";
+      for (const r of rows) {
+        if (!grouped.has(r[groupKey])) grouped.set(r[groupKey], []);
+        grouped.get(r[groupKey]).push(r);
+      }
+      for (const arr of grouped.values()) arr.sort((a, b) => a.date.localeCompare(b.date));
+      trendsRaw[split] = grouped;
+    } else if (split === "station") {
+      trendsRaw.station = await (await fetch("data/station-history.json")).json();
+    }
+  }
+
+  function parseJsonl(text) {
+    return text.trim().split("\n").filter(l => l).map(JSON.parse);
+  }
+
+  function refreshEntityPicker() {
+    const picker = document.getElementById("trends-entity-picker");
+    const label = document.getElementById("trends-entity-label");
+    const netMS = document.getElementById("trends-network-multiselect");
+    const regMS = document.getElementById("trends-region-multiselect");
+    const stationSearch = document.getElementById("trends-station-search");
+    const stationSugg = document.getElementById("trends-station-suggestions");
+
+    if (trendsSplit === "overall") {
+      picker.classList.add("hidden");
+      return;
+    }
+    picker.classList.remove("hidden");
+
+    // Hide everything, then reveal the one for the active split.
+    netMS.classList.add("hidden");
+    regMS.classList.add("hidden");
+    stationSearch.classList.add("hidden");
+    stationSugg.classList.add("hidden");
+
+    if (trendsSplit === "network") {
+      label.textContent = "Tinklas:";
+      netMS.classList.remove("hidden");
+      if (!trendsNetworkMS) {
+        const items = buildEntityItems(trendsRaw.network);
+        const top3 = new Set(items.slice(0, 3).map(it => it.value));
+        trendsSelectedNetworks = top3;
+        trendsNetworkMS = initMultiSelect("trends-network-multiselect", items, (sel) => {
+          trendsSelectedNetworks = sel;
+          computeAndRender();
+        }, { maxSelected: 3, initialChecked: top3 });
+      }
+    } else if (trendsSplit === "region") {
+      label.textContent = "Regionas:";
+      regMS.classList.remove("hidden");
+      if (!trendsRegionMS) {
+        const items = buildEntityItems(trendsRaw.region);
+        const top3 = new Set(items.slice(0, 3).map(it => it.value));
+        trendsSelectedRegions = top3;
+        trendsRegionMS = initMultiSelect("trends-region-multiselect", items, (sel) => {
+          trendsSelectedRegions = sel;
+          computeAndRender();
+        }, { maxSelected: 3, initialChecked: top3 });
+      }
+    } else if (trendsSplit === "station") {
+      label.textContent = "Degalinė:";
+      stationSearch.classList.remove("hidden");
+      const meta = trendsEntity ? trendsRaw.station.stations[trendsEntity] : null;
+      stationSearch.value = meta ? `${meta.company} — ${meta.address}` : "";
+    }
+  }
+
+  // `trendsEntitiesData` holds [{label, rows}] for multi-entity views
+  // (network/region). For overall and station views it's null and the
+  // chart falls back to the single-series `trendsData`.
+  let trendsEntitiesData = null;
+
+  function computeAndRender() {
+    trendsData = [];
+    trendsEntitiesData = null;
+    if (trendsSplit === "overall") {
+      const rows = trendsRaw.overall || [];
+      trendsData = rows.map(r => ({
+        date: r.date,
+        stats: { petrol95: r.petrol95, diesel: r.diesel, lpg: r.lpg },
+      })).sort((a, b) => a.date.localeCompare(b.date));
+    } else if (trendsSplit === "network" || trendsSplit === "region") {
+      const grouped = trendsRaw[trendsSplit];
+      const selected = trendsSplit === "network" ? trendsSelectedNetworks : trendsSelectedRegions;
+      const keys = [...grouped.keys()].sort((a, b) => a.localeCompare(b, "lt"));
+      const active = keys.filter(k => !selected || selected.has(k));
+      trendsEntitiesData = active.map(k => ({
+        label: k,
+        rows: (grouped.get(k) || []).map(r => ({
+          date: r.date,
+          stats: { petrol95: r.petrol95, diesel: r.diesel, lpg: r.lpg },
+        })),
+      }));
+      // Use the longest series as the date axis backbone.
+      const longest = trendsEntitiesData.reduce((best, e) => e.rows.length > (best?.rows.length || 0) ? e : best, null);
+      trendsData = longest ? longest.rows.map(r => ({ date: r.date, stats: {} })) : [];
+    } else if (trendsSplit === "station") {
+      if (trendsEntity && trendsRaw.station) {
+        const s = trendsRaw.station.stations[trendsEntity];
+        if (s) {
+          const dates = trendsRaw.station.dates;
+          const collapse = (v) => v == null ? null : { min: v, avg: v, median: v, max: v };
+          trendsData = dates.map((d, i) => ({
+            date: d,
+            stats: { petrol95: collapse(s.p95[i]), diesel: collapse(s.diesel[i]), lpg: collapse(s.lpg[i]) },
+          }));
+        }
+      }
+    }
+    renderTrendsChartAndTable();
+  }
+
+  function renderTrendsChartAndTable() {
+    if (trendsData.length === 0) {
+      const msg = trendsSplit === "station" && !trendsEntity
+        ? "Pasirinkite degalinę"
+        : "Nėra duomenų";
+      document.getElementById("trends-chart").innerHTML =
+        `<div style="text-align:center;color:var(--text-dim);padding:20px">${msg}</div>`;
+      document.getElementById("trends-table").innerHTML = "";
+      return;
+    }
     const isDark = document.documentElement.getAttribute("data-theme") === "dark";
     const showAll = trendsFuel === "all";
     const fuels = showAll
@@ -1207,7 +1502,86 @@
       : [{ key: trendsFuel, label: FUEL_LABELS[trendsFuel], color: isDark ? "#e0e0e0" : "#111111" }];
 
     renderTrendsChart(fuels, showAll);
-    renderTrendsTable(fuels, showAll);
+    if (Array.isArray(trendsEntitiesData) && trendsEntitiesData.length > 0) {
+      // Multi-entity tables would have one column per entity which is
+      // unreadable at typical widths. The chart legend already names them.
+      document.getElementById("trends-table").innerHTML = "";
+    } else {
+      renderTrendsTable(fuels, showAll);
+    }
+  }
+
+  function setupStationSearch() {
+    const input = document.getElementById("trends-station-search");
+    const sugg = document.getElementById("trends-station-suggestions");
+    let activeTimer = null;
+
+    input.addEventListener("input", () => {
+      clearTimeout(activeTimer);
+      activeTimer = setTimeout(() => {
+        const q = input.value.trim().toLowerCase();
+        if (!q || !trendsRaw.station) {
+          sugg.classList.add("hidden");
+          sugg.innerHTML = "";
+          return;
+        }
+        const matches = [];
+        for (const [id, s] of Object.entries(trendsRaw.station.stations)) {
+          const hay = `${s.company} ${s.address} ${s.municipality}`.toLowerCase();
+          if (hay.includes(q)) {
+            matches.push({ id, ...s });
+            if (matches.length >= 25) break;
+          }
+        }
+        if (matches.length === 0) {
+          sugg.innerHTML = `<div class="trends-station-sugg-item" style="color:var(--text-muted)">Nieko nerasta</div>`;
+        } else {
+          sugg.innerHTML = matches.map(m =>
+            `<div class="trends-station-sugg-item" data-id="${escapeAttr(m.id)}">
+               <div>${escapeText(m.company)}</div>
+               <div class="suggestion-secondary">${escapeText(m.address)}, ${escapeText(m.municipality || "")}</div>
+             </div>`
+          ).join("");
+          sugg.querySelectorAll(".trends-station-sugg-item[data-id]").forEach(el => {
+            el.addEventListener("click", () => {
+              trendsEntity = el.dataset.id;
+              const meta = trendsRaw.station.stations[trendsEntity];
+              input.value = meta ? `${meta.company} — ${meta.address}` : "";
+              sugg.classList.add("hidden");
+              computeAndRender();
+            });
+          });
+        }
+        sugg.classList.remove("hidden");
+      }, 150);
+    });
+
+    input.addEventListener("focus", () => {
+      if (sugg.children.length > 0) sugg.classList.remove("hidden");
+    });
+    document.addEventListener("click", (e) => {
+      if (!input.contains(e.target) && !sugg.contains(e.target)) {
+        sugg.classList.add("hidden");
+      }
+    });
+  }
+
+  function escapeAttr(s) { return String(s).replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+  function escapeText(s) { return String(s).replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+
+  // Build {value, label, count} items sorted by station count descending.
+  // The count is taken from the most recent date a group appears in, which
+  // is what "most gas stations" intuitively means to the user. Ties break
+  // alphabetically so the list is stable day-to-day.
+  function buildEntityItems(grouped) {
+    const items = [];
+    for (const [key, rows] of grouped.entries()) {
+      const latest = rows.reduce((b, r) => !b || r.date > b.date ? r : b, null);
+      const count = latest && typeof latest.count === "number" ? latest.count : 0;
+      items.push({ value: key, label: `${escapeText(key)} <span class="entity-count">(${count})</span>`, count });
+    }
+    items.sort((a, b) => b.count - a.count || a.value.localeCompare(b.value, "lt"));
+    return items;
   }
 
   function renderTrendsChart(fuels, showAll) {
@@ -1216,22 +1590,63 @@
       chartEl.innerHTML = '<div style="text-align:center;color:var(--text-dim);padding:20px">Reikia bent 2 dienų duomenų</div>';
       return;
     }
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
 
     const W = 720, H = 340;
     const pad = { top: 30, right: 20, bottom: 50, left: 60 };
     const plotW = W - pad.left - pad.right;
     const plotH = H - pad.top - pad.bottom;
 
+    // Overlay Lithuania's overall avg as a faint comparison line for any
+    // non-overall split so the user can always see where a network, region,
+    // or station sits relative to the whole market. Skipped in "all fuels"
+    // mode because that view already has three lines per entity — adding
+    // three more market-avg lines would be visual noise.
+    const showCompare = trendsSplit !== "overall" && !showAll && Array.isArray(trendsRaw.overall);
+    const compareSeries = {};
+    if (showCompare) {
+      for (const fuel of ["petrol95", "diesel", "lpg"]) compareSeries[fuel] = {};
+      for (const row of trendsRaw.overall) {
+        for (const fuel of ["petrol95", "diesel", "lpg"]) {
+          if (row[fuel] && typeof row[fuel].avg === "number") {
+            compareSeries[fuel][row.date] = row[fuel].avg;
+          }
+        }
+      }
+    }
+
+    // Multi-entity mode: network/region splits draw one avg line per selected
+    // entity instead of min/avg/max bands. Otherwise we'd need a separate chart
+    // per network which is worse UX than overlaying them.
+    const multiEntity = Array.isArray(trendsEntitiesData) && trendsEntitiesData.length > 0;
+
     // Collect all values for y-axis range
     let allVals = [];
-    for (const f of fuels) {
-      for (const d of trendsData) {
-        const s = d.stats[f.key];
-        if (!s) continue;
-        if (showAll) {
-          allVals.push(s.avg);
-        } else {
-          allVals.push(s.min, s.avg, s.median, s.max);
+    if (multiEntity) {
+      for (const entity of trendsEntitiesData) {
+        for (const r of entity.rows) {
+          for (const f of fuels) {
+            const s = r.stats[f.key];
+            if (s && typeof s.avg === "number") allVals.push(s.avg);
+          }
+        }
+      }
+    } else {
+      for (const f of fuels) {
+        for (const d of trendsData) {
+          const s = d.stats[f.key];
+          if (!s) continue;
+          if (showAll) {
+            allVals.push(s.avg);
+          } else {
+            allVals.push(s.min, s.avg, s.median, s.max);
+          }
+        }
+        if (showCompare) {
+          for (const d of trendsData) {
+            const v = compareSeries[f.key][d.date];
+            if (typeof v === "number") allVals.push(v);
+          }
         }
       }
     }
@@ -1293,65 +1708,130 @@
       ).join("");
     }
 
-    for (const f of fuels) {
-      if (showAll) {
-        // "All fuels" mode: just show avg line per fuel
+    // Distinct hue per entity for multi-entity mode. HSL spread around the
+    // wheel gives enough separation up to ~10–12 entities; beyond that lines
+    // start clashing but the dropdown allows users to narrow down.
+    const entityColor = (idx, total) =>
+      `hsl(${Math.round((idx * 360) / Math.max(total, 1))}, 65%, ${isDark ? 60 : 45}%)`;
+
+    // Always draw the market-avg comparison line first (when applicable) so
+    // it sits behind the entity series and acts as a reference baseline.
+    if (showCompare) {
+      const compareColor = fuels[0].color;
+      for (const f of fuels) {
         const pts = [];
         for (let i = 0; i < trendsData.length; i++) {
-          const s = trendsData[i].stats[f.key];
-          if (s) pts.push({ x: xPos(i), y: yPos(s.avg) });
+          const v = compareSeries[f.key][trendsData[i].date];
+          if (typeof v === "number") pts.push({ x: xPos(i), y: yPos(v) });
         }
-        lines += makeLine(pts, f.color, 2.5, null);
-        lines += makeDots(pts, f.color, 4);
-      } else {
-        // Single fuel mode: show min, average, max bands
-        const minPts = [], avgPts = [], maxPts = [];
-        for (let i = 0; i < trendsData.length; i++) {
-          const s = trendsData[i].stats[f.key];
-          if (!s) continue;
-          const x = xPos(i);
-          minPts.push({ x, y: yPos(s.min) });
-          avgPts.push({ x, y: yPos(s.avg) });
-          maxPts.push({ x, y: yPos(s.max) });
-        }
+        lines += `<g opacity="0.45">${makeLine(pts, multiEntity ? compareColor : f.color, 1.5, "2 3")}</g>`;
+      }
+    }
 
-        // Shaded area between min and max
-        if (minPts.length >= 2) {
-          const areaD = minPts.map((p, i) => `${i === 0 ? "M" : "L"} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(" ")
-            + [...maxPts].reverse().map(p => ` L ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join("") + " Z";
-          lines += `<path d="${areaD}" fill="${f.color}" fill-opacity="0.08"/>`;
-        }
+    if (multiEntity) {
+      // Build a date -> index lookup once so each entity can be projected
+      // onto the shared x-axis even if its series is sparser than the longest.
+      const dateToIdx = new Map();
+      trendsData.forEach((d, i) => dateToIdx.set(d.date, i));
 
-        // Min line (dashed, thin)
-        lines += makeLine(minPts, getCSSVar("--green"), 1.5, "4 3");
-        // Max line (dashed, thin)
-        lines += makeLine(maxPts, getCSSVar("--red"), 1.5, "4 3");
-        // Average line (solid, bold)
-        lines += makeLine(avgPts, f.color, 2.5, null);
-        lines += makeDots(avgPts, f.color, 4);
-        lines += makeDots(minPts, getCSSVar("--green"), 3);
-        lines += makeDots(maxPts, getCSSVar("--red"), 3);
+      trendsEntitiesData.forEach((entity, eIdx) => {
+        const color = entityColor(eIdx, trendsEntitiesData.length);
+        for (const f of fuels) {
+          const pts = [];
+          for (const row of entity.rows) {
+            const s = row.stats[f.key];
+            if (!s || typeof s.avg !== "number") continue;
+            const i = dateToIdx.get(row.date);
+            if (i == null) continue;
+            pts.push({ x: xPos(i), y: yPos(s.avg) });
+          }
+          // In "all fuels" mode, dash diesel and lpg differently so the same
+          // entity color can still be told apart across fuels.
+          const dash = !showAll ? null : f.key === "diesel" ? "5 3" : f.key === "lpg" ? "2 3" : null;
+          lines += makeLine(pts, color, 2, dash);
+        }
+      });
+    } else {
+      for (const f of fuels) {
+        if (showAll) {
+          const pts = [];
+          for (let i = 0; i < trendsData.length; i++) {
+            const s = trendsData[i].stats[f.key];
+            if (s) pts.push({ x: xPos(i), y: yPos(s.avg) });
+          }
+          lines += makeLine(pts, f.color, 2.5, null);
+          lines += makeDots(pts, f.color, 4);
+        } else {
+          const minPts = [], avgPts = [], maxPts = [];
+          for (let i = 0; i < trendsData.length; i++) {
+            const s = trendsData[i].stats[f.key];
+            if (!s) continue;
+            const x = xPos(i);
+            minPts.push({ x, y: yPos(s.min) });
+            avgPts.push({ x, y: yPos(s.avg) });
+            maxPts.push({ x, y: yPos(s.max) });
+          }
+          if (minPts.length >= 2) {
+            const areaD = minPts.map((p, i) => `${i === 0 ? "M" : "L"} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(" ")
+              + [...maxPts].reverse().map(p => ` L ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join("") + " Z";
+            lines += `<path d="${areaD}" fill="${f.color}" fill-opacity="0.08"/>`;
+          }
+          lines += makeLine(minPts, getCSSVar("--green"), 1.5, "4 3");
+          lines += makeLine(maxPts, getCSSVar("--red"), 1.5, "4 3");
+          lines += makeLine(avgPts, f.color, 2.5, null);
+          lines += makeDots(avgPts, f.color, 4);
+          lines += makeDots(minPts, getCSSVar("--green"), 3);
+          lines += makeDots(maxPts, getCSSVar("--red"), 3);
+        }
       }
     }
 
     // Legend
     let legend = "";
-    if (showAll) {
-      fuels.forEach((f, i) => {
-        const lx = pad.left + i * 130;
-        legend += `<rect x="${lx}" y="8" width="14" height="3" rx="1.5" fill="${f.color}"/>`;
-        legend += `<text x="${lx + 18}" y="13" fill="var(--text-dim)" font-size="11">${f.label}</text>`;
+    if (multiEntity) {
+      // One row per entity (max 3) plus the market-avg line entry. Easy to
+      // read since the cap keeps the chart sparse.
+      const items = trendsEntitiesData.map((e, i) => ({
+        color: entityColor(i, trendsEntitiesData.length), label: e.label, dash: null,
+      }));
+      if (showCompare) {
+        items.push({ color: fuels[0].color, label: "Lietuva (vidurkis)", dash: "2 3", opacity: 0.45 });
+      }
+      const perRow = 4;
+      const colW = (W - pad.left - pad.right) / perRow;
+      items.forEach((item, i) => {
+        const row = Math.floor(i / perRow);
+        const col = i % perRow;
+        const lx = pad.left + col * colW;
+        const ly = 10 + row * 12;
+        const dashAttr = item.dash ? ` stroke-dasharray="${item.dash}"` : "";
+        const op = item.opacity != null ? ` opacity="${item.opacity}"` : "";
+        legend += `<line x1="${lx}" y1="${ly}" x2="${lx + 14}" y2="${ly}" stroke="${item.color}" stroke-width="2"${dashAttr}${op}/>`;
+        legend += `<text x="${lx + 18}" y="${ly + 3}" fill="var(--text-dim)" font-size="11">${escapeText(item.label)}</text>`;
       });
     } else {
-      const items = [
-        { label: "Mažiausia", color: getCSSVar("--green"), dash: "4 3" },
-        { label: "Vidurkis", color: fuels[0].color, dash: null },
-        { label: "Didžiausia", color: getCSSVar("--red"), dash: "4 3" },
-      ];
-      items.forEach((item, i) => {
-        const lx = pad.left + i * 130;
-        const dashAttr = item.dash ? ` stroke-dasharray="${item.dash}"` : "";
-        legend += `<line x1="${lx}" y1="10" x2="${lx + 14}" y2="10" stroke="${item.color}" stroke-width="2"${dashAttr}/>`;
+      const legendItems = [];
+      if (showAll) {
+        fuels.forEach((f) => legendItems.push({ kind: "rect", color: f.color, label: f.label }));
+      } else {
+        legendItems.push(
+          { kind: "line", color: getCSSVar("--green"), dash: "4 3", label: "Mažiausia" },
+          { kind: "line", color: fuels[0].color, dash: null, label: trendsSplit === "station" ? "Degalinė" : "Vidurkis" },
+          { kind: "line", color: getCSSVar("--red"), dash: "4 3", label: "Didžiausia" },
+        );
+      }
+      if (showCompare) {
+        legendItems.push({ kind: "line", color: fuels[0].color, dash: "2 3", opacity: 0.35, label: "Lietuva (vidurkis)" });
+      }
+      legendItems.forEach((item, i) => {
+        const lx = pad.left + i * 110;
+        if (item.kind === "rect") {
+          legend += `<rect x="${lx}" y="8" width="14" height="3" rx="1.5" fill="${item.color}"/>`;
+        } else {
+          const dashAttr = item.dash ? ` stroke-dasharray="${item.dash}"` : "";
+          const op = item.opacity != null ? ` opacity="${item.opacity}"` : "";
+          legend += `<line x1="${lx}" y1="10" x2="${lx + 14}" y2="10" stroke="${item.color}" stroke-width="2"${dashAttr}${op}/>`;
+        }
         legend += `<text x="${lx + 18}" y="13" fill="var(--text-dim)" font-size="11">${item.label}</text>`;
       });
     }

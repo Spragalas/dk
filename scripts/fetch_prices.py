@@ -4,7 +4,6 @@
 import json
 import os
 import shutil
-import statistics
 import sys
 import tempfile
 from datetime import datetime, timedelta, timezone
@@ -150,32 +149,6 @@ def compute_averages(stations: list[dict]) -> dict:
     }
 
 
-def compute_trend_stats(stations: list[dict]) -> dict:
-    """Return {petrol95: {min,avg,median,max}, diesel: {...}, lpg: {...}}."""
-    result = {}
-    for fuel in ("petrol95", "diesel", "lpg"):
-        prices = [s["prices"][fuel] for s in stations if s["prices"].get(fuel) is not None]
-        if not prices:
-            result[fuel] = None
-            continue
-        result[fuel] = {
-            "min": round(min(prices), 3),
-            "avg": round(sum(prices) / len(prices), 3),
-            "median": round(statistics.median(prices), 3),
-            "max": round(max(prices), 3),
-        }
-    return result
-
-
-def append_trend_line(date_str: str, stations: list[dict]) -> None:
-    """Append one line to docs/data/price-trends.jsonl for this date."""
-    trends_path = DOCS_DATA / "price-trends.jsonl"
-    entry = {"date": date_str, **compute_trend_stats(stations)}
-    trends_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(trends_path, "a", encoding="utf-8") as f:
-        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
-
-
 def add_price_changes(stations: list[dict], changes: dict) -> list[dict]:
     """Add price change data to stations."""
     result = []
@@ -193,6 +166,54 @@ def update_history_index():
     ])
     with open(DOCS_DATA / "history-index.json", "w") as f:
         json.dump(dates, f)
+
+
+MINI_TREND_DAYS = 14
+
+
+def attach_recent_prices(stations: list[dict], current_date: str) -> tuple[list[dict], list[str], dict]:
+    """Embed last-N-days price history per station for popup sparklines.
+
+    Reads the trailing MINI_TREND_DAYS history files (including `current_date`)
+    and writes, per station, arrays aligned to a shared `recentDates` list.
+    Missing days for a station become null. Returning enriched stations and
+    the shared date list lets the frontend render a sparkline without any
+    extra fetch.
+
+    Also computes the Lithuania-wide average per fuel for each of those days
+    so the popup sparkline can overlay a market-comparison line.
+    """
+    dates = sorted(f.stem for f in HISTORY_DIR.glob("*.json") if f.stem <= current_date)
+    recent = dates[-MINI_TREND_DAYS:]
+    if not recent:
+        return stations, [], {fuel: [] for fuel in ("petrol95", "diesel", "lpg")}
+
+    per_day: dict[str, list[dict]] = {}
+    for d in recent:
+        with open(HISTORY_DIR / f"{d}.json", encoding="utf-8") as f:
+            hist = json.load(f)
+        per_day[d] = hist["stations"]
+    per_day_map = {d: {s["id"]: s["prices"] for s in per_day[d]} for d in recent}
+
+    # Country-wide averages per fuel, aligned to `recent`.
+    recent_averages = {fuel: [] for fuel in ("petrol95", "diesel", "lpg")}
+    for d in recent:
+        for fuel in recent_averages:
+            vals = [s["prices"].get(fuel) for s in per_day[d] if s["prices"].get(fuel) is not None]
+            recent_averages[fuel].append(round(sum(vals) / len(vals), 3) if vals else None)
+
+    enriched = []
+    for s in stations:
+        sid = s["id"]
+        recent_prices = {fuel: [] for fuel in ("petrol95", "diesel", "lpg")}
+        for d in recent:
+            day_prices = per_day_map[d].get(sid) or {}
+            for fuel in recent_prices:
+                recent_prices[fuel].append(day_prices.get(fuel))
+        entry = dict(s)
+        entry["recentPrices"] = recent_prices
+        enriched.append(entry)
+    return enriched, recent, recent_averages
 
 
 def main():
@@ -260,9 +281,6 @@ def main():
             json.dump(history_data, f, ensure_ascii=False, indent=2)
         print(f"Saved {history_file}")
 
-        append_trend_line(date_str, stations)
-        print(f"Appended trend line for {date_str}")
-
     # Load today's data
     with open(history_file, encoding="utf-8") as f:
         today_data = json.load(f)
@@ -283,12 +301,15 @@ def main():
 
     # Add price changes
     enriched = add_price_changes(stations, changes)
+    enriched, recent_dates, recent_averages = attach_recent_prices(enriched, date_str)
     averages = compute_averages(stations)
 
     frontend_data = {
         "date": date_str,
         "updatedAt": datetime.now(timezone.utc).isoformat(),
         "averages": averages,
+        "recentDates": recent_dates,
+        "recentAverages": recent_averages,
         "stations": enriched,
     }
 
@@ -316,6 +337,12 @@ def main():
     # Update history index
     update_history_index()
     print("Updated history-index.json")
+
+    # Rebuild all derived trend artifacts (overall/network/region/station).
+    # build_trends reads data/history/*.json from scratch each run, so it
+    # also self-heals if any of the jsonl files drifted.
+    import build_trends
+    build_trends.main()
 
 
 if __name__ == "__main__":

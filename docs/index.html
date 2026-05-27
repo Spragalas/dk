@@ -227,6 +227,43 @@
         <button class="trends-fuel-tab" data-fuel="diesel">Dyzelinas</button>
         <button class="trends-fuel-tab" data-fuel="lpg">SND</button>
       </div>
+      <div id="trends-split-tabs">
+        <button class="trends-split-tab active" data-split="overall">Bendrai</button>
+        <button class="trends-split-tab" data-split="network">Pagal tinklą</button>
+        <button class="trends-split-tab" data-split="region">Pagal regioną</button>
+        <button class="trends-split-tab" data-split="station">Pagal degalinę</button>
+      </div>
+      <div id="trends-entity-picker" class="hidden">
+        <label id="trends-entity-label">Tinklas:</label>
+        <div class="multi-select trends-multi hidden" id="trends-network-multiselect">
+          <button class="multi-select-btn" type="button">
+            <span class="multi-select-label">Visi</span>
+            <span class="multi-select-arrow">▾</span>
+          </button>
+          <div class="multi-select-dropdown">
+            <div class="multi-select-actions">
+              <button type="button" data-action="all">Visi</button>
+              <button type="button" data-action="none">Joks</button>
+            </div>
+            <div class="multi-select-options"></div>
+          </div>
+        </div>
+        <div class="multi-select trends-multi hidden" id="trends-region-multiselect">
+          <button class="multi-select-btn" type="button">
+            <span class="multi-select-label">Visi</span>
+            <span class="multi-select-arrow">▾</span>
+          </button>
+          <div class="multi-select-dropdown">
+            <div class="multi-select-actions">
+              <button type="button" data-action="all">Visi</button>
+              <button type="button" data-action="none">Joks</button>
+            </div>
+            <div class="multi-select-options"></div>
+          </div>
+        </div>
+        <input type="text" id="trends-station-search" class="hidden" placeholder="Ieškoti degalinės (adresas, miestas, tinklas)…" autocomplete="off" />
+        <div id="trends-station-suggestions" class="hidden"></div>
+      </div>
       <div id="trends-chart"></div>
       <div id="trends-table"></div>
     </div>

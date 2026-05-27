@@ -1030,6 +1030,136 @@ body {
   font-size: 11px;
 }
 
+.popup-spark {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+}
+
+.popup-spark-label {
+  color: var(--text-dim);
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+.popup-spark-svg {
+  width: 100%;
+  height: 44px;
+  display: block;
+}
+
+.popup-spark-ends {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Trends split + entity picker */
+#trends-split-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.trends-split-tab {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.trends-split-tab.active {
+  background: var(--accent);
+  color: var(--bg-panel);
+  border-color: var(--accent);
+}
+
+#trends-entity-picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+#trends-entity-picker.hidden,
+.trends-multi.hidden,
+#trends-station-search.hidden,
+#trends-station-suggestions.hidden,
+#trends-split-tabs.hidden {
+  display: none;
+}
+
+.trends-multi {
+  flex: 1;
+  min-width: 0;
+}
+
+.entity-count {
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+#trends-entity-picker label {
+  color: var(--text-dim);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+#trends-entity-select {
+  flex: 1;
+  background: var(--bg-input);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+#trends-station-search {
+  flex: 1;
+  background: var(--bg-input);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+#trends-station-suggestions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 1000;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.trends-station-sugg-item {
+  padding: 6px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.trends-station-sugg-item:hover {
+  background: var(--bg-card);
+}
+
+.trends-station-sugg-item:last-child {
+  border-bottom: none;
+}
+
 /* Marker cluster overrides for dark theme */
 .marker-cluster-small,
 .marker-cluster-medium,
