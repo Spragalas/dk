@@ -4155,5 +4155,17 @@
     "lng": 25.2804959,
     "display_name": "Kalvarijos, Verkių seniūnija, Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, 08420, Lietuva",
     "review": true
+  },
+  "tauragės-r-sav-|vaidatonių-k-1": {
+    "lat": 55.4812844,
+    "lng": 22.6579734,
+    "display_name": "Vaidatonių g., Vaidatoniai, Pakražančio seniūnija, Kelmės rajono savivaldybė, Šiaulių apskritis, 86304, Lietuva",
+    "review": false
+  },
+  "rietavo-sav-|rietavo-g-32-tverai": {
+    "lat": 55.7362443,
+    "lng": 22.1383099,
+    "display_name": "32, Rietavo g., Tverai, Tverų seniūnija, Rietavo savivaldybė, Telšių apskritis, 90282, Lietuva",
+    "review": false
   }
 }
