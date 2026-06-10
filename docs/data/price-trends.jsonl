@@ -41,3 +41,4 @@
 {"date": "2026-06-05", "petrol95": {"min": 1.62, "avg": 1.78, "median": 1.779, "max": 1.919}, "diesel": {"min": 1.69, "avg": 1.863, "median": 1.859, "max": 2.039}, "lpg": {"min": 0.72, "avg": 0.846, "median": 0.83, "max": 0.969}}
 {"date": "2026-06-08", "petrol95": {"min": 1.629, "avg": 1.756, "median": 1.749, "max": 1.909}, "diesel": {"min": 1.709, "avg": 1.841, "median": 1.827, "max": 2.039}, "lpg": {"min": 0.72, "avg": 0.844, "median": 0.83, "max": 0.969}}
 {"date": "2026-06-09", "petrol95": {"min": 1.63, "avg": 1.845, "median": 1.849, "max": 1.95}, "diesel": {"min": 1.72, "avg": 1.904, "median": 1.899, "max": 2.039}, "lpg": {"min": 0.72, "avg": 0.845, "median": 0.83, "max": 0.969}}
+{"date": "2026-06-10", "petrol95": {"min": 1.629, "avg": 1.802, "median": 1.799, "max": 1.95}, "diesel": {"min": 1.7, "avg": 1.865, "median": 1.869, "max": 1.999}, "lpg": {"min": 0.699, "avg": 0.832, "median": 0.82, "max": 0.969}}
