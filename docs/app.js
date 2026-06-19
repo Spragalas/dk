@@ -9,6 +9,10 @@
   let recentAverages = null; // { petrol95: [...], diesel: [...], lpg: [...] } aligned to recentDates
   let geocache = {}; // id -> { lat, lng }
   let historyDates = [];
+  // Full station roster from the latest dataset. Used so that when viewing an
+  // older date, stations that didn't report that day are still shown (greyed,
+  // no price) instead of vanishing from the map.
+  let baseStations = null;
   // Optional per-fuel color range from ?colorRange=<json>, e.g.
   // ?colorRange={"petrol95":[1.40,1.60],"diesel":[1.30,1.55]}.
   // When set for the current fuel, markers use a continuous gradient instead of
@@ -256,8 +260,11 @@
         const resp = await fetch(`data/history/${historyDate}.json`);
         const hist = await resp.json();
         data = {
+          // Averages reflect only the stations that reported that day, so
+          // merge them before overlaying the full roster (which adds greyed,
+          // priceless entries for stations missing on this date).
           date: hist.date,
-          stations: hist.stations,
+          stations: mergeWithBase(hist.stations),
           averages: computeAverages(hist.stations),
         };
       } else {
@@ -271,6 +278,9 @@
         s.lat = geo ? geo.lat : null;
         s.lng = geo ? geo.lng : null;
       }
+
+      // Remember the full roster from the latest dataset for date overlays.
+      if (!historyDate) baseStations = data.stations;
 
       allStations = data.stations;
       averages = data.averages;
@@ -303,6 +313,28 @@
       console.error("Failed to load data:", err);
       console.error("Klaida kraunant duomenis");
     }
+  }
+
+  // Union the requested day's stations with the latest full roster. Stations
+  // that didn't report on `dateStations`' day are kept (with null prices and a
+  // `missing` flag) so they render greyed instead of disappearing.
+  function mergeWithBase(dateStations) {
+    if (!baseStations) return dateStations;
+    const byId = new Map();
+    for (const s of baseStations) {
+      byId.set(s.id, {
+        id: s.id,
+        company: s.company,
+        municipality: s.municipality,
+        address: s.address,
+        prices: { petrol95: null, diesel: null, lpg: null },
+        missing: true,
+      });
+    }
+    for (const s of dateStations) {
+      byId.set(s.id, { ...s, missing: false });
+    }
+    return [...byId.values()];
   }
 
   function computeAverages(stations) {
@@ -400,11 +432,12 @@
     return getCSSVar("--yellow");
   }
 
-  function createMarkerIcon(color, price) {
+  function createMarkerIcon(color, price, missing) {
     const label = price != null ? price.toFixed(3) : "—";
+    const cls = missing ? "cluster-icon missing" : "cluster-icon";
     return L.divIcon({
       className: "price-cluster",
-      html: `<div class="cluster-icon" style="background:${color}">${label}</div>`,
+      html: `<div class="${cls}" style="background:${color}">${label}</div>`,
       iconSize: [52, 24],
       iconAnchor: [26, 12],
     });
@@ -424,17 +457,19 @@
       { key: "lpg", label: "SND" },
     ];
 
-    const priceRows = fuels
-      .map((f) => {
-        const price = station.prices[f.key];
-        const change = station.priceChange ? station.priceChange[f.key] : null;
-        const priceStr = price != null ? price.toFixed(3) + " \u20ac" : "neprekiauja";
-        return `<div class="price-row">
+    const priceRows = station.missing
+      ? `<div class="no-data">\u0160i\u0105 dien\u0105 duomen\u0173 nepateikta</div>`
+      : fuels
+          .map((f) => {
+            const price = station.prices[f.key];
+            const change = station.priceChange ? station.priceChange[f.key] : null;
+            const priceStr = price != null ? price.toFixed(3) + " \u20ac" : "neprekiauja";
+            return `<div class="price-row">
           <span class="fuel-name">${f.label}</span>
           <span><span class="price-value">${priceStr}</span>${formatChange(change)}</span>
         </div>`;
-      })
-      .join("");
+          })
+          .join("");
 
     const distStr = distance != null
       ? `<div class="distance">${distance < 1 ? (distance * 1000).toFixed(0) + " m" : distance.toFixed(1) + " km"}</div>`
@@ -559,7 +594,7 @@
       const price = station.prices[currentFuel];
       const color = getColor(price, avg);
       const marker = L.marker([station.lat, station.lng], {
-        icon: createMarkerIcon(color, price),
+        icon: createMarkerIcon(color, price, station.missing),
       });
       marker.stationData = station;
       marker.bindPopup(createPopup(station, distance), { maxWidth: 250 });
@@ -2674,9 +2709,17 @@
 
   document.addEventListener("DOMContentLoaded", init);
 
-  // Register service worker
+  // Register service worker — but never on localhost, where a cached SW would
+  // serve stale app.js/CSS and mask local edits. On localhost we also actively
+  // tear down any previously-registered SW and its caches.
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/sw.js");
+    const isLocal = ["localhost", "127.0.0.1"].includes(location.hostname);
+    if (isLocal) {
+      navigator.serviceWorker.getRegistrations().then((regs) => regs.forEach((r) => r.unregister()));
+      if (window.caches) caches.keys().then((keys) => keys.forEach((k) => caches.delete(k)));
+    } else {
+      navigator.serviceWorker.register("/sw.js");
+    }
   }
 
   // PWA install prompt

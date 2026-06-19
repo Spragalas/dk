@@ -947,6 +947,13 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* Stations with no data for the selected date: shown but visibly inactive. */
+.cluster-icon.missing {
+  opacity: 0.5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-style: dashed;
+}
+
 /* Popup styles */
 .leaflet-popup-content-wrapper {
   background: var(--bg-panel) !important;
@@ -990,6 +997,13 @@ body {
 
 .station-popup .prices {
   font-size: 13px;
+}
+
+.station-popup .no-data {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-style: italic;
+  padding: 4px 0;
 }
 
 .station-popup .price-row {
