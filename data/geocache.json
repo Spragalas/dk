@@ -4575,5 +4575,11 @@
     "lng": 24.7873484,
     "display_name": "31, Dariaus ir Girėno g., Užupis, Ukmergė, Ukmergės miesto seniūnija, Ukmergės rajono savivaldybė, Vilniaus apskritis, 20152, Lietuva",
     "review": false
+  },
+  "5-klaipėda-klaipėdos-priešpilio": {
+    "lat": 55.7041452,
+    "lng": 21.129605,
+    "display_name": "5, Priešpilio g., Piliavietė, Senamiestis, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 91240, Lietuva",
+    "review": false
   }
 }
