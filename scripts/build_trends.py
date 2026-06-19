@@ -39,6 +39,90 @@ REGIONS = {
 }
 
 
+import re
+
+# Legal-entity-form tokens stripped when normalising a company name.
+_COMPANY_LEGAL = {"uab", "ab", "mb", "iį", "všį", "kb", "tūb", "žūb", "ūb"}
+_COMPANY_COUNTRY = {"lt", "lietuva", "lithuania"}
+_COMPANY_TOKEN_RE = re.compile(r"[0-9a-ząčęėįšųūž]+")
+
+
+def _company_norm_key(name: str) -> str:
+    """Strip leading/trailing legal-form and country tokens for name matching.
+
+    'UAB Viada LT', 'Viada' -> 'viada'; 'IĮ A. Praškevičiaus',
+    'A. Praškevičiaus IĮ' -> 'a praškevičiaus'.
+    """
+    toks = _COMPANY_TOKEN_RE.findall(name.lower())
+    while toks and toks[0] in _COMPANY_LEGAL:
+        toks.pop(0)
+    while toks and (toks[-1] in _COMPANY_LEGAL or toks[-1] in _COMPANY_COUNTRY):
+        toks.pop()
+    return " ".join(toks)
+
+
+def build_company_canonical_map(days) -> dict[str, str]:
+    """Map every company name to one stable label per network.
+
+    The source relabelled every network to its legal entity name in mid-2026
+    (e.g. 'Viada' -> 'UAB Viada LT', 'GM (Circle K)' -> 'UAB GM Manufacturing
+    Lithuania'). Grouping by the raw name would split each network's trend
+    series at that boundary. Two complementary signals recover one label:
+
+      1. Station crosswalk: follow each physical station (canonical id) from
+         its earliest to its latest company name and majority-vote — catches
+         renames that share no words (the franchise cases above).
+      2. Name normalisation: group names that match after stripping legal-form
+         and country tokens — catches the rest (e.g. 'UAB Andopas' <-> 'Andopas')
+         even when the station id shifted and broke signal 1.
+
+    The canonical label for a group is its earliest-seen (shortest on ties)
+    name — i.e. the short pre-rename name the trend tabs already used.
+    """
+    from collections import Counter
+
+    first_date: dict[str, str] = {}
+    first_seen: dict[str, str] = {}
+    last_seen: dict[str, str] = {}
+    for date, stations in days:  # ascending by date
+        for s in stations:
+            comp = s.get("company")
+            if not comp:
+                continue
+            first_date.setdefault(comp, date)
+            first_seen.setdefault(s["id"], comp)
+            last_seen[s["id"]] = comp
+
+    votes: dict[str, Counter] = defaultdict(Counter)
+    for cid, new_name in last_seen.items():
+        old_name = first_seen.get(cid)
+        if old_name and new_name != old_name:
+            votes[new_name][old_name] += 1
+    crosswalk = {new: counts.most_common(1)[0][0] for new, counts in votes.items()}
+
+    name_groups: dict[str, list[str]] = defaultdict(list)
+    for name in first_date:
+        name_groups[_company_norm_key(name)].append(name)
+    name_map: dict[str, str] = {}
+    for names in name_groups.values():
+        if len(names) > 1:
+            canonical = min(names, key=lambda n: (first_date[n], len(n)))
+            for n in names:
+                name_map[n] = canonical
+
+    def resolve(name: str) -> str:
+        seen = set()
+        while name not in seen:
+            seen.add(name)
+            nxt = crosswalk.get(name) or name_map.get(name)
+            if not nxt or nxt == name:
+                break
+            name = nxt
+        return name
+
+    return {name: resolve(name) for name in first_date}
+
+
 def region_for(municipality: str) -> str | None:
     if not municipality:
         return None
@@ -112,7 +196,7 @@ def write_grouped(days, key_fn, key_name, out_name):
     print(f"Wrote {path}")
 
 
-def write_station_history(days: list[tuple[str, list[dict]]]) -> None:
+def write_station_history(days: list[tuple[str, list[dict]]], company_map: dict[str, str] | None = None) -> None:
     """One file containing every station's full time series.
 
     Format (compact, designed for ~1-2 MB gzipped at one year of data):
@@ -137,11 +221,13 @@ def write_station_history(days: list[tuple[str, list[dict]]]) -> None:
     dates = [d for d, _ in days]
 
     # Discover all station ids and capture latest metadata for each.
+    company_map = company_map or {}
     meta: dict[str, dict] = {}
     for _, stations in days:
         for s in stations:
+            company = s.get("company")
             meta[s["id"]] = {
-                "company": s.get("company"),
+                "company": company_map.get(company, company),
                 "address": s.get("address"),
                 "municipality": s.get("municipality"),
             }
@@ -180,11 +266,17 @@ def main() -> None:
         print("No history files found, nothing to build.")
         return
 
+    company_map = build_company_canonical_map(days)
+
+    def canonical_company(s):
+        c = s.get("company")
+        return company_map.get(c, c)
+
     write_overall(days)
-    write_grouped(days, lambda s: s.get("company"), "network", "trends-by-network.jsonl")
+    write_grouped(days, canonical_company, "network", "trends-by-network.jsonl")
     write_grouped(days, lambda s: region_for(s.get("municipality", "")), "region", "trends-by-region.jsonl")
-    write_station_history(days)
-    print(f"Built trends for {len(days)} dates.")
+    write_station_history(days, company_map)
+    print(f"Built trends for {len(days)} dates ({len(company_map)} network names canonicalized).")
 
 
 if __name__ == "__main__":

@@ -9,6 +9,9 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # Hard cap so a hung download (e.g. the Playwright SharePoint fallback)
+    # fails the run quickly instead of burning the default 6h job limit.
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
