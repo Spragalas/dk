@@ -4581,5 +4581,11 @@
     "lng": 21.129605,
     "display_name": "5, Priešpilio g., Piliavietė, Senamiestis, Klaipėda, Klaipėdos miesto savivaldybė, Klaipėdos apskritis, 91240, Lietuva",
     "review": false
+  },
+  "1-skraičionių-skraičionys-šalčininkų": {
+    "lat": 54.2041215,
+    "lng": 25.6210537,
+    "display_name": "1, Skraičionių g., Skraičionys, Dieveniškių seniūnija, Šalčininkų rajono savivaldybė, Vilniaus apskritis, 17140, Lietuva",
+    "review": false
   }
 }
