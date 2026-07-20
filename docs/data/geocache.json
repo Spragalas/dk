@@ -4611,5 +4611,11 @@
     "lng": 24.0782232,
     "display_name": "Martinavos g., Sergeičikai II, Karmėlavos seniūnija, Kauno rajono savivaldybė, Kauno apskritis, 52286, Lietuva",
     "review": false
+  },
+  "9-europos-kalvarijos-salaperaugio": {
+    "lat": 54.3313097,
+    "lng": 23.1188588,
+    "display_name": "Salaperaugis, Liubavo seniūnija, Kalvarijos savivaldybė, Marijampolės apskritis, 69286, Lietuva",
+    "review": true
   }
 }
