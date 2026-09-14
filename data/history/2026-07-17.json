@@ -3142,8 +3142,8 @@
       "municipality": "Elektrėnų sav.",
       "address": "Vievis, Kauno g. 55A, 21371",
       "prices": {
-        "petrol95": 2.039,
-        "diesel": 1.999,
+        "petrol95": 1.999,
+        "diesel": 2.039,
         "lpg": 0.859
       }
     },
@@ -7367,7 +7367,7 @@
       "address": "Panevėžys, Ramygalos g. 186G, 36224",
       "prices": {
         "petrol95": null,
-        "diesel": 1.899,
+        "diesel": null,
         "lpg": 0.759
       }
     },

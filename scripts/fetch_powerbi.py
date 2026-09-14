@@ -21,7 +21,13 @@ from typing import Optional
 
 import requests
 
-ENA_PAGE = "https://www.ena.lt/degalu-kainos-degalinese/"
+# ena.lt split its fuel-price section into subpages in Sept 2026 and the
+# Power BI embed moved to /dk-irankis/. We try the pages in order so the
+# fetcher survives that kind of reshuffle (and a move back).
+ENA_PAGES = (
+    "https://www.ena.lt/dk-irankis/",
+    "https://www.ena.lt/degalu-kainos-degalinese/",
+)
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120 Safari/537.36"
 
 # Power BI table/columns holding the per-station daily detail.
@@ -58,11 +64,12 @@ class PowerBIClient:
 
     # -- resolution -------------------------------------------------------
     def _embed_token(self) -> str:
-        html = self.s.get(ENA_PAGE, timeout=20).text
-        m = re.search(r"app\.powerbi\.com/view\?r=([A-Za-z0-9_-]+)", html)
-        if not m:
-            raise PowerBIError("No Power BI embed found on ena.lt page")
-        return m.group(1)
+        for page in ENA_PAGES:
+            html = self.s.get(page, timeout=20).text
+            m = re.search(r"app\.powerbi\.com/view\?r=([A-Za-z0-9_-]+)", html)
+            if m:
+                return m.group(1)
+        raise PowerBIError(f"No Power BI embed found on any of {', '.join(ENA_PAGES)}")
 
     def _resolve_cluster(self, token: str) -> None:
         view = self.s.get(f"https://app.powerbi.com/view?r={token}", timeout=20).text

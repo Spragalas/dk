@@ -1,20 +1,28 @@
 #!/usr/bin/env python3
-"""Download the latest fuel price Excel file from ena.lt via SharePoint.
+"""Download the fuel price Excel workbook published by ena.lt via SharePoint.
 
-1. Scrapes ena.lt to find SharePoint links for the target date
-2. Downloads the Excel file from SharePoint using the anonymous guest-share
-   link (`:x:/s/...`), falling back to Playwright if needed.
+1. Scrapes ena.lt for the SharePoint share link
+2. Downloads the workbook using the anonymous guest-share link (`:x:/s/...`),
+   falling back to Playwright if needed.
+
+Since 2026-09-09 ena.lt publishes one consolidated workbook per year (all
+days in a single `Pateikimo data` column) instead of one file per day, so the
+link carries no date of its own — callers pick the day out of the workbook.
 """
 
 import html as html_mod
 import re
-import sys
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 import requests
 
-ENA_PAGE = "https://www.ena.lt/degalu-kainos-degalinese/"
+# The raw-data downloads moved to the /dk-pr-pr-duomenys/ subpage when ena.lt
+# split its fuel-price section (Sept 2026). Tried in order.
+ENA_PAGES = (
+    "https://www.ena.lt/dk-pr-pr-duomenys/",
+    "https://www.ena.lt/degalu-kainos-degalinese/",
+)
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data" / "downloads"
 
 USER_AGENT = (
@@ -23,70 +31,24 @@ USER_AGENT = (
 )
 
 
-def get_sharepoint_links(target_date: str | None = None) -> tuple[list[str], str]:
-    """Scrape ena.lt for SharePoint download links.
+def get_sharepoint_links() -> list[str]:
+    """Scrape ena.lt for SharePoint workbook links, best candidate first.
 
-    Returns (urls, date_string) where `urls` is a list of candidate URLs for
-    the chosen date. ena.lt typically lists two links per date: an internal
-    `/:x:/r/...` viewer URL (requires Microsoft login) and an anonymous
-    `/:x:/s/...` guest-share URL. We return both so callers can try them in
-    preference order (guest share first).
+    ena.lt lists two flavours of link: an internal `/:x:/r/...` viewer URL
+    (requires a Microsoft login) and an anonymous `/:x:/s/...` guest-share
+    URL. Guest-share links come first so callers try the usable one first.
     """
-    resp = requests.get(ENA_PAGE, timeout=15, headers={"User-Agent": USER_AGENT})
-    resp.raise_for_status()
-    html = resp.text
-
-    # ena.lt places the date for each SharePoint share link inside the
-    # anchor tag itself: a `title="Degalų kainos YYYY-MM-DD"` attribute,
-    # or the anchor's own inner text (e.g. `Naujausios degalų kainos
-    # (2026-05-15)`). We require a date inside each anchor — stale
-    # promo/icon anchors with no inline date must be ignored, otherwise
-    # they get mis-attributed to today and silently override the real
-    # current-day link (the same href can linger in the promo box for
-    # days after the underlying file has been replaced).
-    date_pattern = re.compile(r'\d{4}-\d{2}-\d{2}')
-    # Inner is `.*?` with DOTALL so nested tags (e.g. <strong>...</strong>,
-    # which ena.lt sometimes wraps the link text in) don't break matching.
-    a_tag_pattern = re.compile(
-        r'<a\b[^>]*href="(https://ltenergagen\.sharepoint\.com[^"]+)"[^>]*>.*?</a>',
-        re.IGNORECASE | re.DOTALL,
-    )
-
-    links_with_dates: list[tuple[str, str]] = []
-    for m in a_tag_pattern.finditer(html):
-        in_tag = date_pattern.search(m.group(0))
-        if not in_tag:
-            continue
-        date_str = in_tag.group(0)
-        # The href in HTML is entity-encoded (e.g. &amp;). Decode so the
-        # share token query params (d=..., e=...) are usable directly.
-        links_with_dates.append((html_mod.unescape(m.group(1)), date_str))
-
-    if not links_with_dates:
-        print(f"DEBUG: page length={len(html)}, 'sharepoint' in page={'sharepoint' in html.lower()}")
-        raise RuntimeError("No SharePoint links with dated titles found on ena.lt")
-
-    available_dates = sorted({d for _, d in links_with_dates}, reverse=True)
-    print(f"SharePoint dates available: {available_dates}")
-
-    chosen_date = target_date if target_date in available_dates else available_dates[0]
-    if target_date and chosen_date != target_date:
-        print(f"No exact match for {target_date}, latest is {chosen_date}")
-
-    # Prefer guest-share links (`:x:/s/...`) over internal viewer links
-    # (`:x:/r/...`) — the former works without authentication.
-    def link_priority(url: str) -> int:
-        return 0 if "/:x:/s/" in url else 1
-
-    urls = [u for u, d in links_with_dates if d == chosen_date]
-    urls.sort(key=link_priority)
-    return urls, chosen_date
-
-
-def get_sharepoint_link(target_date: str | None = None) -> tuple[str, str]:
-    """Backwards-compatible single-URL accessor (returns highest-priority link)."""
-    urls, date_str = get_sharepoint_links(target_date)
-    return urls[0], date_str
+    for page in ENA_PAGES:
+        resp = requests.get(page, timeout=15, headers={"User-Agent": USER_AGENT})
+        resp.raise_for_status()
+        # The href in HTML is entity-encoded (e.g. &amp;). Decode so the share
+        # token query params (d=..., e=...) stay usable.
+        urls = [html_mod.unescape(u) for u in dict.fromkeys(
+            re.findall(r'href="(https://ltenergagen\.sharepoint\.com[^"]+)"', resp.text))]
+        if urls:
+            urls.sort(key=lambda u: 0 if "/:x:/s/" in u else 1)
+            return urls
+    raise RuntimeError(f"No SharePoint links found on any of {', '.join(ENA_PAGES)}")
 
 
 def _with_download_param(url: str) -> str:
@@ -200,22 +162,14 @@ def download_from_sharepoint_any(urls: list[str], output_path: Path) -> None:
 
 
 def main():
-    target_date = None
-    if len(sys.argv) > 1:
-        target_date = sys.argv[1]
-
-    urls, date_str = get_sharepoint_links(target_date)
-    print(f"Found {len(urls)} link(s) for {date_str}")
+    urls = get_sharepoint_links()
+    print(f"Found {len(urls)} link(s)")
     for u in urls:
         print(f"  {u}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    output_path = OUTPUT_DIR / f"dk-{date_str}.xlsx"
-
-    if output_path.exists():
-        print(f"File already exists: {output_path}")
-    else:
-        download_from_sharepoint_any(urls, output_path)
+    output_path = OUTPUT_DIR / "dk-latest.xlsx"
+    download_from_sharepoint_any(urls, output_path)
 
     # Verify it's a valid Excel file
     import openpyxl
@@ -225,7 +179,6 @@ def main():
     wb.close()
 
     print(f"OUTPUT_PATH={output_path}")
-    print(f"OUTPUT_DATE={date_str}")
 
 
 if __name__ == "__main__":

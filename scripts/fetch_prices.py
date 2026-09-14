@@ -5,7 +5,7 @@ import json
 import re
 import shutil
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -34,6 +34,10 @@ OLD_HEADERS = [
 # Columns: Įmonė | Savivaldybė | Adresas | Degalų tipas | Kaina (EUR/l) |
 # Pateikimo data. This is what the SharePoint share link now serves.
 NEW_HEADERS = ["Įmonė", "Savivaldybė", "Adresas", "Degalų tipas", "Kaina (EUR/l)"]
+
+# Header of the column holding each row's date. Since 2026-09-09 ena.lt ships
+# one workbook per year rather than one per day, so rows must be filtered by it.
+DATE_HEADER = "Pateikimo data"
 
 # Maps the source's fuel-type label (new long format) to our JSON keys.
 FUEL_TYPE_MAP = {
@@ -95,19 +99,31 @@ def _find_header_row(ws, tokens: list[str], max_scan: int = 15) -> int | None:
     return None
 
 
-def _parse_long_format(ws, header_row: int) -> list[dict]:
+def _parse_long_format(ws, header_row: int, want_date: str | None = None) -> list[dict]:
     """Parse the new layout: one row per (station × fuel type).
 
     Rows look like: Įmonė | Savivaldybė | Adresas | Degalų tipas |
-    Kaina (EUR/l) | Pateikimo data. We group consecutive rows for the same
-    physical station (keyed by the canonical id) and fill its three fuel
-    prices. Unknown fuel types and rows missing a company/address are skipped.
+    Kaina (EUR/l) | Pateikimo data. We group rows for the same physical
+    station (keyed by the canonical id) and fill its three fuel prices.
+    Unknown fuel types and rows missing a company/address are skipped.
+
+    The workbook now spans a whole year, so `want_date` (YYYY-MM-DD) selects
+    a single day; without it every row is taken, which is only correct for
+    the legacy one-day-per-file workbooks.
     """
+    headers = [str(c).strip() if c is not None else ""
+               for c in next(ws.iter_rows(min_row=header_row, max_row=header_row,
+                                          values_only=True))]
+    date_col = headers.index(DATE_HEADER) if DATE_HEADER in headers else None
+
     stations: dict[str, dict] = {}
     for row in ws.iter_rows(min_row=header_row + 1, values_only=True):
         company, municipality, address, fuel_type = row[0], row[1], row[2], row[3]
         if not company or not address:
             continue
+        if want_date is not None and date_col is not None:
+            if str(row[date_col])[:10] != want_date:
+                continue
         fuel = FUEL_TYPE_MAP.get(str(fuel_type).strip().lower())
         if fuel is None:
             continue
@@ -153,14 +169,16 @@ def _parse_wide_format(ws, header_row: int) -> list[dict]:
     return stations
 
 
-def parse_excel(path: str) -> list[dict]:
+def parse_excel(path: str, want_date: str | None = None) -> list[dict]:
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
-    ws = wb["Degalų kainos"]
+    # The consolidated yearly workbook names its sheet "DK-<year>"; the older
+    # per-day files used "Degalų kainos". Take the only sheet either way.
+    ws = wb["Degalų kainos"] if "Degalų kainos" in wb.sheetnames else wb[wb.sheetnames[0]]
     try:
         # Detect layout by locating its header row. Prefer the new long format.
         new_row = _find_header_row(ws, ["Adresas", "Degalų tipas", "Kaina (EUR/l)"])
         if new_row is not None:
-            return _parse_long_format(ws, new_row)
+            return _parse_long_format(ws, new_row, want_date)
         old_row = _find_header_row(ws, ["Data", "95 benzinas", "Dyzelinas", "SND"])
         if old_row is not None:
             return _parse_wide_format(ws, old_row)
@@ -354,47 +372,72 @@ def build_recent_roster_ghosts(today_stations: list[dict], current_date: str,
     return ghosts
 
 
+# A single querydata call is capped at 30k rows and a day is ~2.1k rows, so
+# long ranges are fetched in chunks well under that ceiling.
+BACKFILL_CHUNK_DAYS = 10
+
+
+def _backfill_start(target: date) -> date:
+    """First day to fetch: far enough back to close any gap in history.
+
+    Normally that's the trailing BACKFILL_WINDOW_DAYS. If collection has been
+    broken for longer (ena.lt moved the Power BI embed in Sept 2026 and three
+    months went missing), reach back to the newest file we do have so the gap
+    heals on the next run instead of needing a manual backfill.
+    """
+    window = target - timedelta(days=BACKFILL_WINDOW_DAYS)
+    newest = max((f.stem for f in HISTORY_DIR.glob("*.json")), default=None)
+    return min(window, date.fromisoformat(newest)) if newest else window
+
+
 def fetch_via_powerbi(target_date: datetime, date_str: str) -> bool:
     """Primary source: the LEA Power BI dataset embedded on ena.lt.
 
     It exposes the full daily history (verified identical to the Excel), so a
-    single query both fetches the target day and self-heals any recent gap —
-    every run backfills missing business days within the trailing window.
+    single run both fetches the target day and self-heals any gap — every run
+    backfills the missing business days between the newest file and today.
     Returns True if the target day's history file now exists.
     """
-    from fetch_powerbi import stations_by_date
+    from fetch_powerbi import PowerBIClient, stations_by_date
 
-    start = (target_date - timedelta(days=BACKFILL_WINDOW_DAYS)).strftime("%Y-%m-%d")
-    end = (target_date + timedelta(days=1)).strftime("%Y-%m-%d")
-    by_date = stations_by_date(start, end, make_station_id, parse_price)
+    client = PowerBIClient().connect()
+    end = target_date.date() + timedelta(days=1)
+    start = _backfill_start(target_date.date())
     backfilled = []
-    for d, stations in sorted(by_date.items()):
-        if not (HISTORY_DIR / f"{d}.json").exists():
-            _save_history(d, list(stations.values()))
-            backfilled.append(d)
+    while start < end:
+        chunk_end = min(start + timedelta(days=BACKFILL_CHUNK_DAYS), end)
+        by_date = stations_by_date(start.isoformat(), chunk_end.isoformat(),
+                                   make_station_id, parse_price, client)
+        for d, stations in sorted(by_date.items()):
+            if not (HISTORY_DIR / f"{d}.json").exists():
+                _save_history(d, list(stations.values()))
+                backfilled.append(d)
+        start = chunk_end
     if backfilled:
         print(f"Power BI backfilled: {', '.join(backfilled)}")
     return (HISTORY_DIR / f"{date_str}.json").exists()
 
 
 def fetch_via_sharepoint(date_str: str) -> list[dict]:
-    """Fallback source: the SharePoint guest-share Excel (latest day only).
+    """Fallback source: the SharePoint guest-share Excel workbook.
 
-    ena.lt retired the direct .xlsx download URL in mid-2026; this is the
-    backup if the Power BI dataset is unreachable. Exits cleanly if the
-    target day isn't the latest published file.
+    ena.lt retired the direct .xlsx download URL in mid-2026 and since
+    2026-09-09 publishes one workbook per year rather than one per day; this
+    is the backup if the Power BI dataset is unreachable. Exits cleanly if
+    the target day isn't in the workbook yet.
     """
     from download_sharepoint import get_sharepoint_links, download_from_sharepoint_any
 
-    sp_urls, sp_date = get_sharepoint_links(date_str)
-    if sp_date != date_str:
-        print(f"Latest available is {sp_date} but need {date_str} — not published yet, skipping")
-        sys.exit(0)
     dl_dir = DATA_DIR / "downloads"
     dl_dir.mkdir(parents=True, exist_ok=True)
-    xlsx_path = str(dl_dir / f"dk-{date_str}.xlsx")
-    download_from_sharepoint_any(sp_urls, Path(xlsx_path))
-    return parse_excel(xlsx_path)
+    # Always re-download: the yearly workbook gains a new day every morning.
+    xlsx_path = dl_dir / "dk-latest.xlsx"
+    download_from_sharepoint_any(get_sharepoint_links(), xlsx_path)
+    stations = parse_excel(str(xlsx_path), date_str)
+    if not stations:
+        print(f"{date_str} not in the published workbook yet, skipping")
+        sys.exit(0)
+    return stations
 
 
 def main():
