@@ -1312,6 +1312,7 @@
   let trendsData = []; // [{ date, stats: { petrol95: {min,avg,median,max}, ... } }]
 
   function setupTrendsView() {
+    setupTrendsBrush();
     document.getElementById("trends-btn").addEventListener("click", () => {
       trendsFuel = currentFuel;
       // Reopen in whichever mode was last active (prices vs competition).
@@ -1559,6 +1560,90 @@
   // chart falls back to the single-series `trendsData`.
   let trendsEntitiesData = null;
 
+  // Visible time window: `trendsDays` long, ending at `trendsEnd` (UTC day
+  // number; null = follow the latest date). The brush under the chart moves
+  // and resizes it; `trendsFull` keeps the unwindowed series it slices from.
+  const TRENDS_MIN_DAYS = 7, TRENDS_MAX_DAYS = 90;
+  let trendsDays = 50;
+  let trendsEnd = null;
+  let trendsSpan = null; // { first, last } UTC day numbers of the full data
+  let trendsFull = { data: [], entities: null };
+
+  const utcDay = (d) => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +d.slice(8, 10)) / 86400000;
+  const isoDay = (n) => new Date(n * 86400000).toISOString().slice(0, 10);
+  const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+
+  function trendsWindow() {
+    const end = Math.min(trendsEnd ?? trendsSpan.last, trendsSpan.last);
+    return { start: Math.max(end - trendsDays + 1, trendsSpan.first), end };
+  }
+
+  function renderTrendsWindow() {
+    let { data, entities } = trendsFull;
+    const brush = document.getElementById("trends-brush");
+    brush.classList.toggle("hidden", !trendsSpan);
+    if (trendsSpan) {
+      const { start, end } = trendsWindow();
+      const from = isoDay(start), to = isoDay(end);
+      const inWin = (d) => d >= from && d <= to;
+      data = data.filter(d => inWin(d.date));
+      if (entities) entities = entities.map(e => ({ ...e, rows: e.rows.filter(r => inWin(r.date)) }));
+      const total = trendsSpan.last - trendsSpan.first + 1;
+      const win = document.getElementById("trends-brush-win");
+      win.style.left = `${((start - trendsSpan.first) / total) * 100}%`;
+      win.style.width = `${((end - start + 1) / total) * 100}%`;
+    }
+    trendsData = data;
+    trendsEntitiesData = entities;
+    renderTrendsChartAndTable();
+  }
+
+  function setupTrendsBrush() {
+    const brush = document.getElementById("trends-brush");
+    const win = document.getElementById("trends-brush-win");
+    let drag = null, frame = 0;
+    brush.addEventListener("pointerdown", (e) => {
+      if (!trendsSpan) return;
+      const { start, end } = trendsWindow();
+      const pxPerDay = brush.clientWidth / (trendsSpan.last - trendsSpan.first + 1);
+      const cl = e.target.classList;
+      drag = { mode: cl.contains("l") ? "l" : cl.contains("r") ? "r" : "move", x: e.clientX, start, end, pxPerDay };
+      if (e.target === brush) {
+        // Click on the empty track: centre the window there, then keep dragging.
+        const day = trendsSpan.first + Math.floor((e.clientX - brush.getBoundingClientRect().left) / pxPerDay);
+        drag.end = day + Math.floor((end - start) / 2);
+        drag.start = drag.end - (end - start);
+        move(e);
+      }
+      brush.setPointerCapture(e.pointerId);
+      e.preventDefault();
+    });
+    function move(e) {
+      if (!drag) return;
+      const dd = Math.round((e.clientX - drag.x) / drag.pxPerDay);
+      const { first, last } = trendsSpan;
+      let start = drag.start, end = drag.end;
+      if (drag.mode === "move") {
+        const len = end - start;
+        end = clamp(end + dd, first + len, last);
+        start = end - len;
+      } else if (drag.mode === "r") {
+        end = clamp(end + dd, start + TRENDS_MIN_DAYS - 1, Math.min(start + TRENDS_MAX_DAYS - 1, last));
+      } else {
+        start = clamp(start + dd, Math.max(first, end - TRENDS_MAX_DAYS + 1), end - TRENDS_MIN_DAYS + 1);
+      }
+      trendsDays = end - start + 1;
+      trendsEnd = end >= last ? null : end;
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(renderTrendsWindow);
+    }
+    brush.addEventListener("pointermove", move);
+    const stop = () => { drag = null; };
+    brush.addEventListener("pointerup", stop);
+    brush.addEventListener("pointercancel", stop);
+    win.addEventListener("dragstart", (e) => e.preventDefault());
+  }
+
   function computeAndRender() {
     trendsData = [];
     trendsEntitiesData = null;
@@ -1600,7 +1685,10 @@
       const longest = trendsEntitiesData.reduce((best, e) => e.rows.length > (best?.rows.length || 0) ? e : best, null);
       trendsData = longest ? longest.rows.map(r => ({ date: r.date, stats: {} })) : [];
     }
-    renderTrendsChartAndTable();
+    trendsFull = { data: trendsData, entities: trendsEntitiesData };
+    const dates = [...trendsData.map(d => d.date), ...(trendsEntitiesData || []).flatMap(e => e.rows.map(r => r.date))].sort();
+    trendsSpan = dates.length ? { first: utcDay(dates[0]), last: utcDay(dates[dates.length - 1]) } : null;
+    renderTrendsWindow();
   }
 
   // Competition view: for each selected chain, how far its daily MEDIAN price
@@ -2028,12 +2116,10 @@
     // Date labels
     let dateLabels = "";
     const step = Math.max(1, Math.floor(trendsData.length / 6));
-    for (let i = 0; i < trendsData.length; i += step) {
+    for (let i = 0; i < trendsData.length - 1 - step / 2; i += step) {
       dateLabels += `<text x="${xPos(i)}" y="${H - 8}" text-anchor="middle" fill="var(--text-dim)" font-size="11">${trendsData[i].date.slice(5)}</text>`;
     }
-    if ((trendsData.length - 1) % step !== 0) {
-      dateLabels += `<text x="${xPos(trendsData.length - 1)}" y="${H - 8}" text-anchor="middle" fill="var(--text-dim)" font-size="11">${trendsData[trendsData.length - 1].date.slice(5)}</text>`;
-    }
+    dateLabels += `<text x="${xPos(trendsData.length - 1)}" y="${H - 8}" text-anchor="middle" fill="var(--text-dim)" font-size="11">${trendsData[trendsData.length - 1].date.slice(5)}</text>`;
 
     let lines = "";
 

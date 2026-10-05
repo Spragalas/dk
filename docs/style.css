@@ -1553,6 +1553,44 @@ body.side-open #map {
   flex-shrink: 0;
 }
 
+#trends-brush {
+  position: relative;
+  height: 22px;
+  margin: -8px 0 16px;
+  background: var(--border);
+  border-radius: var(--radius);
+  touch-action: none;
+  user-select: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+#trends-brush-win {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 16px;
+  background: var(--text-dim);
+  opacity: 0.6;
+  border-radius: var(--radius);
+  cursor: grab;
+}
+
+#trends-brush-win:active {
+  cursor: grabbing;
+}
+
+.brush-h {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  cursor: ew-resize;
+}
+
+.brush-h.l { left: 0; }
+.brush-h.r { right: 0; }
+
 #trends-chart svg {
   width: 100%;
   height: auto;
